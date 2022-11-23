@@ -358,7 +358,7 @@
     {
       "text": "%pyspark\n\ndf_txn_details\u003dspark.sql(\"select * from transaction_details limit 20\")\ndf_txn_details.printSchema()\ndf_txn_details.show()\n\n\n\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-21 13:17:02.582",
+      "dateUpdated": "2022-11-23 17:15:03.230",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -382,7 +382,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "ANTLR Tool version 4.7 used for code generation does not match the current runtime version 4.8ANTLR Tool version 4.7 used for code generation does not match the current runtime version 4.8root\n |-- id: integer (nullable \u003d true)\n |-- uuid: string (nullable \u003d true)\n |-- cardtype: string (nullable \u003d true)\n |-- website: string (nullable \u003d true)\n |-- product: string (nullable \u003d true)\n |-- amount: double (nullable \u003d true)\n |-- city: string (nullable \u003d true)\n |-- country: string (nullable \u003d true)\n |-- addts: long (nullable \u003d true)\n |-- txn_receive_date: string (nullable \u003d true)\n\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|  id|                uuid|cardtype| website| product|  amount|       city|country|     addts|txn_receive_date|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|3949|c08f1e8a-8e9f-43e...|    VISA|  Amazon|  Tablet|14949.11|     Oxford|     UK|1663203040|      2022-09-15|\n|4143|319e34f2-1e00-45b...|  Master|Flipkart|Computer| 8618.17|   Banglore|     IN|1663203045|      2022-09-15|\n|4547|b7bae4f2-420e-4dd...|  Master|  Amazon|  Laptop|24347.02|   New York|    USA|1663203050|      2022-09-15|\n|3196|2d89dc1c-9d86-45f...|   RuPay|  Amazon|  Tablet|18717.18|Los Angeles|    USA|1663203055|      2022-09-15|\n|2724|de443eb3-38bf-464...|    VISA|  Myntra|  Laptop| 1665.79|      Miami|    USA|1663203060|      2022-09-15|\n|3136|24e6c80a-6318-436...|  Master|  Amazon|Computer|17264.66|   Yokohama|     JP|1663203065|      2022-09-15|\n|4485|84f78629-c611-478...|    Amex|  Myntra|  Laptop|  511.53|      Miami|    USA|1663203070|      2022-09-15|\n|2716|fa66b416-e2be-4d8...|    Amex|  Myntra|  Mobile| 16965.5| Manchester|     UK|1663203075|      2022-09-15|\n|1914|192a7c5d-3c19-411...|  Master|  Myntra|  Laptop|16801.61|     Mumbai|     IN|1663203080|      2022-09-15|\n|4351|c3eca654-2602-406...|   RuPay|Flipkart|  Laptop| 4060.14| Manchester|     UK|1663203085|      2022-09-15|\n|1458|c886b787-5cb7-447...|   RuPay|Flipkart|  Mobile| 1750.67|     London|     UK|1663203090|      2022-09-15|\n|4964|f70be51e-a2d3-420...|    Amex|SnapDeal|Computer| 4401.56|       Pune|     IN|1663203095|      2022-09-15|\n|2572|ae8ba45f-e18b-48e...|    VISA|  Amazon|  Tablet| 4903.23|      Tokyo|     JP|1663203100|      2022-09-15|\n|3909|c0ad06fd-ac44-427...|    VISA|SnapDeal|  Mobile| 15298.2|      Tokyo|     JP|1663203105|      2022-09-15|\n|1314|697cb724-ae18-473...|  Master|  Amazon|  Laptop| 5114.79|      Miami|    USA|1663203110|      2022-09-15|\n|4820|cac70670-42b5-4c3...|  Master|SnapDeal|  Mobile| 10613.9|   Banglore|     IN|1663203115|      2022-09-15|\n|1184|2435c3d4-5944-489...|   RuPay|SnapDeal|  Mobile| 3139.05|      Tokyo|     JP|1663203120|      2022-09-15|\n|3566|e2c655d6-f7c6-493...|    VISA|SnapDeal|  Tablet| 5523.02|  Liverpool|     UK|1663203125|      2022-09-15|\n|3844|486af773-f766-412...|  Master|Flipkart|  Mobile|20678.19|Los Angeles|    USA|1663203130|      2022-09-15|\n|1404|20af6d2e-31d8-4b6...|    Amex|Flipkart|  Laptop|22013.31|       Pune|     IN|1663203135|      2022-09-15|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n\n"
+            "data": "ANTLR Tool version 4.7 used for code generation does not match the current runtime version 4.8ANTLR Tool version 4.7 used for code generation does not match the current runtime version 4.8root\n |-- id: integer (nullable \u003d true)\n |-- uuid: string (nullable \u003d true)\n |-- cardtype: string (nullable \u003d true)\n |-- website: string (nullable \u003d true)\n |-- product: string (nullable \u003d true)\n |-- amount: double (nullable \u003d true)\n |-- city: string (nullable \u003d true)\n |-- country: string (nullable \u003d true)\n |-- addts: long (nullable \u003d true)\n |-- txn_receive_date: string (nullable \u003d true)\n\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|  id|                uuid|cardtype| website| product|  amount|       city|country|     addts|txn_receive_date|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|2679|e6c0099a-a92f-45f...|   RuPay|  Amazon|  Mobile| 7032.13|Los Angeles|    USA|1663204220|      2022-09-15|\n|2678|ece842cc-e7d2-4ab...|  Master|SnapDeal|  Mobile| 23990.0|   New York|    USA|1663204225|      2022-09-15|\n|1664|cb498e9b-b16f-438...|   RuPay|  Amazon|Computer|15798.52|  Hiroshima|     JP|1663204230|      2022-09-15|\n|4687|24dab694-0d40-418...|    VISA|  Amazon|  Laptop|24485.26|      Miami|    USA|1663204235|      2022-09-15|\n|3096|6a5a7387-b841-406...|   RuPay|Flipkart|  Tablet| 6257.98|  Liverpool|     UK|1663204240|      2022-09-15|\n|4232|818d7b85-527a-47a...|  Master|Flipkart|  Laptop|12297.58|     Oxford|     UK|1663204245|      2022-09-15|\n|2926|08f133d7-b381-4ce...|    VISA|SnapDeal|  Laptop|12305.38|   New York|    USA|1663204250|      2022-09-15|\n|3473|86accdf7-b01d-46c...|    Amex|  Amazon|  Tablet|22655.99|      Delhi|     IN|1663204255|      2022-09-15|\n|3949|c08f1e8a-8e9f-43e...|    VISA|  Amazon|  Tablet|14949.11|     Oxford|     UK|1663203040|      2022-09-15|\n|4143|319e34f2-1e00-45b...|  Master|Flipkart|Computer| 8618.17|   Banglore|     IN|1663203045|      2022-09-15|\n|4547|b7bae4f2-420e-4dd...|  Master|  Amazon|  Laptop|24347.02|   New York|    USA|1663203050|      2022-09-15|\n|3196|2d89dc1c-9d86-45f...|   RuPay|  Amazon|  Tablet|18717.18|Los Angeles|    USA|1663203055|      2022-09-15|\n|2724|de443eb3-38bf-464...|    VISA|  Myntra|  Laptop| 1665.79|      Miami|    USA|1663203060|      2022-09-15|\n|3136|24e6c80a-6318-436...|  Master|  Amazon|Computer|17264.66|   Yokohama|     JP|1663203065|      2022-09-15|\n|4485|84f78629-c611-478...|    Amex|  Myntra|  Laptop|  511.53|      Miami|    USA|1663203070|      2022-09-15|\n|2716|fa66b416-e2be-4d8...|    Amex|  Myntra|  Mobile| 16965.5| Manchester|     UK|1663203075|      2022-09-15|\n|1914|192a7c5d-3c19-411...|  Master|  Myntra|  Laptop|16801.61|     Mumbai|     IN|1663203080|      2022-09-15|\n|4351|c3eca654-2602-406...|   RuPay|Flipkart|  Laptop| 4060.14| Manchester|     UK|1663203085|      2022-09-15|\n|1458|c886b787-5cb7-447...|   RuPay|Flipkart|  Mobile| 1750.67|     London|     UK|1663203090|      2022-09-15|\n|4964|f70be51e-a2d3-420...|    Amex|SnapDeal|Computer| 4401.56|       Pune|     IN|1663203095|      2022-09-15|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n\n"
           }
         ]
       },
@@ -395,7 +395,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:44539/jobs/job?id\u003d0"
+              "jobUrl": "http://nodemanager:45971/jobs/job?id\u003d0"
             }
           ],
           "interpreterSettingId": "spark"
@@ -405,8 +405,8 @@
       "jobName": "paragraph_1668999324546_1737801631",
       "id": "paragraph_1668999324546_1737801631",
       "dateCreated": "2022-11-21 02:55:24.546",
-      "dateStarted": "2022-11-21 13:17:02.584",
-      "dateFinished": "2022-11-21 13:18:10.693",
+      "dateStarted": "2022-11-23 17:15:03.233",
+      "dateFinished": "2022-11-23 17:15:50.672",
       "status": "FINISHED"
     },
     {
@@ -620,7 +620,7 @@
     {
       "text": "%pyspark\n\ndf_parquet_txn_details\u003dspark.sql(\"select * from transaction_details_parquet limit 20\")\ndf_parquet_txn_details.printSchema()\ndf_parquet_txn_details.show()\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 01:05:58.040",
+      "dateUpdated": "2022-11-23 17:19:09.544",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -679,8 +679,8 @@
         "code": "SUCCESS",
         "msg": [
           {
-            "type": "TABLE",
-            "data": "id\tuuid\tcardtype\twebsite\tproduct\tamount\tcity\tcountry\taddts\n2679\te6c0099a-a92f-45fa-9d04-82a422a593f6\tRuPay\tAmazon\tMobile\t7032.13\tLos Angeles\tUSA\t1663204220\n2678\tece842cc-e7d2-4aba-a9c0-bdd7560955cf\tMaster\tSnapDeal\tMobile\t23990.0\tNew York\tUSA\t1663204225\n1664\tcb498e9b-b16f-438e-8851-44b16b7a86f6\tRuPay\tAmazon\tComputer\t15798.52\tHiroshima\tJP\t1663204230\n4687\t24dab694-0d40-418f-9544-8aea19ce57b7\tVISA\tAmazon\tLaptop\t24485.26\tMiami\tUSA\t1663204235\n3949\tc08f1e8a-8e9f-43e7-bcf9-f15fde730a7d\tVISA\tAmazon\tTablet\t14949.11\tOxford\tUK\t1663203040\n4143\t319e34f2-1e00-45b3-b8d6-c628ccfbfac2\tMaster\tFlipkart\tComputer\t8618.17\tBanglore\tIN\t1663203045\n4547\tb7bae4f2-420e-4dd6-8f4a-5d9207a7957f\tMaster\tAmazon\tLaptop\t24347.02\tNew York\tUSA\t1663203050\n3196\t2d89dc1c-9d86-45f8-bfc7-d8663276b739\tRuPay\tAmazon\tTablet\t18717.18\tLos Angeles\tUSA\t1663203055\n2724\tde443eb3-38bf-4648-bf3e-31295062d25a\tVISA\tMyntra\tLaptop\t1665.79\tMiami\tUSA\t1663203060\n3136\t24e6c80a-6318-4368-be50-f2073157cd39\tMaster\tAmazon\tComputer\t17264.66\tYokohama\tJP\t1663203065\n4485\t84f78629-c611-4782-9692-396bdc84b3ea\tAmex\tMyntra\tLaptop\t511.53\tMiami\tUSA\t1663203070\n2716\tfa66b416-e2be-4d8f-b4ef-dd4c46ed2a53\tAmex\tMyntra\tMobile\t16965.5\tManchester\tUK\t1663203075\n1914\t192a7c5d-3c19-411e-b612-1036ecb0b984\tMaster\tMyntra\tLaptop\t16801.61\tMumbai\tIN\t1663203080\n4351\tc3eca654-2602-4067-a0a8-21b82b7bbfbb\tRuPay\tFlipkart\tLaptop\t4060.14\tManchester\tUK\t1663203085\n1458\tc886b787-5cb7-447e-b098-5987574c583c\tRuPay\tFlipkart\tMobile\t1750.67\tLondon\tUK\t1663203090\n4964\tf70be51e-a2d3-4206-99d9-92cd312681aa\tAmex\tSnapDeal\tComputer\t4401.56\tPune\tIN\t1663203095\n2572\tae8ba45f-e18b-48ee-93e8-6b382fa823b7\tVISA\tAmazon\tTablet\t4903.23\tTokyo\tJP\t1663203100\n3909\tc0ad06fd-ac44-427f-a4cb-cf59c273b737\tVISA\tSnapDeal\tMobile\t15298.2\tTokyo\tJP\t1663203105\n1314\t697cb724-ae18-4732-848e-e5a09d7f32ea\tMaster\tAmazon\tLaptop\t5114.79\tMiami\tUSA\t1663203110\n4820\tcac70670-42b5-4c3e-bb92-738fae6d0079\tMaster\tSnapDeal\tMobile\t10613.9\tBanglore\tIN\t1663203115\n"
+            "type": "TEXT",
+            "data": "root\n |-- id: integer (nullable \u003d true)\n |-- uuid: string (nullable \u003d true)\n |-- cardtype: string (nullable \u003d true)\n |-- website: string (nullable \u003d true)\n |-- product: string (nullable \u003d true)\n |-- amount: double (nullable \u003d true)\n |-- city: string (nullable \u003d true)\n |-- country: string (nullable \u003d true)\n |-- addts: long (nullable \u003d true)\n\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+\n|  id|                uuid|cardtype| website| product|  amount|       city|country|     addts|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+\n|2679|e6c0099a-a92f-45f...|   RuPay|  Amazon|  Mobile| 7032.13|Los Angeles|    USA|1663204220|\n|2678|ece842cc-e7d2-4ab...|  Master|SnapDeal|  Mobile| 23990.0|   New York|    USA|1663204225|\n|1664|cb498e9b-b16f-438...|   RuPay|  Amazon|Computer|15798.52|  Hiroshima|     JP|1663204230|\n|4687|24dab694-0d40-418...|    VISA|  Amazon|  Laptop|24485.26|      Miami|    USA|1663204235|\n|3949|c08f1e8a-8e9f-43e...|    VISA|  Amazon|  Tablet|14949.11|     Oxford|     UK|1663203040|\n|4143|319e34f2-1e00-45b...|  Master|Flipkart|Computer| 8618.17|   Banglore|     IN|1663203045|\n|4547|b7bae4f2-420e-4dd...|  Master|  Amazon|  Laptop|24347.02|   New York|    USA|1663203050|\n|3196|2d89dc1c-9d86-45f...|   RuPay|  Amazon|  Tablet|18717.18|Los Angeles|    USA|1663203055|\n|2724|de443eb3-38bf-464...|    VISA|  Myntra|  Laptop| 1665.79|      Miami|    USA|1663203060|\n|3136|24e6c80a-6318-436...|  Master|  Amazon|Computer|17264.66|   Yokohama|     JP|1663203065|\n|4485|84f78629-c611-478...|    Amex|  Myntra|  Laptop|  511.53|      Miami|    USA|1663203070|\n|2716|fa66b416-e2be-4d8...|    Amex|  Myntra|  Mobile| 16965.5| Manchester|     UK|1663203075|\n|1914|192a7c5d-3c19-411...|  Master|  Myntra|  Laptop|16801.61|     Mumbai|     IN|1663203080|\n|4351|c3eca654-2602-406...|   RuPay|Flipkart|  Laptop| 4060.14| Manchester|     UK|1663203085|\n|1458|c886b787-5cb7-447...|   RuPay|Flipkart|  Mobile| 1750.67|     London|     UK|1663203090|\n|4964|f70be51e-a2d3-420...|    Amex|SnapDeal|Computer| 4401.56|       Pune|     IN|1663203095|\n|2572|ae8ba45f-e18b-48e...|    VISA|  Amazon|  Tablet| 4903.23|      Tokyo|     JP|1663203100|\n|3909|c0ad06fd-ac44-427...|    VISA|SnapDeal|  Mobile| 15298.2|      Tokyo|     JP|1663203105|\n|1314|697cb724-ae18-473...|  Master|  Amazon|  Laptop| 5114.79|      Miami|    USA|1663203110|\n|4820|cac70670-42b5-4c3...|  Master|SnapDeal|  Mobile| 10613.9|   Banglore|     IN|1663203115|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+\n\n"
           }
         ]
       },
@@ -693,7 +693,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:44539/jobs/job?id\u003d3"
+              "jobUrl": "http://nodemanager:45971/jobs/job?id\u003d1"
             }
           ],
           "interpreterSettingId": "spark"
@@ -703,14 +703,14 @@
       "jobName": "paragraph_1669037472581_1327215802",
       "id": "paragraph_1669037472581_1327215802",
       "dateCreated": "2022-11-21 13:31:12.581",
-      "dateStarted": "2022-11-21 13:32:57.879",
-      "dateFinished": "2022-11-21 13:32:58.139",
+      "dateStarted": "2022-11-23 17:19:09.546",
+      "dateFinished": "2022-11-23 17:19:10.190",
       "status": "FINISHED"
     },
     {
       "text": "%spark.sql\n\nselect * from transaction_details_parquet limit 20;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-21 13:34:29.816",
+      "dateUpdated": "2022-11-23 17:19:17.356",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -783,7 +783,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:44539/jobs/job?id\u003d4"
+              "jobUrl": "http://nodemanager:45971/jobs/job?id\u003d2"
             }
           ],
           "interpreterSettingId": "spark"
@@ -793,15 +793,15 @@
       "jobName": "paragraph_1669037630859_1345275356",
       "id": "paragraph_1669037630859_1345275356",
       "dateCreated": "2022-11-21 13:33:50.859",
-      "dateStarted": "2022-11-21 13:34:24.512",
-      "dateFinished": "2022-11-21 13:34:24.650",
+      "dateStarted": "2022-11-23 17:19:17.361",
+      "dateFinished": "2022-11-23 17:19:17.819",
       "status": "FINISHED"
     },
     {
       "title": "External Parquet Table",
-      "text": "%hive\n\n\nCREATE EXTERNAL TABLE IF NOT EXISTS transaction_details_parquet (\n    id int,\n    uuid string,\n    cardtype string,\n    website string,\n    product string,\n    amount double,\n    city string,\n    country string,\n    addts bigint\n)\nCOMMENT \u0027Transaction Details External Table\u0027\nPARTITIONED BY(txn_receive_date string)\nSTORED AS Parquet\nLOCATION  \u0027hdfs://namenode:9000/transaction_details/\u0027\nTBLPROPERTIES(\n \"creator\"\u003d\"Brijesh K Dhaker\",\n \"parquet.compression\"\u003d\"GZIP\"\n);\n\n",
+      "text": "%hive\n\n\nCREATE EXTERNAL TABLE IF NOT EXISTS transaction_details_external_parquet (\n    id int,\n    uuid string,\n    cardtype string,\n    website string,\n    product string,\n    amount double,\n    city string,\n    country string,\n    addts bigint\n)\nCOMMENT \u0027Transaction Details External Parquet Table\u0027\nPARTITIONED BY(txn_receive_date string)\nSTORED AS Parquet\nLOCATION  \u0027hdfs://namenode:9000/user/hive/warehouse/transaction_details_external_parquet/\u0027\nTBLPROPERTIES(\n \"creator\"\u003d\"Brijesh K Dhaker\",\n \"parquet.compression\"\u003d\"GZIP\"\n);\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-21 02:47:54.870",
+      "dateUpdated": "2022-11-23 17:20:33.308",
       "progress": 0,
       "config": {
         "editorSetting": {
