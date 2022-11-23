@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d08b261-ebb4-479a-9b39-cf0d413b1c57" name="Changes" comment="2022-11-23 Update zeppelin notebooks">
-      <change beforePath="$PROJECT_DIR$/zeppelin-notebooks.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/zeppelin-notebooks.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hive/hive-table-parquet_2HJ48CVNN.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Hive/hive-table-parquet_2HJ48CVNN.zpln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3_2GSNWVBEW.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Python 3_2GSNWVBEW.zpln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-file_2GRN2Y6FJ.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/test-file_2GRN2Y6FJ.zpln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zeppelin-notebooks.iws" beforeDir="false" afterPath="$PROJECT_DIR$/zeppelin-notebooks.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

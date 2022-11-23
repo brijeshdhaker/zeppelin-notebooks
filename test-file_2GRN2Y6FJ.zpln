@@ -3,7 +3,7 @@
     {
       "text": "%file\n\nls -l /user",
       "user": "anonymous",
-      "dateUpdated": "2022-10-21 02:00:33.446",
+      "dateUpdated": "2022-11-23 17:07:25.107",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -25,7 +25,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxrwxrwx\t-\t brije\tsupergroup\t0\t2022-06-05 00:59GMT\t/user/brije\ndrwxrwxrwx\t-\t brijeshdhaker\tsupergroup\t0\t2022-05-29 15:39GMT\t/user/brijeshdhaker\ndrwxrwxrwx\t-\t root\tsupergroup\t0\t2022-01-10 10:44GMT\t/user/hive\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-02-04 06:44GMT\t/user/zeppelin\n"
+            "data": "drwxrwxrwx\t-\t brijeshdhaker\tsupergroup\t0\t2022-05-29 15:39GMT\t/user/brijeshdhaker\ndrwxrwxrwx\t-\t root\tsupergroup\t0\t2022-01-10 10:44GMT\t/user/hive\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-02-04 06:44GMT\t/user/zeppelin\n"
           }
         ]
       },
@@ -35,14 +35,14 @@
       "jobName": "paragraph_1640953227121_981635026",
       "id": "paragraph_1640953227121_981635026",
       "dateCreated": "2021-12-31 12:20:27.121",
-      "dateStarted": "2022-10-21 02:00:33.457",
-      "dateFinished": "2022-10-21 02:00:35.317",
+      "dateStarted": "2022-11-23 17:07:25.110",
+      "dateFinished": "2022-11-23 17:07:25.120",
       "status": "FINISHED"
     },
     {
       "text": "%file\n\nls -l /user/hive/warehouse/\n",
       "user": "anonymous",
-      "dateUpdated": "2022-10-21 02:00:42.772",
+      "dateUpdated": "2022-11-23 17:06:47.685",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -64,7 +64,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:24GMT\t/user/hive/warehouse/zipcodes\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:23GMT\t/user/hive/warehouse/zipcodes_tmp\n"
+            "data": "drwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 03:05GMT\t/user/hive/warehouse/optrans_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 02:43GMT\t/user/hive/warehouse/product_revenue\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-11-18 19:33GMT\t/user/hive/warehouse/sales_delta_managed\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 03:04GMT\t/user/hive/warehouse/transact_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 05:23GMT\t/user/hive/warehouse/transaction_detail_hive_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 00:54GMT\t/user/hive/warehouse/transaction_details_orc\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-21 13:30GMT\t/user/hive/warehouse/transaction_details_parquet\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:24GMT\t/user/hive/warehouse/zipcodes\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:23GMT\t/user/hive/warehouse/zipcodes_tmp\n"
           }
         ]
       },
@@ -74,8 +74,8 @@
       "jobName": "paragraph_1640953238940_1049456036",
       "id": "paragraph_1640953238940_1049456036",
       "dateCreated": "2021-12-31 12:20:38.940",
-      "dateStarted": "2022-10-21 02:00:42.775",
-      "dateFinished": "2022-10-21 02:00:42.784",
+      "dateStarted": "2022-11-23 17:06:47.698",
+      "dateFinished": "2022-11-23 17:06:50.395",
       "status": "FINISHED"
     },
     {
