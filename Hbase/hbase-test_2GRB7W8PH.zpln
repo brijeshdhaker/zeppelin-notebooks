@@ -1,0 +1,463 @@
+{
+  "paragraphs": [
+    {
+      "text": "%hbase\n\nlist\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-11 04:28:51.896",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "TABLE\n0 row(s) in 0.0920 seconds\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641086838798_1928664377",
+      "id": "paragraph_1641086838798_1928664377",
+      "dateCreated": "2022-01-02 01:27:18.798",
+      "dateStarted": "2022-11-11 04:28:51.915",
+      "dateFinished": "2022-11-11 04:28:55.438",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\ndisable \u0027transaction_detail_hbase_tbl\u0027\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-11 02:53:36.257",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nERROR: Table transaction_detail_hbase_tbl does not exist.\n\nHere is some help for this command:\nStart disable of named table:\n  hbase\u003e disable \u0027t1\u0027\n  hbase\u003e disable \u0027ns1:t1\u0027\n\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1668134989302_1408229702",
+      "id": "paragraph_1668134989302_1408229702",
+      "dateCreated": "2022-11-11 02:49:49.302",
+      "dateStarted": "2022-11-11 02:53:36.259",
+      "dateFinished": "2022-11-11 02:53:36.266",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\ndrop \u0027transaction_detail_hbase_tbl\u0027\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-11 02:53:40.532",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\nERROR: Table transaction_detail_hbase_tbl does not exist.\n\nHere is some help for this command:\nDrop the named table. Table must first be disabled:\n  hbase\u003e drop \u0027t1\u0027\n  hbase\u003e drop \u0027ns1:t1\u0027\n\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1668135078464_585842440",
+      "id": "paragraph_1668135078464_585842440",
+      "dateCreated": "2022-11-11 02:51:18.464",
+      "dateStarted": "2022-11-11 02:53:40.536",
+      "dateFinished": "2022-11-11 02:53:40.546",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\nexists \u0027transaction_detail_hbase_tbl\u0027\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-11 04:29:04.115",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Table transaction_detail_hbase_tbl does not exist\n0 row(s) in 0.0460 seconds\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1668135045776_1867189989",
+      "id": "paragraph_1668135045776_1867189989",
+      "dateCreated": "2022-11-11 02:50:45.776",
+      "dateStarted": "2022-11-11 04:29:04.117",
+      "dateFinished": "2022-11-11 04:29:04.166",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\n#\ncreate \u0027transaction_detail_hbase_tbl\u0027,\u0027transaction_data\u0027,\u0027customer_data\u0027\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-11 04:29:16.229",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0 row(s) in 2.1640 seconds\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641086800897_293621363",
+      "id": "paragraph_1641086800897_293621363",
+      "dateCreated": "2022-01-02 01:26:40.897",
+      "dateStarted": "2022-11-11 04:29:16.231",
+      "dateFinished": "2022-11-11 04:29:18.404",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\nlist \u0027transaction_detail_hbase_tbl\u0027",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-11 04:29:28.750",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "TABLE\ntransaction_detail_hbase_tbl\n1 row(s) in 0.0020 seconds\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640952408091_604338175",
+      "id": "paragraph_1640952408091_604338175",
+      "dateCreated": "2021-12-31 12:06:48.091",
+      "dateStarted": "2022-11-11 04:29:28.752",
+      "dateFinished": "2022-11-11 04:29:28.757",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\nput \u0027transaction_detail_hbase_tbl\u0027,\u00271\u0027,\u0027transaction_data:transaction_amount\u0027,\u002750.85\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00271\u0027,\u0027transaction_data:transaction_card_type\u0027,\u0027MasterCard\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00271\u0027,\u0027transaction_data:transaction_ecommerce_website_name\u0027,\u0027www.ebay.com\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00271\u0027,\u0027transaction_data:transaction_datetime\u0027,\u00272019-05-14 15:24:12\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00271\u0027,\u0027transaction_data:transaction_product_name\u0027,\u0027Laptop\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00271\u0027,\u0027customer_data:transaction_city_name\u0027,\u0027Mumbai\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00271\u0027,\u0027customer_data:transaction_country_name\u0027,\u0027India\u0027\n\nput \u0027transaction_detail_hbase_tbl\u0027,\u00272\u0027,\u0027transaction_data:transaction_amount\u0027,\u0027259.12\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00272\u0027,\u0027transaction_data:transaction_card_type\u0027,\u0027MasterCard\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00272\u0027,\u0027transaction_data:transaction_ecommerce_website_name\u0027,\u0027www.amazon.com\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00272\u0027,\u0027transaction_data:transaction_datetime\u0027,\u00272019-05-14 15:24:13\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00272\u0027,\u0027transaction_data:transaction_product_name\u0027,\u0027Wrist Band\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00272\u0027,\u0027customer_data:transaction_city_name\u0027,\u0027Pune\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00272\u0027,\u0027customer_data:transaction_country_name\u0027,\u0027India\u0027\n\nput \u0027transaction_detail_hbase_tbl\u0027,\u00273\u0027,\u0027transaction_data:transaction_amount\u0027,\u0027328.16\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00273\u0027,\u0027transaction_data:transaction_card_type\u0027,\u0027MasterCard\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00273\u0027,\u0027transaction_data:transaction_ecommerce_website_name\u0027,\u0027www.flipkart.com\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00273\u0027,\u0027transaction_data:transaction_datetime\u0027,\u00272019-05-14 15:24:14\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00273\u0027,\u0027transaction_data:transaction_product_name\u0027,\u0027TV Stand\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00273\u0027,\u0027customer_data:transaction_city_name\u0027,\u0027New York City\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00273\u0027,\u0027customer_data:transaction_country_name\u0027,\u0027United States\u0027\n\nput \u0027transaction_detail_hbase_tbl\u0027,\u00274\u0027,\u0027transaction_data:transaction_amount\u0027,\u0027399.06\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00274\u0027,\u0027transaction_data:transaction_card_type\u0027,\u0027Visa\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00274\u0027,\u0027transaction_data:transaction_ecommerce_website_name\u0027,\u0027www.snapdeal.com\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00274\u0027,\u0027transaction_data:transaction_datetime\u0027,\u00272019-05-14 15:24:15\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00274\u0027,\u0027transaction_data:transaction_product_name\u0027,\u0027TV Stand\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00274\u0027,\u0027customer_data:transaction_city_name\u0027,\u0027New Delhi\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00274\u0027,\u0027customer_data:transaction_country_name\u0027,\u0027India\u0027\n\nput \u0027transaction_detail_hbase_tbl\u0027,\u00275\u0027,\u0027transaction_data:transaction_amount\u0027,\u0027194.52\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00275\u0027,\u0027transaction_data:transaction_card_type\u0027,\u0027Visa\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00275\u0027,\u0027transaction_data:transaction_ecommerce_website_name\u0027,\u0027www.ebay.com\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00275\u0027,\u0027transaction_data:transaction_datetime\u0027,\u00272019-05-14 15:24:16\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00275\u0027,\u0027transaction_data:transaction_product_name\u0027,\u0027External Hard Drive\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00275\u0027,\u0027customer_data:transaction_city_name\u0027,\u0027Rome\u0027\nput \u0027transaction_detail_hbase_tbl\u0027,\u00275\u0027,\u0027customer_data:transaction_country_name\u0027,\u0027Italy\u0027\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-11 04:29:36.193",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0 row(s) in 0.0630 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0040 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0060 seconds\n\n0 row(s) in 0.0040 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0040 seconds\n\n0 row(s) in 0.0050 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0040 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0040 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0020 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0030 seconds\n\n0 row(s) in 0.0020 seconds\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641086907811_846961611",
+      "id": "paragraph_1641086907811_846961611",
+      "dateCreated": "2022-01-02 01:28:27.811",
+      "dateStarted": "2022-11-11 04:29:36.196",
+      "dateFinished": "2022-11-11 04:29:36.381",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\nscan \u0027transaction_detail_hbase_tbl\u0027",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-22 05:23:06.257",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "ROW  COLUMN+CELL\n 1 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976276, value\u003dMumbai\n 1 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976278, value\u003dIndia\n 1 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976253, value\u003d50.85\n 1 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976264, value\u003dMasterCard\n 1 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976270, value\u003d2019-05-14 15:24:12\n 1 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976267, value\u003dwww.ebay.com\n 1 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976273, value\u003dLaptop\n 2 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976299, value\u003dPune\n 2 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976305, value\u003dIndia\n 2 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976283, value\u003d259.12\n 2 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976285, value\u003dMasterCard\n 2 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976292, value\u003d2019-05-14 15:24:13\n 2 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976288, value\u003dwww.amazon.com\n 2 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976294, value\u003dWrist Band\n 3 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976331, value\u003dNew York City\n 3 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976334, value\u003dUnited States\n 3 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976309, value\u003d328.16\n 3 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976314, value\u003dMasterCard\n 3 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976323, value\u003d2019-05-14 15:24:14\n 3 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976318, value\u003dwww.flipkart.com\n 3 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976328, value\u003dTV Stand\n 4 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976353, value\u003dNew Delhi\n 4 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976356, value\u003dIndia\n 4 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976337, value\u003d399.06\n 4 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976341, value\u003dVisa\n 4 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976348, value\u003d2019-05-14 15:24:15\n 4 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976345, value\u003dwww.snapdeal.com\n 4 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976350, value\u003dTV Stand\n 5 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976375, value\u003dRome\n 5 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976378, value\u003dItaly\n 5 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976361, value\u003d194.52\n 5 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976364, value\u003dVisa\n 5 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976369, value\u003d2019-05-14 15:24:16\n 5 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976366, value\u003dwww.ebay.com\n 5 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976372, value\u003dExternal Hard Drive\n5 row(s) in 0.1390 seconds\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641085542186_146367919",
+      "id": "paragraph_1641085542186_146367919",
+      "dateCreated": "2022-01-02 01:05:42.186",
+      "dateStarted": "2022-11-22 05:23:06.260",
+      "dateFinished": "2022-11-22 05:23:09.816",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\ncreate \u0027tweeter_tweets\u0027, \u0027Sentence\u0027, \u0027Measure\u0027\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-06-28 05:21:51.643",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0 row(s) in 1.1230 seconds\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640952414919_1461914200",
+      "id": "paragraph_1640952414919_1461914200",
+      "dateCreated": "2021-12-31 12:06:54.919",
+      "dateStarted": "2022-06-28 05:21:51.655",
+      "dateFinished": "2022-06-28 05:21:52.784",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\nput \u0027tweeter_tweets\u0027, \u002716fd2706-8baf-433b-82eb-8c7fada847da\u0027, \u0027Sentence:text\u0027, \u0027Raymond Hello World\u0027\nput \u0027tweeter_tweets\u0027, \u002716fd2706-8baf-433b-82eb-8c7fada847da\u0027, \u0027Measure:words\u0027, \u00273\u0027\nput \u0027tweeter_tweets\u0027, \u002716fd2706-8baf-433b-82eb-8c7fada847da\u0027, \u0027Measure:length\u0027, \u002719\u0027\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-06-28 05:21:55.392",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0 row(s) in 0.0120 seconds\n\n0 row(s) in 0.0060 seconds\n\n0 row(s) in 0.0050 seconds\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640952691838_1392029691",
+      "id": "paragraph_1640952691838_1392029691",
+      "dateCreated": "2021-12-31 12:11:31.838",
+      "dateStarted": "2022-06-28 05:21:55.404",
+      "dateFinished": "2022-06-28 05:21:55.434",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n\nscan \u0027tweeter_tweets\u0027\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-06-28 05:22:02.913",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "ROW  COLUMN+CELL\n 16fd2706-8baf-433b-82eb-8c7fada847da column\u003dMeasure:length, timestamp\u003d1656393715430, value\u003d19\n 16fd2706-8baf-433b-82eb-8c7fada847da column\u003dMeasure:words, timestamp\u003d1656393715424, value\u003d3\n 16fd2706-8baf-433b-82eb-8c7fada847da column\u003dSentence:text, timestamp\u003d1656393715416, value\u003dRaymond Hello World\n1 row(s) in 0.0090 seconds\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640952454866_467246539",
+      "id": "paragraph_1640952454866_467246539",
+      "dateCreated": "2021-12-31 12:07:34.866",
+      "dateStarted": "2022-06-28 05:22:02.923",
+      "dateFinished": "2022-06-28 05:22:02.938",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hbase\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-31 12:07:34.775",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640952454775_241659371",
+      "id": "paragraph_1640952454775_241659371",
+      "dateCreated": "2021-12-31 12:07:34.775",
+      "status": "READY"
+    }
+  ],
+  "name": "hbase-test",
+  "id": "2GRB7W8PH",
+  "defaultInterpreterGroup": "hbase",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}

@@ -1,0 +1,307 @@
+{
+  "paragraphs": [
+    {
+      "text": "%cassandra\n\nCREATE KEYSPACE spark_stream WITH replication \u003d {\u0027class\u0027: \u0027SimpleStrategy\u0027, \u0027replication_factor\u0027: 1};\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-10 08:36:27.413",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640952002888_1547296489",
+      "id": "paragraph_1640952002888_1547296489",
+      "dateCreated": "2021-12-31 12:00:02.889",
+      "status": "READY"
+    },
+    {
+      "text": "%cassandra\n\nuse spark_stream;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-02-16 01:12:32.900",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n\u003cdiv class\u003d\"container\"\u003e\n\u003cdiv class\u003d\"row\"\u003e\n  \u003ch5\u003eNo Result \u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\n    \u003ca role\u003d\"button\" data-toggle\u003d\"collapse\" data-target\u003d\"#218dead2-7351-47e4-b2cc-3d517687ebf6\" aria-expanded\u003d\"false\"\u003e\n      \u003cspan class\u003d\"text-info\"\u003e\u003cstrong\u003eLast query execution info\u003c/strong\u003e\u003c/span\u003e\n    \u003c/a\u003e\n  \u003c/h5\u003e\n\u003c/div\u003e\n\u003cdiv class\u003d\"panel panel-default\"\u003e\n  \u003cdiv id\u003d\"218dead2-7351-47e4-b2cc-3d517687ebf6\" class\u003d\"panel-collapse collapse\" role\u003d\"tabpanel\"\u003e\n    \u003cdiv class\u003d\"panel-body\"\u003e\n      \u003cdiv class\u003d\"row\"\u003e\n        \u003cdiv class\u003d\"col-md-3\"\u003e\u003c/div\u003e\n        \u003cdiv class\u003d\"col-md-6 col-offset-md-3 table-responsive table-bordered\"\u003e\n          \u003ctable class\u003d\"table\"\u003e\n            \u003cthead\u003e\n              \u003ctr\u003e\n                \u003cth\u003eInformation\u003c/th\u003e\n                \u003cth style\u003d\"text-align:left\"\u003eValue\u003c/th\u003e\n              \u003c/tr\u003e\n            \u003c/thead\u003e\n            \u003ctbody\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eStatement\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003euse spark_stream;\u003c/td\u003e\n              \u003c/tr\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eTried Hosts\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003ecassandra:9042\u003c/td\u003e\n              \u003c/tr\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eQueried Hosts\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003ecassandra:9042\u003c/td\u003e\n              \u003c/tr\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eSchema in Agreement\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003etrue\u003c/td\u003e\n              \u003c/tr\u003e\n            \u003c/tbody\u003e\n          \u003c/table\u003e\n        \u003c/div\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640951637120_1357795234",
+      "id": "paragraph_1640951637120_1357795234",
+      "dateCreated": "2021-12-31 11:53:57.120",
+      "dateStarted": "2022-02-16 01:12:32.913",
+      "dateFinished": "2022-02-16 01:12:37.541",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%cassandra\n\nCREATE TABLE tweeter_tweets(uuid text PRIMARY KEY, text text, words int, length int);",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-31 11:58:55.480",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640951927030_68626976",
+      "id": "paragraph_1640951927030_68626976",
+      "dateCreated": "2021-12-31 11:58:47.030",
+      "status": "READY"
+    },
+    {
+      "text": "%cassandra\n\nselect * from tweeter_tweets;",
+      "user": "anonymous",
+      "dateUpdated": "2022-02-16 01:12:44.865",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "uuid": "string",
+                      "length": "string",
+                      "text": "string",
+                      "words": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "uuid\tlength\ttext\twords\na3d21398-b93c-4bc2-a985-1dcf862bd8c8\t50\tbecks ventriculoscopy circumspatial semisymmetric \t4\n44b5b215-8a61-49d4-ba66-9ff302bc271e\t19\twide-realmed timor \t2\n765fc993-b386-45fd-a458-f47cab6596f4\t15\tHomo Phytotoma \t2\n5abe96f5-134e-4cc4-87e9-3a998a805e73\t80\tunsubstantiality hypermetropy demanganization pargets mesostylous resublimation \t6\n4641dec3-8ca6-4278-9c3a-ad7d7824f71a\t68\tmelters exocolitis Nash bridalty ponderousness lithifaction chancre \t7\nd4a531d7-8233-4f48-a58c-97bb5a4209b8\t28\tThersander sawt uncatenated \t3\nb8329c35-a909-4f52-a931-2148e068da80\t37\tbibless escribano intracommunication \t3\n4350d97e-de86-4d85-8d60-3675ae991e9a\t48\tCISC loopy unilabiated too-much goddaughter ivy \t6\n3ff74a55-b00d-4509-a4e2-5d1876bdfca4\t63\tall-transcending keckle Aimwell tpm absorpt playock broommaker \t7\n0181fbc7-5967-478d-b2a0-2ec7b1e741e9\t91\tnight-traveling acupunctured untranscribed clear-crested unpacific preadvisory proletarise \t7\n74ed158a-a480-4802-ac3a-53bbd217f7c4\t28\tpropositionally embraceable \t2\naf541de0-d5ec-492c-8a36-d0a9395ffcbf\t43\tswitchboard aposporic trichiuroid tophaike \t4\nb1ab8db1-5e14-4a37-9fb3-76290a55f585\t66\tlamebrain humbugability Hentrich fee-tail equidistantial armloads \t6\n84cea9a9-365b-4b14-b5de-10a7ca8ec90e\t64\tfinger-marked Audrey owl-headed -motored tricycled gamosepalous \t6\n92626fcb-cce8-420f-8609-9d9664126342\t40\tsubmediant self-satisfaction voluminous \t3\nb1acad6c-0786-4575-8031-21ed697e16f5\t43\tgynobasic chondrosin disubstituted laurone \t4\n56b3e2d6-b7fd-463f-a86e-594ee7e37667\t38\tMildrid skewer-up wanruly non-Hebraic \t4\n8b75fb9c-7238-4352-8341-029eea28e0da\t23\tcupidinous interdepend \t2\n790f54dc-7943-49aa-bc83-6de9584f3966\t36\tkehoeite voitures jaywalkers arguta \t4\n10c83519-64af-4640-b324-9f68cb563827\t22\tundexterous ectosomal \t2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640951939748_1152327736",
+      "id": "paragraph_1640951939748_1152327736",
+      "dateCreated": "2021-12-31 11:58:59.748",
+      "dateStarted": "2022-02-16 01:12:44.866",
+      "dateFinished": "2022-02-16 01:12:44.888",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%cassandra\n\nselect * from spark_stream.tweeter_tweets where uuid \u003d \u0027a3d21398-b93c-4bc2-a985-1dcf862bd8c8\u0027;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-02-16 01:15:40.354",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "uuid": "string",
+                      "length": "string",
+                      "text": "string",
+                      "words": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "uuid",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "length",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/undefined"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "uuid\tlength\ttext\twords\na3d21398-b93c-4bc2-a985-1dcf862bd8c8\t50\tbecks ventriculoscopy circumspatial semisymmetric \t4\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640951953484_446711126",
+      "id": "paragraph_1640951953484_446711126",
+      "dateCreated": "2021-12-31 11:59:13.484",
+      "dateStarted": "2022-02-16 01:15:40.357",
+      "dateFinished": "2022-02-16 01:15:40.377",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%cassandra\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-02-16 01:13:50.586",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1644974030585_824011815",
+      "id": "paragraph_1644974030585_824011815",
+      "dateCreated": "2022-02-16 01:13:50.586",
+      "status": "READY"
+    }
+  ],
+  "name": "test-cassandra",
+  "id": "2GRXY2AC7",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}

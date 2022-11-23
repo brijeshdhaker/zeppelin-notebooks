@@ -1,0 +1,1275 @@
+{
+  "paragraphs": [
+    {
+      "text": "%hive\n\nshow tables;",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:34:01.660",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "tab_name": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "tab_name",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": []
+            },
+            "helium": {}
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "tab_name": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "tab_name\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641519921329_1121972646",
+      "id": "paragraph_1641519921329_1121972646",
+      "dateCreated": "2022-01-07 01:45:21.329",
+      "dateStarted": "2022-10-21 02:34:01.668",
+      "dateFinished": "2022-10-21 02:34:03.769",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\n/* show tables; */\n\nSELECT FROM_UNIXTIME(1641620328);\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:34:11.217",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "_c0\n2022-01-08 05:38:48\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641519937983_1341536481",
+      "id": "paragraph_1641519937983_1341536481",
+      "dateCreated": "2022-01-07 01:45:37.983",
+      "dateStarted": "2022-10-21 02:34:11.223",
+      "dateFinished": "2022-10-21 02:34:12.738",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\n--\nDROP TABLE IF EXISTS transaction_details;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:34:56.715",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642034568518_201239793",
+      "id": "paragraph_1642034568518_201239793",
+      "dateCreated": "2022-01-13 00:42:48.518",
+      "dateStarted": "2022-10-21 02:34:56.718",
+      "dateFinished": "2022-10-21 02:34:56.752",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\n--\nCREATE EXTERNAL TABLE IF NOT EXISTS transaction_details (\n    id int,\n    uuid string,\n    cardtype string,\n    website string,\n    product string,\n    amount double,\n    city string,\n    country string,\n    addts bigint\n)\nCOMMENT \u0027Transaction Details External Table\u0027\nPARTITIONED BY(txn_receive_date string)\nSTORED AS Parquet\nLOCATION  \u0027hdfs://namenode:9000/transaction_details/\u0027\nTBLPROPERTIES(\"creator\"\u003d\"Brijesh K Dhaker\");",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:35:10.784",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641519962115_353682234",
+      "id": "paragraph_1641519962115_353682234",
+      "dateCreated": "2022-01-07 01:46:02.115",
+      "dateStarted": "2022-10-21 02:35:10.786",
+      "dateFinished": "2022-10-21 02:35:11.626",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\nDESCRIBE FORMATTED transaction_details;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:35:21.956",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "col_name": "string",
+                      "data_type": "string",
+                      "comment": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "col_name\tdata_type\tcomment\n# col_name\tdata_type\tcomment\nid\tint\t\nuuid\tstring\t\ncardtype\tstring\t\nwebsite\tstring\t\nproduct\tstring\t\namount\tdouble\t\ncity\tstring\t\ncountry\tstring\t\naddts\tbigint\t\n\tnull\tnull\n# Partition Information\tnull\tnull\n# col_name\tdata_type\tcomment\ntxn_receive_date\tstring\t\n\tnull\tnull\n# Detailed Table Information\tnull\tnull\nDatabase:           \tdefault             \tnull\nOwnerType:          \tUSER                \tnull\nOwner:              \thive                \tnull\nCreateTime:         \tFri Oct 21 02:35:11 UTC 2022\tnull\nLastAccessTime:     \tUNKNOWN             \tnull\nRetention:          \t0                   \tnull\nLocation:           \thdfs://namenode:9000/transaction_details\tnull\nTable Type:         \tEXTERNAL_TABLE      \tnull\nTable Parameters:\tnull\tnull\n\tCOLUMN_STATS_ACCURATE\t{\\\"BASIC_STATS\\\":\\\"true\\\"}\n\tEXTERNAL            \tTRUE                \n\tbucketing_version   \t2                   \n\tcomment             \tTransaction Details External Table\n\tcreator             \tBrijesh K Dhaker    \n\tnumFiles            \t0                   \n\tnumPartitions       \t0                   \n\tnumRows             \t0                   \n\trawDataSize         \t0                   \n\ttotalSize           \t0                   \n\ttransient_lastDdlTime\t1666319711          \n\tnull\tnull\n# Storage Information\tnull\tnull\nSerDe Library:      \torg.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\tnull\nInputFormat:        \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\tnull\nOutputFormat:       \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\tnull\nCompressed:         \tNo                  \tnull\nNum Buckets:        \t-1                  \tnull\nBucket Columns:     \t[]                  \tnull\nSort Columns:       \t[]                  \tnull\nStorage Desc Params:\tnull\tnull\n\tserialization.format\t1                   \n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641526549350_829778374",
+      "id": "paragraph_1641526549350_829778374",
+      "dateCreated": "2022-01-07 03:35:49.350",
+      "dateStarted": "2022-10-21 02:35:21.959",
+      "dateFinished": "2022-10-21 02:35:22.383",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\n/* \nIf we have a large number of partitions you might need to \nset hive.msck.repair.batch.size\n*/\n\nMSCK REPAIR TABLE transaction_details;\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:35:42.280",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641519999115_1185534228",
+      "id": "paragraph_1641519999115_1185534228",
+      "dateCreated": "2022-01-07 01:46:39.115",
+      "dateStarted": "2022-10-21 02:35:42.282",
+      "dateFinished": "2022-10-21 02:35:42.515",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\nSELECT * from transaction_details;\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:35:59.947",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "id": "string",
+                      "uuid": "string",
+                      "cardtype": "string",
+                      "website": "string",
+                      "product": "string",
+                      "amount": "string",
+                      "city": "string",
+                      "country": "string",
+                      "addts": "string",
+                      "txn_receive_date": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "id\tuuid\tcardtype\twebsite\tproduct\tamount\tcity\tcountry\taddts\ttxn_receive_date\n2679\te6c0099a-a92f-45fa-9d04-82a422a593f6\tRuPay\tAmazon\tMobile\t7032.13\tLos Angeles\tUSA\t1663204220\t2022-09-15\n2678\tece842cc-e7d2-4aba-a9c0-bdd7560955cf\tMaster\tSnapDeal\tMobile\t23990.0\tNew York\tUSA\t1663204225\t2022-09-15\n1664\tcb498e9b-b16f-438e-8851-44b16b7a86f6\tRuPay\tAmazon\tComputer\t15798.52\tHiroshima\tJP\t1663204230\t2022-09-15\n4687\t24dab694-0d40-418f-9544-8aea19ce57b7\tVISA\tAmazon\tLaptop\t24485.26\tMiami\tUSA\t1663204235\t2022-09-15\n3949\tc08f1e8a-8e9f-43e7-bcf9-f15fde730a7d\tVISA\tAmazon\tTablet\t14949.11\tOxford\tUK\t1663203040\t2022-09-15\n4143\t319e34f2-1e00-45b3-b8d6-c628ccfbfac2\tMaster\tFlipkart\tComputer\t8618.17\tBanglore\tIN\t1663203045\t2022-09-15\n4547\tb7bae4f2-420e-4dd6-8f4a-5d9207a7957f\tMaster\tAmazon\tLaptop\t24347.02\tNew York\tUSA\t1663203050\t2022-09-15\n3196\t2d89dc1c-9d86-45f8-bfc7-d8663276b739\tRuPay\tAmazon\tTablet\t18717.18\tLos Angeles\tUSA\t1663203055\t2022-09-15\n2724\tde443eb3-38bf-4648-bf3e-31295062d25a\tVISA\tMyntra\tLaptop\t1665.79\tMiami\tUSA\t1663203060\t2022-09-15\n3136\t24e6c80a-6318-4368-be50-f2073157cd39\tMaster\tAmazon\tComputer\t17264.66\tYokohama\tJP\t1663203065\t2022-09-15\n4485\t84f78629-c611-4782-9692-396bdc84b3ea\tAmex\tMyntra\tLaptop\t511.53\tMiami\tUSA\t1663203070\t2022-09-15\n2716\tfa66b416-e2be-4d8f-b4ef-dd4c46ed2a53\tAmex\tMyntra\tMobile\t16965.5\tManchester\tUK\t1663203075\t2022-09-15\n1914\t192a7c5d-3c19-411e-b612-1036ecb0b984\tMaster\tMyntra\tLaptop\t16801.61\tMumbai\tIN\t1663203080\t2022-09-15\n4351\tc3eca654-2602-4067-a0a8-21b82b7bbfbb\tRuPay\tFlipkart\tLaptop\t4060.14\tManchester\tUK\t1663203085\t2022-09-15\n1458\tc886b787-5cb7-447e-b098-5987574c583c\tRuPay\tFlipkart\tMobile\t1750.67\tLondon\tUK\t1663203090\t2022-09-15\n4964\tf70be51e-a2d3-4206-99d9-92cd312681aa\tAmex\tSnapDeal\tComputer\t4401.56\tPune\tIN\t1663203095\t2022-09-15\n2572\tae8ba45f-e18b-48ee-93e8-6b382fa823b7\tVISA\tAmazon\tTablet\t4903.23\tTokyo\tJP\t1663203100\t2022-09-15\n3909\tc0ad06fd-ac44-427f-a4cb-cf59c273b737\tVISA\tSnapDeal\tMobile\t15298.2\tTokyo\tJP\t1663203105\t2022-09-15\n1314\t697cb724-ae18-4732-848e-e5a09d7f32ea\tMaster\tAmazon\tLaptop\t5114.79\tMiami\tUSA\t1663203110\t2022-09-15\n4820\tcac70670-42b5-4c3e-bb92-738fae6d0079\tMaster\tSnapDeal\tMobile\t10613.9\tBanglore\tIN\t1663203115\t2022-09-15\n1184\t2435c3d4-5944-4892-95cc-0cb356974003\tRuPay\tSnapDeal\tMobile\t3139.05\tTokyo\tJP\t1663203120\t2022-09-15\n3566\te2c655d6-f7c6-4938-8e8a-cea1159cc4e5\tVISA\tSnapDeal\tTablet\t5523.02\tLiverpool\tUK\t1663203125\t2022-09-15\n3844\t486af773-f766-412e-8a2a-89a613c78022\tMaster\tFlipkart\tMobile\t20678.19\tLos Angeles\tUSA\t1663203130\t2022-09-15\n1404\t20af6d2e-31d8-4b61-a285-eee7fe2d37b6\tAmex\tFlipkart\tLaptop\t22013.31\tPune\tIN\t1663203135\t2022-09-15\n3558\ta9801a6f-aa8b-4bd4-863f-22c6db7cad4e\tRuPay\tFlipkart\tLaptop\t1099.1\tTokyo\tJP\t1663203140\t2022-09-15\n3630\td1d48efc-7b87-4257-b845-1b8ec5e326d4\tAmex\tAmazon\tLaptop\t8096.47\tChennei\tIN\t1663203145\t2022-09-15\n1404\t6f01312b-cb35-42b4-9d85-df935887cb10\tRuPay\tMyntra\tTablet\t24308.2\tMumbai\tIN\t1663203150\t2022-09-15\n1130\t87226acb-7a31-41fa-afc7-cee4d8803a6e\tMaster\tFlipkart\tComputer\t11354.45\tOsaka\tJP\t1663203155\t2022-09-15\n3591\t238872e2-2b96-44fa-b183-6251b10e21a7\tMaster\tFlipkart\tTablet\t8098.57\tDelhi\tIN\t1663203160\t2022-09-15\n2333\td8dc28d2-b2fe-4a74-809f-c81649025ca2\tMaster\tMyntra\tTablet\t841.79\tYokohama\tJP\t1663203165\t2022-09-15\n4045\t7480f014-fcec-45ee-8a7d-93a64abd3578\tVISA\tFlipkart\tTablet\t23424.78\tLos Angeles\tUSA\t1663203170\t2022-09-15\n4554\t49ee3b06-641b-4617-9e32-ac022e2a429c\tAmex\tMyntra\tComputer\t22666.42\tHiroshima\tJP\t1663203175\t2022-09-15\n2637\te87676b9-b154-424f-a77f-a771fb1fe73d\tRuPay\tMyntra\tComputer\t12935.66\tManchester\tUK\t1663203180\t2022-09-15\n4924\ta38865f7-11a3-476d-bf51-14f4875e7fd4\tAmex\tFlipkart\tLaptop\t9131.9\tOxford\tUK\t1663203185\t2022-09-15\n2916\t29cccb81-2333-4fb5-95b6-686154a96113\tRuPay\tFlipkart\tTablet\t3058.42\tTokyo\tJP\t1663203190\t2022-09-15\n2105\t2e978ace-b2b7-430a-a427-c1809d19a277\tRuPay\tAmazon\tComputer\t10368.27\tMiami\tUSA\t1663203195\t2022-09-15\n1495\t532e78da-95fc-4ec2-ae80-0e68510be599\tVISA\tFlipkart\tLaptop\t13938.86\tDelhi\tIN\t1663203200\t2022-09-15\n1895\t62cdee8e-4c76-4fc2-b363-158ba71af1e5\tVISA\tSnapDeal\tTablet\t5665.99\tLos Angeles\tUSA\t1663203205\t2022-09-15\n2503\t983f1cad-c0af-40a1-87ad-e1eeaab43262\tAmex\tMyntra\tComputer\t17646.95\tLos Angeles\tUSA\t1663203210\t2022-09-15\n1121\t6c7f8654-4ae4-4908-af47-6df99f2b61c2\tMaster\tMyntra\tComputer\t11028.74\tManchester\tUK\t1663203215\t2022-09-15\n3172\ta04b94e7-8c1a-49ea-8243-9e4fca596118\tMaster\tMyntra\tLaptop\t21108.41\tNew York\tUSA\t1663203220\t2022-09-15\n3423\t58c415c1-0c4d-45ed-b498-c5bed9fac2c9\tMaster\tFlipkart\tTablet\t8445.18\tYokohama\tJP\t1663203225\t2022-09-15\n4276\t6fa6fddd-47ae-440c-b9fa-ee419074c068\tMaster\tAmazon\tTablet\t16077.82\tChennei\tIN\t1663203230\t2022-09-15\n1395\tddf2dd31-dc78-4110-b56e-307a686aefa8\tMaster\tAmazon\tTablet\t24661.78\tYokohama\tJP\t1663203235\t2022-09-15\n4029\t0d0f9e2e-cbab-4e28-8aad-34c345b0d8f0\tMaster\tAmazon\tComputer\t12721.04\tLondon\tUK\t1663203240\t2022-09-15\n4470\t2964c365-5047-46b3-b07a-1e1edb6d0ee3\tAmex\tFlipkart\tComputer\t21532.05\tOxford\tUK\t1663203245\t2022-09-15\n3254\tce01281f-9641-4435-8982-b4879bb17b7a\tVISA\tMyntra\tMobile\t5864.95\tChennei\tIN\t1663203250\t2022-09-15\n1973\tab66acfe-bfd8-4e91-8e01-65b1595e44cb\tRuPay\tSnapDeal\tMobile\t749.71\tMumbai\tIN\t1663203255\t2022-09-15\n4070\t84b3562d-c084-4995-b9d4-c4c812dfb426\tAmex\tMyntra\tMobile\t12628.95\tMumbai\tIN\t1663203260\t2022-09-15\n3601\tbd44c2a4-8426-42ae-84bc-0a2bf712446e\tVISA\tFlipkart\tMobile\t16570.75\tLos Angeles\tUSA\t1663203265\t2022-09-15\n1311\t9a8030a6-2718-4d45-a1c1-bdf30fed74a7\tVISA\tMyntra\tLaptop\t7698.38\tLiverpool\tUK\t1663203270\t2022-09-15\n1742\ta0b12275-612c-4bfb-b88b-3ae510e6a660\tVISA\tFlipkart\tLaptop\t15991.91\tHiroshima\tJP\t1663203275\t2022-09-15\n4154\t197e738d-c7df-497f-96fa-fe568141c87f\tRuPay\tSnapDeal\tLaptop\t15786.36\tOxford\tUK\t1663203280\t2022-09-15\n2449\tb5995e3b-6164-4df8-87f7-61a7bb6cebda\tAmex\tSnapDeal\tTablet\t4455.61\tMiami\tUSA\t1663203285\t2022-09-15\n4004\t18c3b7e6-a31a-4b34-923e-a2e6fcd2633f\tRuPay\tSnapDeal\tLaptop\t22146.94\tLiverpool\tUK\t1663203290\t2022-09-15\n3018\t0ddfb3ba-5069-4aa6-a17e-db625b7b226a\tAmex\tSnapDeal\tComputer\t2986.34\tManchester\tUK\t1663203295\t2022-09-15\n1474\ta3ac9031-b3d0-4ab5-9a33-932ffedbd21f\tAmex\tSnapDeal\tMobile\t14040.52\tDelhi\tIN\t1663203300\t2022-09-15\n4365\t145d31d5-68b4-4b58-94f7-7425f3497b9d\tRuPay\tMyntra\tMobile\t14253.95\tMiami\tUSA\t1663203305\t2022-09-15\n1946\tc378095d-8fbf-41e6-a0c0-306d1ba27047\tRuPay\tAmazon\tTablet\t17055.08\tPune\tIN\t1663203310\t2022-09-15\n1835\t7b2032ab-bd02-4098-887c-206e61aa1928\tRuPay\tAmazon\tComputer\t6455.46\tMiami\tUSA\t1663203315\t2022-09-15\n4561\t5d825fc0-cb99-4403-bbb7-3fea05a1b812\tRuPay\tSnapDeal\tTablet\t12434.57\tPune\tIN\t1663203320\t2022-09-15\n3214\t68d05fff-a00f-4b13-a096-275bac7c963c\tAmex\tFlipkart\tLaptop\t8134.83\tTokyo\tJP\t1663203325\t2022-09-15\n3852\t396cf7b1-5004-41d0-9de5-6f98888e3718\tRuPay\tAmazon\tMobile\t5500.66\tYokohama\tJP\t1663203330\t2022-09-15\n4515\tfd092b7b-881c-4616-9620-5914fa24a47d\tRuPay\tSnapDeal\tMobile\t2480.46\tOxford\tUK\t1663203335\t2022-09-15\n1805\t2e6fa0e7-ec11-473b-89d7-8b4b77db3f07\tRuPay\tFlipkart\tMobile\t7368.68\tTokyo\tJP\t1663203340\t2022-09-15\n1533\t9a0329c4-2a5d-4fe4-a126-55d6b2faf826\tVISA\tFlipkart\tMobile\t6517.62\tTokyo\tJP\t1663203345\t2022-09-15\n3445\t48bf2ee9-6da1-40e0-bf87-0fd5c23f1844\tAmex\tAmazon\tLaptop\t6161.2\tMumbai\tIN\t1663203350\t2022-09-15\n1803\t3e8a11ea-5c7c-4a17-a0ab-07656ea75c88\tVISA\tSnapDeal\tLaptop\t10788.81\tLos Angeles\tUSA\t1663203355\t2022-09-15\n2173\tdbbcb8f6-ae88-454f-9194-5a686e1025b0\tVISA\tFlipkart\tComputer\t7738.86\tPune\tIN\t1663203360\t2022-09-15\n2946\t56627b21-c279-4fe0-8bdb-37b40f4057f9\tVISA\tSnapDeal\tMobile\t22363.44\tYokohama\tJP\t1663203365\t2022-09-15\n1707\ta80d87df-6c8c-42fc-8324-041eb78a7de4\tAmex\tAmazon\tTablet\t12358.99\tBanglore\tIN\t1663203370\t2022-09-15\n4095\tde1f99d1-04e9-4286-b8d0-7a5b20230ceb\tAmex\tFlipkart\tMobile\t22527.26\tManchester\tUK\t1663203375\t2022-09-15\n2529\t40587d75-e7ef-4e5e-922b-8923e364f264\tVISA\tFlipkart\tComputer\t4639.72\tOsaka\tJP\t1663203380\t2022-09-15\n1450\td3adbf51-fe6f-45de-beb6-8a87338f0180\tAmex\tFlipkart\tMobile\t19435.79\tMiami\tUSA\t1663203385\t2022-09-15\n3898\tbab37205-0009-4757-b1ed-6b64df9b9e03\tRuPay\tFlipkart\tLaptop\t5125.25\tHiroshima\tJP\t1663203390\t2022-09-15\n1292\tce0bb6d0-9aa2-4849-8f2f-c66743b55bfd\tMaster\tFlipkart\tTablet\t19976.67\tLondon\tUK\t1663203395\t2022-09-15\n3854\t468a676b-9615-4a47-8c7e-6694f9fb1ff4\tVISA\tSnapDeal\tTablet\t17602.75\tLondon\tUK\t1663203400\t2022-09-15\n1456\t377d0ba7-eafe-4141-92bc-c44c9605ae09\tAmex\tFlipkart\tComputer\t4486.96\tBanglore\tIN\t1663203405\t2022-09-15\n3478\tdb0ca2f7-eab0-4034-9224-786340b11f03\tMaster\tSnapDeal\tTablet\t20184.81\tNew York\tUSA\t1663203410\t2022-09-15\n4756\te1ccc438-a78c-4423-aa2e-d9fa80b63f5f\tAmex\tFlipkart\tComputer\t8239.92\tLos Angeles\tUSA\t1663204260\t2022-09-15\n1753\te945b456-be10-4d1b-826c-e84f6bb3ffb3\tAmex\tMyntra\tTablet\t16493.33\tLiverpool\tUK\t1663204265\t2022-09-15\n3851\tb056a764-1855-44bc-9349-7bf4974bc758\tVISA\tSnapDeal\tMobile\t17530.07\tDelhi\tIN\t1663204270\t2022-09-15\n3644\td39e5219-21d0-4a3c-af76-101cdaa763c5\tVISA\tMyntra\tComputer\t5719.33\tLondon\tUK\t1663204275\t2022-09-15\n3096\t6a5a7387-b841-4062-b195-76e52c0adb86\tRuPay\tFlipkart\tTablet\t6257.98\tLiverpool\tUK\t1663204240\t2022-09-15\n4232\t818d7b85-527a-47ad-bdc9-6c3e55130f62\tMaster\tFlipkart\tLaptop\t12297.58\tOxford\tUK\t1663204245\t2022-09-15\n2926\t08f133d7-b381-4ce9-8860-5e20ab92be9b\tVISA\tSnapDeal\tLaptop\t12305.38\tNew York\tUSA\t1663204250\t2022-09-15\n3473\t86accdf7-b01d-46c1-8164-b35ac9bd2acf\tAmex\tAmazon\tTablet\t22655.99\tDelhi\tIN\t1663204255\t2022-09-15\n1556\t230814bd-2f76-44b7-be76-e034576e965c\tRuPay\tFlipkart\tComputer\t8790.97\tDelhi\tIN\t1663204210\t2022-09-15\n2734\t12162ac3-2d44-4ac5-8d33-8d6c9e6b0d04\tAmex\tSnapDeal\tLaptop\t21708.89\tYokohama\tJP\t1663204215\t2022-09-15\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641619517034_1700994531",
+      "id": "paragraph_1641619517034_1700994531",
+      "dateCreated": "2022-01-08 05:25:17.035",
+      "dateStarted": "2022-10-21 02:35:59.950",
+      "dateFinished": "2022-10-21 02:36:00.648",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark.conf\n\nSPARK_HOME /opt/spark\n\nmaster local[4]\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:36:39.287",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/text",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642036034977_573931792",
+      "id": "paragraph_1642036034977_573931792",
+      "dateCreated": "2022-01-13 01:07:14.977",
+      "dateStarted": "2022-10-21 02:36:39.292",
+      "dateFinished": "2022-10-21 02:36:39.298",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\n\nval parqDF \u003d spark.read.parquet(\"/transaction_details\")\nparqDF.createOrReplaceTempView(\"transaction_details\")\n// spark.sql(\"SELECT * from transaction_details\").explain()\n    \nval parkSQL \u003d spark.sql(\"SELECT * from transaction_details\")\nparkSQL.show()\nparkSQL.printSchema()\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:36:46.367",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.lang.IllegalStateException: /transaction_details/_spark_metadata/0 doesn\u0027t exist (latestId: 8, compactInterval: 10)\n  at org.apache.spark.sql.execution.streaming.CompactibleFileStreamLog.$anonfun$allFiles$4(CompactibleFileStreamLog.scala:266)\n  at scala.Option.getOrElse(Option.scala:189)\n  at org.apache.spark.sql.execution.streaming.CompactibleFileStreamLog.$anonfun$allFiles$2(CompactibleFileStreamLog.scala:264)\n  at org.apache.spark.sql.execution.streaming.CompactibleFileStreamLog.$anonfun$allFiles$2$adapted(CompactibleFileStreamLog.scala:262)\n  at scala.collection.TraversableLike.$anonfun$flatMap$1(TraversableLike.scala:245)\n  at scala.collection.immutable.NumericRange.foreach(NumericRange.scala:74)\n  at scala.collection.TraversableLike.flatMap(TraversableLike.scala:245)\n  at scala.collection.TraversableLike.flatMap$(TraversableLike.scala:242)\n  at scala.collection.AbstractTraversable.flatMap(Traversable.scala:108)\n  at org.apache.spark.sql.execution.streaming.CompactibleFileStreamLog.allFiles(CompactibleFileStreamLog.scala:262)\n  at org.apache.spark.sql.execution.streaming.MetadataLogFileIndex.\u003cinit\u003e(MetadataLogFileIndex.scala:53)\n  at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:380)\n  at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:325)\n  at org.apache.spark.sql.DataFrameReader.$anonfun$load$3(DataFrameReader.scala:307)\n  at scala.Option.getOrElse(Option.scala:189)\n  at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:307)\n  at org.apache.spark.sql.DataFrameReader.parquet(DataFrameReader.scala:833)\n  at org.apache.spark.sql.DataFrameReader.parquet(DataFrameReader.scala:805)\n  ... 44 elided\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1642035492566_1329498388",
+      "id": "paragraph_1642035492566_1329498388",
+      "dateCreated": "2022-01-13 00:58:12.566",
+      "dateStarted": "2022-10-21 02:36:46.370",
+      "dateFinished": "2022-10-21 02:37:10.438",
+      "status": "ERROR"
+    },
+    {
+      "text": "%hive\n\nset yarn.app.mapreduce.am.resource.mb\u003d1024;\nset yarn.app.mapreduce.am.resource.cpu-vcores\u003d1;\n--set mapred.job.queue.name\u003droot.default;\n\nselect txn_receive_date, count(uuid) AS txn_count from transaction_details group by txn_receive_date;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-05-23 03:28:36.908",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": true,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "txn_count": "string",
+                      "txn_receive_date": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default",
+                  "stacked": false
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "txn_receive_date",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "txn_count",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "2": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "txn_receive_date": "string",
+                      "txn_count": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "3": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "txn_receive_date": "string",
+                      "txn_count": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\nINFO  : Compiling command(queryId\u003droot_20220523032836_f63f6cd8-d0c2-442c-b502-4fcae72e3354): \n\n\n\n\n\nselect txn_receive_date, count(uuid) AS txn_count from transaction_details group by txn_receive_date\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial \u003d false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:txn_receive_date, type:string, comment:null), FieldSchema(name:txn_count, type:bigint, comment:null)], properties:null)\nINFO  : EXPLAIN output for queryid root_20220523032836_f63f6cd8-d0c2-442c-b502-4fcae72e3354 : STAGE DEPENDENCIES:\n  Stage-1 is a root stage [MAPRED]\n  Stage-0 depends on stages: Stage-1 [FETCH]\n\nSTAGE PLANS:\n  Stage: Stage-1\n    Map Reduce\n      Map Operator Tree:\n          TableScan\n            alias: transaction_details\n            GatherStats: false\n            Select Operator\n              expressions: uuid (type: string), txn_receive_date (type: string)\n              outputColumnNames: uuid, txn_receive_date\n              Group By Operator\n                aggregations: count(uuid)\n                keys: txn_receive_date (type: string)\n                mode: hash\n                outputColumnNames: _col0, _col1\n                Reduce Output Operator\n                  key expressions: _col0 (type: string)\n                  null sort order: a\n                  sort order: +\n                  Map-reduce partition columns: _col0 (type: string)\n                  tag: -1\n                  value expressions: _col1 (type: bigint)\n                  auto parallelism: false\n      Execution mode: vectorized\n      Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-01-13 [transaction_details]\n      Path -\u003e Partition:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-01-13 \n          Partition\n            base file name: txn_receive_date\u003d2022-01-13\n            input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n            output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n            partition values:\n              txn_receive_date 2022-01-13\n            properties:\n              bucket_count -1\n              column.name.delimiter ,\n              columns id,uuid,cardtype,website,product,amount,city,country,addts\n              columns.comments \n              columns.types int:string:string:string:string:double:string:string:bigint\n              file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              location hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-01-13\n              name default.transaction_details\n              numFiles 3\n              partition_columns txn_receive_date\n              partition_columns.types string\n              serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n              serialization.format 1\n              serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              totalSize 26646\n              transient_lastDdlTime 1653276226\n            serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n          \n              input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              properties:\n                EXTERNAL TRUE\n                bucket_count -1\n                bucketing_version 2\n                column.name.delimiter ,\n                columns id,uuid,cardtype,website,product,amount,city,country,addts\n                columns.comments \n                columns.types int:string:string:string:string:double:string:string:bigint\n                comment Transaction Details External Table\n                creator Brijesh K Dhaker\n                file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n                file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n                location hdfs://namenode:9000/transaction_details\n                name default.transaction_details\n                partition_columns txn_receive_date\n                partition_columns.types string\n                serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n                serialization.format 1\n                serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n                transient_lastDdlTime 1653276202\n              serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              name: default.transaction_details\n            name: default.transaction_details\n      Truncated Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-01-13 [transaction_details]\n      Needs Tagging: false\n      Reduce Operator Tree:\n        Group By Operator\n          aggregations: count(VALUE._col0)\n          keys: KEY._col0 (type: string)\n          mode: mergepartial\n          outputColumnNames: _col0, _col1\n          File Output Operator\n            compressed: false\n            GlobalTableId: 0\n            directory: hdfs://namenode:9000/tmp/hive/hive/c489d957-e3bd-4a9f-9626-e1c4cb0b7794/hive_2022-05-23_03-28-37_005_2404499150300281915-1/-mr-10001/.hive-staging_hive_2022-05-23_03-28-37_005_2404499150300281915-1/-ext-10002\n            NumFilesPerFileSink: 1\n            Stats Publishing Key Prefix: hdfs://namenode:9000/tmp/hive/hive/c489d957-e3bd-4a9f-9626-e1c4cb0b7794/hive_2022-05-23_03-28-37_005_2404499150300281915-1/-mr-10001/.hive-staging_hive_2022-05-23_03-28-37_005_2404499150300281915-1/-ext-10002/\n            table:\n                input format: org.apache.hadoop.mapred.SequenceFileInputFormat\n                output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat\n                properties:\n                  columns _col0,_col1\n                  columns.types string:bigint\n                  escape.delim \\\n                  hive.serialization.extend.additional.nesting.levels true\n                  serialization.escape.crlf true\n                  serialization.format 1\n                  serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n                serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n            TotalFiles: 1\n            GatherStats: false\n            MultiFileSpray: false\n\n  Stage: Stage-0\n    Fetch Operator\n      limit: -1\n      Processor Tree:\n        ListSink\n\n\nINFO  : Completed compiling command(queryId\u003droot_20220523032836_f63f6cd8-d0c2-442c-b502-4fcae72e3354); Time taken: 0.611 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId\u003droot_20220523032836_f63f6cd8-d0c2-442c-b502-4fcae72e3354): \n\n\n\n\n\nselect txn_receive_date, count(uuid) AS txn_count from transaction_details group by txn_receive_date\nWARN  : Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.\nINFO  : Query ID \u003d root_20220523032836_f63f6cd8-d0c2-442c-b502-4fcae72e3354\nINFO  : Total jobs \u003d 1\nINFO  : Launching Job 1 out of 1\nINFO  : Starting task [Stage-1:MAPRED] in serial mode\nINFO  : Number of reduce tasks not specified. Estimated from input data size: 1\nINFO  : In order to change the average load for a reducer (in bytes):\nINFO  :   set hive.exec.reducers.bytes.per.reducer\u003d\u003cnumber\u003e\nINFO  : In order to limit the maximum number of reducers:\nINFO  :   set hive.exec.reducers.max\u003d\u003cnumber\u003e\nINFO  : In order to set a constant number of reducers:\nINFO  :   set mapreduce.job.reduces\u003d\u003cnumber\u003e\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "txn_receive_date\ttxn_count\n2022-01-13\t374\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641789776482_1365117778",
+      "id": "paragraph_1641789776482_1365117778",
+      "dateCreated": "2022-01-10 04:42:56.482",
+      "dateStarted": "2022-05-23 03:28:36.933",
+      "dateFinished": "2022-05-23 03:29:01.609",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\n--INSERT OVERWRITE transaction_details \n\nSELECT \nid, \nuuid,\ncardtype,\nwebsite,\nproduct,\namount,\ncity,\ncountry,\nFROM_UNIXTIME(addts) AS txn_datetime\nfrom transaction_details;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:38:53.203",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": true,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "transaction_id0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "tansaction_uuid1",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "transaction_card_type2",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "transaction_ecommerce_website_name3",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "transaction_product_name4",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "transaction_datetime5",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {
+                          "priority": 0.0,
+                          "direction": "desc"
+                        },
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "transaction_amount6",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "transaction_city_name7",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "transaction_country_name8",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "txn_receive_date9",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1.0,
+                      "paginationPageSize": 250.0
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "names": {
+                      "id": "string",
+                      "uuid": "string",
+                      "cardtype": "string",
+                      "website": "string",
+                      "product": "string",
+                      "amount": "string",
+                      "city": "string",
+                      "country": "string",
+                      "txn_datetime": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "pieChart": {},
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "city",
+                  "index": 6.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "amount",
+                  "index": 5.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "id\tuuid\tcardtype\twebsite\tproduct\tamount\tcity\tcountry\ttxn_datetime\n2679\te6c0099a-a92f-45fa-9d04-82a422a593f6\tRuPay\tAmazon\tMobile\t7032.13\tLos Angeles\tUSA\t2022-09-15 01:10:20\n2678\tece842cc-e7d2-4aba-a9c0-bdd7560955cf\tMaster\tSnapDeal\tMobile\t23990.0\tNew York\tUSA\t2022-09-15 01:10:25\n1664\tcb498e9b-b16f-438e-8851-44b16b7a86f6\tRuPay\tAmazon\tComputer\t15798.52\tHiroshima\tJP\t2022-09-15 01:10:30\n4687\t24dab694-0d40-418f-9544-8aea19ce57b7\tVISA\tAmazon\tLaptop\t24485.26\tMiami\tUSA\t2022-09-15 01:10:35\n3949\tc08f1e8a-8e9f-43e7-bcf9-f15fde730a7d\tVISA\tAmazon\tTablet\t14949.11\tOxford\tUK\t2022-09-15 00:50:40\n4143\t319e34f2-1e00-45b3-b8d6-c628ccfbfac2\tMaster\tFlipkart\tComputer\t8618.17\tBanglore\tIN\t2022-09-15 00:50:45\n4547\tb7bae4f2-420e-4dd6-8f4a-5d9207a7957f\tMaster\tAmazon\tLaptop\t24347.02\tNew York\tUSA\t2022-09-15 00:50:50\n3196\t2d89dc1c-9d86-45f8-bfc7-d8663276b739\tRuPay\tAmazon\tTablet\t18717.18\tLos Angeles\tUSA\t2022-09-15 00:50:55\n2724\tde443eb3-38bf-4648-bf3e-31295062d25a\tVISA\tMyntra\tLaptop\t1665.79\tMiami\tUSA\t2022-09-15 00:51:00\n3136\t24e6c80a-6318-4368-be50-f2073157cd39\tMaster\tAmazon\tComputer\t17264.66\tYokohama\tJP\t2022-09-15 00:51:05\n4485\t84f78629-c611-4782-9692-396bdc84b3ea\tAmex\tMyntra\tLaptop\t511.53\tMiami\tUSA\t2022-09-15 00:51:10\n2716\tfa66b416-e2be-4d8f-b4ef-dd4c46ed2a53\tAmex\tMyntra\tMobile\t16965.5\tManchester\tUK\t2022-09-15 00:51:15\n1914\t192a7c5d-3c19-411e-b612-1036ecb0b984\tMaster\tMyntra\tLaptop\t16801.61\tMumbai\tIN\t2022-09-15 00:51:20\n4351\tc3eca654-2602-4067-a0a8-21b82b7bbfbb\tRuPay\tFlipkart\tLaptop\t4060.14\tManchester\tUK\t2022-09-15 00:51:25\n1458\tc886b787-5cb7-447e-b098-5987574c583c\tRuPay\tFlipkart\tMobile\t1750.67\tLondon\tUK\t2022-09-15 00:51:30\n4964\tf70be51e-a2d3-4206-99d9-92cd312681aa\tAmex\tSnapDeal\tComputer\t4401.56\tPune\tIN\t2022-09-15 00:51:35\n2572\tae8ba45f-e18b-48ee-93e8-6b382fa823b7\tVISA\tAmazon\tTablet\t4903.23\tTokyo\tJP\t2022-09-15 00:51:40\n3909\tc0ad06fd-ac44-427f-a4cb-cf59c273b737\tVISA\tSnapDeal\tMobile\t15298.2\tTokyo\tJP\t2022-09-15 00:51:45\n1314\t697cb724-ae18-4732-848e-e5a09d7f32ea\tMaster\tAmazon\tLaptop\t5114.79\tMiami\tUSA\t2022-09-15 00:51:50\n4820\tcac70670-42b5-4c3e-bb92-738fae6d0079\tMaster\tSnapDeal\tMobile\t10613.9\tBanglore\tIN\t2022-09-15 00:51:55\n1184\t2435c3d4-5944-4892-95cc-0cb356974003\tRuPay\tSnapDeal\tMobile\t3139.05\tTokyo\tJP\t2022-09-15 00:52:00\n3566\te2c655d6-f7c6-4938-8e8a-cea1159cc4e5\tVISA\tSnapDeal\tTablet\t5523.02\tLiverpool\tUK\t2022-09-15 00:52:05\n3844\t486af773-f766-412e-8a2a-89a613c78022\tMaster\tFlipkart\tMobile\t20678.19\tLos Angeles\tUSA\t2022-09-15 00:52:10\n1404\t20af6d2e-31d8-4b61-a285-eee7fe2d37b6\tAmex\tFlipkart\tLaptop\t22013.31\tPune\tIN\t2022-09-15 00:52:15\n3558\ta9801a6f-aa8b-4bd4-863f-22c6db7cad4e\tRuPay\tFlipkart\tLaptop\t1099.1\tTokyo\tJP\t2022-09-15 00:52:20\n3630\td1d48efc-7b87-4257-b845-1b8ec5e326d4\tAmex\tAmazon\tLaptop\t8096.47\tChennei\tIN\t2022-09-15 00:52:25\n1404\t6f01312b-cb35-42b4-9d85-df935887cb10\tRuPay\tMyntra\tTablet\t24308.2\tMumbai\tIN\t2022-09-15 00:52:30\n1130\t87226acb-7a31-41fa-afc7-cee4d8803a6e\tMaster\tFlipkart\tComputer\t11354.45\tOsaka\tJP\t2022-09-15 00:52:35\n3591\t238872e2-2b96-44fa-b183-6251b10e21a7\tMaster\tFlipkart\tTablet\t8098.57\tDelhi\tIN\t2022-09-15 00:52:40\n2333\td8dc28d2-b2fe-4a74-809f-c81649025ca2\tMaster\tMyntra\tTablet\t841.79\tYokohama\tJP\t2022-09-15 00:52:45\n4045\t7480f014-fcec-45ee-8a7d-93a64abd3578\tVISA\tFlipkart\tTablet\t23424.78\tLos Angeles\tUSA\t2022-09-15 00:52:50\n4554\t49ee3b06-641b-4617-9e32-ac022e2a429c\tAmex\tMyntra\tComputer\t22666.42\tHiroshima\tJP\t2022-09-15 00:52:55\n2637\te87676b9-b154-424f-a77f-a771fb1fe73d\tRuPay\tMyntra\tComputer\t12935.66\tManchester\tUK\t2022-09-15 00:53:00\n4924\ta38865f7-11a3-476d-bf51-14f4875e7fd4\tAmex\tFlipkart\tLaptop\t9131.9\tOxford\tUK\t2022-09-15 00:53:05\n2916\t29cccb81-2333-4fb5-95b6-686154a96113\tRuPay\tFlipkart\tTablet\t3058.42\tTokyo\tJP\t2022-09-15 00:53:10\n2105\t2e978ace-b2b7-430a-a427-c1809d19a277\tRuPay\tAmazon\tComputer\t10368.27\tMiami\tUSA\t2022-09-15 00:53:15\n1495\t532e78da-95fc-4ec2-ae80-0e68510be599\tVISA\tFlipkart\tLaptop\t13938.86\tDelhi\tIN\t2022-09-15 00:53:20\n1895\t62cdee8e-4c76-4fc2-b363-158ba71af1e5\tVISA\tSnapDeal\tTablet\t5665.99\tLos Angeles\tUSA\t2022-09-15 00:53:25\n2503\t983f1cad-c0af-40a1-87ad-e1eeaab43262\tAmex\tMyntra\tComputer\t17646.95\tLos Angeles\tUSA\t2022-09-15 00:53:30\n1121\t6c7f8654-4ae4-4908-af47-6df99f2b61c2\tMaster\tMyntra\tComputer\t11028.74\tManchester\tUK\t2022-09-15 00:53:35\n3172\ta04b94e7-8c1a-49ea-8243-9e4fca596118\tMaster\tMyntra\tLaptop\t21108.41\tNew York\tUSA\t2022-09-15 00:53:40\n3423\t58c415c1-0c4d-45ed-b498-c5bed9fac2c9\tMaster\tFlipkart\tTablet\t8445.18\tYokohama\tJP\t2022-09-15 00:53:45\n4276\t6fa6fddd-47ae-440c-b9fa-ee419074c068\tMaster\tAmazon\tTablet\t16077.82\tChennei\tIN\t2022-09-15 00:53:50\n1395\tddf2dd31-dc78-4110-b56e-307a686aefa8\tMaster\tAmazon\tTablet\t24661.78\tYokohama\tJP\t2022-09-15 00:53:55\n4029\t0d0f9e2e-cbab-4e28-8aad-34c345b0d8f0\tMaster\tAmazon\tComputer\t12721.04\tLondon\tUK\t2022-09-15 00:54:00\n4470\t2964c365-5047-46b3-b07a-1e1edb6d0ee3\tAmex\tFlipkart\tComputer\t21532.05\tOxford\tUK\t2022-09-15 00:54:05\n3254\tce01281f-9641-4435-8982-b4879bb17b7a\tVISA\tMyntra\tMobile\t5864.95\tChennei\tIN\t2022-09-15 00:54:10\n1973\tab66acfe-bfd8-4e91-8e01-65b1595e44cb\tRuPay\tSnapDeal\tMobile\t749.71\tMumbai\tIN\t2022-09-15 00:54:15\n4070\t84b3562d-c084-4995-b9d4-c4c812dfb426\tAmex\tMyntra\tMobile\t12628.95\tMumbai\tIN\t2022-09-15 00:54:20\n3601\tbd44c2a4-8426-42ae-84bc-0a2bf712446e\tVISA\tFlipkart\tMobile\t16570.75\tLos Angeles\tUSA\t2022-09-15 00:54:25\n1311\t9a8030a6-2718-4d45-a1c1-bdf30fed74a7\tVISA\tMyntra\tLaptop\t7698.38\tLiverpool\tUK\t2022-09-15 00:54:30\n1742\ta0b12275-612c-4bfb-b88b-3ae510e6a660\tVISA\tFlipkart\tLaptop\t15991.91\tHiroshima\tJP\t2022-09-15 00:54:35\n4154\t197e738d-c7df-497f-96fa-fe568141c87f\tRuPay\tSnapDeal\tLaptop\t15786.36\tOxford\tUK\t2022-09-15 00:54:40\n2449\tb5995e3b-6164-4df8-87f7-61a7bb6cebda\tAmex\tSnapDeal\tTablet\t4455.61\tMiami\tUSA\t2022-09-15 00:54:45\n4004\t18c3b7e6-a31a-4b34-923e-a2e6fcd2633f\tRuPay\tSnapDeal\tLaptop\t22146.94\tLiverpool\tUK\t2022-09-15 00:54:50\n3018\t0ddfb3ba-5069-4aa6-a17e-db625b7b226a\tAmex\tSnapDeal\tComputer\t2986.34\tManchester\tUK\t2022-09-15 00:54:55\n1474\ta3ac9031-b3d0-4ab5-9a33-932ffedbd21f\tAmex\tSnapDeal\tMobile\t14040.52\tDelhi\tIN\t2022-09-15 00:55:00\n4365\t145d31d5-68b4-4b58-94f7-7425f3497b9d\tRuPay\tMyntra\tMobile\t14253.95\tMiami\tUSA\t2022-09-15 00:55:05\n1946\tc378095d-8fbf-41e6-a0c0-306d1ba27047\tRuPay\tAmazon\tTablet\t17055.08\tPune\tIN\t2022-09-15 00:55:10\n1835\t7b2032ab-bd02-4098-887c-206e61aa1928\tRuPay\tAmazon\tComputer\t6455.46\tMiami\tUSA\t2022-09-15 00:55:15\n4561\t5d825fc0-cb99-4403-bbb7-3fea05a1b812\tRuPay\tSnapDeal\tTablet\t12434.57\tPune\tIN\t2022-09-15 00:55:20\n3214\t68d05fff-a00f-4b13-a096-275bac7c963c\tAmex\tFlipkart\tLaptop\t8134.83\tTokyo\tJP\t2022-09-15 00:55:25\n3852\t396cf7b1-5004-41d0-9de5-6f98888e3718\tRuPay\tAmazon\tMobile\t5500.66\tYokohama\tJP\t2022-09-15 00:55:30\n4515\tfd092b7b-881c-4616-9620-5914fa24a47d\tRuPay\tSnapDeal\tMobile\t2480.46\tOxford\tUK\t2022-09-15 00:55:35\n1805\t2e6fa0e7-ec11-473b-89d7-8b4b77db3f07\tRuPay\tFlipkart\tMobile\t7368.68\tTokyo\tJP\t2022-09-15 00:55:40\n1533\t9a0329c4-2a5d-4fe4-a126-55d6b2faf826\tVISA\tFlipkart\tMobile\t6517.62\tTokyo\tJP\t2022-09-15 00:55:45\n3445\t48bf2ee9-6da1-40e0-bf87-0fd5c23f1844\tAmex\tAmazon\tLaptop\t6161.2\tMumbai\tIN\t2022-09-15 00:55:50\n1803\t3e8a11ea-5c7c-4a17-a0ab-07656ea75c88\tVISA\tSnapDeal\tLaptop\t10788.81\tLos Angeles\tUSA\t2022-09-15 00:55:55\n2173\tdbbcb8f6-ae88-454f-9194-5a686e1025b0\tVISA\tFlipkart\tComputer\t7738.86\tPune\tIN\t2022-09-15 00:56:00\n2946\t56627b21-c279-4fe0-8bdb-37b40f4057f9\tVISA\tSnapDeal\tMobile\t22363.44\tYokohama\tJP\t2022-09-15 00:56:05\n1707\ta80d87df-6c8c-42fc-8324-041eb78a7de4\tAmex\tAmazon\tTablet\t12358.99\tBanglore\tIN\t2022-09-15 00:56:10\n4095\tde1f99d1-04e9-4286-b8d0-7a5b20230ceb\tAmex\tFlipkart\tMobile\t22527.26\tManchester\tUK\t2022-09-15 00:56:15\n2529\t40587d75-e7ef-4e5e-922b-8923e364f264\tVISA\tFlipkart\tComputer\t4639.72\tOsaka\tJP\t2022-09-15 00:56:20\n1450\td3adbf51-fe6f-45de-beb6-8a87338f0180\tAmex\tFlipkart\tMobile\t19435.79\tMiami\tUSA\t2022-09-15 00:56:25\n3898\tbab37205-0009-4757-b1ed-6b64df9b9e03\tRuPay\tFlipkart\tLaptop\t5125.25\tHiroshima\tJP\t2022-09-15 00:56:30\n1292\tce0bb6d0-9aa2-4849-8f2f-c66743b55bfd\tMaster\tFlipkart\tTablet\t19976.67\tLondon\tUK\t2022-09-15 00:56:35\n3854\t468a676b-9615-4a47-8c7e-6694f9fb1ff4\tVISA\tSnapDeal\tTablet\t17602.75\tLondon\tUK\t2022-09-15 00:56:40\n1456\t377d0ba7-eafe-4141-92bc-c44c9605ae09\tAmex\tFlipkart\tComputer\t4486.96\tBanglore\tIN\t2022-09-15 00:56:45\n3478\tdb0ca2f7-eab0-4034-9224-786340b11f03\tMaster\tSnapDeal\tTablet\t20184.81\tNew York\tUSA\t2022-09-15 00:56:50\n4756\te1ccc438-a78c-4423-aa2e-d9fa80b63f5f\tAmex\tFlipkart\tComputer\t8239.92\tLos Angeles\tUSA\t2022-09-15 01:11:00\n1753\te945b456-be10-4d1b-826c-e84f6bb3ffb3\tAmex\tMyntra\tTablet\t16493.33\tLiverpool\tUK\t2022-09-15 01:11:05\n3851\tb056a764-1855-44bc-9349-7bf4974bc758\tVISA\tSnapDeal\tMobile\t17530.07\tDelhi\tIN\t2022-09-15 01:11:10\n3644\td39e5219-21d0-4a3c-af76-101cdaa763c5\tVISA\tMyntra\tComputer\t5719.33\tLondon\tUK\t2022-09-15 01:11:15\n3096\t6a5a7387-b841-4062-b195-76e52c0adb86\tRuPay\tFlipkart\tTablet\t6257.98\tLiverpool\tUK\t2022-09-15 01:10:40\n4232\t818d7b85-527a-47ad-bdc9-6c3e55130f62\tMaster\tFlipkart\tLaptop\t12297.58\tOxford\tUK\t2022-09-15 01:10:45\n2926\t08f133d7-b381-4ce9-8860-5e20ab92be9b\tVISA\tSnapDeal\tLaptop\t12305.38\tNew York\tUSA\t2022-09-15 01:10:50\n3473\t86accdf7-b01d-46c1-8164-b35ac9bd2acf\tAmex\tAmazon\tTablet\t22655.99\tDelhi\tIN\t2022-09-15 01:10:55\n1556\t230814bd-2f76-44b7-be76-e034576e965c\tRuPay\tFlipkart\tComputer\t8790.97\tDelhi\tIN\t2022-09-15 01:10:10\n2734\t12162ac3-2d44-4ac5-8d33-8d6c9e6b0d04\tAmex\tSnapDeal\tLaptop\t21708.89\tYokohama\tJP\t2022-09-15 01:10:15\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641531622445_741806722",
+      "id": "paragraph_1641531622445_741806722",
+      "dateCreated": "2022-01-07 05:00:22.445",
+      "dateStarted": "2022-09-15 16:17:32.990",
+      "dateFinished": "2022-09-15 16:17:33.763",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\nselect FROM_UNIXTIME(cast(\u00271641620328000\u0027 as bigint) DIV 1000) AS txn_datetime ;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-09-15 16:17:41.114",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 11.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "txn_datetime": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "txn_datetime\n2022-01-08 05:38:48\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641575237750_1875813281",
+      "id": "paragraph_1641575237750_1875813281",
+      "dateCreated": "2022-01-07 17:07:17.750",
+      "dateStarted": "2022-09-15 16:17:41.133",
+      "dateFinished": "2022-09-15 16:17:41.917",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\nSELECT \n    product,\n    amount,\n    city\nfrom (\n    SELECT \n        id, \n        uuid,\n        cardtype,\n        website,\n        product,\n        amount,\n        city,\n        country,\n        FROM_UNIXTIME(addts) AS txn_datetime,\n        RANK() OVER (PARTITION BY city order by amount DESC) AS RANK\n    from transaction_details\n) tmp \nwhere \nRANK \u003c\u003d 2;\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:39:37.383",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "product": "string",
+                      "amount": "string",
+                      "city": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": true,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "product": "string",
+                      "amount": "string",
+                      "city": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "pieChart": {},
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "product",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "amount",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "INFO  : Compiling command(queryId\u003droot_20221021023937_6c528dc8-759d-4f70-bdef-6c1c5b17fd00): \n\nSELECT \n    product,\n    amount,\n    city\nfrom (\n    SELECT \n        id, \n        uuid,\n        cardtype,\n        website,\n        product,\n        amount,\n        city,\n        country,\n        FROM_UNIXTIME(addts) AS txn_datetime,\n        RANK() OVER (PARTITION BY city order by amount DESC) AS RANK\n    from transaction_details\n) tmp \nwhere \nRANK \u003c\u003d 2\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial \u003d false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:product, type:string, comment:null), FieldSchema(name:amount, type:double, comment:null), FieldSchema(name:city, type:string, comment:null)], properties:null)\nINFO  : EXPLAIN output for queryid root_20221021023937_6c528dc8-759d-4f70-bdef-6c1c5b17fd00 : STAGE DEPENDENCIES:\n  Stage-1 is a root stage [MAPRED]\n  Stage-0 depends on stages: Stage-1 [FETCH]\n\nSTAGE PLANS:\n  Stage: Stage-1\n    Map Reduce\n      Map Operator Tree:\n          TableScan\n            alias: transaction_details\n            GatherStats: false\n            Reduce Output Operator\n              key expressions: city (type: string), amount (type: double)\n              null sort order: az\n              sort order: +-\n              Map-reduce partition columns: city (type: string)\n              tag: -1\n              TopN: 3\n              TopN Hash Memory Usage: 0.1\n              value expressions: product (type: string)\n              auto parallelism: false\n      Execution mode: vectorized\n      Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-09-15 [$hdt$_0:transaction_details]\n      Path -\u003e Partition:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-09-15 \n          Partition\n            base file name: txn_receive_date\u003d2022-09-15\n            input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n            output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n            partition values:\n              txn_receive_date 2022-09-15\n            properties:\n              bucket_count -1\n              column.name.delimiter ,\n              columns id,uuid,cardtype,website,product,amount,city,country,addts\n              columns.comments \n              columns.types int:string:string:string:string:double:string:string:bigint\n              file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              location hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-09-15\n              name default.transaction_details\n              numFiles 5\n              partition_columns txn_receive_date\n              partition_columns.types string\n              serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n              serialization.format 1\n              serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              totalSize 17002\n              transient_lastDdlTime 1666319742\n            serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n          \n              input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              properties:\n                EXTERNAL TRUE\n                bucket_count -1\n                bucketing_version 2\n                column.name.delimiter ,\n                columns id,uuid,cardtype,website,product,amount,city,country,addts\n                columns.comments \n                columns.types int:string:string:string:string:double:string:string:bigint\n                comment Transaction Details External Table\n                creator Brijesh K Dhaker\n                file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n                file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n                location hdfs://namenode:9000/transaction_details\n                name default.transaction_details\n                partition_columns txn_receive_date\n                partition_columns.types string\n                serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n                serialization.format 1\n                serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n                transient_lastDdlTime 1666319711\n              serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              name: default.transaction_details\n            name: default.transaction_details\n      Truncated Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-09-15 [$hdt$_0:transaction_details]\n      Needs Tagging: false\n      Reduce Operator Tree:\n        Select Operator\n          expressions: VALUE._col4 (type: string), KEY.reducesinkkey1 (type: double), KEY.reducesinkkey0 (type: string)\n          outputColumnNames: _col4, _col5, _col6\n          PTF Operator\n            Function definitions:\n                Input definition\n                  input alias: ptf_0\n                  output shape: _col4: string, _col5: double, _col6: string\n                  type: WINDOWING\n                Windowing table definition\n                  input alias: ptf_1\n                  name: windowingtablefunction\n                  order by: _col5 DESC NULLS LAST\n                  partition by: _col6\n                  raw input shape:\n                  window functions:\n                      window function definition\n                        alias: RANK_window_0\n                        arguments: _col5\n                        name: RANK\n                        window function: GenericUDAFRankEvaluator\n                        window frame: ROWS PRECEDING(MAX)~FOLLOWING(MAX)\n                        isPivotResult: true\n            Filter Operator\n              isSamplingPred: false\n              predicate: (RANK_window_0 \u003c\u003d 2) (type: boolean)\n              Select Operator\n                expressions: _col4 (type: string), _col5 (type: double), _col6 (type: string)\n                outputColumnNames: _col0, _col1, _col2\n                File Output Operator\n                  compressed: false\n                  GlobalTableId: 0\n                  directory: hdfs://namenode:9000/tmp/hive/hive/e1e80121-f534-4b75-a23b-1f6e1fc805ff/hive_2022-10-21_02-39-37_401_4807444676789561210-2/-mr-10001/.hive-staging_hive_2022-10-21_02-39-37_401_4807444676789561210-2/-ext-10002\n                  NumFilesPerFileSink: 1\n                  Stats Publishing Key Prefix: hdfs://namenode:9000/tmp/hive/hive/e1e80121-f534-4b75-a23b-1f6e1fc805ff/hive_2022-10-21_02-39-37_401_4807444676789561210-2/-mr-10001/.hive-staging_hive_2022-10-21_02-39-37_401_4807444676789561210-2/-ext-10002/\n                  table:\n                      input format: org.apache.hadoop.mapred.SequenceFileInputFormat\n                      output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat\n                      properties:\n                        columns _col0,_col1,_col2\n                        columns.types string:double:string\n                        escape.delim \\\n                        hive.serialization.extend.additional.nesting.levels true\n                        serialization.escape.crlf true\n                        serialization.format 1\n                        serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n                      serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n                  TotalFiles: 1\n                  GatherStats: false\n                  MultiFileSpray: false\n\n  Stage: Stage-0\n    Fetch Operator\n      limit: -1\n      Processor Tree:\n        ListSink\n\n\nINFO  : Completed compiling command(queryId\u003droot_20221021023937_6c528dc8-759d-4f70-bdef-6c1c5b17fd00); Time taken: 0.272 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId\u003droot_20221021023937_6c528dc8-759d-4f70-bdef-6c1c5b17fd00): \n\nSELECT \n    product,\n    amount,\n    city\nfrom (\n    SELECT \n        id, \n        uuid,\n        cardtype,\n        website,\n        product,\n        amount,\n        city,\n        country,\n        FROM_UNIXTIME(addts) AS txn_datetime,\n        RANK() OVER (PARTITION BY city order by amount DESC) AS RANK\n    from transaction_details\n) tmp \nwhere \nRANK \u003c\u003d 2\nWARN  : Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.\nINFO  : Query ID \u003d root_20221021023937_6c528dc8-759d-4f70-bdef-6c1c5b17fd00\nINFO  : Total jobs \u003d 1\nINFO  : Launching Job 1 out of 1\nINFO  : Starting task [Stage-1:MAPRED] in serial mode\nINFO  : Number of reduce tasks not specified. Estimated from input data size: 1\nINFO  : In order to change the average load for a reducer (in bytes):\nINFO  :   set hive.exec.reducers.bytes.per.reducer\u003d\u003cnumber\u003e\nINFO  : In order to limit the maximum number of reducers:\nINFO  :   set hive.exec.reducers.max\u003d\u003cnumber\u003e\nINFO  : In order to set a constant number of reducers:\nINFO  :   set mapreduce.job.reduces\u003d\u003cnumber\u003e\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "product\tamount\tcity\nTablet\t12358.99\tBanglore\nMobile\t10613.9\tBanglore\nTablet\t16077.82\tChennei\nLaptop\t8096.47\tChennei\nTablet\t22655.99\tDelhi\nMobile\t17530.07\tDelhi\nComputer\t22666.42\tHiroshima\nLaptop\t15991.91\tHiroshima\nLaptop\t22146.94\tLiverpool\nTablet\t16493.33\tLiverpool\nTablet\t19976.67\tLondon\nTablet\t17602.75\tLondon\nTablet\t23424.78\tLos Angeles\nMobile\t20678.19\tLos Angeles\nMobile\t22527.26\tManchester\nMobile\t16965.5\tManchester\nLaptop\t24485.26\tMiami\nMobile\t19435.79\tMiami\nTablet\t24308.2\tMumbai\nLaptop\t16801.61\tMumbai\nLaptop\t24347.02\tNew York\nMobile\t23990.0\tNew York\nComputer\t11354.45\tOsaka\nComputer\t4639.72\tOsaka\nComputer\t21532.05\tOxford\nLaptop\t15786.36\tOxford\nLaptop\t22013.31\tPune\nTablet\t17055.08\tPune\nMobile\t15298.2\tTokyo\nLaptop\t8134.83\tTokyo\nTablet\t24661.78\tYokohama\nMobile\t22363.44\tYokohama\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641645680103_722728678",
+      "id": "paragraph_1641645680103_722728678",
+      "dateCreated": "2022-01-08 12:41:20.104",
+      "dateStarted": "2022-10-21 02:39:37.386",
+      "dateFinished": "2022-10-21 02:39:56.417",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\nSELECT \n    city,\n    sum(CAST(amount AS bigint)) DIV 1000 As MD_SELL\nfrom transaction_details\n    group by city;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:41:27.663",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "city": "string",
+                      "md_sell": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "INFO  : Compiling command(queryId\u003droot_20221021024127_6f471906-e1db-4279-a6ae-a8f35cbf472e): \n\nSELECT \n    city,\n    sum(CAST(amount AS bigint)) DIV 1000 As MD_SELL\nfrom transaction_details\n    group by city\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial \u003d false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:city, type:string, comment:null), FieldSchema(name:md_sell, type:bigint, comment:null)], properties:null)\nINFO  : EXPLAIN output for queryid root_20221021024127_6f471906-e1db-4279-a6ae-a8f35cbf472e : STAGE DEPENDENCIES:\n  Stage-1 is a root stage [MAPRED]\n  Stage-0 depends on stages: Stage-1 [FETCH]\n\nSTAGE PLANS:\n  Stage: Stage-1\n    Map Reduce\n      Map Operator Tree:\n          TableScan\n            alias: transaction_details\n            GatherStats: false\n            Select Operator\n              expressions: city (type: string), UDFToLong(amount) (type: bigint)\n              outputColumnNames: _col0, _col1\n              Group By Operator\n                aggregations: sum(_col1)\n                keys: _col0 (type: string)\n                mode: hash\n                outputColumnNames: _col0, _col1\n                Reduce Output Operator\n                  key expressions: _col0 (type: string)\n                  null sort order: a\n                  sort order: +\n                  Map-reduce partition columns: _col0 (type: string)\n                  tag: -1\n                  value expressions: _col1 (type: bigint)\n                  auto parallelism: false\n      Execution mode: vectorized\n      Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-09-15 [$hdt$_0:transaction_details]\n      Path -\u003e Partition:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-09-15 \n          Partition\n            base file name: txn_receive_date\u003d2022-09-15\n            input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n            output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n            partition values:\n              txn_receive_date 2022-09-15\n            properties:\n              bucket_count -1\n              column.name.delimiter ,\n              columns id,uuid,cardtype,website,product,amount,city,country,addts\n              columns.comments \n              columns.types int:string:string:string:string:double:string:string:bigint\n              file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              location hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-09-15\n              name default.transaction_details\n              numFiles 5\n              partition_columns txn_receive_date\n              partition_columns.types string\n              serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n              serialization.format 1\n              serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              totalSize 17002\n              transient_lastDdlTime 1666319742\n            serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n          \n              input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              properties:\n                EXTERNAL TRUE\n                bucket_count -1\n                bucketing_version 2\n                column.name.delimiter ,\n                columns id,uuid,cardtype,website,product,amount,city,country,addts\n                columns.comments \n                columns.types int:string:string:string:string:double:string:string:bigint\n                comment Transaction Details External Table\n                creator Brijesh K Dhaker\n                file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n                file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n                location hdfs://namenode:9000/transaction_details\n                name default.transaction_details\n                partition_columns txn_receive_date\n                partition_columns.types string\n                serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n                serialization.format 1\n                serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n                transient_lastDdlTime 1666319711\n              serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              name: default.transaction_details\n            name: default.transaction_details\n      Truncated Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-09-15 [$hdt$_0:transaction_details]\n      Needs Tagging: false\n      Reduce Operator Tree:\n        Group By Operator\n          aggregations: sum(VALUE._col0)\n          keys: KEY._col0 (type: string)\n          mode: mergepartial\n          outputColumnNames: _col0, _col1\n          Select Operator\n            expressions: _col0 (type: string), (_col1 div 1000) (type: bigint)\n            outputColumnNames: _col0, _col1\n            File Output Operator\n              compressed: false\n              GlobalTableId: 0\n              directory: hdfs://namenode:9000/tmp/hive/hive/e1e80121-f534-4b75-a23b-1f6e1fc805ff/hive_2022-10-21_02-41-27_811_6246802560356309682-2/-mr-10001/.hive-staging_hive_2022-10-21_02-41-27_811_6246802560356309682-2/-ext-10002\n              NumFilesPerFileSink: 1\n              Stats Publishing Key Prefix: hdfs://namenode:9000/tmp/hive/hive/e1e80121-f534-4b75-a23b-1f6e1fc805ff/hive_2022-10-21_02-41-27_811_6246802560356309682-2/-mr-10001/.hive-staging_hive_2022-10-21_02-41-27_811_6246802560356309682-2/-ext-10002/\n              table:\n                  input format: org.apache.hadoop.mapred.SequenceFileInputFormat\n                  output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat\n                  properties:\n                    columns _col0,_col1\n                    columns.types string:bigint\n                    escape.delim \\\n                    hive.serialization.extend.additional.nesting.levels true\n                    serialization.escape.crlf true\n                    serialization.format 1\n                    serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n                  serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n              TotalFiles: 1\n              GatherStats: false\n              MultiFileSpray: false\n\n  Stage: Stage-0\n    Fetch Operator\n      limit: -1\n      Processor Tree:\n        ListSink\n\n\nINFO  : Completed compiling command(queryId\u003droot_20221021024127_6f471906-e1db-4279-a6ae-a8f35cbf472e); Time taken: 0.204 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId\u003droot_20221021024127_6f471906-e1db-4279-a6ae-a8f35cbf472e): \n\nSELECT \n    city,\n    sum(CAST(amount AS bigint)) DIV 1000 As MD_SELL\nfrom transaction_details\n    group by city\nWARN  : Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.\nINFO  : Query ID \u003d root_20221021024127_6f471906-e1db-4279-a6ae-a8f35cbf472e\nINFO  : Total jobs \u003d 1\nINFO  : Launching Job 1 out of 1\nINFO  : Starting task [Stage-1:MAPRED] in serial mode\nINFO  : Number of reduce tasks not specified. Estimated from input data size: 1\nINFO  : In order to change the average load for a reducer (in bytes):\nINFO  :   set hive.exec.reducers.bytes.per.reducer\u003d\u003cnumber\u003e\nINFO  : In order to limit the maximum number of reducers:\nINFO  :   set hive.exec.reducers.max\u003d\u003cnumber\u003e\nINFO  : In order to set a constant number of reducers:\nINFO  :   set mapreduce.job.reduces\u003d\u003cnumber\u003e\nINFO  : number of splits:1\nINFO  : Submitting tokens for job: job_1666317502575_0004\nINFO  : Executing with tokens: []\nINFO  : The url to track the job: http://resourcemanager:8088/proxy/application_1666317502575_0004/\nINFO  : Starting Job \u003d job_1666317502575_0004, Tracking URL \u003d http://resourcemanager:8088/proxy/application_1666317502575_0004/\nINFO  : Kill Command \u003d /opt/hadoop-3.2.1/bin/mapred job  -kill job_1666317502575_0004\nINFO  : Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1\nINFO  : 2022-10-21 02:41:33,796 Stage-1 map \u003d 0%,  reduce \u003d 0%\nINFO  : 2022-10-21 02:41:37,870 Stage-1 map \u003d 100%,  reduce \u003d 0%, Cumulative CPU 3.49 sec\nINFO  : 2022-10-21 02:41:42,956 Stage-1 map \u003d 100%,  reduce \u003d 100%, Cumulative CPU 5.76 sec\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "city\tmd_sell\nBanglore\t36\nChennei\t30\nDelhi\t85\nHiroshima\t59\nLiverpool\t58\nLondon\t57\nLos Angeles\t128\nManchester\t70\nMiami\t86\nMumbai\t60\nNew York\t101\nOsaka\t15\nOxford\t76\nPune\t63\nTokyo\t49\nYokohama\t100\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "HIVE JOB",
+          "tooltip": "View in YARN WEB UI",
+          "group": "jdbc",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1666317502575_0004/"
+            }
+          ],
+          "interpreterSettingId": "hive"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641649162516_49743898",
+      "id": "paragraph_1641649162516_49743898",
+      "dateCreated": "2022-01-08 13:39:22.526",
+      "dateStarted": "2022-10-21 02:41:27.665",
+      "dateFinished": "2022-10-21 02:41:44.030",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n\ndrop table transaction_details;\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-10-21 02:39:02.153",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641520014550_234746293",
+      "id": "paragraph_1641520014550_234746293",
+      "dateCreated": "2022-01-07 01:46:54.550",
+      "dateStarted": "2022-01-12 17:09:22.902",
+      "dateFinished": "2022-01-12 17:09:23.002",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%hive\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-01-07 05:03:13.210",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641531793210_1553477390",
+      "id": "paragraph_1641531793210_1553477390",
+      "dateCreated": "2022-01-07 05:03:13.210",
+      "status": "READY"
+    }
+  ],
+  "name": "hive-transaction-data-pipeline",
+  "id": "2GS1ZX4SG",
+  "defaultInterpreterGroup": "hive",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}

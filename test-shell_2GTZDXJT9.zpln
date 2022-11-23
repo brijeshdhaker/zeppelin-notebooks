@@ -1,0 +1,197 @@
+{
+  "paragraphs": [
+    {
+      "text": "%sh\n\n\nls -lart /",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-31 14:37:47.159",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "total 28\ndrwxr-xr-x   1 root root    0 Apr 15  2020 home\ndrwxr-xr-x   1 root root    0 Apr 15  2020 boot\nlrwxrwxrwx   1 root root    8 Jul 23 17:35 sbin -\u003e usr/sbin\nlrwxrwxrwx   1 root root   10 Jul 23 17:35 libx32 -\u003e usr/libx32\nlrwxrwxrwx   1 root root    9 Jul 23 17:35 lib64 -\u003e usr/lib64\nlrwxrwxrwx   1 root root    9 Jul 23 17:35 lib32 -\u003e usr/lib32\nlrwxrwxrwx   1 root root    7 Jul 23 17:35 lib -\u003e usr/lib\nlrwxrwxrwx   1 root root    7 Jul 23 17:35 bin -\u003e usr/bin\ndrwxr-xr-x   1 root root  102 Jul 23 17:35 usr\ndrwxr-xr-x   1 root root    0 Jul 23 17:35 srv\ndrwxr-xr-x   1 root root    0 Jul 23 17:35 mnt\ndrwxr-xr-x   1 root root    0 Jul 23 17:35 media\ndrwxr-xr-x   1 root root   90 Jul 23 17:38 var\ndrwx------   1 root root   30 Jul 23 17:38 root\ndrwxr-xr-x   1 root root   40 Jul 23 17:38 run\n-rw-r--r--   1 root root  477 Aug 24 06:36 env_python_3_with_R.yml\n-rwxr-xr-x   1 root root    0 Dec 31 11:50 .dockerenv\ndrwxr-xr-x   1 root root 1398 Dec 31 11:50 etc\ndr-xr-xr-x  13 root root    0 Dec 31 11:51 sys\ndr-xr-xr-x 552 root root    0 Dec 31 11:51 proc\ndrwxr-xr-x   1 root root  116 Dec 31 11:51 opt\ndrwxr-xr-x   1 root root   16 Dec 31 11:51 apps\ndrwxr-xr-x   1 root root  228 Dec 31 11:51 ..\ndrwxr-xr-x   1 root root  228 Dec 31 11:51 .\ndrwxr-xr-x   5 root root  340 Dec 31 11:51 dev\ndrwxrwxrwt   1 root root  188 Dec 31 14:37 tmp\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640961453774_2002247069",
+      "id": "paragraph_1640961453774_2002247069",
+      "dateCreated": "2021-12-31 14:37:33.774",
+      "dateStarted": "2021-12-31 14:37:47.161",
+      "dateFinished": "2021-12-31 14:37:49.212",
+      "status": "ABORT"
+    },
+    {
+      "text": "%sh\n\njava -version\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-31 15:34:57.338",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "openjdk version \"1.8.0_292\"\nOpenJDK Runtime Environment (build 1.8.0_292-8u292-b10-0ubuntu1~20.04-b10)\nOpenJDK 64-Bit Server VM (build 25.292-b10, mixed mode)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640961467161_1663777995",
+      "id": "paragraph_1640961467161_1663777995",
+      "dateCreated": "2021-12-31 14:37:47.161",
+      "dateStarted": "2021-12-31 15:34:57.342",
+      "dateFinished": "2021-12-31 15:34:57.413",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\npython --version",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-31 15:35:09.322",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Python 3.7.10\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640964883683_819741172",
+      "id": "paragraph_1640964883683_819741172",
+      "dateCreated": "2021-12-31 15:34:43.683",
+      "dateStarted": "2021-12-31 15:35:09.328",
+      "dateFinished": "2021-12-31 15:35:09.385",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$SPARK_HOME/bin/spark-shell\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-31 15:35:50.984",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "SLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/opt/spark-2.3.4/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/opt/hadoop-2.10.1/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]\n2021-12-31 15:35:52 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\nSetting default log level to \"WARN\".\nTo adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\nSpark context Web UI available at http://zeppelin:4040\nSpark context available as \u0027sc\u0027 (master \u003d local[*], app id \u003d local-1640964959107).\nSpark session available as \u0027spark\u0027.\nWelcome to\n      ____              __\n     / __/__  ___ _____/ /__\n    _\\ \\/ _ \\/ _ `/ __/  \u0027_/\n   /___/ .__/\\_,_/_/ /_/\\_\\   version 2.3.4\n      /_/\n         \nUsing Scala version 2.11.8 (OpenJDK 64-Bit Server VM, Java 1.8.0_292)\nType in expressions to have them evaluated.\nType :help for more information.\n\nscala\u003e :quit\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640964909326_1436974950",
+      "id": "paragraph_1640964909326_1436974950",
+      "dateCreated": "2021-12-31 15:35:09.326",
+      "dateStarted": "2021-12-31 15:35:50.988",
+      "dateFinished": "2021-12-31 15:36:01.180",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-12-31 15:35:50.987",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1640964950987_507423571",
+      "id": "paragraph_1640964950987_507423571",
+      "dateCreated": "2021-12-31 15:35:50.987",
+      "status": "READY"
+    }
+  ],
+  "name": "test-shell",
+  "id": "2GTZDXJT9",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
