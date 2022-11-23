@@ -3,7 +3,7 @@
     {
       "text": "%hive\n\nDROP TABLE IF EXISTS transaction_details_orc;",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:46:24.774",
+      "dateUpdated": "2022-11-23 17:01:21.121",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -16,7 +16,8 @@
         "editorMode": "ace/mode/sql",
         "fontSize": 12.0,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -45,7 +46,7 @@
       "title": "Managed ORC Table",
       "text": "%hive\n\nCREATE TABLE IF NOT EXISTS transaction_details_orc (\n    id int,\n    uuid string,\n    cardtype string,\n    website string,\n    product string,\n    amount double,\n    city string,\n    country string,\n    addts bigint,\n    txn_receive_date bigint\n)\nCOMMENT \u0027Hive Managed ORC Table\u0027\nSTORED AS ORC\nTBLPROPERTIES(\n \"creator\"\u003d\"Brijesh K Dhaker\",\n \"hive.exec.dynamic.partition\"\u003d\"true\",\n \"hive.exec.dynamic.partition.mode\"\u003d\"nonstrict\",\n \"orc.compress\"\u003d\"SNAPPY\"\n);\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:46:34.397",
+      "dateUpdated": "2022-11-23 17:01:21.124",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -59,7 +60,8 @@
         "fontSize": 12.0,
         "title": true,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -87,7 +89,7 @@
     {
       "text": "%file\n\nls -l /user/hive/warehouse\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:46:44.885",
+      "dateUpdated": "2022-11-23 17:01:21.127",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -100,7 +102,8 @@
         "editorMode": "ace/mode/undefined",
         "fontSize": 12.0,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -128,7 +131,7 @@
     {
       "text": "%hive\n\nDESCRIBE FORMATTED transaction_details_orc;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:47:08.528",
+      "dateUpdated": "2022-11-23 17:01:21.129",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -171,7 +174,8 @@
             }
           }
         },
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -199,7 +203,7 @@
     {
       "text": "%hive\n\nSELECT id,\n    uuid,\n    cardtype,\n    website,\n    product,\n    amount,\n    city,\n    country,\n    addts,\n    txn_receive_date,\n    unix_timestamp(txn_receive_date,\u0027yyyy-MM-dd\u0027)\nFROM transaction_details;\n    ",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:52:21.068",
+      "dateUpdated": "2022-11-23 17:01:21.132",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -365,7 +369,8 @@
             }
           }
         },
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -393,7 +398,7 @@
     {
       "text": "%hive\n\n\nINSERT INTO TABLE transaction_details_orc SELECT id,\n    uuid,\n    cardtype,\n    website,\n    product,\n    amount,\n    city,\n    country,\n    addts,\n    addts as txn_receive_date\n    FROM transaction_details;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:54:11.769",
+      "dateUpdated": "2022-11-23 17:01:21.136",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -406,7 +411,8 @@
         "editorMode": "ace/mode/sql",
         "fontSize": 12.0,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -438,7 +444,7 @@
     {
       "text": "%spark.conf\n\n#\n# Must set SPARK_HOME for this example, because it won\u0027t work for Zeppelin\u0027s embedded spark mode. The embedded spark mode doesn\u0027t \n# use spark-submit to launch spark interpreter, so spark.jars and spark.jars.packages won\u0027t take affect. \n\nspark.app.name pyspark-hive-orc-table\n#\n#\n#\n\nSPARK_HOME /opt/spark\n\n#\n# set execution mode\n#\n\nmaster yarn\n\n#\n# set driver memory to 8g\n#\n\nspark.driver.memory 640m\nspark.driver.cores 1\n\n#\n# set executor number to be \n#\n\nspark.executor.instances  2\nspark.executor.memory  640m\nspark.executor.cores 4\n\n#\n#\n#\n\nspark.submit.deployMode cluster\n\n\n\n#\n# spark.jars can be used for adding any local jar files into spark interpreter\n# \n\n# spark.jars  file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.driver.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.executor.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n# spark.executor.extraLibrary file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n#\n#\n\nspark.yarn.archive hdfs://namenode:9000/archives/spark-3.1.2.zip\n\nspark.yarn.dist.archives hdfs://namenode:9000/archives/mr-delta.tar.gz#environment\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:56:44.444",
+      "dateUpdated": "2022-11-23 17:01:21.139",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -451,7 +457,8 @@
         "editorMode": "ace/mode/text",
         "fontSize": 12.0,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -474,7 +481,7 @@
     {
       "text": "%pyspark\n\ndf_txn_details\u003dspark.sql(\"select * from transaction_details limit 20\")\ndf_txn_details.printSchema()\ndf_txn_details.show()\n\n\n\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-21 13:38:29.090",
+      "dateUpdated": "2022-11-23 17:01:21.146",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -487,7 +494,8 @@
         "editorMode": "ace/mode/python",
         "fontSize": 12.0,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -513,7 +521,7 @@
     {
       "text": "%pyspark\n\n## Prepare a Parquet data directory\ndf_txn_details.write.mode(\"append\").parquet(\"/user/hive/warehouse/transaction_details_orc\")\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:54:52.339",
+      "dateUpdated": "2022-11-23 17:01:21.149",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -526,7 +534,8 @@
         "editorMode": "ace/mode/python",
         "fontSize": 12.0,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -547,7 +556,7 @@
     {
       "text": "%hive\n\n/* \nIf we have a large number of partitions you might need to \nset hive.msck.repair.batch.size\n*/\n\nMSCK REPAIR TABLE ;\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 01:13:32.990",
+      "dateUpdated": "2022-11-23 17:01:21.151",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -560,7 +569,8 @@
         "editorMode": "ace/mode/sql",
         "fontSize": 12.0,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -586,7 +596,7 @@
     {
       "text": "%spark.sql\n\nselect * from transaction_details_orc limit 20;\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 01:15:28.577",
+      "dateUpdated": "2022-11-23 17:01:21.152",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -658,7 +668,8 @@
             "helium": {}
           }
         },
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -699,7 +710,7 @@
     {
       "text": "%hive\n\nselect * from transaction_details_orc;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 01:13:45.221",
+      "dateUpdated": "2022-11-23 17:01:21.155",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -788,7 +799,8 @@
             "helium": {}
           }
         },
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -816,7 +828,7 @@
     {
       "text": "%file\n\nls -l /user/hive/warehouse/transaction_details_orc\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:55:25.822",
+      "dateUpdated": "2022-11-23 17:01:21.158",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -829,7 +841,8 @@
         "editorMode": "ace/mode/undefined",
         "fontSize": 12.0,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -857,7 +870,7 @@
     {
       "text": "%pyspark\n\ndf_orc_txn_details\u003dspark.sql(\"select * from transaction_details_orc limit 20\")\ndf_orc_txn_details.printSchema()\ndf_orc_txn_details.show()\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 00:57:33.029",
+      "dateUpdated": "2022-11-23 17:01:21.161",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -906,7 +919,8 @@
             }
           }
         },
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -947,7 +961,7 @@
     {
       "text": "%sql\n\nselect * from transaction_details_orc limit 20;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 01:16:12.340",
+      "dateUpdated": "2022-11-23 17:01:21.163",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -997,7 +1011,8 @@
             }
           }
         },
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -1036,10 +1051,10 @@
       "status": "FINISHED"
     },
     {
-      "title": "External Parquet Table",
-      "text": "%hive\n\n\nCREATE EXTERNAL TABLE IF NOT EXISTS transaction_details_external_orc (\n    id int,\n    uuid string,\n    cardtype string,\n    website string,\n    product string,\n    amount double,\n    city string,\n    country string,\n    addts bigint\n)\nCOMMENT \u0027Transaction Details External Table\u0027\nPARTITIONED BY(txn_receive_date string)\nSTORED AS Parquet\nLOCATION  \u0027hdfs://namenode:9000/transaction_details/\u0027\nTBLPROPERTIES(\n \"creator\"\u003d\"Brijesh K Dhaker\",\n \"parquet.compression\"\u003d\"GZIP\"\n);\n\n",
+      "title": "External ORC Table",
+      "text": "%hive\n\n\nCREATE EXTERNAL TABLE IF NOT EXISTS transaction_details_external_orc (\n    id int,\n    uuid string,\n    cardtype string,\n    website string,\n    product string,\n    amount double,\n    city string,\n    country string,\n    addts bigint\n)\nCOMMENT \u0027Transaction Details External ORC Table\u0027\nPARTITIONED BY(txn_receive_date string)\nSTORED AS Parquet\nLOCATION  \u0027hdfs://namenode:9000/user/hive/warehouse/transaction_details_external_orc/\u0027\nTBLPROPERTIES(\n \"creator\"\u003d\"Brijesh K Dhaker\",\n \"parquet.compression\"\u003d\"GZIP\"\n);\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 01:01:37.356",
+      "dateUpdated": "2022-11-23 17:01:21.166",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1053,7 +1068,8 @@
         "fontSize": 12.0,
         "title": true,
         "results": {},
-        "enabled": true
+        "enabled": true,
+        "editorHide": false
       },
       "settings": {
         "params": {},
