@@ -46,7 +46,7 @@
     {
       "text": "%pyspark\n\n# Read JSON file into dataframe\ndf \u003d spark.read.json(\"/datasets/card_transactions.json\")\ndf.printSchema()\ndf.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-16 03:55:11.859",
+      "dateUpdated": "2022-11-27 12:08:36.288",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -58,7 +58,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 11.0,
+        "fontSize": 12.0,
         "editorHide": false,
         "results": {},
         "enabled": true
@@ -105,7 +105,7 @@
     {
       "text": "%pyspark\n\nrdd \u003d df.rdd\nfor record in rdd.take(3): print(record)\nfor e in rdd.take(3): print(e[\"user_id\"])\nfor e in rdd.take(3): print(e.user_id)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-16 03:55:22.954",
+      "dateUpdated": "2022-11-27 12:08:43.085",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -116,7 +116,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 11.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -166,7 +166,7 @@
       "title": "Analysis Datasource",
       "text": "%pyspark\n\nimport json\n\n\nraw_rdd \u003d spark.sparkContext.textFile(\"/datasets/card_transactions.json\")\ninput_rdd \u003d raw_rdd.map(lambda x: json.loads(x)).filter(lambda x: 1580515200 \u003c\u003d x.get(\"ts\") \u003c 1583020800).cache()\nfor e in input_rdd.take(3): print(e)\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-16 10:47:42.905",
+      "dateUpdated": "2022-11-27 12:08:52.289",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -177,7 +177,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 11.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true,
         "title": true
@@ -281,7 +281,7 @@
       "title": "# Total amount spent by each user for each of their cards",
       "text": "%pyspark\n\nuser_expense_rdd \u003d input_rdd.map(lambda x: ((x.get(\u0027user_id\u0027), x.get(\u0027card_num\u0027)), x.get(\u0027amount\u0027)))\nresult_rdd \u003d user_expense_rdd.reduceByKey(lambda x, y: x + y)\nfor e in result_rdd.take(3): print(e)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-16 10:59:24.865",
+      "dateUpdated": "2022-11-27 12:09:01.163",
       "progress": 0,
       "config": {
         "editorSetting": {

@@ -56,7 +56,7 @@
     {
       "text": "%python\nimport matplotlib.pyplot as plt\nplt.plot([1, 2, 3])",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 03:47:29.783",
+      "dateUpdated": "2022-11-25 02:18:42.552",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -86,14 +86,23 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[\u003cmatplotlib.lines.Line2D at 0x7f1a5b43fcd0\u003e]"
+          }
+        ]
+      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1478123627958_-1475087605",
       "id": "20161101-192232_289486976",
       "dateCreated": "2016-11-02 14:53:47.000",
-      "dateStarted": "2021-07-26 03:47:29.787",
-      "dateFinished": "2021-07-26 03:47:31.206",
+      "dateStarted": "2022-11-25 02:18:42.563",
+      "dateFinished": "2022-11-25 02:18:47.742",
       "status": "FINISHED"
     },
     {
@@ -148,7 +157,7 @@
     {
       "text": "%python\n# Figure 1\nplt.plot([1, 2, 3])\n\n# Figure 2\nplt.figure()\nplt.plot([3, 2, 1])",
       "user": "anonymous",
-      "dateUpdated": "2022-11-18 19:53:50.086",
+      "dateUpdated": "2022-11-25 02:18:56.257",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -179,11 +188,11 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
+        "code": "SUCCESS",
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)\n\u001b[0;32m/tmp/ipykernel_526/1408621745.py\u001b[0m in \u001b[0;36m\u003cmodule\u003e\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# Figure 1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----\u003e 2\u001b[0;31m \u001b[0mplt\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mplot\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m3\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;31m# Figure 2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mplt\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfigure\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;31mNameError\u001b[0m: name \u0027plt\u0027 is not defined"
+            "data": "[\u003cmatplotlib.lines.Line2D at 0x7f1a5b2feb10\u003e]"
           }
         ]
       },
@@ -193,9 +202,9 @@
       "jobName": "paragraph_1478123627959_-1475472354",
       "id": "20161101-193533_2096366908",
       "dateCreated": "2016-11-02 14:53:47.000",
-      "dateStarted": "2022-11-18 19:53:50.088",
-      "dateFinished": "2022-11-18 19:53:50.145",
-      "status": "ERROR"
+      "dateStarted": "2022-11-25 02:18:56.259",
+      "dateFinished": "2022-11-25 02:18:56.314",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n### Changing the default inline plotting behavior\nBoth the `python` and `pyspark` include a built-in function for changing some default inline plotting behavior. For example, we can change the default size of each figure in pixels to 400x300 in svg format using: ",
@@ -250,7 +259,7 @@
     {
       "text": "%python\nz.configure_mpl(width\u003d400, height\u003d300, fmt\u003d\u0027svg\u0027)\nplt.plot([1, 2, 3])",
       "user": "anonymous",
-      "dateUpdated": "2022-11-18 19:53:40.693",
+      "dateUpdated": "2022-11-25 02:19:03.508",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -287,7 +296,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)\n\u001b[0;32m/tmp/ipykernel_526/921319803.py\u001b[0m in \u001b[0;36m\u003cmodule\u003e\u001b[0;34m\u001b[0m\n\u001b[0;32m----\u003e 1\u001b[0;31m \u001b[0mz\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mconfigure_mpl\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mwidth\u001b[0m\u001b[0;34m\u003d\u001b[0m\u001b[0;36m400\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mheight\u001b[0m\u001b[0;34m\u003d\u001b[0m\u001b[0;36m300\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mfmt\u001b[0m\u001b[0;34m\u003d\u001b[0m\u001b[0;34m\u0027svg\u0027\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mplt\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mplot\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m3\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/tmp/ipykernel_526/3534818399.py\u001b[0m in \u001b[0;36mconfigure_mpl\u001b[0;34m(self, **kwargs)\u001b[0m\n\u001b[1;32m    256\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    257\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mconfigure_mpl\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--\u003e 258\u001b[0;31m         \u001b[0;32mimport\u001b[0m \u001b[0mmpl_config\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    259\u001b[0m         \u001b[0mmpl_config\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mconfigure\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    260\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;31mModuleNotFoundError\u001b[0m: No module named \u0027mpl_config\u0027"
+            "data": "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)\n\u001b[0;32m/tmp/ipykernel_735/921319803.py\u001b[0m in \u001b[0;36m\u003cmodule\u003e\u001b[0;34m\u001b[0m\n\u001b[0;32m----\u003e 1\u001b[0;31m \u001b[0mz\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mconfigure_mpl\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mwidth\u001b[0m\u001b[0;34m\u003d\u001b[0m\u001b[0;36m400\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mheight\u001b[0m\u001b[0;34m\u003d\u001b[0m\u001b[0;36m300\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mfmt\u001b[0m\u001b[0;34m\u003d\u001b[0m\u001b[0;34m\u0027svg\u0027\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0mplt\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mplot\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m3\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/tmp/ipykernel_735/3534818399.py\u001b[0m in \u001b[0;36mconfigure_mpl\u001b[0;34m(self, **kwargs)\u001b[0m\n\u001b[1;32m    256\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    257\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mconfigure_mpl\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--\u003e 258\u001b[0;31m         \u001b[0;32mimport\u001b[0m \u001b[0mmpl_config\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    259\u001b[0m         \u001b[0mmpl_config\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mconfigure\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    260\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;31mModuleNotFoundError\u001b[0m: No module named \u0027mpl_config\u0027"
           }
         ]
       },
@@ -297,8 +306,8 @@
       "jobName": "paragraph_1478123627959_-1475472354",
       "id": "20160616-234947_579056637",
       "dateCreated": "2016-11-02 14:53:47.000",
-      "dateStarted": "2022-11-18 19:53:40.695",
-      "dateFinished": "2022-11-18 19:53:45.660",
+      "dateStarted": "2022-11-25 02:19:03.510",
+      "dateFinished": "2022-11-25 02:19:03.627",
       "status": "ERROR"
     },
     {

@@ -89,10 +89,10 @@
     {
       "text": "%md\n\n## APACHE SPARK ![Spark Logo Tiny](https://files.training.databricks.com/images/105/logo_spark_tiny.png)\nSPARK is a unified processing engine that helps in managing and coordinating the execution of tasks on data across a cluster of computers. \n\n![Spark Engines](https://files.training.databricks.com/images/wiki-book/book_intro/spark_4engines.png)\n\u003cbr/\u003e\n\u003cbr/\u003e\n* At its core is the Spark Engine.\n* The DataFrames API provides an abstraction above RDDs while simultaneously improving performance 5-20x over traditional RDDs with its Catalyst Optimizer.\n* Spark ML provides high quality and finely tuned machine learning algorithms for processing big data.\n* The Graph processing API gives us an easily approachable API for modeling pairwise relationships between people, objects, or nodes in a network.\n* The Streaming APIs give us End-to-End Fault Tolerance, with Exactly-Once semantics, and the possibility for sub-millisecond latency.\n\n**RDDs**\n* The primary data abstraction of Spark engine is the RDD: Resilient Distributed Dataset\n  * Resilient, i.e., fault-tolerant with the help of RDD lineage graph and so able to recompute missing or damaged partitions due to node failures.\n  * Distributed with data residing on multiple nodes in a cluster.\n  * Dataset is a collection of partitioned data with primitive values or values of values, e.g., tuples or other objects.\n* The original paper that gave birth to the concept of RDD is \u003ca href\u003d\"https://cs.stanford.edu/~matei/papers/2012/nsdi_spark.pdf\" target\u003d\"_blank\"\u003eResilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing\u003c/a\u003e by Matei Zaharia et al.\n* Today, with Spark 2.x, we treat RDDs as the assembly language of the Spark ecosystem.\n* DataFrames, Datasets \u0026 SQL provide the higher level abstraction over RDDs.\n\n\n**SPARK** is a distributed programming model where the user specifies\n* **Transformations**, which build-up a directed acyclic- graph of instructions\n* **Actions**, which begin the process of executing that graph of instructions, as a single job, by breaking it down into stages and tasks to execute across the cluster\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-24 05:55:57.659",
+      "dateUpdated": "2022-11-27 12:20:03.058",
       "progress": 0,
       "config": {
-        "tableHide": false,
+        "tableHide": true,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
@@ -102,7 +102,7 @@
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
         "fontSize": 9.0,
-        "editorHide": true,
+        "editorHide": false,
         "results": {},
         "enabled": true
       },

@@ -320,9 +320,9 @@
       "status": "FINISHED"
     },
     {
-      "text": "%spark.conf\n\n#\n# Must set SPARK_HOME for this example, because it won\u0027t work for Zeppelin\u0027s embedded spark mode. The embedded spark mode doesn\u0027t \n# use spark-submit to launch spark interpreter, so spark.jars and spark.jars.packages won\u0027t take affect. \n\nspark.app.name pyspark-hive-parquet-table\n\nSPARK_HOME /opt/spark\n\nmaster yarn\nspark.submit.deployMode cluster\n\n#\n#\n#\nspark.driver.memory 640m\nspark.driver.cores 1\n\n#\n# set executor number to be \n#\n\nspark.executor.instances  2\nspark.executor.memory  640m\nspark.executor.cores 3\n\n\n\n\n#\n# spark.jars can be used for adding any local jar files into spark interpreter\n# \n\n# spark.jars  file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.driver.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.executor.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n# spark.executor.extraLibrary file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n#\n#\n\nspark.yarn.archive hdfs://namenode:9000/archives/spark-3.1.2.zip\n\nspark.yarn.dist.archives hdfs://namenode:9000/archives/mr-delta.tar.gz#environment\n\n",
+      "text": "%spark.conf\n\n#\n# Must set SPARK_HOME for this example, because it won\u0027t work for Zeppelin\u0027s embedded spark mode. The embedded spark mode doesn\u0027t \n# use spark-submit to launch spark interpreter, so spark.jars and spark.jars.packages won\u0027t take affect. \n\nspark.app.name pyspark-hive-parquet-table\n\nSPARK_HOME /opt/spark\n\nmaster yarn\nspark.submit.deployMode cluster\n\n#\n#\n#\nspark.driver.memory 640m\nspark.driver.cores 1\n\n#\n# set executor number to be \n#\n\nspark.executor.instances  2\nspark.executor.memory  640m\nspark.executor.cores 3\n\n\n\n\n#\n# spark.jars can be used for adding any local jar files into spark interpreter\n# \n\n# spark.jars  file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.driver.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.executor.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n# spark.executor.extraLibrary file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n#\n#\n\nspark.yarn.archive hdfs://namenode:9000/archives/spark-3.1.2.zip\n\nspark.yarn.dist.archives hdfs://namenode:9000/archives/pyspark3.7-20221125.tar.gz#environment\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 01:05:35.277",
+      "dateUpdated": "2022-11-26 06:49:33.614",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -502,7 +502,7 @@
     {
       "text": "%hive\n\nselect * from transaction_details_parquet;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-21 13:30:51.300",
+      "dateUpdated": "2022-11-27 03:10:16.576",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -513,7 +513,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {
           "0": {
             "graph": {

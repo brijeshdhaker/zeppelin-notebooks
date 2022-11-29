@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%spark.conf\n\n#\n# Must set SPARK_HOME for this example, because it won\u0027t work for Zeppelin\u0027s embedded spark mode. The embedded spark mode doesn\u0027t \n# use spark-submit to launch spark interpreter, so spark.jars and spark.jars.packages won\u0027t take affect. \n\nspark.app.name pyspark-delta-table\n#\n#\n#\n\nSPARK_HOME /opt/spark\n\n#\n# set execution mode\n#\n\nmaster yarn\n\n#\n# set driver memory to 8g\n#\n\nspark.driver.memory 640m\nspark.driver.cores 1\n\n#\n# set executor number to be \n#\n\nspark.executor.instances  2\nspark.executor.memory  640m\nspark.executor.cores 4\n\n#\n#\n#\n\nspark.submit.deployMode cluster\n\n\n\n#\n# spark.jars can be used for adding any local jar files into spark interpreter\n# \n\n# spark.jars  file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.driver.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.executor.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n# spark.executor.extraLibrary file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n#\n#\n\nspark.yarn.archive hdfs://namenode:9000/archives/spark-3.1.2.zip\n\nspark.yarn.dist.archives hdfs://namenode:9000/archives/mr-delta.tar.gz#environment\n\n\n#\n# spark.jars.packages can be used for adding packages into spark interpreter\n# The following is to add avro into your spark interpreter\n#\n\n# spark.jars.packages io.delta:delta-core_2.12:2.1.1,com.databricks:spark-avro_2.11:4.0.0\n\nspark.jars.packages io.delta:delta-core_2.12:1.0.0\n\n\n#\n#\n#\nspark.sql.extensions io.delta.sql.DeltaSparkSessionExtension\nspark.sql.catalog.spark_catalog org.apache.spark.sql.delta.catalog.DeltaCatalog\n\n#\n#\n#\nspark.sql.warehouse.dir /user/spark/warehouse\n\n",
+      "text": "%spark.conf\n\n#\n# Must set SPARK_HOME for this example, because it won\u0027t work for Zeppelin\u0027s embedded spark mode. The embedded spark mode doesn\u0027t \n# use spark-submit to launch spark interpreter, so spark.jars and spark.jars.packages won\u0027t take affect. \n\nspark.app.name pyspark-delta-table\n#\n#\n#\n\nSPARK_HOME /opt/spark\n\n#\n# set execution mode\n#\n\nmaster yarn\n\n#\n# set driver memory to 8g\n#\n\nspark.driver.memory 640m\nspark.driver.cores 1\n\n#\n# set executor number to be \n#\n\nspark.executor.instances  2\nspark.executor.memory  640m\nspark.executor.cores 4\n\n#\n#\n#\n\nspark.submit.deployMode cluster\n\n\n\n#\n# spark.jars can be used for adding any local jar files into spark interpreter\n# \n\n# spark.jars  file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.driver.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.executor.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n# spark.executor.extraLibrary file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n#\n#\n\nspark.yarn.archive hdfs://namenode:9000/archives/spark-3.1.2.zip\n\nspark.yarn.dist.archives hdfs://namenode:9000/archives/pyspark3.7-20221125.tar.gz#environment\n\n#\nzeppelin.interpreter.conda.env.name environment\n\n#\n# spark.jars.packages can be used for adding packages into spark interpreter\n# The following is to add avro into your spark interpreter\n#\n\n# spark.jars.packages io.delta:delta-core_2.12:2.1.1,com.databricks:spark-avro_2.11:4.0.0\n\nspark.jars.packages io.delta:delta-core_2.12:1.0.0\n\n\n#\n#\n#\nspark.sql.extensions io.delta.sql.DeltaSparkSessionExtension\nspark.sql.catalog.spark_catalog org.apache.spark.sql.delta.catalog.DeltaCatalog\n\n#\n#\n#\nspark.sql.warehouse.dir /user/spark/warehouse\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-18 19:26:36.124",
+      "dateUpdated": "2022-11-25 02:31:42.041",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -597,119 +597,7 @@
     {
       "text": "%pyspark\n\n\n# Lets check the current version of the table\n\nfrom delta import DeltaTable\n\ndt \u003d DeltaTable.forName(spark, \"sales_delta_managed\")\ndt.history().select(\"version\", \"timestamp\").show(truncate\u003dFalse)\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-18 19:29:36.503",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "python",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "+-------+----------------------+\n|version|timestamp             |\n+-------+----------------------+\n|0      |2022-11-18 02:41:50.67|\n+-------+----------------------+\n\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://nodemanager:40913/jobs/job?id\u003d3"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1668739526362_546071316",
-      "id": "paragraph_1668739526362_546071316",
-      "dateCreated": "2022-11-18 02:45:26.362",
-      "dateStarted": "2022-11-18 19:29:17.656",
-      "dateFinished": "2022-11-18 19:29:20.119",
-      "status": "FINISHED"
-    },
-    {
-      "text": "%spark.sql\n\nupdate default.sales_delta_managed set amount \u003d 15000.00 where id \u003d 3949;\n\n",
-      "user": "anonymous",
-      "dateUpdated": "2022-11-18 19:33:24.215",
-      "progress": 63,
-      "config": {
-        "editorSetting": {
-          "language": "sql",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/sql",
-        "fontSize": 12.0,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": []
-      },
-      "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://nodemanager:40913/jobs/job?id\u003d12"
-            },
-            {
-              "jobUrl": "http://nodemanager:40913/jobs/job?id\u003d13"
-            },
-            {
-              "jobUrl": "http://nodemanager:40913/jobs/job?id\u003d14"
-            },
-            {
-              "jobUrl": "http://nodemanager:40913/jobs/job?id\u003d15"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1668799837695_1049710910",
-      "id": "paragraph_1668799837695_1049710910",
-      "dateCreated": "2022-11-18 19:30:37.695",
-      "dateStarted": "2022-11-18 19:33:24.219",
-      "dateFinished": "2022-11-18 19:33:26.940",
-      "status": "FINISHED"
-    },
-    {
-      "text": "%pyspark\n\n# Lets check the current version of the table\n\ndt.history().select(\"version\", \"timestamp\").show(truncate\u003dFalse)\n",
-      "user": "anonymous",
-      "dateUpdated": "2022-11-18 19:34:10.614",
+      "dateUpdated": "2022-11-25 01:47:32.528",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -746,7 +634,122 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:40913/jobs/job?id\u003d16"
+              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d2"
+            },
+            {
+              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d3"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1668739526362_546071316",
+      "id": "paragraph_1668739526362_546071316",
+      "dateCreated": "2022-11-18 02:45:26.362",
+      "dateStarted": "2022-11-25 01:47:32.534",
+      "dateFinished": "2022-11-25 01:47:42.555",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark.sql\n\nupdate default.sales_delta_managed set amount \u003d 15000.00 where id \u003d 3949;\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-25 01:47:50.266",
+      "progress": 57,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d4"
+            },
+            {
+              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d5"
+            },
+            {
+              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d6"
+            },
+            {
+              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d7"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1668799837695_1049710910",
+      "id": "paragraph_1668799837695_1049710910",
+      "dateCreated": "2022-11-18 19:30:37.695",
+      "dateStarted": "2022-11-25 01:47:50.268",
+      "dateFinished": "2022-11-25 01:47:55.698",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n\n# Lets check the current version of the table\n\ndt.history().select(\"version\", \"timestamp\").show(truncate\u003dFalse)\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-25 01:48:08.306",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+-----------------------+\n|version|timestamp              |\n+-------+-----------------------+\n|4      |2022-11-25 01:47:53.986|\n|3      |2022-11-18 19:33:25.879|\n|2      |2022-11-18 19:33:04.573|\n|1      |2022-11-18 19:32:38.246|\n|0      |2022-11-18 02:41:50.67 |\n+-------+-----------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d8"
             }
           ],
           "interpreterSettingId": "spark"
@@ -756,14 +759,14 @@
       "jobName": "paragraph_1668800024490_547923331",
       "id": "paragraph_1668800024490_547923331",
       "dateCreated": "2022-11-18 19:33:44.490",
-      "dateStarted": "2022-11-18 19:34:01.637",
-      "dateFinished": "2022-11-18 19:34:01.847",
+      "dateStarted": "2022-11-25 01:48:08.308",
+      "dateFinished": "2022-11-25 01:48:08.674",
       "status": "FINISHED"
     },
     {
       "text": "%spark.sql\n\nselect * from default.sales_delta_managed limit 10;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-18 19:34:53.403",
+      "dateUpdated": "2022-11-25 01:48:14.227",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -838,10 +841,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:40913/jobs/job?id\u003d17"
+              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d9"
             },
             {
-              "jobUrl": "http://nodemanager:40913/jobs/job?id\u003d18"
+              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d10"
             }
           ],
           "interpreterSettingId": "spark"
@@ -851,14 +854,14 @@
       "jobName": "paragraph_1668800074836_1070256155",
       "id": "paragraph_1668800074836_1070256155",
       "dateCreated": "2022-11-18 19:34:34.836",
-      "dateStarted": "2022-11-18 19:34:52.660",
-      "dateFinished": "2022-11-18 19:34:53.062",
+      "dateStarted": "2022-11-25 01:48:14.232",
+      "dateFinished": "2022-11-25 01:48:14.692",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n\n# Verify if a given table is Delta\n\nprint(DeltaTable.isDeltaTable(spark, \"/user/hive/warehouse/transaction_details\"))\nprint(DeltaTable.isDeltaTable(spark, \"/user/hive/warehouse/sales_delta_managed\"))\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-18 19:39:20.691",
+      "dateUpdated": "2022-11-25 01:48:22.358",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -892,8 +895,8 @@
       "jobName": "paragraph_1668800130131_1841510933",
       "id": "paragraph_1668800130131_1841510933",
       "dateCreated": "2022-11-18 19:35:30.131",
-      "dateStarted": "2022-11-18 19:39:20.696",
-      "dateFinished": "2022-11-18 19:39:20.718",
+      "dateStarted": "2022-11-25 01:48:22.363",
+      "dateFinished": "2022-11-25 01:48:22.387",
       "status": "FINISHED"
     },
     {

@@ -1,9 +1,49 @@
 {
   "paragraphs": [
     {
+      "text": "%md\n\nThere IS a difference between the two, refer to the following figure from Apache\u0027s official documentation:\n\n![Spark Engines](https://i.stack.imgur.com/Sf22z.png)\n\nAs we can see here, the \u0027hdfs dfs\u0027 command is used very specifically for hadoop filesystem (hdfs) data operations while \u0027hadoop fs\u0027 covers a larger variety of data present on external platforms as well. These external platforms include the local filesystem data as well. \n\n\nhttps://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-29 00:38:36.115",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 12.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eThere IS a difference between the two, refer to the following figure from Apache\u0026rsquo;s official documentation:\u003c/p\u003e\n\u003cp\u003e\u003cimg src\u003d\"https://i.stack.imgur.com/Sf22z.png\" alt\u003d\"Spark Engines\" /\u003e\u003c/p\u003e\n\u003cp\u003eAs we can see here, the \u0026lsquo;hdfs dfs\u0026rsquo; command is used very specifically for hadoop filesystem (hdfs) data operations while \u0026lsquo;hadoop fs\u0026rsquo; covers a larger variety of data present on external platforms as well. These external platforms include the local filesystem data as well.\u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html\"\u003ehttps://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html\u003c/a\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669682316115_1346393379",
+      "id": "paragraph_1669551577713_1753776435",
+      "dateCreated": "2022-11-29 00:38:36.115",
+      "status": "READY"
+    },
+    {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:05:49.073",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -33,17 +73,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669520416975_1687379561",
+      "jobName": "paragraph_1669682316116_1893938647",
       "id": "paragraph_1669520416975_1687379561",
-      "dateCreated": "2022-11-27 03:40:16.975",
-      "dateStarted": "2022-11-27 03:40:40.703",
-      "dateFinished": "2022-11-27 03:40:41.990",
-      "status": "FINISHED"
+      "dateCreated": "2022-11-29 00:38:36.116",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n\n$HADOOP_HOME/bin/hadoop fs -mkdir -p /user/zeppelin\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:05:53.632",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -68,17 +106,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669520406592_806578354",
+      "jobName": "paragraph_1669682316116_1466157057",
       "id": "paragraph_1669520406592_806578354",
-      "dateCreated": "2022-11-27 03:40:06.593",
-      "dateStarted": "2022-11-27 03:42:11.800",
-      "dateFinished": "2022-11-27 03:42:13.092",
-      "status": "FINISHED"
+      "dateCreated": "2022-11-29 00:38:36.116",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:05:58.023",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -108,17 +144,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669520414709_1132110154",
+      "jobName": "paragraph_1669682316116_1637411037",
       "id": "paragraph_1669520414709_1132110154",
-      "dateCreated": "2022-11-27 03:40:14.709",
-      "dateStarted": "2022-11-27 03:42:16.648",
-      "dateFinished": "2022-11-27 03:42:17.927",
-      "status": "FINISHED"
+      "dateCreated": "2022-11-29 00:38:36.116",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n\n#\n# \u0027/\u0027 means absolute path\n#\n$HADOOP_HOME/bin/hdfs dfs -mkdir  /test  \n\n\n                                  \n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:48:14.125",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -143,17 +177,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669520468473_1155373080",
+      "jobName": "paragraph_1669682316116_1266125837",
       "id": "paragraph_1669520468473_1155373080",
-      "dateCreated": "2022-11-27 03:41:08.473",
-      "dateStarted": "2022-11-27 03:48:14.126",
-      "dateFinished": "2022-11-27 03:48:15.405",
-      "status": "FINISHED"
+      "dateCreated": "2022-11-29 00:38:36.116",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n\n#\n# Relative path -\u003e the folder will be created relative to the home directory.\n#\n$HADOOP_HOME/bin/hdfs dfs -mkdir  test  ",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:48:18.323",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -178,17 +210,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669520881890_1828724926",
+      "jobName": "paragraph_1669682316116_50447382",
       "id": "paragraph_1669520881890_1828724926",
-      "dateCreated": "2022-11-27 03:48:01.890",
-      "dateStarted": "2022-11-27 03:48:18.327",
-      "dateFinished": "2022-11-27 03:48:19.677",
-      "status": "FINISHED"
+      "dateCreated": "2022-11-29 00:38:36.116",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n\n#\n# Relative path -\u003e the folder will be created relative to the home directory.\n#\n\n$HADOOP_HOME/bin/hdfs dfs -mkdir  test  \n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:53:46.003",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -209,15 +239,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521004247_780459680",
+      "jobName": "paragraph_1669682316116_872371525",
       "id": "paragraph_1669521004247_780459680",
-      "dateCreated": "2022-11-27 03:50:04.247",
+      "dateCreated": "2022-11-29 00:38:36.116",
       "status": "READY"
     },
     {
       "text": "%sh\n\n#\n# Relative path -\u003e the folder will be created relative to the home directory.\n#\n\nsudo -u root $HADOOP_HOME/bin/hdfs dfs -mkdir  test  ",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:51:06.219",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -251,17 +281,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669520898326_1276222445",
+      "jobName": "paragraph_1669682316116_1245762789",
       "id": "paragraph_1669520898326_1276222445",
-      "dateCreated": "2022-11-27 03:48:18.326",
-      "dateStarted": "2022-11-27 03:50:58.806",
-      "dateFinished": "2022-11-27 03:50:58.825",
-      "status": "ERROR"
+      "dateCreated": "2022-11-29 00:38:36.116",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -touchz  myfile.txt ",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:59:07.390",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -286,17 +314,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521037440_1974018261",
+      "jobName": "paragraph_1669682316116_1996238930",
       "id": "paragraph_1669521037440_1974018261",
-      "dateCreated": "2022-11-27 03:50:37.440",
-      "dateStarted": "2022-11-27 03:55:45.899",
-      "dateFinished": "2022-11-27 03:55:47.291",
-      "status": "FINISHED"
+      "dateCreated": "2022-11-29 00:38:36.116",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -copyFromLocal ../Desktop/AI.txt /geeks\n\n(OR)\n\n$HADOOP_HOME/bin/hdfs dfs -put ../Desktop/AI.txt /geeks\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:59:03.986",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -317,15 +343,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521345897_1205703906",
+      "jobName": "paragraph_1669682316116_2098973954",
       "id": "paragraph_1669521345897_1205703906",
-      "dateCreated": "2022-11-27 03:55:45.898",
+      "dateCreated": "2022-11-29 00:38:36.116",
       "status": "READY"
     },
     {
       "text": "%sh\n\n\n# print the content of AI.txt present inside geeks folder.\n\n$HADOOP_HOME/bin/hdfs dfs -cat /geeks/AI.txt -\u003e\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:59:00.804",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -346,15 +372,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521402206_796503991",
+      "jobName": "paragraph_1669682316116_1266266045",
       "id": "paragraph_1669521402206_796503991",
-      "dateCreated": "2022-11-27 03:56:42.206",
+      "dateCreated": "2022-11-29 00:38:36.116",
       "status": "READY"
     },
     {
       "text": "%sh\n\n\n$HADOOP_HOME/bin/hdfs dfs -copyToLocal  /geeks   ../Desktop/hero  \n\n\n$HADOOP_HOME/bin/hdfs dfs -get /geeks/myfile.txt  ../Desktop/hero",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:58:57.497",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -375,15 +401,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521446261_1359296170",
+      "jobName": "paragraph_1669682316116_1130341315",
       "id": "paragraph_1669521446261_1359296170",
-      "dateCreated": "2022-11-27 03:57:26.261",
+      "dateCreated": "2022-11-29 00:38:36.116",
       "status": "READY"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -moveFromLocal  ../Desktop/cutAndPaste.txt   /geeks",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:59:18.271",
+      "dateUpdated": "2022-11-29 00:38:36.116",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -404,15 +430,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521520834_1710914950",
+      "jobName": "paragraph_1669682316116_1081422616",
       "id": "paragraph_1669521520834_1710914950",
-      "dateCreated": "2022-11-27 03:58:40.834",
+      "dateCreated": "2022-11-29 00:38:36.116",
       "status": "READY"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs -cp /geeks  /geeks_copied\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:02:04.384",
+      "dateUpdated": "2022-11-29 00:38:36.117",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -433,15 +459,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521525424_784562805",
+      "jobName": "paragraph_1669682316116_1179054765",
       "id": "paragraph_1669521525424_784562805",
-      "dateCreated": "2022-11-27 03:58:45.424",
+      "dateCreated": "2022-11-29 00:38:36.117",
       "status": "READY"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs  -mv  /geeks/myfile.txt  /geeks_copied",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:02:00.923",
+      "dateUpdated": "2022-11-29 00:38:36.117",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -462,15 +488,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521582344_1475596691",
+      "jobName": "paragraph_1669682316117_1983031326",
       "id": "paragraph_1669521582344_1475596691",
-      "dateCreated": "2022-11-27 03:59:42.344",
+      "dateCreated": "2022-11-29 00:38:36.117",
       "status": "READY"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -rmr  /geeks_copied -\u003e It will delete all the content inside the \n                                       directory then the directory itself.\n                                       ",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:01:58.561",
+      "dateUpdated": "2022-11-29 00:38:36.117",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -491,15 +517,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521612148_678725421",
+      "jobName": "paragraph_1669682316117_52832714",
       "id": "paragraph_1669521612148_678725421",
-      "dateCreated": "2022-11-27 04:00:12.148",
+      "dateCreated": "2022-11-29 00:38:36.117",
       "status": "READY"
     },
     {
       "text": "%sh\n\n# du: It will give the size of each file in directory.\n\n$HADOOP_HOME/bin/hdfs dfs -du /user\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:02:27.654",
+      "dateUpdated": "2022-11-29 00:38:36.117",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -529,17 +555,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521639068_417047791",
+      "jobName": "paragraph_1669682316117_377076792",
       "id": "paragraph_1669521639068_417047791",
-      "dateCreated": "2022-11-27 04:00:39.068",
-      "dateStarted": "2022-11-27 04:02:27.656",
-      "dateFinished": "2022-11-27 04:02:28.950",
-      "status": "FINISHED"
+      "dateCreated": "2022-11-29 00:38:36.117",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n# dus:: This command will give the total size of directory/file.\n\n$HADOOP_HOME/bin/hdfs dfs -dus /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:03:32.950",
+      "dateUpdated": "2022-11-29 00:38:36.117",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -569,17 +593,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521726582_1315864413",
+      "jobName": "paragraph_1669682316117_73194018",
       "id": "paragraph_1669521726582_1315864413",
-      "dateCreated": "2022-11-27 04:02:06.582",
-      "dateStarted": "2022-11-27 04:03:32.954",
-      "dateFinished": "2022-11-27 04:03:34.277",
-      "status": "FINISHED"
+      "dateCreated": "2022-11-29 00:38:36.117",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n# stat: It will give the last modified time of directory or path. In short it will give stats of the directory or file.\n\n$HADOOP_HOME/bin/hdfs dfs -stat /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:04:26.531",
+      "dateUpdated": "2022-11-29 00:38:36.117",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -609,17 +631,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521804878_1360607290",
+      "jobName": "paragraph_1669682316117_1177197981",
       "id": "paragraph_1669521804878_1360607290",
-      "dateCreated": "2022-11-27 04:03:24.878",
-      "dateStarted": "2022-11-27 04:04:22.988",
-      "dateFinished": "2022-11-27 04:04:24.284",
-      "status": "FINISHED"
+      "dateCreated": "2022-11-29 00:38:36.117",
+      "status": "READY"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:05:37.862",
+      "dateUpdated": "2022-11-29 00:38:36.117",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -653,17 +673,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521862986_849057622",
+      "jobName": "paragraph_1669682316117_1661276283",
       "id": "paragraph_1669521862986_849057622",
-      "dateCreated": "2022-11-27 04:04:22.987",
-      "dateStarted": "2022-11-27 04:05:13.829",
-      "dateFinished": "2022-11-27 04:05:14.333",
-      "status": "ERROR"
+      "dateCreated": "2022-11-29 00:38:36.117",
+      "status": "READY"
     },
     {
       "text": "%sh\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:05:13.829",
+      "dateUpdated": "2022-11-29 00:38:36.117",
       "progress": 0,
       "config": {},
       "settings": {
@@ -673,14 +691,14 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669521913829_1778800232",
+      "jobName": "paragraph_1669682316117_1919352241",
       "id": "paragraph_1669521913829_1778800232",
-      "dateCreated": "2022-11-27 04:05:13.829",
+      "dateCreated": "2022-11-29 00:38:36.117",
       "status": "READY"
     }
   ],
-  "name": "hadoop-commands",
-  "id": "2HKVQKV3U",
+  "name": "hdfs-commands",
+  "id": "2HNX4CQUP",
   "defaultInterpreterGroup": "sh",
   "version": "0.10.1",
   "noteParams": {},

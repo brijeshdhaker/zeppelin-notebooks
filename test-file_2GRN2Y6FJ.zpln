@@ -3,7 +3,7 @@
     {
       "text": "%file\n\nls -l /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-23 17:07:25.107",
+      "dateUpdated": "2022-11-24 10:38:54.118",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -35,14 +35,14 @@
       "jobName": "paragraph_1640953227121_981635026",
       "id": "paragraph_1640953227121_981635026",
       "dateCreated": "2021-12-31 12:20:27.121",
-      "dateStarted": "2022-11-23 17:07:25.110",
-      "dateFinished": "2022-11-23 17:07:25.120",
+      "dateStarted": "2022-11-24 10:38:54.140",
+      "dateFinished": "2022-11-24 10:38:55.980",
       "status": "FINISHED"
     },
     {
       "text": "%file\n\nls -l /user/hive/warehouse/\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-23 17:06:47.685",
+      "dateUpdated": "2022-11-24 10:38:59.319",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -74,8 +74,8 @@
       "jobName": "paragraph_1640953238940_1049456036",
       "id": "paragraph_1640953238940_1049456036",
       "dateCreated": "2021-12-31 12:20:38.940",
-      "dateStarted": "2022-11-23 17:06:47.698",
-      "dateFinished": "2022-11-23 17:06:50.395",
+      "dateStarted": "2022-11-24 10:38:59.324",
+      "dateFinished": "2022-11-24 10:38:59.335",
       "status": "FINISHED"
     },
     {
