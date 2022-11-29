@@ -14,7 +14,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/undefined",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -55,7 +55,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/undefined",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -96,7 +96,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/undefined",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },

@@ -15,7 +15,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": true,
         "results": {},
         "enabled": true
@@ -150,7 +150,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {},
         "enabled": true
@@ -182,7 +182,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {},
         "enabled": true
@@ -225,7 +225,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {},
         "enabled": true
@@ -281,7 +281,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {},
         "enabled": true
@@ -337,7 +337,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {},
         "enabled": true
@@ -393,7 +393,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {},
         "enabled": true
@@ -435,7 +435,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -510,7 +510,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -549,7 +549,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },

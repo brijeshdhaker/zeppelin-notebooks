@@ -13,7 +13,7 @@
           "editOnDblClick": true
         },
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "tableHide": false
@@ -54,7 +54,7 @@
           "editOnDblClick": true
         },
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "tableHide": true
@@ -157,7 +157,7 @@
         "editorMode": "ace/mode/python",
         "editorHide": false,
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {

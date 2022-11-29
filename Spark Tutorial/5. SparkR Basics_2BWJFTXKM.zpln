@@ -8,7 +8,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -74,7 +74,7 @@
           "completionSupport": false,
           "completionKey": "TAB"
         },
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -597,7 +597,7 @@
           "completionSupport": false,
           "completionKey": "TAB"
         },
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true
       },
       "settings": {
@@ -652,7 +652,7 @@
           "completionSupport": false,
           "completionKey": "TAB"
         },
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true
       },
       "settings": {
@@ -708,7 +708,7 @@
           "completionKey": "TAB"
         },
         "editorHide": false,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true
       },
       "settings": {

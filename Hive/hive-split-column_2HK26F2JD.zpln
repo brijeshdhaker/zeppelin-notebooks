@@ -13,7 +13,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -53,7 +53,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -97,7 +97,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {
           "0": {
             "graph": {
@@ -165,7 +165,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },

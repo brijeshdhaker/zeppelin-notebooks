@@ -11,7 +11,7 @@
         "title": true,
         "checkEmpty": true,
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -63,7 +63,7 @@
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "title": true,
         "checkEmpty": true
@@ -109,7 +109,7 @@
         "title": true,
         "results": {},
         "enabled": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -154,7 +154,7 @@
         "title": true,
         "results": {},
         "enabled": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -240,7 +240,7 @@
         "title": true,
         "results": {},
         "enabled": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -285,7 +285,7 @@
         "title": true,
         "results": {},
         "enabled": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -327,7 +327,7 @@
         "title": true,
         "checkEmpty": true,
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -379,7 +379,7 @@
         "title": true,
         "results": {},
         "enabled": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -619,7 +619,7 @@
           }
         },
         "enabled": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -662,7 +662,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {

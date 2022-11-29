@@ -15,7 +15,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": false,
         "results": {},
         "enabled": true
@@ -49,7 +49,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": false,
         "results": {},
         "enabled": true
@@ -83,7 +83,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": false,
         "results": {},
         "enabled": true
@@ -116,7 +116,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -157,7 +157,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -190,7 +190,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": false,
         "results": {},
         "enabled": true
@@ -224,7 +224,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/undefined",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": false,
         "results": {},
         "enabled": true
@@ -267,7 +267,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": false,
         "results": {},
         "enabled": true

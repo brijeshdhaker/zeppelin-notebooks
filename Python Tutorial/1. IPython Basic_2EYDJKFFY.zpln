@@ -16,7 +16,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": true,
         "results": {},
         "enabled": true,
@@ -60,7 +60,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": true,
         "results": {},
         "enabled": true
@@ -104,7 +104,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": true,
         "results": {},
         "enabled": true
@@ -147,7 +147,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": true,
         "results": {},
         "enabled": true
@@ -190,7 +190,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true,
         "title": true
@@ -233,7 +233,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true,
         "title": true
@@ -276,7 +276,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": true,
         "results": {},
         "enabled": true
@@ -319,7 +319,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true,
         "title": false
@@ -362,7 +362,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": true,
         "results": {},
         "enabled": true
@@ -405,7 +405,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": true,
         "results": {},
         "enabled": true
@@ -448,7 +448,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "editorHide": true,
         "results": {},
         "enabled": true
@@ -491,7 +491,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -543,7 +543,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {
           "0": {
             "graph": {
@@ -668,7 +668,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {

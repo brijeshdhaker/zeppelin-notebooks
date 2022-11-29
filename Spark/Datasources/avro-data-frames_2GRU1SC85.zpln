@@ -8,7 +8,7 @@
       "config": {
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true,
         "editorSetting": {
@@ -44,7 +44,7 @@
       "config": {
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true,
         "editorSetting": {
@@ -104,7 +104,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -151,7 +151,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true,
         "editorSetting": {
@@ -192,7 +192,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true,
         "editorSetting": {}
@@ -223,7 +223,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },

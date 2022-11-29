@@ -7,7 +7,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {
           "0": {
@@ -81,7 +81,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {
           "0": {
             "graph": {
@@ -149,7 +149,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {
           "0": {
             "graph": {
@@ -217,7 +217,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {
           "0": {
             "graph": {

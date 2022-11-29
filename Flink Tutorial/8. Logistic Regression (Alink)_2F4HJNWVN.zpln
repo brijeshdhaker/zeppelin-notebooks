@@ -7,7 +7,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -43,7 +43,7 @@
         "editorMode": "ace/mode/python",
         "editorHide": false,
         "colWidth": 6.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -76,7 +76,7 @@
         "editorMode": "ace/mode/python",
         "editorHide": false,
         "colWidth": 6.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -109,7 +109,7 @@
         "editorMode": "ace/mode/python",
         "editorHide": false,
         "colWidth": 6.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -142,7 +142,7 @@
         "editorMode": "ace/mode/python",
         "editorHide": false,
         "colWidth": 6.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -175,7 +175,7 @@
         "editorMode": "ace/mode/python",
         "editorHide": false,
         "colWidth": 6.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -208,7 +208,7 @@
         "editorMode": "ace/mode/python",
         "editorHide": false,
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {
           "0": {
@@ -289,7 +289,7 @@
         "editorMode": "ace/mode/python",
         "editorHide": false,
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "editorSetting": {

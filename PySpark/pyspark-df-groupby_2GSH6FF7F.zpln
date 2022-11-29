@@ -15,7 +15,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {},
         "enabled": true
@@ -50,7 +50,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {
           "0": {
@@ -120,7 +120,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {
           "0": {
@@ -268,7 +268,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "title": true,
         "results": {},
@@ -380,7 +380,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "runOnSelectionChange": true,
         "title": true,
         "results": {
@@ -579,7 +579,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -633,7 +633,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -681,7 +681,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -738,7 +738,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -770,7 +770,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -819,7 +819,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -878,7 +878,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {},
         "enabled": true
@@ -937,7 +937,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -995,7 +995,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -1026,7 +1026,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },

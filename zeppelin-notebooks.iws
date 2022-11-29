@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d08b261-ebb4-479a-9b39-cf0d413b1c57" name="Changes" comment="2022-11-23 Update zeppelin notebooks">
-      <change beforePath="$PROJECT_DIR$/Hive/hive-table-parquet_2HJ48CVNN.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Hive/hive-table-parquet_2HJ48CVNN.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PySpark/SecondarySort_Car_Loan_2GTMZQEGC.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/SecondarySort_Car_Loan_2GTMZQEGC.zpln" afterDir="false" />
+    <list default="true" id="7d08b261-ebb4-479a-9b39-cf0d413b1c57" name="Changes" comment="2022-11-29 Update zeppelin notebooks">
+      <change beforePath="$PROJECT_DIR$/PySpark/logical_physical_plans_2GSB9H2KW.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/logical_physical_plans_2GSB9H2KW.zpln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpark/pyspark-data-frames_2GP9RXBET.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/pyspark-data-frames_2GP9RXBET.zpln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PySpark/pyspark-delta-table_2HK4A8YWE.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/pyspark-delta-table_2HK4A8YWE.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PySpark/pyspark-hive-tables_2HF6UJS5M.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/pyspark-hive-tables_2HF6UJS5M.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Tutorial/4. Matplotlib (Python, PySpark)_2C2AUG798.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Python Tutorial/4. Matplotlib (Python, PySpark)_2C2AUG798.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Tutorial/1. Spark Interpreter Introduction_2F8KN6TKK.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Tutorial/1. Spark Interpreter Introduction_2F8KN6TKK.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Tutorial/4. Spark MlLib_2EZFM3GJA.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Tutorial/4. Spark MlLib_2EZFM3GJA.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Tutorial/6. SparkR Shiny App_2F1CHQ4TT.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Tutorial/6. SparkR Shiny App_2F1CHQ4TT.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark Tutorial/8. PySpark Conda Env in Yarn Mode_2GE79Y5FV.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Spark Tutorial/8. PySpark Conda Env in Yarn Mode_2GE79Y5FV.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-file_2GRN2Y6FJ.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/test-file_2GRN2Y6FJ.zpln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpark/pyspark-df-distinct_2GR1FZHBM.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/pyspark-df-distinct_2GR1FZHBM.zpln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpark/pyspark-df-groupby_2GSH6FF7F.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/pyspark-df-groupby_2GSH6FF7F.zpln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpark/pyspark-hash-partitioner_2GQ7X5UAN.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/pyspark-hash-partitioner_2GQ7X5UAN.zpln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PySpark/pyspark-hive-hbase_2GRHRBP3V.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/pyspark-hive-hbase_2GRHRBP3V.zpln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zeppelin-notebooks.iws" beforeDir="false" afterPath="$PROJECT_DIR$/zeppelin-notebooks.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669170664013</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2022-11-29 Update zeppelin notebooks">
+      <created>1669684751518</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669684751518</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -83,6 +87,7 @@
       <path value="$PROJECT_DIR$/notebook" />
     </ignored-roots>
     <MESSAGE value="2022-11-23 Update zeppelin notebooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-11-23 Update zeppelin notebooks" />
+    <MESSAGE value="2022-11-29 Update zeppelin notebooks" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-11-29 Update zeppelin notebooks" />
   </component>
 </project>

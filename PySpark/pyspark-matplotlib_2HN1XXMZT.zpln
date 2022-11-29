@@ -14,7 +14,7 @@
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
         "editorHide": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": [
           {
             "graph": {
@@ -65,7 +65,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": [
           {
             "graph": {
@@ -118,7 +118,7 @@
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
         "editorHide": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": [
           {
             "graph": {
@@ -169,7 +169,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": [
           {
             "graph": {
@@ -223,7 +223,7 @@
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
         "editorHide": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": [
           {
             "graph": {
@@ -274,7 +274,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": [
           {
             "graph": {
@@ -329,7 +329,7 @@
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
         "editorHide": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": [
           {
             "graph": {
@@ -381,7 +381,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [
           {
@@ -440,7 +440,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [
           {
@@ -495,7 +495,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [
           {
@@ -550,7 +550,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [
           {
@@ -605,7 +605,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [
           {
@@ -655,7 +655,7 @@
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
         "editorHide": true,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": [
           {
             "graph": {
@@ -707,7 +707,7 @@
         },
         "colWidth": 7.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [
           {
@@ -766,7 +766,7 @@
         },
         "colWidth": 5.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [],
         "enabled": true
@@ -813,7 +813,7 @@
         },
         "colWidth": 5.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [],
         "enabled": true
@@ -860,7 +860,7 @@
         },
         "colWidth": 5.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [],
         "enabled": true
@@ -907,7 +907,7 @@
         },
         "colWidth": 5.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": [],
         "enabled": true
