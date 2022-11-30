@@ -319,6 +319,63 @@
       "status": "READY"
     },
     {
+      "title": "Transformation - mapValues(func)",
+      "text": "%pyspark\n\n# Creating PairRDD student_rdd with key value pairs\nt_student_marks \u003d [\n    (\"Joseph\", \"Maths\", 83),\n    (\"Joseph\", \"Physics\", 74),\n    (\"Joseph\", \"Chemistry\", 91),\n    (\"Joseph\", \"Biology\", 82),\n    (\"Jimmy\", \"Maths\", 69),\n    (\"Jimmy\", \"Physics\", 62),\n    (\"Jimmy\", \"Chemistry\", 97),\n    (\"Jimmy\", \"Biology\", 80),\n    (\"Tina\", \"Maths\", 78),\n    (\"Tina\", \"Physics\", 73),\n    (\"Tina\", \"Chemistry\", 68),\n    (\"Tina\", \"Biology\", 87),\n    (\"Thomas\", \"Maths\", 87),\n    (\"Thomas\", \"Physics\", 93),\n    (\"Thomas\", \"Chemistry\", 91),\n    (\"Thomas\", \"Biology\", 74),\n    (\"Cory\", \"Maths\", 56),\n    (\"Cory\", \"Physics\", 65),\n    (\"Cory\", \"Chemistry\", 71),\n    (\"Cory\", \"Biology\", 68),\n    (\"Jackeline\", \"Maths\", 86),\n    (\"Jackeline\", \"Physics\", 62),\n    (\"Jackeline\", \"Chemistry\", 75),\n    (\"Jackeline\", \"Biology\", 83),\n    (\"Juan\", \"Maths\", 63),\n    (\"Juan\", \"Physics\", 69),\n    (\"Juan\", \"Chemistry\", 64),\n    (\"Juan\", \"Biology\", 60)\n]\n\nstudentMarksRDD \u003d sc.parallelize(t_student_marks,4)\n\nprint(studentMarksRDD.glom().collect())\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-29 02:13:03.850",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 12.0,
+        "editorHide": false,
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[[(\u0027Joseph\u0027, \u0027Maths\u0027, 83), (\u0027Joseph\u0027, \u0027Physics\u0027, 74), (\u0027Joseph\u0027, \u0027Chemistry\u0027, 91), (\u0027Joseph\u0027, \u0027Biology\u0027, 82), (\u0027Jimmy\u0027, \u0027Maths\u0027, 69), (\u0027Jimmy\u0027, \u0027Physics\u0027, 62), (\u0027Jimmy\u0027, \u0027Chemistry\u0027, 97)], [(\u0027Jimmy\u0027, \u0027Biology\u0027, 80), (\u0027Tina\u0027, \u0027Maths\u0027, 78), (\u0027Tina\u0027, \u0027Physics\u0027, 73), (\u0027Tina\u0027, \u0027Chemistry\u0027, 68), (\u0027Tina\u0027, \u0027Biology\u0027, 87), (\u0027Thomas\u0027, \u0027Maths\u0027, 87), (\u0027Thomas\u0027, \u0027Physics\u0027, 93)], [(\u0027Thomas\u0027, \u0027Chemistry\u0027, 91), (\u0027Thomas\u0027, \u0027Biology\u0027, 74), (\u0027Cory\u0027, \u0027Maths\u0027, 56), (\u0027Cory\u0027, \u0027Physics\u0027, 65), (\u0027Cory\u0027, \u0027Chemistry\u0027, 71), (\u0027Cory\u0027, \u0027Biology\u0027, 68), (\u0027Jackeline\u0027, \u0027Maths\u0027, 86)], [(\u0027Jackeline\u0027, \u0027Physics\u0027, 62), (\u0027Jackeline\u0027, \u0027Chemistry\u0027, 75), (\u0027Jackeline\u0027, \u0027Biology\u0027, 83), (\u0027Juan\u0027, \u0027Maths\u0027, 63), (\u0027Juan\u0027, \u0027Physics\u0027, 69), (\u0027Juan\u0027, \u0027Chemistry\u0027, 64), (\u0027Juan\u0027, \u0027Biology\u0027, 60)]]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669679786778_0001//jobs/job?id\u003d0"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669687625948_286789531",
+      "id": "paragraph_1669687625948_286789531",
+      "dateCreated": "2022-11-29 02:07:05.948",
+      "dateStarted": "2022-11-29 02:13:03.852",
+      "dateFinished": "2022-11-29 02:13:52.475",
+      "status": "FINISHED"
+    },
+    {
       "title": "Transformation - union(otherDataset)",
       "text": "%pyspark\n",
       "user": "anonymous",

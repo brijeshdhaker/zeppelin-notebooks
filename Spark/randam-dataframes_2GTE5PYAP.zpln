@@ -78,7 +78,7 @@
     {
       "text": "%spark\n\nimport scala.util._\nimport  org.apache.spark.sql.functions._\n\nimport spark.sqlContext.implicits._\n\nval df1 \u003d Seq.fill(50)(Random.nextInt).toDF(\"C1\")\n//df1.show()\nval df2 \u003d df1.withColumn(\"C2\", rand()).join(df1, \"C1\").cache()\n\n//df1.select(concat($\"C1\", lit(\" Brijesh \")).alias(\"VAL\")).show()\n\n//use withColumn method to add a new column called newColName\ndf1.withColumn(\"newColName\", concat($\"C1\", lit(\" Hello\"))).select(\"newColName\", \"C1\").show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-15 01:59:05.634",
+      "dateUpdated": "2022-11-29 15:42:35.360",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -102,7 +102,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "+-----------------+-----------+\n|       newColName|         C1|\n+-----------------+-----------+\n|  985844442 Hello|  985844442|\n|   33783141 Hello|   33783141|\n|  170546799 Hello|  170546799|\n|  892444264 Hello|  892444264|\n|-1045428358 Hello|-1045428358|\n|-1958921484 Hello|-1958921484|\n| -239434726 Hello| -239434726|\n| 1062178574 Hello| 1062178574|\n|  918604157 Hello|  918604157|\n| 1007181258 Hello| 1007181258|\n| 1930673517 Hello| 1930673517|\n| -428546008 Hello| -428546008|\n| 1124473738 Hello| 1124473738|\n|   31179112 Hello|   31179112|\n| 1547527452 Hello| 1547527452|\n|  886977532 Hello|  886977532|\n| 1892551521 Hello| 1892551521|\n|-2101853555 Hello|-2101853555|\n|  702291897 Hello|  702291897|\n| -293141850 Hello| -293141850|\n+-----------------+-----------+\nonly showing top 20 rows\n\nimport scala.util._\nimport org.apache.spark.sql.functions._\nimport spark.sqlContext.implicits._\n\u001b[1m\u001b[34mdf1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [C1: int]\n\u001b[1m\u001b[34mdf2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [C1: int, C2: double]\n"
+            "data": "+-----------------+-----------+\n|       newColName|         C1|\n+-----------------+-----------+\n| -149619608 Hello| -149619608|\n| -970558732 Hello| -970558732|\n|  160911700 Hello|  160911700|\n|-1171534531 Hello|-1171534531|\n| -819481617 Hello| -819481617|\n|  269855231 Hello|  269855231|\n| -477043937 Hello| -477043937|\n|-1881772287 Hello|-1881772287|\n| -187755667 Hello| -187755667|\n|  333430280 Hello|  333430280|\n| 1370593126 Hello| 1370593126|\n|-2080482260 Hello|-2080482260|\n|-2082947097 Hello|-2082947097|\n|  427900253 Hello|  427900253|\n| -132791050 Hello| -132791050|\n| 2054978469 Hello| 2054978469|\n|-1951015908 Hello|-1951015908|\n| 1905615091 Hello| 1905615091|\n| 1332326227 Hello| 1332326227|\n|-1432339604 Hello|-1432339604|\n+-----------------+-----------+\nonly showing top 20 rows\n\nimport scala.util._\nimport org.apache.spark.sql.functions._\nimport spark.sqlContext.implicits._\n\u001b[1m\u001b[34mdf1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [C1: int]\n\u001b[1m\u001b[34mdf2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [C1: int, C2: double]\n"
           }
         ]
       },
@@ -112,8 +112,8 @@
       "jobName": "paragraph_1641137668751_44837357",
       "id": "paragraph_1641033351266_1126094960",
       "dateCreated": "2022-01-02 15:34:28.751",
-      "dateStarted": "2022-01-15 01:59:05.641",
-      "dateFinished": "2022-01-15 01:59:06.580",
+      "dateStarted": "2022-11-29 15:42:35.362",
+      "dateFinished": "2022-11-29 15:42:36.106",
       "status": "FINISHED"
     },
     {

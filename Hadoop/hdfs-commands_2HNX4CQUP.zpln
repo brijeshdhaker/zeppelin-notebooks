@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%md\n\nThere IS a difference between the two, refer to the following figure from Apache\u0027s official documentation:\n\n![Spark Engines](https://i.stack.imgur.com/Sf22z.png)\n\nAs we can see here, the \u0027hdfs dfs\u0027 command is used very specifically for hadoop filesystem (hdfs) data operations while \u0027hadoop fs\u0027 covers a larger variety of data present on external platforms as well. These external platforms include the local filesystem data as well. \n\n\nhttps://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html\n",
+      "text": "%md\n\nThere IS a difference between the two, refer to the following figure from Apache\u0027s official documentation:\n\n![Spark Engines](https://i.stack.imgur.com/Sf22z.png)\n\nAs we can see here, the \u0027hdfs dfs\u0027 command is used very specifically for hadoop filesystem (hdfs) data operations while \u0027hadoop fs\u0027 covers a larger variety of data present on external platforms as well. These external platforms include the local filesystem data as well. \n\n\nhttps://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html\n\nhttps://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 00:38:36.115",
+      "dateUpdated": "2022-11-29 02:25:28.100",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -28,7 +28,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eThere IS a difference between the two, refer to the following figure from Apache\u0026rsquo;s official documentation:\u003c/p\u003e\n\u003cp\u003e\u003cimg src\u003d\"https://i.stack.imgur.com/Sf22z.png\" alt\u003d\"Spark Engines\" /\u003e\u003c/p\u003e\n\u003cp\u003eAs we can see here, the \u0026lsquo;hdfs dfs\u0026rsquo; command is used very specifically for hadoop filesystem (hdfs) data operations while \u0026lsquo;hadoop fs\u0026rsquo; covers a larger variety of data present on external platforms as well. These external platforms include the local filesystem data as well.\u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html\"\u003ehttps://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html\u003c/a\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eThere IS a difference between the two, refer to the following figure from Apache\u0026rsquo;s official documentation:\u003c/p\u003e\n\u003cp\u003e\u003cimg src\u003d\"https://i.stack.imgur.com/Sf22z.png\" alt\u003d\"Spark Engines\" /\u003e\u003c/p\u003e\n\u003cp\u003eAs we can see here, the \u0026lsquo;hdfs dfs\u0026rsquo; command is used very specifically for hadoop filesystem (hdfs) data operations while \u0026lsquo;hadoop fs\u0026rsquo; covers a larger variety of data present on external platforms as well. These external platforms include the local filesystem data as well.\u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html\"\u003ehttps://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href\u003d\"https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html\"\u003ehttps://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html\u003c/a\u003e\u003c/p\u003e\n\n\u003c/div\u003e"
           }
         ]
       },
@@ -38,7 +38,9 @@
       "jobName": "paragraph_1669682316115_1346393379",
       "id": "paragraph_1669551577713_1753776435",
       "dateCreated": "2022-11-29 00:38:36.115",
-      "status": "READY"
+      "dateStarted": "2022-11-29 02:25:28.101",
+      "dateFinished": "2022-11-29 02:25:28.113",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /",

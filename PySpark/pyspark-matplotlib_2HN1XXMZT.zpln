@@ -54,7 +54,7 @@
     {
       "text": "%pyspark\n\nimport matplotlib.pyplot as plt\n\nplt.plot([1, 2, 3])",
       "user": "anonymous",
-      "dateUpdated": "2022-11-25 01:59:43.588",
+      "dateUpdated": "2022-11-29 15:44:44.962",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -90,7 +90,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7fd599d62090\u003e]\n"
+            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7f15996c2f50\u003e]\n"
           },
           {
             "type": "HTML",
@@ -104,8 +104,8 @@
       "jobName": "paragraph_1669341494266_749760080",
       "id": "20161101-192232_289486976",
       "dateCreated": "2022-11-25 01:58:14.266",
-      "dateStarted": "2022-11-25 01:59:43.590",
-      "dateFinished": "2022-11-25 01:59:43.713",
+      "dateStarted": "2022-11-29 15:44:44.964",
+      "dateFinished": "2022-11-29 15:44:45.112",
       "status": "FINISHED"
     },
     {
@@ -158,7 +158,7 @@
     {
       "text": "%pyspark\n\n# Figure 1\nplt.plot([1, 2, 3])\n\n# Figure 2\nplt.figure()\nplt.plot([3, 2, 1])",
       "user": "anonymous",
-      "dateUpdated": "2022-11-25 01:59:49.778",
+      "dateUpdated": "2022-11-29 15:44:51.248",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -194,7 +194,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7fd59977e590\u003e]\n"
+            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7f1598551a90\u003e]\n"
           },
           {
             "type": "HTML",
@@ -208,8 +208,8 @@
       "jobName": "paragraph_1669341494267_997376007",
       "id": "20161101-193533_2096366908",
       "dateCreated": "2022-11-25 01:58:14.267",
-      "dateStarted": "2022-11-25 01:59:49.780",
-      "dateFinished": "2022-11-25 01:59:49.907",
+      "dateStarted": "2022-11-29 15:44:51.252",
+      "dateFinished": "2022-11-29 15:44:51.403",
       "status": "FINISHED"
     },
     {
@@ -263,7 +263,7 @@
     {
       "text": "%pyspark\n\nz.configure_mpl(width\u003d400, height\u003d300, fmt\u003d\u0027svg\u0027)\nplt.plot([1, 2, 3])",
       "user": "anonymous",
-      "dateUpdated": "2022-11-25 02:00:09.364",
+      "dateUpdated": "2022-11-29 15:44:56.977",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -301,7 +301,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7fd59964d150\u003e]\n"
+            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7f159842e450\u003e]\n"
           },
           {
             "type": "HTML",
@@ -315,8 +315,8 @@
       "jobName": "paragraph_1669341494267_1770876192",
       "id": "20160616-234947_579056637",
       "dateCreated": "2022-11-25 01:58:14.267",
-      "dateStarted": "2022-11-25 02:00:09.369",
-      "dateFinished": "2022-11-25 02:00:09.447",
+      "dateStarted": "2022-11-29 15:44:56.982",
+      "dateFinished": "2022-11-29 15:44:57.055",
       "status": "FINISHED"
     },
     {
@@ -370,7 +370,7 @@
       "title": "First line",
       "text": "%pyspark\n\nplt.close() # Added here to reset the first plot when rerunning the paragraph\nz.configure_mpl(width\u003d600, height\u003d400, fmt\u003d\u0027png\u0027, close\u003dFalse)\nplt.plot([1, 2, 3], label\u003dr\u0027$y\u003dx$\u0027)",
       "user": "anonymous",
-      "dateUpdated": "2022-11-25 02:00:26.892",
+      "dateUpdated": "2022-11-29 15:45:03.173",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -407,7 +407,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7fd5983ed710\u003e]\n"
+            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7f15983bc990\u003e]\n"
           },
           {
             "type": "HTML",
@@ -421,15 +421,15 @@
       "jobName": "paragraph_1669341494267_654667262",
       "id": "20161101-195657_1336292109",
       "dateCreated": "2022-11-25 01:58:14.268",
-      "dateStarted": "2022-11-25 02:00:26.900",
-      "dateFinished": "2022-11-25 02:00:26.965",
+      "dateStarted": "2022-11-29 15:45:03.176",
+      "dateFinished": "2022-11-29 15:45:03.242",
       "status": "FINISHED"
     },
     {
       "title": "Second line",
       "text": "%pyspark\n\nplt.plot([3, 2, 1], label\u003dr\u0027$y\u003d3-x$\u0027)",
       "user": "anonymous",
-      "dateUpdated": "2022-11-25 02:00:53.376",
+      "dateUpdated": "2022-11-29 15:45:07.210",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -466,7 +466,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7fd59838b990\u003e]\n"
+            "data": "[\u003cmatplotlib.lines.Line2D object at 0x7f15983ccdd0\u003e]\n"
           }
         ]
       },
@@ -476,8 +476,8 @@
       "jobName": "paragraph_1669341494268_675542872",
       "id": "20161101-195937_907325325",
       "dateCreated": "2022-11-25 01:58:14.268",
-      "dateStarted": "2022-11-25 02:00:53.382",
-      "dateFinished": "2022-11-25 02:00:53.431",
+      "dateStarted": "2022-11-29 15:45:07.212",
+      "dateFinished": "2022-11-29 15:45:07.259",
       "status": "FINISHED"
     },
     {

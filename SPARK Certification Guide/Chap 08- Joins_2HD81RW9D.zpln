@@ -69,13 +69,23 @@
       "status": "READY"
     },
     {
-      "text": "%pyspark\nperson \u003d spark.createDataFrame([\n        (0, \"Bill Chambers\", 0, [100]),\n        (1, \"Matei Zaharia\", 1, [500, 250, 100]),\n        (2, \"Michael Armbrust\", 1, [250, 100])])\\\n        .toDF(\"id\", \"name\", \"graduate_program\", \"spark_status\")\n\ngraduateProgram \u003d spark.createDataFrame([\n          (0, \"Masters\", \"School of Information\", \"UC Berkeley\"),\n          (2, \"Masters\", \"EECS\", \"UC Berkeley\"),\n          (1, \"Ph.D.\", \"EECS\", \"UC Berkeley\")])\\\n          .toDF(\"id\", \"degree\", \"department\", \"school\")\n\nsparkStatus \u003d spark.createDataFrame([\n              (500, \"Vice President\"),\n              (250, \"PMC Member\"),\n              (100, \"Contributor\")])\\\n              .toDF(\"id\", \"status\")",
+      "text": "%pyspark\n\nperson \u003d spark.createDataFrame([\n        (0, \"Bill Chambers\", 0, [100]),\n        (1, \"Matei Zaharia\", 1, [500, 250, 100]),\n        (2, \"Michael Armbrust\", 1, [250, 100])])\\\n        .toDF(\"id\", \"name\", \"graduate_program\", \"spark_status\")\n\ngraduateProgram \u003d spark.createDataFrame([\n          (0, \"Masters\", \"School of Information\", \"UC Berkeley\"),\n          (2, \"Masters\", \"EECS\", \"UC Berkeley\"),\n          (1, \"Ph.D.\", \"EECS\", \"UC Berkeley\")])\\\n          .toDF(\"id\", \"degree\", \"department\", \"school\")\n\nsparkStatus \u003d spark.createDataFrame([\n              (500, \"Vice President\"),\n              (250, \"PMC Member\"),\n              (100, \"Contributor\")])\\\n              .toDF(\"id\", \"status\")",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2022-11-30 00:56:30.331",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -99,13 +109,23 @@
       "status": "READY"
     },
     {
-      "text": "%pyspark\nperson.createOrReplaceTempView(\"person\")\ngraduateProgram.createOrReplaceTempView(\"graduateProgram\")\nsparkStatus.createOrReplaceTempView(\"sparkStatus\")",
+      "text": "%pyspark\n\nperson.createOrReplaceTempView(\"person\")\ngraduateProgram.createOrReplaceTempView(\"graduateProgram\")\nsparkStatus.createOrReplaceTempView(\"sparkStatus\")\n",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2022-11-30 00:56:55.106",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -129,13 +149,23 @@
       "status": "READY"
     },
     {
-      "text": "%pyspark\nperson.show()\ngraduateProgram.show()\nsparkStatus.show()",
+      "text": "%pyspark\n\nperson.show()\ngraduateProgram.show()\nsparkStatus.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2022-11-30 00:56:46.452",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -193,13 +223,23 @@
       "status": "READY"
     },
     {
-      "text": "%pyspark\njoinExpression \u003d person[\"graduate_program\"] \u003d\u003d graduateProgram[\"id\"]",
+      "text": "%pyspark\n\njoinExpression \u003d person[\"graduate_program\"] \u003d\u003d graduateProgram[\"id\"]",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2022-11-30 00:57:01.533",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -223,13 +263,23 @@
       "status": "READY"
     },
     {
-      "text": "%pyspark\nwrongJoinExpression \u003d person[\"name\"] \u003d\u003d graduateProgram[\"school\"]",
+      "text": "%pyspark\n\nwrongJoinExpression \u003d person[\"name\"] \u003d\u003d graduateProgram[\"school\"]",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2022-11-30 00:57:04.587",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -287,13 +337,23 @@
       "status": "READY"
     },
     {
-      "text": "%pyspark\nperson.join(graduateProgram, joinExpression).show()",
+      "text": "%pyspark\n\nperson.join(graduateProgram, joinExpression).show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2022-11-30 00:57:24.908",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -1403,15 +1463,20 @@
     {
       "text": "%md\n**Big table to Big table:**\n* when you join big table to big table, we end up in **Shuffle Join**\n* In Shuffle join, every node talks to other node and they share data according to which node has a certain key or set of keys(on which you are joining).\n* These joins are expensive because the network can be become congested with traffic, especially when the data is not partitioned well.\n\n![Big table to Bigtable](files/tables/Bigtable_to_bigtable-44cdf.PNG)",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.673",
+      "dateUpdated": "2022-11-30 00:55:07.809",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},

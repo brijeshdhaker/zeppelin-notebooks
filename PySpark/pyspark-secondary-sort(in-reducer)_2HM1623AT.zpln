@@ -236,10 +236,10 @@
     {
       "text": "%md\n\n### Data Set Columns \n\nhttps://data.cityofchicago.org/Transportation/Taxi-Trips/wrvz-psew/data\n\n| `ID` | `Name` |\n|:--:|:--:|\n|0  | Trip ID  |\n|1  | Taxi ID  |\n|2  | Trip Start Timestamp |\n|3  | Trip End Timestamp |\n|4  | Trip Seconds |\n|5  | Trip Miles |\n|6 | Trip ID | \t\n|7 | Taxi ID | \t\n|8 | Trip Start Timestamp |  \n|9 | Trip End Timestamp |  \t\n|10 | Trip Seconds |  \t\n|11 | Trip Miles |  \n|12 | Pickup Census Tract |  \t\n|13 | Dropoff Census Tract |  \t\n|14 | Pickup Community Area |  \t\n|15 | Dropoff Community Area |  \t\n|16 | Fare | \n|17 | Tips |  \t\n|18 | Tolls |  \t\n|19 | Extras |  \t\n|20 | Trip Total |  \t\n|21 | Payment Type |  \t\n|22 | Company |  \t\n|23 | Pickup Centroid Latitude |  \t\n|24 | Pickup Centroid Longitude |  \t\n|25 | Pickup Centroid Location | \n|26 | Dropoff Centroid Latitude |  \t\n|27 | Dropoff Centroid Longitude |  \t\n|28 | Dropoff Centroid Location | \n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-28 02:42:16.461",
+      "dateUpdated": "2022-11-29 02:03:03.421",
       "progress": 0,
       "config": {
-        "tableHide": true,
+        "tableHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true,
@@ -249,7 +249,7 @@
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
         "fontSize": 12.0,
-        "editorHide": false,
+        "editorHide": true,
         "results": {},
         "enabled": true
       },
@@ -272,8 +272,8 @@
       "jobName": "paragraph_1669602374158_296288951",
       "id": "paragraph_1669602374158_296288951",
       "dateCreated": "2022-11-28 02:26:14.158",
-      "dateStarted": "2022-11-28 02:39:29.612",
-      "dateFinished": "2022-11-28 02:39:29.623",
+      "dateStarted": "2022-11-29 02:03:03.421",
+      "dateFinished": "2022-11-29 02:03:03.447",
       "status": "FINISHED"
     },
     {

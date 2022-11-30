@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%spark.conf\n\nSPARK_HOME /opt/spark-2.3.4\nmaster local[4]\nspark.jars.packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4",
+      "text": "%spark.conf\n\nSPARK_HOME /opt/spark\n\nspark.jars.packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4",
       "user": "anonymous",
-      "dateUpdated": "2022-01-08 09:55:26.806",
+      "dateUpdated": "2022-11-29 01:48:12.122",
       "progress": 0,
       "config": {
         "editorSetting": {
