@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%md\n\n1. Read the file from storage (__/FileStore/tables/card_transactions.json__)\n2. File has json records\n3. Each record has fields:\n     * user_id\n     * card_num\n     * merchant\n     * category\n     * amount\n     * ts",
+      "text": "%md\n\n1. Read the file from storage (__/datasets/card_transactions.json__)\n2. File has json records\n3. Each record has fields:\n     * user_id\n     * card_num\n     * merchant\n     * category\n     * amount\n     * ts",
       "user": "anonymous",
-      "dateUpdated": "2022-01-14 06:59:29.801",
+      "dateUpdated": "2022-11-30 02:04:17.124",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -29,7 +29,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003col\u003e\n\u003cli\u003eRead the file from storage (\u003cstrong\u003e/FileStore/tables/card_transactions.json\u003c/strong\u003e)\u003c/li\u003e\n\u003cli\u003eFile has json records\u003c/li\u003e\n\u003cli\u003eEach record has fields:\n\u003cul\u003e\n\u003cli\u003euser_id\u003c/li\u003e\n\u003cli\u003ecard_num\u003c/li\u003e\n\u003cli\u003emerchant\u003c/li\u003e\n\u003cli\u003ecategory\u003c/li\u003e\n\u003cli\u003eamount\u003c/li\u003e\n\u003cli\u003ets\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003col\u003e\n\u003cli\u003eRead the file from storage (\u003cstrong\u003e/datasets/card_transactions.json\u003c/strong\u003e)\u003c/li\u003e\n\u003cli\u003eFile has json records\u003c/li\u003e\n\u003cli\u003eEach record has fields:\n\u003cul\u003e\n\u003cli\u003euser_id\u003c/li\u003e\n\u003cli\u003ecard_num\u003c/li\u003e\n\u003cli\u003emerchant\u003c/li\u003e\n\u003cli\u003ecategory\u003c/li\u003e\n\u003cli\u003eamount\u003c/li\u003e\n\u003cli\u003ets\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ol\u003e\n\n\u003c/div\u003e"
           }
         ]
       },
@@ -39,8 +39,8 @@
       "jobName": "paragraph_1642143355113_364002411",
       "id": "paragraph_1642143355113_364002411",
       "dateCreated": "2022-01-14 06:55:55.113",
-      "dateStarted": "2022-01-14 06:59:29.801",
-      "dateFinished": "2022-01-14 06:59:29.811",
+      "dateStarted": "2022-11-30 02:04:17.124",
+      "dateFinished": "2022-11-30 02:04:19.051",
       "status": "FINISHED"
     },
     {

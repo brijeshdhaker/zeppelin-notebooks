@@ -2,9 +2,9 @@
   "paragraphs": [
     {
       "title": "Settings for YARN Cluster",
-      "text": "%spark.conf\n\n# set the following 2 properties to run spark in yarn-cluster mode\nspark.master yarn\nspark.submit.deployMode cluster\n\nspark.driver.memory 640m\nspark.executor.memory 640m\n\n# spark.yarn.dist.archives can be either local file or hdfs file\n# spark.yarn.dist.archives hdfs://namenode:9000/archives/pyspark3.7.tar.gz#environment\n\n#\n# Python 3.7 Runtime\n#\n# spark.yarn.dist.archives file:///apps/hostpath/python/pyspark3.7.tar.gz#environment\n\n#\n# Python 3.8 Runtime\n#\nspark.yarn.dist.archives /apps/hostpath/python/pyspark3.8.tar.gz#environment\n\n\nzeppelin.interpreter.conda.env.name environment\n\nspark.sql.execution.arrow.pyspark.enabled true\nspark.sql.execution.arrow.pyspark.fallback.enabled false\n\n# Set the following setting for ARROW if you are using spark 2.x, otherwise using pyarrow udf would fail\n# spark.yarn.appMasterEnv.ARROW_PRE_0_15_IPC_FORMAT 1\n# spark.executorEnv.ARROW_PRE_0_15_IPC_FORMAT 1\n\n",
+      "text": "%spark.conf\n\n# set the following 2 properties to run spark in yarn-cluster mode\nspark.master yarn\nspark.submit.deployMode cluster\n\nspark.driver.memory 640m\nspark.executor.memory 640m\n\n#\n# Python 3.7 Runtime\n#\nspark.yarn.dist.archives hdfs://namenode:9000/archives/pyspark3.7.tar.gz#environment\nzeppelin.interpreter.conda.env.name environment\n\n#\nspark.pyspark.python python3\nspark.pyspark.driver.python python3\n\n\nspark.sql.execution.arrow.pyspark.enabled true\nspark.sql.execution.arrow.pyspark.fallback.enabled false\n\n# Set the following setting for ARROW if you are using spark 2.x, otherwise using pyarrow udf would fail\n# spark.yarn.appMasterEnv.ARROW_PRE_0_15_IPC_FORMAT 1\n# spark.executorEnv.ARROW_PRE_0_15_IPC_FORMAT 1\n\n#\nspark.eventLog.enabled                      true\nspark.eventLog.dir                          hdfs://namenode:9000/tmp/logs/spark",
       "user": "anonymous",
-      "dateUpdated": "2022-06-24 03:17:46.456",
+      "dateUpdated": "2022-11-30 01:14:59.818",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -36,44 +36,6 @@
       "dateCreated": "2022-01-05 06:00:06.341",
       "dateStarted": "2022-06-24 03:13:00.901",
       "dateFinished": "2022-06-24 03:13:00.915",
-      "status": "FINISHED"
-    },
-    {
-      "title": "Settings for Spark Cluster",
-      "text": "%spark.conf\n\n# set the following 2 properties to run spark in yarn-cluster mode\nspark.master spark://spark-master:7077\n\nspark.driver.memory 640m\nspark.executor.memory 640m\n\n#\nspark.pyspark.python python3\nspark.pyspark.driver.python python3\n\n#\nspark.eventLog.enabled                      true\nspark.eventLog.dir                          hdfs://namenode:9000/tmp/logs/spark",
-      "user": "anonymous",
-      "dateUpdated": "2022-06-24 03:17:31.482",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "text",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/text",
-        "fontSize": 12.0,
-        "results": {},
-        "enabled": true,
-        "title": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": []
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1655867185469_142417513",
-      "id": "paragraph_1655867185469_142417513",
-      "dateCreated": "2022-06-22 03:06:25.469",
-      "dateStarted": "2022-06-22 05:28:39.521",
-      "dateFinished": "2022-06-22 05:28:39.569",
       "status": "FINISHED"
     },
     {

@@ -320,9 +320,9 @@
     },
     {
       "title": "Transformation - mapValues(func)",
-      "text": "%pyspark\n\n# Creating PairRDD student_rdd with key value pairs\nt_student_marks \u003d [\n    (\"Joseph\", \"Maths\", 83),\n    (\"Joseph\", \"Physics\", 74),\n    (\"Joseph\", \"Chemistry\", 91),\n    (\"Joseph\", \"Biology\", 82),\n    (\"Jimmy\", \"Maths\", 69),\n    (\"Jimmy\", \"Physics\", 62),\n    (\"Jimmy\", \"Chemistry\", 97),\n    (\"Jimmy\", \"Biology\", 80),\n    (\"Tina\", \"Maths\", 78),\n    (\"Tina\", \"Physics\", 73),\n    (\"Tina\", \"Chemistry\", 68),\n    (\"Tina\", \"Biology\", 87),\n    (\"Thomas\", \"Maths\", 87),\n    (\"Thomas\", \"Physics\", 93),\n    (\"Thomas\", \"Chemistry\", 91),\n    (\"Thomas\", \"Biology\", 74),\n    (\"Cory\", \"Maths\", 56),\n    (\"Cory\", \"Physics\", 65),\n    (\"Cory\", \"Chemistry\", 71),\n    (\"Cory\", \"Biology\", 68),\n    (\"Jackeline\", \"Maths\", 86),\n    (\"Jackeline\", \"Physics\", 62),\n    (\"Jackeline\", \"Chemistry\", 75),\n    (\"Jackeline\", \"Biology\", 83),\n    (\"Juan\", \"Maths\", 63),\n    (\"Juan\", \"Physics\", 69),\n    (\"Juan\", \"Chemistry\", 64),\n    (\"Juan\", \"Biology\", 60)\n]\n\nstudentMarksRDD \u003d sc.parallelize(t_student_marks,4)\n\nprint(studentMarksRDD.glom().collect())\n",
+      "text": "%pyspark\n\n# Creating PairRDD student_rdd with key value pairs\nt_student_marks \u003d [\n    (\"Joseph\", \"Maths\", 83),\n    (\"Joseph\", \"Physics\", 74),\n    (\"Joseph\", \"Chemistry\", 91),\n    (\"Joseph\", \"Biology\", 82),\n    (\"Jimmy\", \"Maths\", 69),\n    (\"Jimmy\", \"Physics\", 62),\n    (\"Jimmy\", \"Chemistry\", 97),\n    (\"Jimmy\", \"Biology\", 80),\n    (\"Tina\", \"Maths\", 78),\n    (\"Tina\", \"Physics\", 73),\n    (\"Tina\", \"Chemistry\", 68),\n    (\"Tina\", \"Biology\", 87),\n    (\"Thomas\", \"Maths\", 87),\n    (\"Thomas\", \"Physics\", 93),\n    (\"Thomas\", \"Chemistry\", 91),\n    (\"Thomas\", \"Biology\", 74),\n    (\"Cory\", \"Maths\", 56),\n    (\"Cory\", \"Physics\", 65),\n    (\"Cory\", \"Chemistry\", 71),\n    (\"Cory\", \"Biology\", 68),\n    (\"Jackeline\", \"Maths\", 86),\n    (\"Jackeline\", \"Physics\", 62),\n    (\"Jackeline\", \"Chemistry\", 75),\n    (\"Jackeline\", \"Biology\", 83),\n    (\"Juan\", \"Maths\", 63),\n    (\"Juan\", \"Physics\", 69),\n    (\"Juan\", \"Chemistry\", 64),\n    (\"Juan\", \"Biology\", 60)\n]\n\nstudentMarksRDD \u003d sc.parallelize(t_student_marks,4)\n\n\nprint(studentMarksRDD.glom().collect())\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 02:13:03.850",
+      "dateUpdated": "2022-11-30 02:06:17.811",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -853,9 +853,9 @@
     },
     {
       "title": "Transformation - repartitionAndSortWithinPartitions(partitioner)\t",
-      "text": "%pyspark\n",
+      "text": "%pyspark\n#\n# Repartition the RDD according to the given partitioner and, within each resulting partition, sort records by their keys. \n# This is more efficient than calling repartition and then sorting within each partition because it can push the sorting down into the shuffle machinery.\n#\n\n\n# Creating PairRDD student_rdd with key value pairs\nt_student_marks \u003d [\n    (\"Joseph\", \"Maths\", 83),\n    (\"Joseph\", \"Physics\", 74),\n    (\"Joseph\", \"Chemistry\", 91),\n    (\"Joseph\", \"Biology\", 82),\n    (\"Jimmy\", \"Maths\", 69),\n    (\"Jimmy\", \"Physics\", 62),\n    (\"Jimmy\", \"Chemistry\", 97),\n    (\"Jimmy\", \"Biology\", 80),\n    (\"Tina\", \"Maths\", 78),\n    (\"Tina\", \"Physics\", 73),\n    (\"Tina\", \"Chemistry\", 68),\n    (\"Tina\", \"Biology\", 87),\n    (\"Thomas\", \"Maths\", 87),\n    (\"Thomas\", \"Physics\", 93),\n    (\"Thomas\", \"Chemistry\", 91),\n    (\"Thomas\", \"Biology\", 74),\n    (\"Cory\", \"Maths\", 56),\n    (\"Cory\", \"Physics\", 65),\n    (\"Cory\", \"Chemistry\", 71),\n    (\"Cory\", \"Biology\", 68),\n    (\"Jackeline\", \"Maths\", 86),\n    (\"Jackeline\", \"Physics\", 62),\n    (\"Jackeline\", \"Chemistry\", 75),\n    (\"Jackeline\", \"Biology\", 83),\n    (\"Juan\", \"Maths\", 63),\n    (\"Juan\", \"Physics\", 69),\n    (\"Juan\", \"Chemistry\", 64),\n    (\"Juan\", \"Biology\", 60)\n]\n\nstudentMarksRDD \u003d sc.parallelize(t_student_marks,4)\n\nmappedStudentRDD \u003d studentMarksRDD.map(lambda r: ((r[0],r[2]), r))\nfor i in mappedStudentRDD.collect(): print(i)\n\n#\ndef partition_func(key):\n    return portable_hash(key[0])\n\n#\ndef key_func(entry):\n    return entry\n\n\nprint(\"\")\nprint(\"\")\n\n# This function will partition data as per provided key part (key[0]) ...and sort data as per provided key .\nsortedRDD \u003d mappedStudentRDD.repartitionAndSortWithinPartitions(partitionFunc\u003dpartition_func, numPartitions\u003d4, keyfunc\u003dkey_func, ascending\u003dTrue)\nfor i in sortedRDD.collect(): print(i)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 01:08:53.057",
+      "dateUpdated": "2022-11-30 02:29:39.997",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -875,19 +875,76 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "((\u0027Joseph\u0027, 83), (\u0027Joseph\u0027, \u0027Maths\u0027, 83))\n((\u0027Joseph\u0027, 74), (\u0027Joseph\u0027, \u0027Physics\u0027, 74))\n((\u0027Joseph\u0027, 91), (\u0027Joseph\u0027, \u0027Chemistry\u0027, 91))\n((\u0027Joseph\u0027, 82), (\u0027Joseph\u0027, \u0027Biology\u0027, 82))\n((\u0027Jimmy\u0027, 69), (\u0027Jimmy\u0027, \u0027Maths\u0027, 69))\n((\u0027Jimmy\u0027, 62), (\u0027Jimmy\u0027, \u0027Physics\u0027, 62))\n((\u0027Jimmy\u0027, 97), (\u0027Jimmy\u0027, \u0027Chemistry\u0027, 97))\n((\u0027Jimmy\u0027, 80), (\u0027Jimmy\u0027, \u0027Biology\u0027, 80))\n((\u0027Tina\u0027, 78), (\u0027Tina\u0027, \u0027Maths\u0027, 78))\n((\u0027Tina\u0027, 73), (\u0027Tina\u0027, \u0027Physics\u0027, 73))\n((\u0027Tina\u0027, 68), (\u0027Tina\u0027, \u0027Chemistry\u0027, 68))\n((\u0027Tina\u0027, 87), (\u0027Tina\u0027, \u0027Biology\u0027, 87))\n((\u0027Thomas\u0027, 87), (\u0027Thomas\u0027, \u0027Maths\u0027, 87))\n((\u0027Thomas\u0027, 93), (\u0027Thomas\u0027, \u0027Physics\u0027, 93))\n((\u0027Thomas\u0027, 91), (\u0027Thomas\u0027, \u0027Chemistry\u0027, 91))\n((\u0027Thomas\u0027, 74), (\u0027Thomas\u0027, \u0027Biology\u0027, 74))\n((\u0027Cory\u0027, 56), (\u0027Cory\u0027, \u0027Maths\u0027, 56))\n((\u0027Cory\u0027, 65), (\u0027Cory\u0027, \u0027Physics\u0027, 65))\n((\u0027Cory\u0027, 71), (\u0027Cory\u0027, \u0027Chemistry\u0027, 71))\n((\u0027Cory\u0027, 68), (\u0027Cory\u0027, \u0027Biology\u0027, 68))\n((\u0027Jackeline\u0027, 86), (\u0027Jackeline\u0027, \u0027Maths\u0027, 86))\n((\u0027Jackeline\u0027, 62), (\u0027Jackeline\u0027, \u0027Physics\u0027, 62))\n((\u0027Jackeline\u0027, 75), (\u0027Jackeline\u0027, \u0027Chemistry\u0027, 75))\n((\u0027Jackeline\u0027, 83), (\u0027Jackeline\u0027, \u0027Biology\u0027, 83))\n((\u0027Juan\u0027, 63), (\u0027Juan\u0027, \u0027Maths\u0027, 63))\n((\u0027Juan\u0027, 69), (\u0027Juan\u0027, \u0027Physics\u0027, 69))\n((\u0027Juan\u0027, 64), (\u0027Juan\u0027, \u0027Chemistry\u0027, 64))\n((\u0027Juan\u0027, 60), (\u0027Juan\u0027, \u0027Biology\u0027, 60))\n\n\n((\u0027Jimmy\u0027, 62), (\u0027Jimmy\u0027, \u0027Physics\u0027, 62))\n((\u0027Jimmy\u0027, 69), (\u0027Jimmy\u0027, \u0027Maths\u0027, 69))\n((\u0027Jimmy\u0027, 80), (\u0027Jimmy\u0027, \u0027Biology\u0027, 80))\n((\u0027Jimmy\u0027, 97), (\u0027Jimmy\u0027, \u0027Chemistry\u0027, 97))\n((\u0027Thomas\u0027, 74), (\u0027Thomas\u0027, \u0027Biology\u0027, 74))\n((\u0027Thomas\u0027, 87), (\u0027Thomas\u0027, \u0027Maths\u0027, 87))\n((\u0027Thomas\u0027, 91), (\u0027Thomas\u0027, \u0027Chemistry\u0027, 91))\n((\u0027Thomas\u0027, 93), (\u0027Thomas\u0027, \u0027Physics\u0027, 93))\n((\u0027Juan\u0027, 60), (\u0027Juan\u0027, \u0027Biology\u0027, 60))\n((\u0027Juan\u0027, 63), (\u0027Juan\u0027, \u0027Maths\u0027, 63))\n((\u0027Juan\u0027, 64), (\u0027Juan\u0027, \u0027Chemistry\u0027, 64))\n((\u0027Juan\u0027, 69), (\u0027Juan\u0027, \u0027Physics\u0027, 69))\n((\u0027Tina\u0027, 68), (\u0027Tina\u0027, \u0027Chemistry\u0027, 68))\n((\u0027Tina\u0027, 73), (\u0027Tina\u0027, \u0027Physics\u0027, 73))\n((\u0027Tina\u0027, 78), (\u0027Tina\u0027, \u0027Maths\u0027, 78))\n((\u0027Tina\u0027, 87), (\u0027Tina\u0027, \u0027Biology\u0027, 87))\n((\u0027Cory\u0027, 56), (\u0027Cory\u0027, \u0027Maths\u0027, 56))\n((\u0027Cory\u0027, 65), (\u0027Cory\u0027, \u0027Physics\u0027, 65))\n((\u0027Cory\u0027, 68), (\u0027Cory\u0027, \u0027Biology\u0027, 68))\n((\u0027Cory\u0027, 71), (\u0027Cory\u0027, \u0027Chemistry\u0027, 71))\n((\u0027Jackeline\u0027, 62), (\u0027Jackeline\u0027, \u0027Physics\u0027, 62))\n((\u0027Jackeline\u0027, 75), (\u0027Jackeline\u0027, \u0027Chemistry\u0027, 75))\n((\u0027Jackeline\u0027, 83), (\u0027Jackeline\u0027, \u0027Biology\u0027, 83))\n((\u0027Jackeline\u0027, 86), (\u0027Jackeline\u0027, \u0027Maths\u0027, 86))\n((\u0027Joseph\u0027, 74), (\u0027Joseph\u0027, \u0027Physics\u0027, 74))\n((\u0027Joseph\u0027, 82), (\u0027Joseph\u0027, \u0027Biology\u0027, 82))\n((\u0027Joseph\u0027, 83), (\u0027Joseph\u0027, \u0027Maths\u0027, 83))\n((\u0027Joseph\u0027, 91), (\u0027Joseph\u0027, \u0027Chemistry\u0027, 91))\n"
+          }
+        ]
+      },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669767427234_0001//jobs/job?id\u003d11"
+            },
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669767427234_0001//jobs/job?id\u003d12"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1669683262724_420093415",
       "id": "paragraph_1669683262724_420093415",
       "dateCreated": "2022-11-29 00:54:22.724",
+      "dateStarted": "2022-11-30 02:25:36.825",
+      "dateFinished": "2022-11-30 02:25:37.214",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-30 02:05:30.273",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669773920717_344877345",
+      "id": "paragraph_1669773920717_344877345",
+      "dateCreated": "2022-11-30 02:05:20.717",
       "status": "READY"
     },
     {
       "title": "Action - reduce",
-      "text": "%pyspark\n\n#\n# Reduce Example\n#\n\ndef add(x, y):\n    print(\u0027{}+{}\u003d{}\u0027.format(x, y, x+y))\n    return x+y\n    \n    \ndata \u003d [1,2,3,4,5]\n\nrdd_1 \u003d spark.sparkContext.parallelize(data,2)\n\nprint(\"Partitions : {}\".format(rdd_1.getNumPartitions()))\nprint(\"Total : {}\".format(rdd_1.reduce(add)))\nprint(\"Total with init value : {}\".format(rdd_1.reduce(lambda x, y : x + y)))\nprint(\"Min : {}\".format(rdd_1.reduce(lambda x, y : min(x, y) )))\nprint(\"Max : {}\".format(rdd_1.reduce(lambda x, y : max(x, y) )))",
+      "text": "%pyspark\n\n#\n# Reduce Example\n#\n\ndef add(x, y):\n    print(\u0027{}+{}\u003d{}\u0027.format(x, y, x+y))\n    return x+y\n    \n    \ndata \u003d [1,2,3,4,5]\n\nrdd_1 \u003d spark.sparkContext.parallelize(range(21),4)\n\nprint(\"Partitions : {}\".format(rdd_1.getNumPartitions()))\nprint(\"Total : {}\".format(rdd_1.reduce(add)))\nprint(\"Total with init value : {}\".format(rdd_1.reduce(lambda x, y : x + y)))\nprint(\"Min : {}\".format(rdd_1.reduce(lambda x, y : min(x, y) )))\nprint(\"Max : {}\".format(rdd_1.reduce(lambda x, y : max(x, y) )))",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 01:09:36.264",
+      "dateUpdated": "2022-11-30 05:33:21.034",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -912,7 +969,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Partitions : 2\n3+12\u003d15\nTotal : 15\nTotal with init value : 15\nMin : 1\nMax : 5\n"
+            "data": "Partitions : 4\n10+35\u003d45\n45+60\u003d105\n105+105\u003d210\nTotal : 210\nTotal with init value : 210\nMin : 0\nMax : 20\n"
           }
         ]
       },
@@ -925,16 +982,16 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://quickstart-bigdata:4040/jobs/job?id\u003d11"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669767427234_0001//jobs/job?id\u003d13"
             },
             {
-              "jobUrl": "http://quickstart-bigdata:4040/jobs/job?id\u003d12"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669767427234_0001//jobs/job?id\u003d14"
             },
             {
-              "jobUrl": "http://quickstart-bigdata:4040/jobs/job?id\u003d13"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669767427234_0001//jobs/job?id\u003d15"
             },
             {
-              "jobUrl": "http://quickstart-bigdata:4040/jobs/job?id\u003d14"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669767427234_0001//jobs/job?id\u003d16"
             }
           ],
           "interpreterSettingId": "spark"
@@ -944,15 +1001,15 @@
       "jobName": "paragraph_1639111050084_1196817670",
       "id": "paragraph_1638440185623_41423979",
       "dateCreated": "2021-12-10 10:07:30.084",
-      "dateStarted": "2021-12-10 10:16:03.839",
-      "dateFinished": "2021-12-10 10:16:04.898",
+      "dateStarted": "2022-11-30 05:33:21.043",
+      "dateFinished": "2022-11-30 05:33:22.124",
       "status": "FINISHED"
     },
     {
       "title": "Action - collect",
-      "text": "%pyspark\n\n#\n# Return all the elements of the dataset as an array at the driver program. This is usually useful after a filter or other operation that returns a sufficiently small subset of the data.\n#\n",
+      "text": "%pyspark\n\n#\n# Return all the elements of the dataset as an array at the driver program. This is usually useful after a filter or other operation that returns a sufficiently small subset of the data.\n#\n\ndata \u003d rdd_1.collect()\nfor i in data: print(i)\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 01:09:41.474",
+      "dateUpdated": "2022-11-30 05:37:06.854",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -972,19 +1029,43 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n"
+          }
+        ]
+      },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669767427234_0001//jobs/job?id\u003d17"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1669683515101_125332748",
       "id": "paragraph_1669683515101_125332748",
       "dateCreated": "2022-11-29 00:58:35.101",
-      "status": "READY"
+      "dateStarted": "2022-11-30 05:35:41.425",
+      "dateFinished": "2022-11-30 05:35:41.613",
+      "status": "FINISHED"
     },
     {
       "title": "Action - count",
-      "text": "%pyspark\n\n#\n# Return the number of elements in the dataset.\n# \n\n",
+      "text": "%pyspark\n\n#\n# Return the number of elements in the dataset.\n# \n\n_count \u003d rdd_1.count()\nprint(_count)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 01:09:44.805",
+      "dateUpdated": "2022-11-30 05:37:35.560",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1004,13 +1085,37 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "21\n"
+          }
+        ]
+      },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669767427234_0001//jobs/job?id\u003d18"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1669683566864_1672174634",
       "id": "paragraph_1669683566864_1672174634",
       "dateCreated": "2022-11-29 00:59:26.864",
-      "status": "READY"
+      "dateStarted": "2022-11-30 05:37:35.573",
+      "dateFinished": "2022-11-30 05:37:35.767",
+      "status": "FINISHED"
     },
     {
       "title": "Action - first",
@@ -1365,9 +1470,9 @@
       "status": "READY"
     },
     {
-      "text": "%pyspark\n\n#\n# Broadcast Variables\n#\n\nbroadcastVar \u003d sc.broadcast([1, 2, 3])\nprint(\"{}\".format(broadcastVar.value))\n\n",
+      "text": "%pyspark\n\n#\n# Broadcast Variables\n#\n\nbroadcastVar \u003d sc.broadcast([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\nprint(\"{}\".format(broadcastVar.value))\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-06-19 02:28:39.675",
+      "dateUpdated": "2022-11-30 05:45:38.622",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1391,7 +1496,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "[1, 2, 3]\n"
+            "data": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
           }
         ]
       },
@@ -1401,14 +1506,14 @@
       "jobName": "paragraph_1639111050085_1617425978",
       "id": "paragraph_1638962691917_1511648622",
       "dateCreated": "2021-12-10 10:07:30.085",
-      "dateStarted": "2021-12-10 10:17:24.879",
-      "dateFinished": "2021-12-10 10:17:25.485",
+      "dateStarted": "2022-11-30 05:45:38.627",
+      "dateFinished": "2022-11-30 05:45:38.641",
       "status": "FINISHED"
     },
     {
-      "text": "%pyspark\n\n#\n# Accumulators\n#\n\naccum \u003d sc.accumulator(0)\n\nacc_rd \u003d sc.parallelize(data,4)\nacc_rd.foreach(lambda x : accum.add(x))\n\nprint(\"{}\".format(accum.value))\n\n",
+      "text": "%pyspark\n\n#\n# Accumulators\n#\n\naccum \u003d sc.accumulator(0)\n\nacc_rd \u003d sc.parallelize(range(1, 21), 4)\nacc_rd.foreach(lambda x : accum.add(x))\n\nprint(\"{}\".format(accum.value))\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-06-19 02:28:49.961",
+      "dateUpdated": "2022-11-30 05:46:47.248",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1432,7 +1537,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "15\n"
+            "data": "210\n"
           }
         ]
       },
@@ -1445,7 +1550,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://quickstart-bigdata:4040/jobs/job?id\u003d23"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1669767427234_0001//jobs/job?id\u003d19"
             }
           ],
           "interpreterSettingId": "spark"
@@ -1455,9 +1560,27 @@
       "jobName": "paragraph_1639111050085_1218744193",
       "id": "paragraph_1638960380810_818547062",
       "dateCreated": "2021-12-10 10:07:30.085",
-      "dateStarted": "2021-12-10 10:17:46.799",
-      "dateFinished": "2021-12-10 10:17:47.214",
+      "dateStarted": "2022-11-30 05:46:47.258",
+      "dateFinished": "2022-11-30 05:46:47.445",
       "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-30 05:46:47.258",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669787207257_81375735",
+      "id": "paragraph_1669787207257_81375735",
+      "dateCreated": "2022-11-30 05:46:47.257",
+      "status": "READY"
     }
   ],
   "name": "pyspark-local-rdd-actions",

@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%hive\n\nset logger.PerfLogger.level \u003d ERROR;\n\nset  hive.root.logger\u003dERROR,console\n\n\n--\ndrop table IF EXISTS tweeter_tweets;\n\n\n",
+      "text": "%hive\n\ndrop table IF EXISTS tweeter_tweets;\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-09-16 02:58:59.735",
+      "dateUpdated": "2022-12-01 15:38:16.857",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -65,14 +65,14 @@
       "jobName": "paragraph_1641828852655_1982241524",
       "id": "paragraph_1641828852655_1982241524",
       "dateCreated": "2022-01-10 15:34:12.655",
-      "dateStarted": "2022-05-28 04:26:11.881",
-      "dateFinished": "2022-05-28 04:26:12.104",
+      "dateStarted": "2022-12-01 15:38:16.862",
+      "dateFinished": "2022-12-01 15:38:17.585",
       "status": "FINISHED"
     },
     {
-      "text": "%hive\n\n--\nCREATE TABLE if not exists tweeter_tweets (\n    uuid STRING,\n    text STRING, \n    words INT, \n    length INT\n) \nSTORED AS ORC;\n\n",
+      "text": "%hive\n\n--\nCREATE TABLE if not exists tweeter_tweets (\n    uuid STRING,\n    text STRING, \n    words INT, \n    length INT,\n    `timestamp` BIGINT\n) \nSTORED AS ORC;\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-05-28 04:27:10.149",
+      "dateUpdated": "2022-12-01 08:39:47.550",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -124,15 +124,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "INFO  : Compiling command(queryId\u003droot_20220528042619_59fc1c83-6fa3-426b-8e59-ea6dbc19c05e): \n\n\nCREATE TABLE if not exists tweeter_tweets (\n    uuid STRING,\n    text STRING, \n    words INT, \n    length INT\n) \nSTORED AS ORC\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial \u003d false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:null, properties:null)\nINFO  : EXPLAIN output for queryid root_20220528042619_59fc1c83-6fa3-426b-8e59-ea6dbc19c05e : STAGE DEPENDENCIES:\n  Stage-0 is a root stage [DDL]\n\nSTAGE PLANS:\n  Stage: Stage-0\n      Create Table Operator:\n        Create Table\n          columns: uuid string, text string, words int, length int\n          if not exists: true\n          input format: org.apache.hadoop.hive.ql.io.orc.OrcInputFormat\n          output format: org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat\n          serde name: org.apache.hadoop.hive.ql.io.orc.OrcSerde\n          name: default.tweeter_tweets\n\n\nINFO  : Completed compiling command(queryId\u003droot_20220528042619_59fc1c83-6fa3-426b-8e59-ea6dbc19c05e); Time taken: 0.094 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId\u003droot_20220528042619_59fc1c83-6fa3-426b-8e59-ea6dbc19c05e): \n\n\nCREATE TABLE if not exists tweeter_tweets (\n    uuid STRING,\n    text STRING, \n    words INT, \n    length INT\n) \nSTORED AS ORC\nINFO  : Starting task [Stage-0:DDL] in serial mode\n\n"
-          },
-          {
-            "type": "TEXT",
             "data": "Query executed successfully. Affected rows : -1\n"
-          },
-          {
-            "type": "TABLE",
-            "data": "_c0\n0\n"
           }
         ]
       },
@@ -142,14 +134,14 @@
       "jobName": "paragraph_1641875515517_863888253",
       "id": "paragraph_1641875515517_863888253",
       "dateCreated": "2022-01-11 04:31:55.517",
-      "dateStarted": "2022-05-28 04:26:19.083",
-      "dateFinished": "2022-05-28 04:26:22.994",
+      "dateStarted": "2022-12-01 08:39:47.553",
+      "dateFinished": "2022-12-01 08:39:47.605",
       "status": "FINISHED"
     },
     {
-      "text": "%hive\n\n--\nselect count(*) from tweeter_tweets;\n",
+      "text": "%hive\n\n--\nselect * from tweeter_tweets;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-05-28 04:27:30.653",
+      "dateUpdated": "2022-12-01 15:37:10.545",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -172,7 +164,11 @@
                   "tableGridState": {},
                   "tableColumnTypeState": {
                     "names": {
-                      "_c0": "string"
+                      "uuid": "string",
+                      "text": "string",
+                      "words": "string",
+                      "length": "string",
+                      "timestamp": "string"
                     },
                     "updated": false
                   },
@@ -201,7 +197,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "_c0\n0\n"
+            "data": "uuid\ttext\twords\tlength\ttimestamp\n"
           }
         ]
       },
@@ -211,14 +207,14 @@
       "jobName": "paragraph_1653712022765_1387770565",
       "id": "paragraph_1653712022765_1387770565",
       "dateCreated": "2022-05-28 04:27:02.765",
-      "dateStarted": "2022-05-28 04:27:30.256",
-      "dateFinished": "2022-05-28 04:27:30.446",
+      "dateStarted": "2022-12-01 15:37:10.565",
+      "dateFinished": "2022-12-01 15:37:14.992",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\nMSCK REPAIR TABLE tweeter_tweets\n",
       "user": "anonymous",
-      "dateUpdated": "2022-02-02 05:38:26.882",
+      "dateUpdated": "2022-12-01 10:02:44.071",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -252,14 +248,14 @@
       "jobName": "paragraph_1641875777438_949392300",
       "id": "paragraph_1641875777438_949392300",
       "dateCreated": "2022-01-11 04:36:17.438",
-      "dateStarted": "2022-01-11 06:01:13.363",
-      "dateFinished": "2022-01-11 06:01:13.502",
+      "dateStarted": "2022-12-01 10:02:44.074",
+      "dateFinished": "2022-12-01 10:02:44.114",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\nselect * from tweeter_tweets;",
       "user": "anonymous",
-      "dateUpdated": "2022-02-02 05:38:12.580",
+      "dateUpdated": "2022-12-01 15:37:50.750",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -285,7 +281,8 @@
                       "uuid": "string",
                       "text": "string",
                       "words": "string",
-                      "length": "string"
+                      "length": "string",
+                      "timestamp": "string"
                     },
                     "updated": false
                   },
@@ -343,7 +340,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "uuid\ttext\twords\tlength\n90070601-1de4-4f3b-bd25-f3c3de563543\trotenones stepgrandchild oophorectomized tar-brush pillory foliously \t6\t69\n1e6d25b8-3b46-4854-9395-9082eea6445b\tkingdomship Kola preundertaken notices \t4\t39\nf53dbb3d-a671-4c35-8f96-3164a18d1589\tAllayne threw \t2\t14\n7ebc0025-4a42-434a-9ff2-8ba953847e89\tdrain Eproboscidea \t2\t19\n4f49dfb6-dfb5-4de2-b08f-d1c584ba55e5\tDogger gateman \t2\t15\n211d7cbe-085d-4c36-86c2-33a7d74761d1\tglobosely nonrepudiation unracking jack-boy Bellotto \t5\t53\nfe3567ac-4b8b-4861-bdb7-c300fd5a5d83\tasparagic murasakite nonevents sexivalency \t4\t43\nee1ddf11-f21e-4b56-aa22-325191f9e2de\tocellary calvary \t2\t17\n921a9564-521f-4aa9-8040-74b466aa1be3\tsilicic oculospinal nodulus Rikari hexangularly \t5\t48\nc9fb4f65-ee89-4a59-b9c4-aede9a7c8f6b\tperithoracic dansk \t2\t19\nca55233b-a5bd-468b-aedb-f2adf44b121a\tprotogelatose curdler audiometries \t3\t35\n099ad971-69c0-48a4-8a17-a62322febba8\tDelphinus conch- unended pelvimetric \t4\t37\nf5e11012-30fa-4e4c-9b73-5080d7daef7e\tjarsful duopsony unswatheable \t3\t30\n555a3b7c-0ea1-4af1-b396-c180b277b7ec\tselenate unexpressive syren alcade hypertelic \t5\t46\nd756a32d-4bc5-4a38-b526-f51420807e7f\tbumpsy subtotally paedogenetic Chiles \t4\t38\n9066da30-7c72-4f8a-8cd3-62271415cefc\tstomate esonarthex euroclydon \t3\t30\n"
+            "data": "uuid\ttext\twords\tlength\ttimestamp\n"
           }
         ]
       },
@@ -353,14 +350,14 @@
       "jobName": "paragraph_1641828889460_1168357193",
       "id": "paragraph_1641828889460_1168357193",
       "dateCreated": "2022-01-10 15:34:49.460",
-      "dateStarted": "2022-01-11 06:03:14.266",
-      "dateFinished": "2022-01-11 06:03:14.514",
+      "dateStarted": "2022-12-01 15:37:50.756",
+      "dateFinished": "2022-12-01 15:37:50.919",
       "status": "FINISHED"
     },
     {
-      "text": "%hive\n\ndescribe extended tweeter_tweets;",
+      "text": "%hive\n\ndescribe formatted tweeter_tweets;",
       "user": "anonymous",
-      "dateUpdated": "2022-02-02 05:38:17.108",
+      "dateUpdated": "2022-12-01 15:38:03.151",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -414,7 +411,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "col_name\tdata_type\tcomment\nuuid\tstring\t\ntext\tstring\t\nwords\tint\t\nlength\tint\t\n\tnull\tnull\nDetailed Table Information\tTable(tableName:tweeter_tweets, dbName:default, owner:brijeshdhaker, createTime:1641880881, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:uuid, type:string, comment:null), FieldSchema(name:text, type:string, comment:null), FieldSchema(name:words, type:int, comment:null), FieldSchema(name:length, type:int, comment:null)], location:hdfs://namenode:9000/user/hive/warehouse/tweeter_tweets, inputFormat:org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe, parameters:{serialization.format\u003d1, path\u003dhdfs://namenode:9000/user/hive/warehouse/tweeter_tweets}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[], parameters:{totalSize\u003d9584, spark.sql.sources.schema.part.0\u003d{\\\"type\\\":\\\"struct\\\",\\\"fields\\\":[{\\\"name\\\":\\\"uuid\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"text\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"words\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"length\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}}]}, numFiles\u003d6, transient_lastDdlTime\u003d1641881011, spark.sql.sources.schema.numParts\u003d1, spark.sql.sources.provider\u003dparquet, spark.sql.create.version\u003d3.1.2}, viewOriginalText:null, viewExpandedText:null, tableType:MANAGED_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)\t\n"
+            "data": "col_name\tdata_type\tcomment\n# col_name\tdata_type\tcomment\nuuid\tstring\t\ntext\tstring\t\nwords\tint\t\nlength\tint\t\ntimestamp\tbigint\t\n\tnull\tnull\n# Detailed Table Information\tnull\tnull\nDatabase:           \tdefault             \tnull\nOwnerType:          \tUSER                \tnull\nOwner:              \tzeppelin            \tnull\nCreateTime:         \tThu Dec 01 09:55:37 UTC 2022\tnull\nLastAccessTime:     \tUNKNOWN             \tnull\nRetention:          \t0                   \tnull\nLocation:           \thdfs://namenode:9000/user/hive/warehouse/tweeter_tweets\tnull\nTable Type:         \tMANAGED_TABLE       \tnull\nTable Parameters:\tnull\tnull\n\tnumFiles            \t27                  \n\tspark.sql.create.version\t3.1.2               \n\tspark.sql.sources.provider\torc                 \n\tspark.sql.sources.schema.numParts\t1                   \n\tspark.sql.sources.schema.part.0\t{\\\"type\\\":\\\"struct\\\",\\\"fields\\\":[{\\\"name\\\":\\\"uuid\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"text\\\",\\\"type\\\":\\\"string\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"words\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"length\\\",\\\"type\\\":\\\"integer\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}},{\\\"name\\\":\\\"timestamp\\\",\\\"type\\\":\\\"long\\\",\\\"nullable\\\":true,\\\"metadata\\\":{}}]}\n\ttotalSize           \t32623               \n\ttransient_lastDdlTime\t1669888790          \n\tnull\tnull\n# Storage Information\tnull\tnull\nSerDe Library:      \torg.apache.hadoop.hive.ql.io.orc.OrcSerde\tnull\nInputFormat:        \torg.apache.hadoop.hive.ql.io.orc.OrcInputFormat\tnull\nOutputFormat:       \torg.apache.hadoop.hive.ql.io.orc.OrcOutputFormat\tnull\nCompressed:         \tNo                  \tnull\nNum Buckets:        \t-1                  \tnull\nBucket Columns:     \t[]                  \tnull\nSort Columns:       \t[]                  \tnull\nStorage Desc Params:\tnull\tnull\n\tpath                \thdfs://namenode:9000/user/hive/warehouse/tweeter_tweets\n\tserialization.format\t1                   \n"
           }
         ]
       },
@@ -424,8 +421,8 @@
       "jobName": "paragraph_1641828914639_1165800673",
       "id": "paragraph_1641828914639_1165800673",
       "dateCreated": "2022-01-10 15:35:14.639",
-      "dateStarted": "2022-01-11 06:08:33.438",
-      "dateFinished": "2022-01-11 06:08:33.595",
+      "dateStarted": "2022-12-01 15:38:03.155",
+      "dateFinished": "2022-12-01 15:38:03.372",
       "status": "FINISHED"
     },
     {

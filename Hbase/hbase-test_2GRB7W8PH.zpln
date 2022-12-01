@@ -3,7 +3,7 @@
     {
       "text": "%hbase\n\nlist\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-11 04:28:51.896",
+      "dateUpdated": "2022-12-01 02:22:04.631",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -25,7 +25,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "TABLE\n0 row(s) in 0.0920 seconds\n\n"
+            "data": "TABLE\ntransaction_detail_hbase_tbl\n1 row(s) in 0.0900 seconds\n\n"
           }
         ]
       },
@@ -35,8 +35,8 @@
       "jobName": "paragraph_1641086838798_1928664377",
       "id": "paragraph_1641086838798_1928664377",
       "dateCreated": "2022-01-02 01:27:18.798",
-      "dateStarted": "2022-11-11 04:28:51.915",
-      "dateFinished": "2022-11-11 04:28:55.438",
+      "dateStarted": "2022-12-01 02:22:04.653",
+      "dateFinished": "2022-12-01 02:22:08.347",
       "status": "FINISHED"
     },
     {
@@ -120,7 +120,7 @@
     {
       "text": "%hbase\n\nexists \u0027transaction_detail_hbase_tbl\u0027\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-11 04:29:04.115",
+      "dateUpdated": "2022-12-01 02:22:27.026",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -142,7 +142,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Table transaction_detail_hbase_tbl does not exist\n0 row(s) in 0.0460 seconds\n\n"
+            "data": "Table transaction_detail_hbase_tbl does exist\n0 row(s) in 0.0080 seconds\n\n"
           }
         ]
       },
@@ -152,8 +152,8 @@
       "jobName": "paragraph_1668135045776_1867189989",
       "id": "paragraph_1668135045776_1867189989",
       "dateCreated": "2022-11-11 02:50:45.776",
-      "dateStarted": "2022-11-11 04:29:04.117",
-      "dateFinished": "2022-11-11 04:29:04.166",
+      "dateStarted": "2022-12-01 02:22:27.031",
+      "dateFinished": "2022-12-01 02:22:27.043",
       "status": "FINISHED"
     },
     {
@@ -198,7 +198,7 @@
     {
       "text": "%hbase\n\nlist \u0027transaction_detail_hbase_tbl\u0027",
       "user": "anonymous",
-      "dateUpdated": "2022-11-11 04:29:28.750",
+      "dateUpdated": "2022-12-01 02:22:37.228",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -230,8 +230,8 @@
       "jobName": "paragraph_1640952408091_604338175",
       "id": "paragraph_1640952408091_604338175",
       "dateCreated": "2021-12-31 12:06:48.091",
-      "dateStarted": "2022-11-11 04:29:28.752",
-      "dateFinished": "2022-11-11 04:29:28.757",
+      "dateStarted": "2022-12-01 02:22:37.232",
+      "dateFinished": "2022-12-01 02:22:37.237",
       "status": "FINISHED"
     },
     {
@@ -276,7 +276,7 @@
     {
       "text": "%hbase\n\nscan \u0027transaction_detail_hbase_tbl\u0027",
       "user": "anonymous",
-      "dateUpdated": "2022-11-22 05:23:06.257",
+      "dateUpdated": "2022-12-01 02:22:45.062",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -299,7 +299,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "ROW  COLUMN+CELL\n 1 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976276, value\u003dMumbai\n 1 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976278, value\u003dIndia\n 1 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976253, value\u003d50.85\n 1 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976264, value\u003dMasterCard\n 1 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976270, value\u003d2019-05-14 15:24:12\n 1 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976267, value\u003dwww.ebay.com\n 1 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976273, value\u003dLaptop\n 2 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976299, value\u003dPune\n 2 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976305, value\u003dIndia\n 2 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976283, value\u003d259.12\n 2 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976285, value\u003dMasterCard\n 2 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976292, value\u003d2019-05-14 15:24:13\n 2 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976288, value\u003dwww.amazon.com\n 2 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976294, value\u003dWrist Band\n 3 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976331, value\u003dNew York City\n 3 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976334, value\u003dUnited States\n 3 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976309, value\u003d328.16\n 3 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976314, value\u003dMasterCard\n 3 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976323, value\u003d2019-05-14 15:24:14\n 3 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976318, value\u003dwww.flipkart.com\n 3 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976328, value\u003dTV Stand\n 4 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976353, value\u003dNew Delhi\n 4 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976356, value\u003dIndia\n 4 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976337, value\u003d399.06\n 4 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976341, value\u003dVisa\n 4 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976348, value\u003d2019-05-14 15:24:15\n 4 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976345, value\u003dwww.snapdeal.com\n 4 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976350, value\u003dTV Stand\n 5 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976375, value\u003dRome\n 5 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976378, value\u003dItaly\n 5 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976361, value\u003d194.52\n 5 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976364, value\u003dVisa\n 5 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976369, value\u003d2019-05-14 15:24:16\n 5 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976366, value\u003dwww.ebay.com\n 5 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976372, value\u003dExternal Hard Drive\n5 row(s) in 0.1390 seconds\n\n"
+            "data": "ROW  COLUMN+CELL\n 1 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976276, value\u003dMumbai\n 1 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976278, value\u003dIndia\n 1 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976253, value\u003d50.85\n 1 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976264, value\u003dMasterCard\n 1 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976270, value\u003d2019-05-14 15:24:12\n 1 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976267, value\u003dwww.ebay.com\n 1 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976273, value\u003dLaptop\n 2 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976299, value\u003dPune\n 2 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976305, value\u003dIndia\n 2 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976283, value\u003d259.12\n 2 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976285, value\u003dMasterCard\n 2 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976292, value\u003d2019-05-14 15:24:13\n 2 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976288, value\u003dwww.amazon.com\n 2 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976294, value\u003dWrist Band\n 3 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976331, value\u003dNew York City\n 3 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976334, value\u003dUnited States\n 3 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976309, value\u003d328.16\n 3 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976314, value\u003dMasterCard\n 3 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976323, value\u003d2019-05-14 15:24:14\n 3 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976318, value\u003dwww.flipkart.com\n 3 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976328, value\u003dTV Stand\n 4 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976353, value\u003dNew Delhi\n 4 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976356, value\u003dIndia\n 4 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976337, value\u003d399.06\n 4 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976341, value\u003dVisa\n 4 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976348, value\u003d2019-05-14 15:24:15\n 4 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976345, value\u003dwww.snapdeal.com\n 4 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976350, value\u003dTV Stand\n 5 column\u003dcustomer_data:transaction_city_name, timestamp\u003d1668140976375, value\u003dRome\n 5 column\u003dcustomer_data:transaction_country_name, timestamp\u003d1668140976378, value\u003dItaly\n 5 column\u003dtransaction_data:transaction_amount, timestamp\u003d1668140976361, value\u003d194.52\n 5 column\u003dtransaction_data:transaction_card_type, timestamp\u003d1668140976364, value\u003dVisa\n 5 column\u003dtransaction_data:transaction_datetime, timestamp\u003d1668140976369, value\u003d2019-05-14 15:24:16\n 5 column\u003dtransaction_data:transaction_ecommerce_website_name, timestamp\u003d1668140976366, value\u003dwww.ebay.com\n 5 column\u003dtransaction_data:transaction_product_name, timestamp\u003d1668140976372, value\u003dExternal Hard Drive\n5 row(s) in 0.0450 seconds\n\n"
           }
         ]
       },
@@ -309,8 +309,8 @@
       "jobName": "paragraph_1641085542186_146367919",
       "id": "paragraph_1641085542186_146367919",
       "dateCreated": "2022-01-02 01:05:42.186",
-      "dateStarted": "2022-11-22 05:23:06.260",
-      "dateFinished": "2022-11-22 05:23:09.816",
+      "dateStarted": "2022-12-01 02:22:45.066",
+      "dateFinished": "2022-12-01 02:22:45.121",
       "status": "FINISHED"
     },
     {

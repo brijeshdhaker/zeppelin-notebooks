@@ -1,0 +1,100 @@
+{
+  "paragraphs": [
+    {
+      "text": "%python.conf\n\n\nzeppelin.interpreter.launcher yarn\n\nzeppelin.yarn.dist.archives /apps/hostpath/python/pyspark3.7-20221125.tar.gz#environment\n\nzeppelin.interpreter.conda.env.name environment\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-27 03:01:41.651",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "text",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/text",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669517377010_1685412728",
+      "id": "paragraph_1669517377010_1685412728",
+      "dateCreated": "2022-11-27 02:49:37.010",
+      "dateStarted": "2022-11-27 03:01:41.655",
+      "dateFinished": "2022-11-27 03:01:41.657",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%python\n\nprint(1);\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-27 03:00:06.112",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669517500723_1300190586",
+      "id": "paragraph_1669517500723_1300190586",
+      "dateCreated": "2022-11-27 02:51:40.723",
+      "dateStarted": "2022-11-27 03:00:06.116",
+      "dateFinished": "2022-11-27 03:00:06.117",
+      "status": "ERROR",
+      "errorMessage": "java.lang.ClassNotFoundException: org.apache.hadoop.yarn.exceptions.ApplicationNotFoundException\n\tat java.net.URLClassLoader.findClass(URLClassLoader.java:387)\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:418)\n\tat java.lang.ClassLoader.loadClass(ClassLoader.java:351)\n\tat org.apache.zeppelin.interpreter.launcher.YarnInterpreterLauncher.launchDirectly(YarnInterpreterLauncher.java:46)\n\tat org.apache.zeppelin.interpreter.launcher.InterpreterLauncher.launch(InterpreterLauncher.java:110)\n\tat org.apache.zeppelin.interpreter.InterpreterSetting.createInterpreterProcess(InterpreterSetting.java:856)\n\tat org.apache.zeppelin.interpreter.ManagedInterpreterGroup.getOrCreateInterpreterProcess(ManagedInterpreterGroup.java:66)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getOrCreateInterpreterProcess(RemoteInterpreter.java:104)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.internal_create(RemoteInterpreter.java:154)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.open(RemoteInterpreter.java:126)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getFormType(RemoteInterpreter.java:271)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:438)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:69)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+    },
+    {
+      "text": "%python\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-11-27 02:54:53.529",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669517693529_1038893868",
+      "id": "paragraph_1669517693529_1038893868",
+      "dateCreated": "2022-11-27 02:54:53.529",
+      "status": "READY"
+    }
+  ],
+  "name": "python-yarn-test",
+  "id": "2HM8QKR93",
+  "defaultInterpreterGroup": "python",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}

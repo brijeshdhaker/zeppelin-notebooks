@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d08b261-ebb4-479a-9b39-cf0d413b1c57" name="Changes" comment="2022-11-29 Update zeppelin notebooks">
-      <change beforePath="$PROJECT_DIR$/PySpark/structured_stream_2GS3G93GM.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/PySpark/structured_stream_2GS3G93GM.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zeppelin-notebooks.iws" beforeDir="false" afterPath="$PROJECT_DIR$/zeppelin-notebooks.iws" afterDir="false" />
-    </list>
+    <list default="true" id="7d08b261-ebb4-479a-9b39-cf0d413b1c57" name="Changes" comment="2022-11-29 Update zeppelin notebooks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669686411127</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2022-11-29 Update zeppelin notebooks">
+      <created>1669769951788</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669769951788</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

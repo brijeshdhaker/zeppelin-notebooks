@@ -1058,7 +1058,7 @@
       "title": "Show Tables",
       "text": "%spark.sql\n\nshow tables",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 04:34:06.478",
+      "dateUpdated": "2022-11-30 01:09:12.751",
       "progress": 0,
       "config": {
         "runOnSelectionChange": true,
@@ -1115,7 +1115,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "database\ttableName\tisTemporary\n\tbank\ttrue\n\tpeople\ttrue\n"
+            "data": "database\ttableName\tisTemporary\ndefault\toptrans_tbl\tfalse\ndefault\tproduct_revenue\tfalse\ndefault\tsales_delta_managed\tfalse\ndefault\ttransact_tbl\tfalse\ndefault\ttransaction_detail_hive_tbl\tfalse\ndefault\ttransaction_details\tfalse\ndefault\ttransaction_details_orc\tfalse\ndefault\ttransaction_details_parquet\tfalse\n"
           }
         ]
       },
@@ -1125,8 +1125,8 @@
       "jobName": "paragraph_1578388432752_877455036",
       "id": "paragraph_1578388432752_877455036",
       "dateCreated": "2020-01-07 17:13:52.752",
-      "dateStarted": "2021-07-26 04:34:06.482",
-      "dateFinished": "2021-07-26 04:34:06.556",
+      "dateStarted": "2022-11-30 01:09:12.756",
+      "dateFinished": "2022-11-30 01:09:15.088",
       "status": "FINISHED"
     },
     {
@@ -1604,7 +1604,5 @@
   "config": {
     "isZeppelinNotebookCronEnable": false
   },
-  "info": {
-    "isRunning": false
-  }
+  "info": {}
 }
