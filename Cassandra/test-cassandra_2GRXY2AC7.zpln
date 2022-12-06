@@ -398,11 +398,23 @@
       "status": "FINISHED"
     },
     {
-      "text": "%cassandra\n",
+      "text": "%spark\n\nimport com.datastax.spark.connector._\n\nval sparkMasterHost \u003d \"127.0.0.1\"\nval cassandraHost \u003d \"127.0.0.1\"\nval keyspace \u003d \"test\"\nval table \u003d \"words\"\n\n// Tell Spark the address of one Cassandra node:\nval conf \u003d new SparkConf(true).set(\"spark.cassandra.connection.host\", cassandraHost)\n\n// Connect to the Spark cluster:\nval sc \u003d new SparkContext(\"spark://\" + sparkMasterHost + \":7077\", \"example\", conf)\n\n// Read the table and print its contents:\nval rdd \u003d sc.cassandraTable(keyspace, table)\nrdd.toArray().foreach(println)\n\n// Write two rows to the table:\nval col \u003d sc.parallelize(Seq((\"of\", 1200), (\"the\", \"863\")))\ncol.saveToCassandra(keyspace, table)\n\nsc.stop()\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-02-16 01:13:50.586",
+      "dateUpdated": "2022-12-05 10:19:05.275",
       "progress": 0,
-      "config": {},
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
       "settings": {
         "params": {},
         "forms": {}

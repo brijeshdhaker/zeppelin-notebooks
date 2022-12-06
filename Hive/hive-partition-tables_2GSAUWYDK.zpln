@@ -46,11 +46,11 @@
       "title": "Advantage",
       "text": "%hive\n\nshow databases;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-09-18 04:47:12.871",
+      "dateUpdated": "2022-12-06 14:03:38.128",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 11.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {
           "0": {
@@ -109,18 +109,18 @@
       "jobName": "paragraph_1639277817222_1025855003",
       "id": "paragraph_1639277817222_1025855003",
       "dateCreated": "2021-12-12 08:26:57.222",
-      "dateStarted": "2022-09-18 04:47:12.888",
-      "dateFinished": "2022-09-18 04:47:12.968",
+      "dateStarted": "2022-12-06 14:03:38.133",
+      "dateFinished": "2022-12-06 14:03:38.172",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\nshow tables;\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-09-18 05:22:30.994",
+      "dateUpdated": "2022-12-06 14:03:40.764",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 11.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {
           "0": {
@@ -167,7 +167,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "tab_name\ntransaction_details\nzipcodes\nzipcodes_tmp\n"
+            "data": "tab_name\nglobal_external_table\nglobal_managed_table\noptrans_tbl\npermanent_view\nproduct_revenue\nsales_delta_managed\ntransact_tbl\ntransaction_detail_hive_tbl\ntransaction_details\ntransaction_details_orc\ntransaction_details_parquet\ntweeter_tweets\n"
           }
         ]
       },
@@ -177,8 +177,8 @@
       "jobName": "paragraph_1639295298354_986197200",
       "id": "paragraph_1639295298354_986197200",
       "dateCreated": "2021-12-12 13:18:18.354",
-      "dateStarted": "2022-09-18 05:22:31.058",
-      "dateFinished": "2022-09-18 05:22:40.336",
+      "dateStarted": "2022-12-06 14:03:40.770",
+      "dateFinished": "2022-12-06 14:03:40.828",
       "status": "FINISHED"
     },
     {

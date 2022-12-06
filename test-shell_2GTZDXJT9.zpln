@@ -44,7 +44,7 @@
     {
       "text": "%sh\n\njava -version\n",
       "user": "anonymous",
-      "dateUpdated": "2021-12-31 15:34:57.338",
+      "dateUpdated": "2022-12-05 08:08:01.183",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -68,7 +68,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "openjdk version \"1.8.0_292\"\nOpenJDK Runtime Environment (build 1.8.0_292-8u292-b10-0ubuntu1~20.04-b10)\nOpenJDK 64-Bit Server VM (build 25.292-b10, mixed mode)\n"
+            "data": "openjdk version \"1.8.0_312\"\nOpenJDK Runtime Environment (build 1.8.0_312-8u312-b07-0ubuntu1~20.04-b07)\nOpenJDK 64-Bit Server VM (build 25.312-b07, mixed mode)\n"
           }
         ]
       },
@@ -78,14 +78,14 @@
       "jobName": "paragraph_1640961467161_1663777995",
       "id": "paragraph_1640961467161_1663777995",
       "dateCreated": "2021-12-31 14:37:47.161",
-      "dateStarted": "2021-12-31 15:34:57.342",
-      "dateFinished": "2021-12-31 15:34:57.413",
+      "dateStarted": "2022-12-05 08:08:01.185",
+      "dateFinished": "2022-12-05 08:08:03.292",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\npython --version",
       "user": "anonymous",
-      "dateUpdated": "2021-12-31 15:35:09.322",
+      "dateUpdated": "2022-12-05 08:08:05.496",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -109,7 +109,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Python 3.7.10\n"
+            "data": "Python 3.7.12\n"
           }
         ]
       },
@@ -119,8 +119,8 @@
       "jobName": "paragraph_1640964883683_819741172",
       "id": "paragraph_1640964883683_819741172",
       "dateCreated": "2021-12-31 15:34:43.683",
-      "dateStarted": "2021-12-31 15:35:09.328",
-      "dateFinished": "2021-12-31 15:35:09.385",
+      "dateStarted": "2022-12-05 08:08:05.506",
+      "dateFinished": "2022-12-05 08:08:05.528",
       "status": "FINISHED"
     },
     {

@@ -460,9 +460,9 @@
       "status": "FINISHED"
     },
     {
-      "text": "%spark\n\nimport org.apache.spark.sql.types.{IntegerType, StringType, LongType, StructField, StructType}\nimport org.apache.spark.sql.{Row, SaveMode, SparkSession}\n\n// create DataFrame from scala Seq. It can infer schema for you.\nval df \u003d spark.createDataFrame(Seq(\n    (\"cd56bef5-997b-47c1-8edc-6657c806bbf7\", \"Hello world\", 2, 10, 1669888540), \n    (\"c719729d-34f4-4306-a646-f495d7edbb58\", \"Brijesh Kumar Dhaker\", 3, 16, 1669888545), \n    (\"c719729d-34f4-4306-a646-f495d7edbb59\", \"james\", 1, 5, 1669888550)\n)).toDF(\"uuid\", \"text\", \"words\", \"length\", \"timestamp\")\n\ndf.printSchema\ndf.show()\n\n// Turn on flag for Hive Dynamic Partitioning\nspark.conf.set(\"hive.exec.dynamic.partition\", \"true\")\nspark.conf.set(\"hive.exec.dynamic.partition.mode\", \"nonstrict\")\n//df.write.format(\"orc\").mode(SaveMode.Append).saveAsTable(\"default.tweeter_tweets\")\n/*\n    Map(\n        \"fileFormat\"-\u003e\"orc\",\n        \"serde\"-\u003e\"org.apache.hadoop.hive.ql.io.orc.OrcSerde\",\n        \"inputFormat\"-\u003e \"org.apache.hadoop.hive.ql.io.orc.OrcInputFormat\",\n        \"outputFormat\"-\u003e\"org.apache.hadoop.hive.ql.io.orc.OrcOutputFormat\"\n    )\n    */\n//createOrReplaceTempView\n\ndf.write.format(\"hive\").mode(SaveMode.Append).saveAsTable(\"default.tweeter_tweets\")\n",
+      "text": "%spark\n\nimport org.apache.spark.sql.types.{IntegerType, StringType, LongType, StructField, StructType}\nimport org.apache.spark.sql.{Row, SaveMode, SparkSession}\n\n// create DataFrame from scala Seq. It can infer schema for you.\nval df \u003d spark.createDataFrame(Seq(\n    (\"cd56bef5-997b-47c1-8edc-6657c806bbf7\", \"Hello world\", 2, 10, 1669888540), \n    (\"c719729d-34f4-4306-a646-f495d7edbb58\", \"Brijesh Kumar Dhaker\", 3, 16, 1669888545), \n    (\"c719729d-34f4-4306-a646-f495d7edbb59\", \"james\", 1, 5, 1669888550)\n)).toDF(\"uuid\", \"text\", \"words\", \"length\", \"timestamp\")\n\ndf.printSchema\ndf.show()\n\n// Turn on flag for Hive Dynamic Partitioning\nspark.conf.set(\"hive.exec.dynamic.partition\", \"true\")\nspark.conf.set(\"hive.exec.dynamic.partition.mode\", \"nonstrict\")\ndf.write.format(\"hive\").mode(SaveMode.Append).saveAsTable(\"default.tweeter_tweets\")\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-01 17:18:32.839",
+      "dateUpdated": "2022-12-01 18:11:40.193",
       "progress": 100,
       "config": {
         "editorSetting": {
@@ -630,9 +630,9 @@
       "status": "FINISHED"
     },
     {
-      "text": "%spark\n\n// Run the streaming job\nssc.start()\n\n// Wait for Stop Signal\nssc.awaitTermination()\n\n",
+      "text": "%spark\n\n// Run the streaming job\nssc.start()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-01 17:54:19.891",
+      "dateUpdated": "2022-12-01 18:12:27.279",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -669,6 +669,30 @@
       "dateStarted": "2022-12-01 17:54:19.895",
       "dateFinished": "2022-12-01 18:00:48.807",
       "status": "ABORT"
+    },
+    {
+      "text": "%spark\n\n// Wait for Stop Signal\nssc.awaitTermination()\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-01 18:14:59.452",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669918347457_1791409367",
+      "id": "paragraph_1669918347457_1791409367",
+      "dateCreated": "2022-12-01 18:12:27.457",
+      "status": "READY"
     },
     {
       "text": "%spark.sql\n\nshow tables;\n",
@@ -956,7 +980,7 @@
     {
       "text": "%sql\n\nSELECT `timestamp` AS TS, sum(words) AS wordcount\nFROM `tweeter_tweets`\nGROUP BY `timestamp`\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-01 17:57:58.700",
+      "dateUpdated": "2022-12-01 18:12:05.521",
       "progress": 48,
       "config": {
         "editorSetting": {
@@ -972,7 +996,7 @@
         "results": {
           "0": {
             "graph": {
-              "mode": "table",
+              "mode": "pieChart",
               "height": 300.0,
               "optionOpen": false,
               "setting": {
@@ -1086,9 +1110,9 @@
     },
     {
       "title": "Gracefully Stop Streaming Context",
-      "text": "%spark\n//\n\nssc.stop(stopSparkContext\u003dfalse, stopGracefully\u003dtrue)\n",
+      "text": "%spark\n\n//\nssc.stop(stopSparkContext\u003dfalse, stopGracefully\u003dtrue)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-01 18:00:03.412",
+      "dateUpdated": "2022-12-01 18:15:09.703",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1189,7 +1213,9 @@
   "noteForms": {},
   "angularObjects": {},
   "config": {
-    "isZeppelinNotebookCronEnable": false
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
   },
   "info": {}
 }

@@ -3,7 +3,7 @@
     {
       "text": "%file\n\nls -l /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-24 10:38:54.118",
+      "dateUpdated": "2022-12-05 08:06:19.892",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -25,7 +25,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxrwxrwx\t-\t brijeshdhaker\tsupergroup\t0\t2022-05-29 15:39GMT\t/user/brijeshdhaker\ndrwxrwxrwx\t-\t root\tsupergroup\t0\t2022-01-10 10:44GMT\t/user/hive\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-02-04 06:44GMT\t/user/zeppelin\n"
+            "data": "drwxr-xr-x\t-\t airflow\tsupergroup\t0\t2022-12-02 18:08GMT\t/user/airflow\ndrwxrwxrwx\t-\t brijeshdhaker\tsupergroup\t0\t2022-11-26 06:44GMT\t/user/brijeshdhaker\ndrwxrwxrwx\t-\t root\tsupergroup\t0\t2022-01-10 10:44GMT\t/user/hive\ndrwxr-xr-x\t-\t root\tsupergroup\t0\t2022-11-27 03:39GMT\t/user/root\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-12-04 17:11GMT\t/user/zeppelin\n"
           }
         ]
       },
@@ -35,14 +35,14 @@
       "jobName": "paragraph_1640953227121_981635026",
       "id": "paragraph_1640953227121_981635026",
       "dateCreated": "2021-12-31 12:20:27.121",
-      "dateStarted": "2022-11-24 10:38:54.140",
-      "dateFinished": "2022-11-24 10:38:55.980",
+      "dateStarted": "2022-12-05 08:06:19.916",
+      "dateFinished": "2022-12-05 08:06:22.338",
       "status": "FINISHED"
     },
     {
       "text": "%file\n\nls -l /user/hive/warehouse/\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-24 10:38:59.319",
+      "dateUpdated": "2022-12-05 08:07:32.535",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -64,7 +64,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 03:05GMT\t/user/hive/warehouse/optrans_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 02:43GMT\t/user/hive/warehouse/product_revenue\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-11-18 19:33GMT\t/user/hive/warehouse/sales_delta_managed\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 03:04GMT\t/user/hive/warehouse/transact_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 05:23GMT\t/user/hive/warehouse/transaction_detail_hive_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 00:54GMT\t/user/hive/warehouse/transaction_details_orc\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-21 13:30GMT\t/user/hive/warehouse/transaction_details_parquet\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:24GMT\t/user/hive/warehouse/zipcodes\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:23GMT\t/user/hive/warehouse/zipcodes_tmp\n"
+            "data": "drwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 03:05GMT\t/user/hive/warehouse/optrans_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 02:43GMT\t/user/hive/warehouse/product_revenue\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-11-25 01:47GMT\t/user/hive/warehouse/sales_delta_managed\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 03:04GMT\t/user/hive/warehouse/transact_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 05:23GMT\t/user/hive/warehouse/transaction_detail_hive_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 00:54GMT\t/user/hive/warehouse/transaction_details_orc\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-21 13:30GMT\t/user/hive/warehouse/transaction_details_parquet\ndrwxr-xr-x\t-\t zeppelin\tsupergroup\t0\t2022-12-01 09:59GMT\t/user/hive/warehouse/tweeter_tweets\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:24GMT\t/user/hive/warehouse/zipcodes\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:23GMT\t/user/hive/warehouse/zipcodes_tmp\n"
           }
         ]
       },
@@ -74,8 +74,8 @@
       "jobName": "paragraph_1640953238940_1049456036",
       "id": "paragraph_1640953238940_1049456036",
       "dateCreated": "2021-12-31 12:20:38.940",
-      "dateStarted": "2022-11-24 10:38:59.324",
-      "dateFinished": "2022-11-24 10:38:59.335",
+      "dateStarted": "2022-12-05 08:07:32.538",
+      "dateFinished": "2022-12-05 08:07:32.552",
       "status": "FINISHED"
     },
     {

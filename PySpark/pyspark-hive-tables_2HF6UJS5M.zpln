@@ -80,7 +80,7 @@
     {
       "text": "%pyspark\n\ndf\u003dspark.sql(\"show databases\")\ndf.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-25 01:26:51.111",
+      "dateUpdated": "2022-12-06 14:04:02.590",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -114,8 +114,8 @@
       "jobName": "paragraph_1666325109735_774518376",
       "id": "paragraph_1666325109735_774518376",
       "dateCreated": "2022-10-21 04:05:09.735",
-      "dateStarted": "2022-11-25 01:26:51.132",
-      "dateFinished": "2022-11-25 01:27:43.925",
+      "dateStarted": "2022-12-06 14:04:02.591",
+      "dateFinished": "2022-12-06 14:04:03.766",
       "status": "FINISHED"
     },
     {

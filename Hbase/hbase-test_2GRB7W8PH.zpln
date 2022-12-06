@@ -3,7 +3,7 @@
     {
       "text": "%hbase\n\nlist\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-01 02:22:04.631",
+      "dateUpdated": "2022-12-05 10:55:19.645",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -25,7 +25,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "TABLE\ntransaction_detail_hbase_tbl\n1 row(s) in 0.0900 seconds\n\n"
+            "data": "TABLE\n0 row(s) in 0.1510 seconds\n\n"
           }
         ]
       },
@@ -35,14 +35,14 @@
       "jobName": "paragraph_1641086838798_1928664377",
       "id": "paragraph_1641086838798_1928664377",
       "dateCreated": "2022-01-02 01:27:18.798",
-      "dateStarted": "2022-12-01 02:22:04.653",
-      "dateFinished": "2022-12-01 02:22:08.347",
+      "dateStarted": "2022-12-05 10:55:19.656",
+      "dateFinished": "2022-12-05 10:55:24.959",
       "status": "FINISHED"
     },
     {
       "text": "%hbase\n\ndisable \u0027transaction_detail_hbase_tbl\u0027\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-11 02:53:36.257",
+      "dateUpdated": "2022-12-04 03:01:42.262",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -59,24 +59,15 @@
         "params": {},
         "forms": {}
       },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "\nERROR: Table transaction_detail_hbase_tbl does not exist.\n\nHere is some help for this command:\nStart disable of named table:\n  hbase\u003e disable \u0027t1\u0027\n  hbase\u003e disable \u0027ns1:t1\u0027\n\n\n"
-          }
-        ]
-      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1668134989302_1408229702",
       "id": "paragraph_1668134989302_1408229702",
       "dateCreated": "2022-11-11 02:49:49.302",
-      "dateStarted": "2022-11-11 02:53:36.259",
-      "dateFinished": "2022-11-11 02:53:36.266",
-      "status": "FINISHED"
+      "dateStarted": "2022-12-04 03:01:42.267",
+      "dateFinished": "2022-12-04 03:02:30.096",
+      "status": "ABORT"
     },
     {
       "text": "%hbase\n\ndrop \u0027transaction_detail_hbase_tbl\u0027\n",
