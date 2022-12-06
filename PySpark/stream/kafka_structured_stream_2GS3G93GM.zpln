@@ -167,9 +167,9 @@
     },
     {
       "title": "Write Data To File Sink",
-      "text": "%pyspark\n\n# Writing to File sink can be \"parquet\" \"orc\", \"json\", \"csv\", etc.\n\ntxn_query \u003d txn_details.writeStream \\\n    .format(\"parquet\") \\\n    .option(\"path\", \"hdfs://namenode:9000/transaction_details/\") \\\n    .option(\"checkpointLocation\", \"hdfs://namenode:9000/checkpoints/transaction_details/\") \\\n    .partitionBy(\"txn_receive_date\") \\\n    .trigger(processingTime\u003d\"10 seconds\") \\\n    .start()\n\n",
+      "text": "%pyspark\n\n# Writing to File sink can be \"parquet\" \"orc\", \"json\", \"csv\", etc.\n\ntxn_query \u003d txn_details.writeStream \\\n    .queryName(\u0027txn_query\u0027) \\\n    .format(\"parquet\") \\\n    .option(\"path\", \"hdfs://namenode:9000/transaction_details/\") \\\n    .option(\"checkpointLocation\", \"hdfs://namenode:9000/checkpoints/transaction_details/\") \\\n    .partitionBy(\"txn_receive_date\") \\\n    .trigger(processingTime\u003d\"10 seconds\") \\\n    .start()\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-06 13:43:33.988",
+      "dateUpdated": "2022-12-06 13:47:53.709",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -199,8 +199,8 @@
       "jobName": "paragraph_1670094211834_724608643",
       "id": "paragraph_1670094211834_724608643",
       "dateCreated": "2022-12-03 19:03:31.834",
-      "dateStarted": "2022-12-06 13:43:33.991",
-      "dateFinished": "2022-12-06 13:43:34.199",
+      "dateStarted": "2022-12-06 13:47:53.712",
+      "dateFinished": "2022-12-06 13:47:53.744",
       "status": "FINISHED"
     },
     {
