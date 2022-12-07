@@ -78,19 +78,19 @@
       "status": "FINISHED"
     },
     {
-      "text": "%pyspark\n\nfrom pyspark.rdd import portable_hash\nkeys \u003d [\"A\",\"B\",\"C\",\"D\"]\ndef key_partitioning(k):\n    return keys.index(k)\n    \nudf_country_hash \u003d udf(lambda str: country_partitioning(str))    \n",
+      "text": "%pyspark\n\nfrom pyspark.rdd import portable_hash\n\nkeys \u003d [\"A\",\"B\",\"C\",\"D\"]\ndef key_partitioning(k):\n    return keys.index(k)\n    \nudf_country_hash \u003d udf(lambda str: country_partitioning(str))    \n",
       "user": "anonymous",
-      "dateUpdated": "2022-06-19 10:41:01.536",
+      "dateUpdated": "2022-12-06 14:24:21.876",
       "progress": 0,
       "config": {
         "editorSetting": {
-          "language": "scala",
+          "language": "python",
           "editOnDblClick": false,
           "completionKey": "TAB",
           "completionSupport": true
         },
         "colWidth": 12.0,
-        "editorMode": "ace/mode/scala",
+        "editorMode": "ace/mode/python",
         "fontSize": 12.0,
         "results": {},
         "enabled": true

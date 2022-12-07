@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d08b261-ebb4-479a-9b39-cf0d413b1c57" name="Changes" comment="2022-12-01 Add notebooks">
-      <change beforePath="$PROJECT_DIR$/Cassandra/test-cassandra_2GRXY2AC7.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Cassandra/test-cassandra_2GRXY2AC7.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hbase/hbase-test_2GRB7W8PH.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Hbase/hbase-test_2GRB7W8PH.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hive/hive-transaction-data-pipeline_2GS1ZX4SG.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Hive/hive-transaction-data-pipeline_2GS1ZX4SG.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PySpark/spark-kafka-batch_2HKUFJTM6.zpln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PySpark/structured_stream_2GS3G93GM.zpln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spark/Stream/kafka-streaming-example_2HKZHZPA8.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/Spark/Stream/kafka-streaming-example_2HKZHZPA8.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-file_2GRN2Y6FJ.zpln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-shell_2GTZDXJT9.zpln" beforeDir="false" afterPath="$PROJECT_DIR$/test-shell_2GTZDXJT9.zpln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zeppelin-notebooks.iws" beforeDir="false" afterPath="$PROJECT_DIR$/zeppelin-notebooks.iws" afterDir="false" />
-    </list>
+    <list default="true" id="7d08b261-ebb4-479a-9b39-cf0d413b1c57" name="Changes" comment="2022-12-06 Add notebooks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669918186724</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2022-12-06 Add notebooks">
+      <created>1670335791102</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670335791102</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +138,7 @@
     <MESSAGE value="2022-11-23 Update zeppelin notebooks" />
     <MESSAGE value="2022-11-29 Update zeppelin notebooks" />
     <MESSAGE value="2022-12-01 Add notebooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-12-01 Add notebooks" />
+    <MESSAGE value="2022-12-06 Add notebooks" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-12-06 Add notebooks" />
   </component>
 </project>

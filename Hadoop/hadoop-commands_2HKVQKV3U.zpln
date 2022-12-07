@@ -158,9 +158,9 @@
       "status": "FINISHED"
     },
     {
-      "text": "%sh\n\n\n#\n# \u0027/\u0027 means absolute path\n#\n$HADOOP_HOME/bin/hdfs dfs -mkdir  /test  \n\n\n                                  \n",
+      "text": "%sh\n\n\n#\n# \u0027/\u0027 means absolute path\n#\ndate_now\u003d$(date \"+%F\")\nunix_epoch_date\u003d$(date +%s)\necho $date_now \necho $unix_epoch_date\n\n$HADOOP_HOME/bin/hadoop fs -mkdir  -p \"/test-$unix_epoch_date\"  \n\n\n                                  \n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:48:14.125",
+      "dateUpdated": "2022-12-06 14:42:03.128",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -175,12 +175,19 @@
         "enabled": true
       },
       "settings": {
-        "params": {},
+        "params": {
+          "date_now": "ds"
+        },
         "forms": {}
       },
       "results": {
         "code": "SUCCESS",
-        "msg": []
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2022-12-06\n1670337723\n"
+          }
+        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -188,14 +195,14 @@
       "jobName": "paragraph_1669520468473_1155373080",
       "id": "paragraph_1669520468473_1155373080",
       "dateCreated": "2022-11-27 03:41:08.473",
-      "dateStarted": "2022-11-27 03:48:14.126",
-      "dateFinished": "2022-11-27 03:48:15.405",
+      "dateStarted": "2022-12-06 14:42:03.132",
+      "dateFinished": "2022-12-06 14:42:04.356",
       "status": "FINISHED"
     },
     {
-      "text": "%sh\n\n\n#\n# Relative path -\u003e the folder will be created relative to the home directory.\n#\n$HADOOP_HOME/bin/hdfs dfs -mkdir  test  ",
+      "text": "%sh\n\n\n#\n# Relative path -\u003e the folder will be created relative to the home directory.\n#\n$HADOOP_HOME/bin/hadoop fs -mkdir  test-$(date +%s)  ",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:48:18.323",
+      "dateUpdated": "2022-12-06 14:44:22.759",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -223,8 +230,8 @@
       "jobName": "paragraph_1669520881890_1828724926",
       "id": "paragraph_1669520881890_1828724926",
       "dateCreated": "2022-11-27 03:48:01.890",
-      "dateStarted": "2022-11-27 03:48:18.327",
-      "dateFinished": "2022-11-27 03:48:19.677",
+      "dateStarted": "2022-12-06 14:44:22.764",
+      "dateFinished": "2022-12-06 14:44:23.999",
       "status": "FINISHED"
     },
     {
@@ -259,7 +266,7 @@
     {
       "text": "%sh\n\n#\n# Relative path -\u003e the folder will be created relative to the home directory.\n#\n\nsudo -u root $HADOOP_HOME/bin/hdfs dfs -mkdir  test  ",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:51:06.219",
+      "dateUpdated": "2022-12-06 14:45:40.128",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -282,7 +289,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "bash: line 4: su-u: command not found\n"
+            "data": "bash: line 4: sudo: command not found\n"
           },
           {
             "type": "TEXT",
@@ -296,8 +303,8 @@
       "jobName": "paragraph_1669520898326_1276222445",
       "id": "paragraph_1669520898326_1276222445",
       "dateCreated": "2022-11-27 03:48:18.326",
-      "dateStarted": "2022-11-27 03:50:58.806",
-      "dateFinished": "2022-11-27 03:50:58.825",
+      "dateStarted": "2022-12-06 14:45:40.131",
+      "dateFinished": "2022-12-06 14:45:40.141",
       "status": "ERROR"
     },
     {
