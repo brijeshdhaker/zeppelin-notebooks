@@ -1,0 +1,332 @@
+{
+  "paragraphs": [
+    {
+      "text": "%pyspark\n\nspark.catalog.currentDatabase()",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-06 15:45:24.618",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u0027default\u0027\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670341509377_80678223",
+      "id": "paragraph_1670340929434_1715832294",
+      "dateCreated": "2022-12-06 15:45:09.377",
+      "status": "READY"
+    },
+    {
+      "text": "%pyspark\n\nspark.catalog.databaseExists(\"default\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-06 15:47:35.400",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Fail to execute line 3: spark.catalog.databaseExists(\"default\")\nTraceback (most recent call last):\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1670331107952_0005/container_1670331107952_0005_01_000001/tmp/python7830983884828520469/zeppelin_python.py\", line 167, in \u003cmodule\u003e\n    exec(code, _zcUserQueryNameSpace)\n  File \"\u003cstdin\u003e\", line 3, in \u003cmodule\u003e\nAttributeError: \u0027Catalog\u0027 object has no attribute \u0027databaseExists\u0027\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670341647548_1943455616",
+      "id": "paragraph_1670341647548_1943455616",
+      "dateCreated": "2022-12-06 15:47:27.548",
+      "dateStarted": "2022-12-06 15:47:35.403",
+      "dateFinished": "2022-12-06 15:47:35.415",
+      "status": "ERROR"
+    },
+    {
+      "text": "%pyspark\n\nspark.catalog.listDatabases()",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-06 15:45:09.377",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[Database(name\u003d\u0027default\u0027, description\u003d\u0027Default Hive database\u0027, locationUri\u003d\u0027hdfs://namenode:9000/user/hive/warehouse\u0027)]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670341509377_1279865428",
+      "id": "paragraph_1670340815626_1237156843",
+      "dateCreated": "2022-12-06 15:45:09.377",
+      "status": "READY"
+    },
+    {
+      "text": "%pyspark\n\nspark.catalog.tableExists(\"10e4\")\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-06 15:45:09.378",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Fail to execute line 3: spark.catalog.tableExists(\"10e4\")\nTraceback (most recent call last):\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1670331107952_0005/container_1670331107952_0005_01_000001/tmp/python7830983884828520469/zeppelin_python.py\", line 167, in \u003cmodule\u003e\n    exec(code, _zcUserQueryNameSpace)\n  File \"\u003cstdin\u003e\", line 3, in \u003cmodule\u003e\nAttributeError: \u0027Catalog\u0027 object has no attribute \u0027tableExists\u0027\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670341509377_914487658",
+      "id": "paragraph_1670341137955_825795853",
+      "dateCreated": "2022-12-06 15:45:09.377",
+      "status": "READY"
+    },
+    {
+      "text": "%pyspark\n\nspark.catalog.listTables()\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-06 15:46:24.895",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[Table(name\u003d\u002710e4\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u002710e6\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027global_external_table\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027EXTERNAL\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027global_managed_table\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027optrans_tbl\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027permanent_view\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027VIEW\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027product_revenue\u0027, database\u003d\u0027default\u0027, description\u003d\u0027PRODUCT_REVENUE Hive Managed ORC Table\u0027, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027sales_delta_managed\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027transact_tbl\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027transaction_detail_hive_tbl\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003dNone, isTemporary\u003dFalse), Table(name\u003d\u0027transaction_details\u0027, database\u003d\u0027default\u0027, description\u003d\u0027Transaction Details External Table\u0027, tableType\u003d\u0027EXTERNAL\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027transaction_details_orc\u0027, database\u003d\u0027default\u0027, description\u003d\u0027Hive Managed ORC Table\u0027, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027transaction_details_parquet\u0027, database\u003d\u0027default\u0027, description\u003d\u0027Hive Managed Parquet Table\u0027, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027tweeter_tweets\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse)]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1670331107952_0005//jobs/job?id\u003d19"
+            },
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1670331107952_0005//jobs/job?id\u003d20"
+            },
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1670331107952_0005//jobs/job?id\u003d21"
+            },
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1670331107952_0005//jobs/job?id\u003d22"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670341509378_119396786",
+      "id": "paragraph_1670340838383_890543918",
+      "dateCreated": "2022-12-06 15:45:09.378",
+      "dateStarted": "2022-12-06 15:46:24.898",
+      "dateFinished": "2022-12-06 15:46:25.282",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\n\nspark.catalog.listTables(\u0027default\u0027)",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-06 15:45:09.378",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[Table(name\u003d\u002710e4\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u002710e6\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027global_external_table\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027EXTERNAL\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027global_managed_table\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027optrans_tbl\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027permanent_view\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027VIEW\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027product_revenue\u0027, database\u003d\u0027default\u0027, description\u003d\u0027PRODUCT_REVENUE Hive Managed ORC Table\u0027, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027sales_delta_managed\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027transact_tbl\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027transaction_detail_hive_tbl\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003dNone, isTemporary\u003dFalse), Table(name\u003d\u0027transaction_details\u0027, database\u003d\u0027default\u0027, description\u003d\u0027Transaction Details External Table\u0027, tableType\u003d\u0027EXTERNAL\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027transaction_details_orc\u0027, database\u003d\u0027default\u0027, description\u003d\u0027Hive Managed ORC Table\u0027, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027transaction_details_parquet\u0027, database\u003d\u0027default\u0027, description\u003d\u0027Hive Managed Parquet Table\u0027, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse), Table(name\u003d\u0027tweeter_tweets\u0027, database\u003d\u0027default\u0027, description\u003dNone, tableType\u003d\u0027MANAGED\u0027, isTemporary\u003dFalse)]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670341509378_1977890699",
+      "id": "paragraph_1670340964817_367928494",
+      "dateCreated": "2022-12-06 15:45:09.378",
+      "status": "READY"
+    },
+    {
+      "text": "%pyspark\n\ntables \u003d spark.catalog.listTables.where(col(\"name\") startsWith \"t10e\")\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-06 15:45:09.378",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Traceback (most recent call last):\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1670331107952_0005/container_1670331107952_0005_01_000001/tmp/python7830983884828520469/zeppelin_python.py\", line 152, in \u003cmodule\u003e\n    code \u003d compile(\u0027\\n\u0027.join(stmts), \u0027\u003cstdin\u003e\u0027, \u0027exec\u0027, ast.PyCF_ONLY_AST, 1)\n  File \"\u003cstdin\u003e\", line 3\n    tables \u003d spark.catalog.listTables.where(col(\"name\") startsWith \"t10e\")\n                                                                 ^\nSyntaxError: invalid syntax\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670341509378_613249442",
+      "id": "paragraph_1670340384999_997328722",
+      "dateCreated": "2022-12-06 15:45:09.378",
+      "status": "READY"
+    },
+    {
+      "text": "%pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-06 15:45:09.378",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1670341509378_1053245054",
+      "id": "paragraph_1670340753765_322972876",
+      "dateCreated": "2022-12-06 15:45:09.378",
+      "status": "READY"
+    }
+  ],
+  "name": "spark_session_catalog",
+  "id": "2HMCG3GW8",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
