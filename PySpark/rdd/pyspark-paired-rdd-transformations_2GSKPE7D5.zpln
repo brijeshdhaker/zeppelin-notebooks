@@ -2,9 +2,9 @@
   "paragraphs": [
     {
       "title": "Settings for YARN Cluster",
-      "text": "%spark.conf\n\n# set the following 2 properties to run spark in yarn-cluster mode\nspark.master yarn\nspark.submit.deployMode cluster\n\nspark.driver.memory 640m\nspark.executor.memory 640m\n\n#\n# Python 3.7 Runtime\n#\nspark.yarn.dist.archives hdfs://namenode:9000/archives/pyspark3.7.tar.gz#environment\nzeppelin.interpreter.conda.env.name environment\n\n#\nspark.pyspark.python python3\nspark.pyspark.driver.python python3\n\n\nspark.sql.execution.arrow.pyspark.enabled true\nspark.sql.execution.arrow.pyspark.fallback.enabled false\n\n# Set the following setting for ARROW if you are using spark 2.x, otherwise using pyarrow udf would fail\n# spark.yarn.appMasterEnv.ARROW_PRE_0_15_IPC_FORMAT 1\n# spark.executorEnv.ARROW_PRE_0_15_IPC_FORMAT 1\n\n#\nspark.eventLog.enabled                      true\nspark.eventLog.dir                          hdfs://namenode:9000/tmp/logs/spark",
+      "text": "%spark.conf\n\nspark.app.name paired-rdd-transformations\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-30 01:14:59.818",
+      "dateUpdated": "2022-12-11 13:01:42.487",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -25,8 +25,13 @@
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
-        "msg": []
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.io.IOException: Can not change interpreter properties when interpreter process has already been launched\n\tat org.apache.zeppelin.interpreter.InterpreterSetting.setInterpreterGroupProperties(InterpreterSetting.java:945)\n\tat org.apache.zeppelin.interpreter.ConfInterpreter.interpret(ConfInterpreter.java:72)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:484)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:69)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.FIFOScheduler.lambda$runJobInScheduler$0(FIFOScheduler.java:42)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+          }
+        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -34,9 +39,9 @@
       "jobName": "paragraph_1641362406341_1540538845",
       "id": "paragraph_1641362406341_1540538845",
       "dateCreated": "2022-01-05 06:00:06.341",
-      "dateStarted": "2022-06-24 03:13:00.901",
-      "dateFinished": "2022-06-24 03:13:00.915",
-      "status": "FINISHED"
+      "dateStarted": "2022-12-11 13:01:42.490",
+      "dateFinished": "2022-12-11 13:01:42.505",
+      "status": "ERROR"
     },
     {
       "text": "%pyspark\n\nfrom pyspark.rdd import portable_hash\nfrom random import random\nimport hashlib\n\nkeys \u003d [\"A\", \"B\", \"C\", \"D\"]\n\ndef hash_partitioning(key):\n    return portable_hash(key) % len(keys);\n    \n    \ndef hash_partitioning(key):\n    return hash(key) % len(keys)\n\n\ndef key_partitioning(key):\n    return keys.index(key)\n\n\nhashValue \u003d lambda str: portable_hash(str)\n\n\n#\n#\n#\ndef print_partitions(rdd):\n    numPartitions \u003d rdd.getNumPartitions()\n    print(\"Total partitions: {}\".format(numPartitions))\n    print(\"Partitioner: {}\".format(rdd.partitioner))\n    parts \u003d rdd.glom().collect()\n    i \u003d 0\n    j \u003d 0\n    for p in parts:\n        print(\"\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d Partition - {} \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\".format(i))\n        for r in p:\n            print(\"Row {} : {} : {}\".format(j, r, (hash(r[0])%numPartitions)))\n            j \u003d j+1\n        i \u003d i+1\n\n\n\nraw_values \u003d (\n    (\"A\", (\"Hindi\", 630, [10,15,18])),\n    (\"B\", (\"Hindi\", 720, [19,13,12])),\n    (\"C\", (\"Hindi\", 560, [19,13,12])),\n    (\"D\", (\"Hindi\", 870, [19,13,12])),\n    (\"A\", (\"English\", 710, [19,13,12])),\n    (\"B\", (\"English\", 730, [19,20,19])),\n    (\"C\", (\"English\", 620, [14,13,12])),\n    (\"D\", (\"English\", 800, [14,13,12])),\n    (\"A\", (\"Math\", 660, [17,18,18])),\n    (\"B\", (\"Math\", 750, [10,9,12])),\n    (\"C\", (\"Math\", 600, [10,12,13])),\n    (\"D\", (\"Math\", 840, [11,15,16])),\n    (\"A\", (\"Science\", 830, [17,18,18])),\n    (\"B\", (\"Science\", 700, [10,9,12])),\n    (\"C\", (\"Science\", 500, [10,12,13])),\n    (\"D\", (\"Science\", 880, [11,15,16]))\n)\n\nrawRDD \u003d spark.sparkContext.parallelize(raw_values).partitionBy(4, key_partitioning)\n\n# print(\"RDD-1 Partition Count : %i \" % (rawRDD.getNumPartitions()))\n# print(\"Values in RDD-1 : {0} \".format(rawRDD.glom().collect()))\nprint_partitions(rawRDD)",
@@ -326,6 +331,65 @@
       "status": "FINISHED"
     },
     {
+      "title": "combineByKey",
+      "text": " %pyspark\n\n# 1. createCombiner, which turns a V into a C (e.g., creates a one-element list)  V --\u003e C\n# 2. mergeValue, to merge a V into a C (e.g., adds it to the end of a list) C, V --\u003e C\n# 3. mergeCombiners, to combine two C’s into a single one. C , C --\u003e C\n\n#\n# create this “combiner” to be a tuple in the form of (sum, count). The very first step in this aggregation is then (value, 1), \n# where value is the first RDD value that combineByKey comes across and 1 initializes the count.\n\n# V --\u003e C\ndef createCombiner(v):\n    _c \u003d {\"total\":0, \"count\":0, \"min\":0, \"max\":0}\n    _c[\"total\"] \u003d v[2]\n    _c[\"count\"] \u003d 1\n    _c[\"min\"]   \u003d v[2]\n    _c[\"max\"]   \u003d v[2]\n    return _c\n#\n#\n#\n\n# C,V ---\u003e C\ndef merge(c, v):\n    \n    c[\"total\"] \u003d c[\"total\"] + v[2]\n    c[\"count\"] \u003d c[\"count\"] + 1\n    c[\"min\"]   \u003d min(c[\"min\"], v[2])\n    c[\"max\"]   \u003d max(c[\"max\"], v[2])\n    return c\n\n#\n#\n#\n\n# C,C ---\u003e C\ndef mergeCombiners(c1, c2):\n    c3 \u003d {}\n    c3[\"total\"] \u003d c1[\"total\"] + c2[\"total\"]\n    c3[\"count\"] \u003d c1[\"count\"] + c2[\"count\"]\n    c3[\"min\"]   \u003d min(c1[\"min\"], c2[\"min\"])\n    c3[\"max\"]   \u003d max(c1[\"max\"], c2[\"max\"])\n    return c3\n    \n\nstudent_marks \u003d [\n    (\"Joseph\", \"Maths\", 83),\n    (\"Joseph\", \"Physics\", 74),\n    (\"Joseph\", \"Chemistry\", 91),\n    (\"Joseph\", \"Biology\", 82),\n    (\"Jimmy\", \"Maths\", 69),\n    (\"Jimmy\", \"Physics\", 62),\n    (\"Jimmy\", \"Chemistry\", 97),\n    (\"Jimmy\", \"Biology\", 80),\n    (\"Tina\", \"Maths\", 78),\n    (\"Tina\", \"Physics\", 73),\n    (\"Tina\", \"Chemistry\", 68),\n    (\"Tina\", \"Biology\", 87),\n    (\"Thomas\", \"Maths\", 87),\n    (\"Thomas\", \"Physics\", 93),\n    (\"Thomas\", \"Chemistry\", 91),\n    (\"Thomas\", \"Biology\", 74),\n    (\"Cory\", \"Maths\", 56),\n    (\"Cory\", \"Physics\", 65),\n    (\"Cory\", \"Chemistry\", 71),\n    (\"Cory\", \"Biology\", 68),\n    (\"Jackeline\", \"Maths\", 86),\n    (\"Jackeline\", \"Physics\", 62),\n    (\"Jackeline\", \"Chemistry\", 75),\n    (\"Jackeline\", \"Biology\", 83),\n    (\"Juan\", \"Maths\", 63),\n    (\"Juan\", \"Physics\", 69),\n    (\"Juan\", \"Chemistry\", 64),\n    (\"Juan\", \"Biology\", 60)\n]\n\nstudent_marks_rdd \u003d spark.sparkContext.parallelize(student_marks).map(lambda x: (x[0],x))\n#for x in student_marks_rdd.collect():\n#   print(x)\n\nresult_rdd \u003d student_marks_rdd.combineByKey(createCombiner, merge, mergeCombiners )\nfor x in result_rdd.collect():\n  print(x)\n    \n#\n# Compute the Average\n#\nprint(\"\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003dCalulate Average\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\")\ndef cal_avg(v):\n    v[1][\"avg\"] \u003d v[1][\"total\"]/v[1][\"count\"]\n    return v\n    \navg_rdd \u003d result_rdd.map(cal_avg)\nfor x in avg_rdd.collect():\n  print(x)\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-12-11 13:37:11.386",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/python",
+        "title": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(\u0027Jimmy\u0027, {\u0027total\u0027: 308, \u0027count\u0027: 4, \u0027min\u0027: 62, \u0027max\u0027: 97})\n(\u0027Thomas\u0027, {\u0027total\u0027: 345, \u0027count\u0027: 4, \u0027min\u0027: 74, \u0027max\u0027: 93})\n(\u0027Juan\u0027, {\u0027total\u0027: 256, \u0027count\u0027: 4, \u0027min\u0027: 60, \u0027max\u0027: 69})\n(\u0027Tina\u0027, {\u0027total\u0027: 306, \u0027count\u0027: 4, \u0027min\u0027: 68, \u0027max\u0027: 87})\n(\u0027Joseph\u0027, {\u0027total\u0027: 330, \u0027count\u0027: 4, \u0027min\u0027: 74, \u0027max\u0027: 91})\n(\u0027Cory\u0027, {\u0027total\u0027: 260, \u0027count\u0027: 4, \u0027min\u0027: 56, \u0027max\u0027: 71})\n(\u0027Jackeline\u0027, {\u0027total\u0027: 306, \u0027count\u0027: 4, \u0027min\u0027: 62, \u0027max\u0027: 86})\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003dCalulate Average\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n(\u0027Jimmy\u0027, {\u0027total\u0027: 308, \u0027count\u0027: 4, \u0027min\u0027: 62, \u0027max\u0027: 97, \u0027avg\u0027: 77.0})\n(\u0027Thomas\u0027, {\u0027total\u0027: 345, \u0027count\u0027: 4, \u0027min\u0027: 74, \u0027max\u0027: 93, \u0027avg\u0027: 86.25})\n(\u0027Juan\u0027, {\u0027total\u0027: 256, \u0027count\u0027: 4, \u0027min\u0027: 60, \u0027max\u0027: 69, \u0027avg\u0027: 64.0})\n(\u0027Tina\u0027, {\u0027total\u0027: 306, \u0027count\u0027: 4, \u0027min\u0027: 68, \u0027max\u0027: 87, \u0027avg\u0027: 76.5})\n(\u0027Joseph\u0027, {\u0027total\u0027: 330, \u0027count\u0027: 4, \u0027min\u0027: 74, \u0027max\u0027: 91, \u0027avg\u0027: 82.5})\n(\u0027Cory\u0027, {\u0027total\u0027: 260, \u0027count\u0027: 4, \u0027min\u0027: 56, \u0027max\u0027: 71, \u0027avg\u0027: 65.0})\n(\u0027Jackeline\u0027, {\u0027total\u0027: 306, \u0027count\u0027: 4, \u0027min\u0027: 62, \u0027max\u0027: 86, \u0027avg\u0027: 76.5})\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1670734498586_0001//jobs/job?id\u003d8"
+            },
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1670734498586_0001//jobs/job?id\u003d9"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641381962217_955178022",
+      "id": "paragraph_1641381962217_955178022",
+      "dateCreated": "2022-01-05 11:26:02.217",
+      "dateStarted": "2022-12-11 13:37:11.391",
+      "dateFinished": "2022-12-11 13:37:11.756",
+      "status": "FINISHED"
+    },
+    {
       "title": "mapPartitions",
       "text": "%md\n\nmapPartitions is a transformation operation model of PySpark RDD.\nmapPartitions is applied over RDD in PySpark so that the Data frame needs to be converted to RDD.\nmapPartitions are applied over the logic or functions that are heavy transformations.\nmapPartitions is applied to a specific partition in the model rather than each and every row model in PySpark.\nmapPartitions keep the result in the partition memory.\nmapPartitions is a faster and cheap data processing model.\n",
       "user": "anonymous",
@@ -535,38 +599,6 @@
       "dateStarted": "2022-06-19 10:15:23.445",
       "dateFinished": "2022-06-19 10:15:23.619",
       "status": "FINISHED"
-    },
-    {
-      "title": "combineByKey",
-      "text": "%pyspark\n\n# 1. createCombiner, which turns a V into a C (e.g., creates a one-element list)  V --\u003e C\n# 2. mergeValue, to merge a V into a C (e.g., adds it to the end of a list) C, V --\u003e C\n# 3. mergeCombiners, to combine two C’s into a single one. C , C --\u003e C\n\n",
-      "user": "anonymous",
-      "dateUpdated": "2022-06-19 10:31:11.278",
-      "progress": 0,
-      "config": {
-        "colWidth": 12.0,
-        "fontSize": 12.0,
-        "enabled": true,
-        "results": {},
-        "editorSetting": {
-          "language": "python",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/python",
-        "title": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1641381962217_955178022",
-      "id": "paragraph_1641381962217_955178022",
-      "dateCreated": "2022-01-05 11:26:02.217",
-      "status": "READY"
     }
   ],
   "name": "pyspark-paired-rdd-transformations",

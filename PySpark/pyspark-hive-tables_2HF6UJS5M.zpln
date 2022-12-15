@@ -80,7 +80,7 @@
     {
       "text": "%pyspark\n\ndf\u003dspark.sql(\"show databases\")\ndf.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-06 14:04:02.590",
+      "dateUpdated": "2022-12-08 02:58:10.551",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -104,7 +104,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "ANTLR Tool version 4.7 used for code generation does not match the current runtime version 4.8ANTLR Tool version 4.7 used for code generation does not match the current runtime version 4.8+---------+\n|namespace|\n+---------+\n|  default|\n+---------+\n\n"
+            "data": "+---------+\n|namespace|\n+---------+\n|  default|\n+---------+\n\n"
           }
         ]
       },
@@ -114,14 +114,14 @@
       "jobName": "paragraph_1666325109735_774518376",
       "id": "paragraph_1666325109735_774518376",
       "dateCreated": "2022-10-21 04:05:09.735",
-      "dateStarted": "2022-12-06 14:04:02.591",
-      "dateFinished": "2022-12-06 14:04:03.766",
+      "dateStarted": "2022-12-08 02:58:10.555",
+      "dateFinished": "2022-12-08 02:58:10.685",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\ntables \u003d spark.sql(\"show tables\").show(truncate\u003dFalse)",
       "user": "anonymous",
-      "dateUpdated": "2022-11-30 01:26:22.812",
+      "dateUpdated": "2022-12-08 02:58:18.125",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -145,7 +145,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "+--------+---------------------------+-----------+\n|database|tableName                  |isTemporary|\n+--------+---------------------------+-----------+\n|default |optrans_tbl                |false      |\n|default |product_revenue            |false      |\n|default |sales_delta_managed        |false      |\n|default |transact_tbl               |false      |\n|default |transaction_detail_hive_tbl|false      |\n|default |transaction_details        |false      |\n|default |transaction_details_orc    |false      |\n|default |transaction_details_parquet|false      |\n+--------+---------------------------+-----------+\n\nNone\n"
+            "data": "+--------+---------------------------+-----------+\n|database|tableName                  |isTemporary|\n+--------+---------------------------+-----------+\n|default |10e4                       |false      |\n|default |10e6                       |false      |\n|default |global_external_table      |false      |\n|default |global_managed_table       |false      |\n|default |optrans_tbl                |false      |\n|default |permanent_view             |false      |\n|default |product_revenue            |false      |\n|default |sales_delta_managed        |false      |\n|default |transact_tbl               |false      |\n|default |transaction_detail_hive_tbl|false      |\n|default |transaction_details        |false      |\n|default |transaction_details_orc    |false      |\n|default |transaction_details_parquet|false      |\n|default |tweeter_tweets             |false      |\n+--------+---------------------------+-----------+\n\n"
           }
         ]
       },
@@ -155,14 +155,14 @@
       "jobName": "paragraph_1666325164231_1286637945",
       "id": "paragraph_1666325164231_1286637945",
       "dateCreated": "2022-10-21 04:06:04.231",
-      "dateStarted": "2022-11-30 01:26:07.544",
-      "dateFinished": "2022-11-30 01:26:07.601",
+      "dateStarted": "2022-12-08 02:58:18.129",
+      "dateFinished": "2022-12-08 02:58:18.224",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\ndf1\u003dspark.sql(\"select * from transaction_details limit 15\")\ndf1.show(truncate\u003dFalse)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-25 01:45:28.097",
+      "dateUpdated": "2022-12-08 02:58:33.249",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -186,7 +186,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "+----+------------------------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|id  |uuid                                |cardtype|website |product |amount  |city       |country|addts     |txn_receive_date|\n+----+------------------------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|2679|e6c0099a-a92f-45fa-9d04-82a422a593f6|RuPay   |Amazon  |Mobile  |7032.13 |Los Angeles|USA    |1663204220|2022-09-15      |\n|2678|ece842cc-e7d2-4aba-a9c0-bdd7560955cf|Master  |SnapDeal|Mobile  |23990.0 |New York   |USA    |1663204225|2022-09-15      |\n|1664|cb498e9b-b16f-438e-8851-44b16b7a86f6|RuPay   |Amazon  |Computer|15798.52|Hiroshima  |JP     |1663204230|2022-09-15      |\n|4687|24dab694-0d40-418f-9544-8aea19ce57b7|VISA    |Amazon  |Laptop  |24485.26|Miami      |USA    |1663204235|2022-09-15      |\n|3096|6a5a7387-b841-4062-b195-76e52c0adb86|RuPay   |Flipkart|Tablet  |6257.98 |Liverpool  |UK     |1663204240|2022-09-15      |\n|4232|818d7b85-527a-47ad-bdc9-6c3e55130f62|Master  |Flipkart|Laptop  |12297.58|Oxford     |UK     |1663204245|2022-09-15      |\n|2926|08f133d7-b381-4ce9-8860-5e20ab92be9b|VISA    |SnapDeal|Laptop  |12305.38|New York   |USA    |1663204250|2022-09-15      |\n|3473|86accdf7-b01d-46c1-8164-b35ac9bd2acf|Amex    |Amazon  |Tablet  |22655.99|Delhi      |IN     |1663204255|2022-09-15      |\n|3949|c08f1e8a-8e9f-43e7-bcf9-f15fde730a7d|VISA    |Amazon  |Tablet  |14949.11|Oxford     |UK     |1663203040|2022-09-15      |\n|4143|319e34f2-1e00-45b3-b8d6-c628ccfbfac2|Master  |Flipkart|Computer|8618.17 |Banglore   |IN     |1663203045|2022-09-15      |\n|4547|b7bae4f2-420e-4dd6-8f4a-5d9207a7957f|Master  |Amazon  |Laptop  |24347.02|New York   |USA    |1663203050|2022-09-15      |\n|3196|2d89dc1c-9d86-45f8-bfc7-d8663276b739|RuPay   |Amazon  |Tablet  |18717.18|Los Angeles|USA    |1663203055|2022-09-15      |\n|2724|de443eb3-38bf-4648-bf3e-31295062d25a|VISA    |Myntra  |Laptop  |1665.79 |Miami      |USA    |1663203060|2022-09-15      |\n|3136|24e6c80a-6318-4368-be50-f2073157cd39|Master  |Amazon  |Computer|17264.66|Yokohama   |JP     |1663203065|2022-09-15      |\n|4485|84f78629-c611-4782-9692-396bdc84b3ea|Amex    |Myntra  |Laptop  |511.53  |Miami      |USA    |1663203070|2022-09-15      |\n+----+------------------------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n\n"
+            "data": "+----+------------------------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|id  |uuid                                |cardtype|website |product |amount  |city       |country|addts     |txn_receive_date|\n+----+------------------------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|2384|f5933a1b-7e40-46ec-a512-b69f3355a3bc|VISA    |Flipkart|Computer|2063.05 |Banglore   |IN     |1670091965|2022-12-03      |\n|1578|d8bc8036-dd5a-4866-a7c0-25b01aa466b1|Master  |SnapDeal|Tablet  |14983.49|Osaka      |JP     |1670091970|2022-12-03      |\n|2263|8fa465b4-90ed-4729-b4c3-f1991257d00c|VISA    |Myntra  |Mobile  |19861.74|Manchester |UK     |1670091975|2022-12-03      |\n|4860|55bd7efe-2396-44d9-a132-6b707f1839a7|RuPay   |Flipkart|Mobile  |602.14  |Miami      |USA    |1670091980|2022-12-03      |\n|4875|65ff481a-fdb3-4135-9cfc-bede42984252|RuPay   |Myntra  |Laptop  |10756.32|Manchester |UK     |1670091985|2022-12-03      |\n|4503|67c11efd-a168-4e67-848f-b407061f4c74|VISA    |Amazon  |Tablet  |22579.02|Miami      |USA    |1670091990|2022-12-03      |\n|3158|2f3d4d8f-5eae-444e-9b55-ae97ba8a83ef|RuPay   |Amazon  |Tablet  |23931.48|Los Angeles|USA    |1670091995|2022-12-03      |\n|4328|af670a37-73d3-4516-8933-4ecff799f3f3|VISA    |SnapDeal|Mobile  |17015.44|New York   |USA    |1670092000|2022-12-03      |\n|2241|ef5ac267-4e1e-4e13-b2d7-07376b7849b1|RuPay   |Myntra  |Mobile  |17466.07|Tokyo      |JP     |1670092005|2022-12-03      |\n|1133|4c4a5531-71a5-4e4c-b0a1-bb1d554325ca|VISA    |Myntra  |Computer|20511.61|Hiroshima  |JP     |1670092010|2022-12-03      |\n|1665|8c37ea81-1aa9-4162-a405-fb1a4cc64fa4|RuPay   |Myntra  |Mobile  |17428.22|Tokyo      |JP     |1670092015|2022-12-03      |\n|4372|88fc405d-980f-4487-9cb6-b6969c7f86ad|RuPay   |Myntra  |Laptop  |12217.09|Osaka      |JP     |1670092020|2022-12-03      |\n|2915|f91ec2e3-bad7-412a-b768-1393bb3e0716|Master  |Myntra  |Laptop  |17863.81|Chennei    |IN     |1670092025|2022-12-03      |\n|1933|0b29b437-8134-46be-94c6-267811c57352|Master  |SnapDeal|Tablet  |12110.63|Tokyo      |JP     |1670092030|2022-12-03      |\n|4489|812850fb-eada-4a6b-8b30-3e73fd5666e0|VISA    |Flipkart|Mobile  |12300.78|Miami      |USA    |1670092035|2022-12-03      |\n+----+------------------------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n\n"
           }
         ]
       },
@@ -199,7 +199,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:44139/jobs/job?id\u003d1"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1670462386538_0006//jobs/job?id\u003d2"
             }
           ],
           "interpreterSettingId": "spark"
@@ -209,14 +209,14 @@
       "jobName": "paragraph_1666325200944_1434210057",
       "id": "paragraph_1666325200944_1434210057",
       "dateCreated": "2022-10-21 04:06:40.944",
-      "dateStarted": "2022-11-25 01:45:28.102",
-      "dateFinished": "2022-11-25 01:45:28.700",
+      "dateStarted": "2022-12-08 02:58:33.252",
+      "dateFinished": "2022-12-08 02:58:33.919",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\ndf1.printSchema()\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-10-21 04:08:06.707",
+      "dateUpdated": "2022-12-08 02:58:44.084",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -250,8 +250,8 @@
       "jobName": "paragraph_1666325253268_1984446054",
       "id": "paragraph_1666325253268_1984446054",
       "dateCreated": "2022-10-21 04:07:33.268",
-      "dateStarted": "2022-10-21 04:08:06.711",
-      "dateFinished": "2022-10-21 04:08:06.731",
+      "dateStarted": "2022-12-08 02:58:44.087",
+      "dateFinished": "2022-12-08 02:58:44.108",
       "status": "FINISHED"
     },
     {
