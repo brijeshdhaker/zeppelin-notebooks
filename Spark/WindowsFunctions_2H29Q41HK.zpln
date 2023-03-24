@@ -3,7 +3,7 @@
     {
       "text": "%pyspark\n\n# Create Data Frame From Hive table\ndataset \u003d [\n    (\"Thin\",       \"cell phone\", 6000),\n    (\"Normal\",     \"tablet\",     1500),\n    (\"Mini\",       \"tablet\",     5500),\n    (\"Ultra thin\", \"cell phone\", 5000),\n    (\"Very thin\",  \"cell phone\", 6000),\n    (\"Big\",        \"tablet\",     2500),\n    (\"Bendable\",   \"cell phone\", 3000),\n    (\"Foldable\",   \"cell phone\", 3000),\n    (\"Pro\",        \"tablet\",     4500),\n    (\"Pro2\",       \"tablet\",     6500)\n]\n\ndataFrame \u003d spark.createDataFrame(dataset, [\"category\", \"product\",  \"revenue\"])\ndataFrame.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-03-30 01:03:46.280",
+      "dateUpdated": "2023-02-12 19:08:32.539",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -40,10 +40,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d0"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d12"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d1"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d13"
             }
           ],
           "interpreterSettingId": "spark"
@@ -53,14 +53,14 @@
       "jobName": "paragraph_1648602168563_540395953",
       "id": "paragraph_1648602168563_540395953",
       "dateCreated": "2022-03-30 01:02:48.563",
-      "dateStarted": "2022-03-30 01:03:46.296",
-      "dateFinished": "2022-03-30 01:04:30.542",
+      "dateStarted": "2023-02-12 19:08:32.543",
+      "dateFinished": "2023-02-12 19:08:33.945",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\nfrom pyspark.sql.window import Window\nfrom pyspark.sql.functions import *\n\nwindowSpec \u003d Window.partitionBy(dataFrame[\u0027category\u0027]).orderBy(dataFrame[\u0027revenue\u0027].desc())\n",
       "user": "anonymous",
-      "dateUpdated": "2022-03-30 01:05:53.941",
+      "dateUpdated": "2023-02-12 19:08:36.743",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -89,15 +89,15 @@
       "jobName": "paragraph_1648602226295_20254511",
       "id": "paragraph_1648602226295_20254511",
       "dateCreated": "2022-03-30 01:03:46.295",
-      "dateStarted": "2022-03-30 01:05:53.947",
-      "dateFinished": "2022-03-30 01:05:54.182",
+      "dateStarted": "2023-02-12 19:08:36.745",
+      "dateFinished": "2023-02-12 19:08:36.783",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\ndataFrame.withColumn(\"revenue_diff\", max(col(\"revenue\")).over(windowSpec) - dataFrame[\u0027revenue\u0027]).show(truncate\u003dFalse)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-03-30 01:06:21.809",
-      "progress": 64,
+      "dateUpdated": "2023-02-12 19:08:38.592",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "python",
@@ -133,19 +133,19 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d2"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d14"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d3"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d15"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d4"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d16"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d5"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d17"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d6"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d18"
             }
           ],
           "interpreterSettingId": "spark"
@@ -155,15 +155,15 @@
       "jobName": "paragraph_1648602353946_118297432",
       "id": "paragraph_1648602353946_118297432",
       "dateCreated": "2022-03-30 01:05:53.946",
-      "dateStarted": "2022-03-30 01:06:21.816",
-      "dateFinished": "2022-03-30 01:06:26.017",
+      "dateStarted": "2023-02-12 19:08:38.595",
+      "dateFinished": "2023-02-12 19:08:41.911",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n# ROW_NUMBER\ndataFrame.withColumn(\"row_number\", row_number().over(windowSpec)) \\\n    .show(truncate\u003dFalse)",
       "user": "anonymous",
-      "dateUpdated": "2022-03-30 01:06:59.992",
-      "progress": 76,
+      "dateUpdated": "2023-02-12 19:08:44.157",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "python",
@@ -199,19 +199,19 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d7"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d19"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d8"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d20"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d9"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d21"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d10"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d22"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d11"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d23"
             }
           ],
           "interpreterSettingId": "spark"
@@ -221,15 +221,15 @@
       "jobName": "paragraph_1648602381815_1980091516",
       "id": "paragraph_1648602381815_1980091516",
       "dateCreated": "2022-03-30 01:06:21.815",
-      "dateStarted": "2022-03-30 01:06:59.998",
-      "dateFinished": "2022-03-30 01:07:02.131",
+      "dateStarted": "2023-02-12 19:08:44.160",
+      "dateFinished": "2023-02-12 19:08:45.461",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n# RANK\ndataFrame.withColumn(\"rank\", rank().over(windowSpec)) \\\n    .show(truncate\u003dFalse)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-03-30 01:07:22.795",
-      "progress": 89,
+      "dateUpdated": "2023-02-12 19:08:47.952",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "python",
@@ -265,19 +265,19 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d12"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d24"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d13"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d25"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d14"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d26"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d15"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d27"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d16"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d28"
             }
           ],
           "interpreterSettingId": "spark"
@@ -287,15 +287,15 @@
       "jobName": "paragraph_1648602419997_837500559",
       "id": "paragraph_1648602419997_837500559",
       "dateCreated": "2022-03-30 01:06:59.997",
-      "dateStarted": "2022-03-30 01:07:22.800",
-      "dateFinished": "2022-03-30 01:07:24.888",
+      "dateStarted": "2023-02-12 19:08:47.955",
+      "dateFinished": "2023-02-12 19:08:49.282",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n\"\"\"dens_rank\"\"\"\ndataFrame.withColumn(\"dense_rank\", dense_rank().over(windowSpec)) \\\n    .show()",
       "user": "anonymous",
-      "dateUpdated": "2022-03-30 01:07:40.419",
-      "progress": 15,
+      "dateUpdated": "2023-02-12 19:08:50.915",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "python",
@@ -331,19 +331,19 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d17"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d29"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d18"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d30"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d19"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d31"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d20"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d32"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d21"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d33"
             }
           ],
           "interpreterSettingId": "spark"
@@ -353,15 +353,15 @@
       "jobName": "paragraph_1648602442799_1368964278",
       "id": "paragraph_1648602442799_1368964278",
       "dateCreated": "2022-03-30 01:07:22.799",
-      "dateStarted": "2022-03-30 01:07:40.424",
-      "dateFinished": "2022-03-30 01:07:42.359",
+      "dateStarted": "2023-02-12 19:08:50.918",
+      "dateFinished": "2023-02-12 19:08:52.190",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n\"\"\" percent_rank \"\"\"\ndataFrame.withColumn(\"percent_rank\", percent_rank().over(windowSpec)) \\\n    .show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-03-30 01:07:56.051",
-      "progress": 19,
+      "dateUpdated": "2023-02-12 19:08:54.556",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "python",
@@ -397,19 +397,19 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d22"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d34"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d23"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d35"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d24"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d36"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d25"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d37"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d26"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d38"
             }
           ],
           "interpreterSettingId": "spark"
@@ -419,15 +419,15 @@
       "jobName": "paragraph_1648602460422_96521964",
       "id": "paragraph_1648602460422_96521964",
       "dateCreated": "2022-03-30 01:07:40.422",
-      "dateStarted": "2022-03-30 01:07:56.055",
-      "dateFinished": "2022-03-30 01:07:57.888",
+      "dateStarted": "2023-02-12 19:08:54.557",
+      "dateFinished": "2023-02-12 19:08:55.869",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n\n\"\"\" Aggregate Functions \"\"\"\ndataFrame.withColumn(\"row\", row_number().over(windowSpec)) \\\n    .withColumn(\"avg\", avg(col(\"revenue\")).over(windowSpec)) \\\n    .withColumn(\"sum\", sum(col(\"revenue\")).over(windowSpec)) \\\n    .withColumn(\"min\", min(col(\"revenue\")).over(windowSpec)) \\\n    .withColumn(\"max\", max(col(\"revenue\")).over(windowSpec)) \\\n    .where(col(\"row\") \u003d\u003d 1).select(\"category\", \"avg\", \"sum\", \"min\", \"max\") \\\n    .show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-03-30 01:08:50.797",
-      "progress": 37,
+      "dateUpdated": "2023-02-12 19:08:58.347",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "python",
@@ -463,19 +463,19 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d27"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d39"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d28"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d40"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d29"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d41"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d30"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d42"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d31"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d43"
             }
           ],
           "interpreterSettingId": "spark"
@@ -485,8 +485,8 @@
       "jobName": "paragraph_1648602476054_319914913",
       "id": "paragraph_1648602476054_319914913",
       "dateCreated": "2022-03-30 01:07:56.054",
-      "dateStarted": "2022-03-30 01:08:50.800",
-      "dateFinished": "2022-03-30 01:08:53.789",
+      "dateStarted": "2023-02-12 19:08:58.351",
+      "dateFinished": "2023-02-12 19:09:00.138",
       "status": "FINISHED"
     },
     {

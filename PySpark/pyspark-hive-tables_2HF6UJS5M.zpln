@@ -80,7 +80,7 @@
     {
       "text": "%pyspark\n\ndf\u003dspark.sql(\"show databases\")\ndf.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-08 02:58:10.551",
+      "dateUpdated": "2023-02-12 18:53:02.053",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -114,14 +114,14 @@
       "jobName": "paragraph_1666325109735_774518376",
       "id": "paragraph_1666325109735_774518376",
       "dateCreated": "2022-10-21 04:05:09.735",
-      "dateStarted": "2022-12-08 02:58:10.555",
-      "dateFinished": "2022-12-08 02:58:10.685",
+      "dateStarted": "2023-02-12 18:53:02.060",
+      "dateFinished": "2023-02-12 18:53:02.164",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\ntables \u003d spark.sql(\"show tables\").show(truncate\u003dFalse)",
       "user": "anonymous",
-      "dateUpdated": "2022-12-08 02:58:18.125",
+      "dateUpdated": "2023-02-12 18:53:05.889",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -155,14 +155,14 @@
       "jobName": "paragraph_1666325164231_1286637945",
       "id": "paragraph_1666325164231_1286637945",
       "dateCreated": "2022-10-21 04:06:04.231",
-      "dateStarted": "2022-12-08 02:58:18.129",
-      "dateFinished": "2022-12-08 02:58:18.224",
+      "dateStarted": "2023-02-12 18:53:05.891",
+      "dateFinished": "2023-02-12 18:53:05.981",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\ndf1\u003dspark.sql(\"select * from transaction_details limit 15\")\ndf1.show(truncate\u003dFalse)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-08 02:58:33.249",
+      "dateUpdated": "2023-02-12 18:53:09.267",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -199,7 +199,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://resourcemanager:8088/proxy/application_1670462386538_0006//jobs/job?id\u003d2"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0003//jobs/job?id\u003d11"
             }
           ],
           "interpreterSettingId": "spark"
@@ -209,14 +209,14 @@
       "jobName": "paragraph_1666325200944_1434210057",
       "id": "paragraph_1666325200944_1434210057",
       "dateCreated": "2022-10-21 04:06:40.944",
-      "dateStarted": "2022-12-08 02:58:33.252",
-      "dateFinished": "2022-12-08 02:58:33.919",
+      "dateStarted": "2023-02-12 18:53:09.270",
+      "dateFinished": "2023-02-12 18:53:09.768",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\ndf1.printSchema()\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-08 02:58:44.084",
+      "dateUpdated": "2023-02-12 18:53:13.228",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -250,8 +250,8 @@
       "jobName": "paragraph_1666325253268_1984446054",
       "id": "paragraph_1666325253268_1984446054",
       "dateCreated": "2022-10-21 04:07:33.268",
-      "dateStarted": "2022-12-08 02:58:44.087",
-      "dateFinished": "2022-12-08 02:58:44.108",
+      "dateStarted": "2023-02-12 18:53:13.232",
+      "dateFinished": "2023-02-12 18:53:13.241",
       "status": "FINISHED"
     },
     {

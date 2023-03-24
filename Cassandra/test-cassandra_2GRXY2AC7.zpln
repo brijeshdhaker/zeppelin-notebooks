@@ -156,7 +156,7 @@
     {
       "text": "%cassandra\n\nuse spark_stream;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:45:02.358",
+      "dateUpdated": "2023-01-17 00:46:41.744",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -180,7 +180,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\n\n\n\n\n\n\u003cdiv class\u003d\"container\"\u003e\n\u003cdiv class\u003d\"row\"\u003e\n  \u003ch5\u003eNo Result \u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\n    \u003ca role\u003d\"button\" data-toggle\u003d\"collapse\" data-target\u003d\"#909b135d-c7b1-42d7-b24e-6d0a644fe095\" aria-expanded\u003d\"false\"\u003e\n      \u003cspan class\u003d\"text-info\"\u003e\u003cstrong\u003eLast query execution info\u003c/strong\u003e\u003c/span\u003e\n    \u003c/a\u003e\n  \u003c/h5\u003e\n\u003c/div\u003e\n\u003cdiv class\u003d\"panel panel-default\"\u003e\n  \u003cdiv id\u003d\"909b135d-c7b1-42d7-b24e-6d0a644fe095\" class\u003d\"panel-collapse collapse\" role\u003d\"tabpanel\"\u003e\n    \u003cdiv class\u003d\"panel-body\"\u003e\n      \u003cdiv class\u003d\"row\"\u003e\n        \u003cdiv class\u003d\"col-md-3\"\u003e\u003c/div\u003e\n        \u003cdiv class\u003d\"col-md-6 col-offset-md-3 table-responsive table-bordered\"\u003e\n          \u003ctable class\u003d\"table\"\u003e\n            \u003cthead\u003e\n              \u003ctr\u003e\n                \u003cth\u003eInformation\u003c/th\u003e\n                \u003cth style\u003d\"text-align:left\"\u003eValue\u003c/th\u003e\n              \u003c/tr\u003e\n            \u003c/thead\u003e\n            \u003ctbody\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eStatement\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003euse spark_stream;\u003c/td\u003e\n              \u003c/tr\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eTried Hosts\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003ecassandra:9042\u003c/td\u003e\n              \u003c/tr\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eQueried Hosts\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003ecassandra:9042\u003c/td\u003e\n              \u003c/tr\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eSchema in Agreement\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003etrue\u003c/td\u003e\n              \u003c/tr\u003e\n            \u003c/tbody\u003e\n          \u003c/table\u003e\n        \u003c/div\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n"
+            "data": "\n\n\n\n\n\n\u003cdiv class\u003d\"container\"\u003e\n\u003cdiv class\u003d\"row\"\u003e\n  \u003ch5\u003eNo Result \u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\u0026nbsp;\n    \u003ca role\u003d\"button\" data-toggle\u003d\"collapse\" data-target\u003d\"#cda6edc5-6bd3-4158-9be0-dca48cabec22\" aria-expanded\u003d\"false\"\u003e\n      \u003cspan class\u003d\"text-info\"\u003e\u003cstrong\u003eLast query execution info\u003c/strong\u003e\u003c/span\u003e\n    \u003c/a\u003e\n  \u003c/h5\u003e\n\u003c/div\u003e\n\u003cdiv class\u003d\"panel panel-default\"\u003e\n  \u003cdiv id\u003d\"cda6edc5-6bd3-4158-9be0-dca48cabec22\" class\u003d\"panel-collapse collapse\" role\u003d\"tabpanel\"\u003e\n    \u003cdiv class\u003d\"panel-body\"\u003e\n      \u003cdiv class\u003d\"row\"\u003e\n        \u003cdiv class\u003d\"col-md-3\"\u003e\u003c/div\u003e\n        \u003cdiv class\u003d\"col-md-6 col-offset-md-3 table-responsive table-bordered\"\u003e\n          \u003ctable class\u003d\"table\"\u003e\n            \u003cthead\u003e\n              \u003ctr\u003e\n                \u003cth\u003eInformation\u003c/th\u003e\n                \u003cth style\u003d\"text-align:left\"\u003eValue\u003c/th\u003e\n              \u003c/tr\u003e\n            \u003c/thead\u003e\n            \u003ctbody\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eStatement\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003euse spark_stream;\u003c/td\u003e\n              \u003c/tr\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eTried Hosts\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003ecassandra:9042\u003c/td\u003e\n              \u003c/tr\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eQueried Hosts\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003ecassandra:9042\u003c/td\u003e\n              \u003c/tr\u003e\n              \u003ctr\u003e\n                \u003ctd\u003eSchema in Agreement\u003c/td\u003e\n                \u003ctd style\u003d\"text-align:left\"\u003etrue\u003c/td\u003e\n              \u003c/tr\u003e\n            \u003c/tbody\u003e\n          \u003c/table\u003e\n        \u003c/div\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n"
           }
         ]
       },
@@ -190,8 +190,8 @@
       "jobName": "paragraph_1640951637120_1357795234",
       "id": "paragraph_1640951637120_1357795234",
       "dateCreated": "2021-12-31 11:53:57.120",
-      "dateStarted": "2022-11-27 04:44:35.165",
-      "dateFinished": "2022-11-27 04:44:35.262",
+      "dateStarted": "2023-01-17 00:46:41.747",
+      "dateFinished": "2023-01-17 00:46:41.983",
       "status": "FINISHED"
     },
     {
@@ -227,7 +227,7 @@
     {
       "text": "%cassandra\n\nselect * from tweeter_tweets;",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:44:45.338",
+      "dateUpdated": "2023-01-17 00:46:46.444",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -293,14 +293,14 @@
       "jobName": "paragraph_1640951939748_1152327736",
       "id": "paragraph_1640951939748_1152327736",
       "dateCreated": "2021-12-31 11:58:59.748",
-      "dateStarted": "2022-11-27 04:44:41.208",
-      "dateFinished": "2022-11-27 04:44:41.226",
+      "dateStarted": "2023-01-17 00:46:46.448",
+      "dateFinished": "2023-01-17 00:46:46.477",
       "status": "FINISHED"
     },
     {
       "text": "%cassandra\n\nselect * from spark_stream.tweeter_tweets where uuid \u003d \u0027a3d21398-b93c-4bc2-a985-1dcf862bd8c8\u0027;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:44:50.909",
+      "dateUpdated": "2023-01-17 00:46:55.154",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -393,8 +393,8 @@
       "jobName": "paragraph_1640951953484_446711126",
       "id": "paragraph_1640951953484_446711126",
       "dateCreated": "2021-12-31 11:59:13.484",
-      "dateStarted": "2022-02-16 01:15:40.357",
-      "dateFinished": "2022-02-16 01:15:40.377",
+      "dateStarted": "2023-01-17 00:46:55.160",
+      "dateFinished": "2023-01-17 00:46:55.170",
       "status": "FINISHED"
     },
     {

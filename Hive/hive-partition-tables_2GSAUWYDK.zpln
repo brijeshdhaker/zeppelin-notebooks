@@ -1247,11 +1247,11 @@
     {
       "text": "%hive\n\n\nDROP TABLE zipcodes;\nDROP TABLE zipcodes_temp;\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-08 04:33:20.345",
+      "dateUpdated": "2022-12-16 00:53:35.965",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 11.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true,
         "editorSetting": {

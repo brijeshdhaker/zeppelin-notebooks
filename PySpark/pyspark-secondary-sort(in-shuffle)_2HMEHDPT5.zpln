@@ -338,7 +338,7 @@
     {
       "text": "%pyspark\n\nimport time\nimport itertools\nimport re\nfrom pyspark.rdd import portable_hash\nfrom datetime import datetime\n\nAPP_NAME   \u003d \u0027in-shuffle-secondary-sort-compute\u0027\nINPUT_FILE \u003d \u0027/datasets/Taxi_Trips.csv\u0027\nOUTPUT_DIR \u003d \u0027/test/output-in-shuffle-sort-compute-{timestamp}.txt\u0027\n\nCOMMA_DELIMITER \u003d re.compile(\u0027\u0027\u0027,(?\u003d(?:[^\"]*\"[^\"]*\")*[^\"]*$)\u0027\u0027\u0027)\n\nFIRST_KEY \u003d 1\nSECOND_KEY \u003d 2\nTRIP_END_TIMESTAMP \u003d 3\n\n\nTIMESTAMP \u003d int(time.time())\n\n\ndef partition_func(key):\n    return portable_hash(key[0])\n\n\ndef key_func(entry):\n    return entry[0], entry[1]\n\n#\n# make_pair will return a pair having a composite key (Taxi ID, Trip Start Timestamp) and a payload, after which the payload is compressed to only two values: Trip Start Timestamp and Trip End Timestamp:\n#\ndef make_pair(entry):\n    key \u003d (entry[FIRST_KEY], entry[SECOND_KEY])\n    return key, entry\n\n\ndef unpair(entry):\n    return entry[0][0], entry[1][0], entry[1][1]\n\n\ndef create_pair_rdd(ctx):\n    rawRDD \u003d ctx.textFile(INPUT_FILE)\n    headerlessRDD \u003d rawRDD.filter(lambda x: not x.startswith(\u0027Trip ID\u0027))\n    rdd \u003d headerlessRDD.map(lambda x: COMMA_DELIMITER.split(x))\n    validRDD \u003d rdd.filter(lambda x: len(x[FIRST_KEY]) \u003e 0 and len(x[SECOND_KEY]) \u003e 0 and len(x[TRIP_END_TIMESTAMP]) \u003e 0)\n    \n    pairRDD \u003d validRDD.map(make_pair)\n    \n    # after which the payload is compressed to only two values: Trip Start Timestamp and Trip End Timestamp:\n    compressedRDD \u003d pairRDD.mapValues(lambda x: (x[SECOND_KEY], x[TRIP_END_TIMESTAMP]))\n\n    return compressedRDD\n\n#\n#\n#\ndef sorted_group(lines):\n    return itertools.groupby(lines, key\u003dlambda x: x[0])\n\n#\n#\n#\ndef calculate_loss(entry):\n    key, group \u003d entry\n    loss \u003d 0\n    _, _, prev_end \u003d next(group)\n\n    for item in group:\n        _, start, end \u003d item\n        delta \u003d datetime.strptime(start, \u0027%m/%d/%Y %I:%M:%S %p\u0027).timestamp() \\\n                - datetime.strptime(prev_end, \u0027%m/%d/%Y %I:%M:%S %p\u0027).timestamp()\n        if delta \u003e 0:\n            loss +\u003d delta\n        prev_end \u003d end\n\n    return key, loss",
       "user": "anonymous",
-      "dateUpdated": "2022-11-28 02:43:42.348",
+      "dateUpdated": "2023-02-10 02:40:17.710",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -367,14 +367,14 @@
       "jobName": "paragraph_1669559338876_1926200043",
       "id": "paragraph_1669559338876_1926200043",
       "dateCreated": "2022-11-27 14:28:58.876",
-      "dateStarted": "2022-11-27 14:38:49.763",
-      "dateFinished": "2022-11-27 14:38:49.771",
+      "dateStarted": "2023-02-10 02:40:17.713",
+      "dateFinished": "2023-02-10 02:40:17.719",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n\n\n\n#\nrdd \u003d create_pair_rdd(sc)\n\n\n#\n# As discussed, repartitionAndSortWithinPartitions receives a partitioner(partition_func) and a sort comparator (keyfunc). \n# One also can specify the number of partitions to use and the sorting order. The partitioner just uses the standard \n# portable_hash function with the first part of the key, while the sort comparator just returns back the composite key. \n#\nsortedRDD \u003d rdd.repartitionAndSortWithinPartitions(partitionFunc\u003dpartition_func,\n                                                   numPartitions\u003d4,\n                                                   keyfunc\u003dkey_func,\n                                                   ascending\u003dTrue)\n#\n# After the shuffling process invoked by repartitionAndSortWithinPartitions is over, one can iterate over each RDD partition in order to group the data as presented in the next code snippet:\n#\nunpairedRDD \u003d sortedRDD.map(unpair, preservesPartitioning\u003dTrue)\n\n#\n# One very important aspect to discuss before moving forward is why itertools.groupby was used and not a regular group by algorithm. Sure, the standard python library is elegant and it does the job of grouping the data, but there is more to it. The itertools.groupby, keeps the iterator received by sorted_group still as an iterator. Keeping it as an iterator and not materializing it to something else saves memory and prevents Spark from going out of memory. This strategy is known as iterator-to-iterator transformation and it has the advantage of chaining multiple data transformations delaying the actual evaluation, thus saving space and time[5]. Using the iterator-to-iterator transformation strategy, one can continue processing the secondary sort result, thus sorted_group just returns now a new iterator obtained from itertools.groupby. This transforms the partitions grouping data by key. Because this is kept as an iterator, nothing is evaluated yet, therefor no extra space is used.\n#\n# For the last step, one can apply a map transformation on the fresh groups in order to iterate over them and compute the total down time.\n#\n\n\n#\ngroupedRDD \u003d unpairedRDD.mapPartitions(sorted_group, preservesPartitioning\u003dTrue)\n\n# The map method receives calculate_loss, which just iterates over each group and computes the total downtime. Elements are accessed one by one, which again does not allocate extra space.\nlossRDD \u003d groupedRDD.map(calculate_loss)\n\n#\nlossRDD.saveAsTextFile(OUTPUT_DIR.format(timestamp\u003dTIMESTAMP))\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-28 02:42:44.541",
+      "dateUpdated": "2023-02-10 02:40:21.442",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -406,7 +406,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://resourcemanager:8088/proxy/application_1669549114284_0001//jobs/job?id\u003d0"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d41"
             }
           ],
           "interpreterSettingId": "spark"
@@ -416,8 +416,8 @@
       "jobName": "paragraph_1669559451993_847979606",
       "id": "paragraph_1669559451993_847979606",
       "dateCreated": "2022-11-27 14:30:51.993",
-      "dateStarted": "2022-11-27 14:41:12.098",
-      "dateFinished": "2022-11-27 14:42:19.909",
+      "dateStarted": "2023-02-10 02:40:21.444",
+      "dateFinished": "2023-02-10 02:41:31.778",
       "status": "FINISHED"
     },
     {

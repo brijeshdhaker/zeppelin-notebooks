@@ -39,7 +39,7 @@
     {
       "text": "%spark\n\n\nval linesRDD \u003d sc.parallelize(\n  List(\"Germany India USA\",\"USA India Russia\",\"India Brazil Canada China\")\n) \n\n//linesRDD.foreach(println)\n\nfor (response \u003c- linesRDD.collect()) println(response)\n\nprintln\nprintln\nprintln\nprintln\n\nlinesRDD.take(3).foreach(println)\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-06-22 02:02:49.534",
+      "dateUpdated": "2023-02-10 02:58:09.502",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -63,7 +63,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Germany India USA\nUSA India Russia\nIndia Brazil Canada China\n\n\n\n\nGermany India USA\nUSA India Russia\nIndia Brazil Canada China\n\u001b[1m\u001b[34mlinesRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d ParallelCollectionRDD[12] at parallelize at \u003cconsole\u003e:28\n"
+            "data": "Germany India USA\nUSA India Russia\nIndia Brazil Canada China\n\n\n\n\nGermany India USA\nUSA India Russia\nIndia Brazil Canada China\n\u001b[1m\u001b[34mlinesRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d ParallelCollectionRDD[200] at parallelize at \u003cconsole\u003e:31\n"
           }
         ]
       },
@@ -76,16 +76,13 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d2"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d47"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d3"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d48"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d4"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d5"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d49"
             }
           ],
           "interpreterSettingId": "spark"
@@ -95,14 +92,14 @@
       "jobName": "paragraph_1642061616834_1676521321",
       "id": "paragraph_1642061616834_1676521321",
       "dateCreated": "2022-01-13 08:13:36.834",
-      "dateStarted": "2022-06-22 02:02:49.573",
-      "dateFinished": "2022-06-22 02:02:53.073",
+      "dateStarted": "2023-02-10 02:58:09.512",
+      "dateFinished": "2023-02-10 02:58:09.888",
       "status": "FINISHED"
     },
     {
       "text": "%spark\n\nval wordRDD \u003d linesRDD.flatMap(_.split(\" \"));\n//\nwordRDD.foreach(println)\n//\n// wordRDD.collect().foreach(println)\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-06-19 06:04:25.559",
+      "dateUpdated": "2023-02-10 02:58:14.108",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -126,7 +123,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mwordRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d MapPartitionsRDD[4] at flatMap at \u003cconsole\u003e:29\n"
+            "data": "\u001b[1m\u001b[34mwordRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d MapPartitionsRDD[201] at flatMap at \u003cconsole\u003e:30\n"
           }
         ]
       },
@@ -139,7 +136,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:42647/jobs/job?id\u003d7"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d50"
             }
           ],
           "interpreterSettingId": "spark"
@@ -149,14 +146,14 @@
       "jobName": "paragraph_1642061766413_1835503491",
       "id": "paragraph_1642061766413_1835503491",
       "dateCreated": "2022-01-13 08:16:06.413",
-      "dateStarted": "2022-06-19 06:04:25.581",
-      "dateFinished": "2022-06-19 06:04:25.871",
+      "dateStarted": "2023-02-10 02:58:14.111",
+      "dateFinished": "2023-02-10 02:58:14.336",
       "status": "FINISHED"
     },
     {
       "text": "%spark\n\nval pairedWordRDD \u003d wordRDD.map(x \u003d\u003e (x, 1))\npairedWordRDD.take(3).foreach(println)",
       "user": "anonymous",
-      "dateUpdated": "2022-06-16 02:09:00.897",
+      "dateUpdated": "2023-02-10 02:58:17.317",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -180,7 +177,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "(Germany,1)\n(India,1)\n(USA,1)\n\u001b[1m\u001b[34mpairedWordRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d MapPartitionsRDD[2] at map at \u003cconsole\u003e:27\n"
+            "data": "(Germany,1)\n(India,1)\n(USA,1)\n\u001b[1m\u001b[34mpairedWordRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d MapPartitionsRDD[202] at map at \u003cconsole\u003e:30\n"
           }
         ]
       },
@@ -193,7 +190,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d3"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d51"
+            },
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d52"
             }
           ],
           "interpreterSettingId": "spark"
@@ -203,14 +203,14 @@
       "jobName": "paragraph_1642064227753_1830165128",
       "id": "paragraph_1642064227753_1830165128",
       "dateCreated": "2022-01-13 08:57:07.753",
-      "dateStarted": "2022-06-16 02:09:00.916",
-      "dateFinished": "2022-06-16 02:09:01.369",
+      "dateStarted": "2023-02-10 02:58:17.320",
+      "dateFinished": "2023-02-10 02:58:17.551",
       "status": "FINISHED"
     },
     {
       "text": "%spark\n\nprintln(\"Distinct \u003d\u003d\u003e\")\nval distinctRDD \u003d pairedWordRDD.distinct()\ndistinctRDD.take(3).foreach(println)",
       "user": "anonymous",
-      "dateUpdated": "2022-06-16 02:09:14.410",
+      "dateUpdated": "2023-02-10 02:58:19.725",
       "progress": 50,
       "config": {
         "editorSetting": {
@@ -234,7 +234,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Distinct \u003d\u003d\u003e\n(Germany,1)\n(India,1)\n(Brazil,1)\n\u001b[1m\u001b[34mdistinctRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d MapPartitionsRDD[5] at distinct at \u003cconsole\u003e:28\n"
+            "data": "Distinct \u003d\u003d\u003e\n(Brazil,1)\n(USA,1)\n(India,1)\n\u001b[1m\u001b[34mdistinctRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d MapPartitionsRDD[205] at distinct at \u003cconsole\u003e:31\n"
           }
         ]
       },
@@ -247,7 +247,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d4"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d53"
+            },
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d54"
             }
           ],
           "interpreterSettingId": "spark"
@@ -257,15 +260,15 @@
       "jobName": "paragraph_1642062060602_1630820985",
       "id": "paragraph_1642062060602_1630820985",
       "dateCreated": "2022-01-13 08:21:00.602",
-      "dateStarted": "2022-06-16 02:09:14.428",
-      "dateFinished": "2022-06-16 02:09:15.526",
+      "dateStarted": "2023-02-10 02:58:19.736",
+      "dateFinished": "2023-02-10 02:58:20.097",
       "status": "FINISHED"
     },
     {
       "title": "SortByKey",
       "text": "%spark\n\n \nprintln(\"Sort by Key \u003d\u003d\u003e\")\nval sortRDD \u003d pairedWordRDD.sortByKey()\nsortRDD.take(3).foreach(println)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-15 15:11:15.193",
+      "dateUpdated": "2023-02-10 02:58:22.531",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -290,7 +293,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Sort by Key \u003d\u003d\u003e\n(Brazil,1)\n(Canada,1)\n(China,1)\n\u001b[1m\u001b[34msortRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d ShuffledRDD[112] at sortByKey at \u003cconsole\u003e:29\n"
+            "data": "Sort by Key \u003d\u003d\u003e\n(Brazil,1)\n(Canada,1)\n(China,1)\n\u001b[1m\u001b[34msortRDD\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d ShuffledRDD[208] at sortByKey at \u003cconsole\u003e:32\n"
           }
         ]
       },
@@ -303,10 +306,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d47"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d55"
             },
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d48"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d56"
             }
           ],
           "interpreterSettingId": "spark"
@@ -316,15 +319,15 @@
       "jobName": "paragraph_1642064342739_1401623065",
       "id": "paragraph_1642064342739_1401623065",
       "dateCreated": "2022-01-13 08:59:02.739",
-      "dateStarted": "2022-01-15 15:11:15.197",
-      "dateFinished": "2022-01-15 15:11:15.634",
+      "dateStarted": "2023-02-10 02:58:22.533",
+      "dateFinished": "2023-02-10 02:58:22.873",
       "status": "FINISHED"
     },
     {
       "title": "reduceByKey",
       "text": "%spark\n\n//reduceByKey\nprintln(\"Reduce by Key \u003d\u003d\u003e\")\nval wordCount \u003d pairedWordRDD.reduceByKey((a,b)\u003d\u003ea+b)\nwordCount.take(6).foreach(println)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-24 03:41:09.979",
+      "dateUpdated": "2023-02-10 02:58:25.657",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -349,7 +352,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Reduce by Key \u003d\u003d\u003e\n(Brazil,1)\n(Canada,1)\n(China,1)\n(USA,2)\n(Germany,1)\n(Russia,1)\n\u001b[1m\u001b[34mwordCount\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d ShuffledRDD[113] at reduceByKey at \u003cconsole\u003e:29\n"
+            "data": "Reduce by Key \u003d\u003d\u003e\n(Brazil,1)\n(Canada,1)\n(China,1)\n(USA,2)\n(Germany,1)\n(Russia,1)\n\u001b[1m\u001b[34mwordCount\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d ShuffledRDD[209] at reduceByKey at \u003cconsole\u003e:32\n"
           }
         ]
       },
@@ -362,10 +365,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d49"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d57"
             },
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d50"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d58"
             }
           ],
           "interpreterSettingId": "spark"
@@ -375,15 +378,15 @@
       "jobName": "paragraph_1642064509536_1828362782",
       "id": "paragraph_1642064509536_1828362782",
       "dateCreated": "2022-01-13 09:01:49.537",
-      "dateStarted": "2022-01-15 15:11:26.603",
-      "dateFinished": "2022-01-15 15:11:27.328",
+      "dateStarted": "2023-02-10 02:58:25.660",
+      "dateFinished": "2023-02-10 02:58:26.142",
       "status": "FINISHED"
     },
     {
       "title": "aggregateByKey",
       "text": "%spark\n\n/*\n\nAggregateByKey(arg1,arg2):\n\nThis will take the two functions:\n1st Argument : specify what to do with value of the key if the same key appears inside same partition\n2nd Argument : specify what to do with the values of same key across all other partitions\n\n*/\n\ndef seqFunction \u003d (accu:Int, v:Int) \u003d\u003e accu + v\n\ndef combFunction \u003d (accu1:Int, accu2:Int) \u003d\u003e accu1 + accu2\n\nprintln(\"Aggregate by Key \u003d\u003d\u003e wordcount\")\nval wordCount2 \u003d pairedWordRDD.aggregateByKey(0)(seqFunction, combFunction)\n\nwordCount2.take(3).foreach(println)\n    \n\n//keys\nprintln(\"Keys \u003d\u003d\u003e\")\nwordCount2.keys.foreach(println)\n\n//values\nprintln(\"values \u003d\u003d\u003e\")\nwordCount2.values.foreach(println)\n\nprintln(\"Count :\"+wordCount2.count())\n    ",
       "user": "anonymous",
-      "dateUpdated": "2022-01-24 03:41:05.090",
+      "dateUpdated": "2023-02-10 02:58:34.365",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -408,7 +411,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Aggregate by Key \u003d\u003d\u003e wordcount\n(Brazil,1)\n(Canada,1)\n(China,1)\nKeys \u003d\u003d\u003e\nvalues \u003d\u003d\u003e\nCount :7\n\u001b[1m\u001b[34mseqFunction\u001b[0m: \u001b[1m\u001b[32m(Int, Int) \u003d\u003e Int\u001b[0m\n\u001b[1m\u001b[34mcombFunction\u001b[0m: \u001b[1m\u001b[32m(Int, Int) \u003d\u003e Int\u001b[0m\n\u001b[1m\u001b[34mwordCount2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d ShuffledRDD[114] at aggregateByKey at \u003cconsole\u003e:42\n"
+            "data": "Aggregate by Key \u003d\u003d\u003e wordcount\n(Brazil,1)\n(Canada,1)\n(China,1)\nKeys \u003d\u003d\u003e\nvalues \u003d\u003d\u003e\nCount :7\n\u001b[1m\u001b[34mseqFunction\u001b[0m: \u001b[1m\u001b[32m(Int, Int) \u003d\u003e Int\u001b[0m\n\u001b[1m\u001b[34mcombFunction\u001b[0m: \u001b[1m\u001b[32m(Int, Int) \u003d\u003e Int\u001b[0m\n\u001b[1m\u001b[34mwordCount2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d ShuffledRDD[216] at aggregateByKey at \u003cconsole\u003e:49\n"
           }
         ]
       },
@@ -421,19 +424,19 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d51"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d69"
             },
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d52"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d70"
             },
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d53"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d71"
             },
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d54"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d72"
             },
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d55"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d73"
             }
           ],
           "interpreterSettingId": "spark"
@@ -443,8 +446,8 @@
       "jobName": "paragraph_1642064654166_2014856083",
       "id": "paragraph_1642064654166_2014856083",
       "dateCreated": "2022-01-13 09:04:14.166",
-      "dateStarted": "2022-01-15 15:11:38.288",
-      "dateFinished": "2022-01-15 15:11:38.825",
+      "dateStarted": "2023-02-10 02:58:34.369",
+      "dateFinished": "2023-02-10 02:58:34.731",
       "status": "FINISHED"
     },
     {

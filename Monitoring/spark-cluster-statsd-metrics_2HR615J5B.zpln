@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%spark.conf\n\n# Must set SPARK_HOME for this example, because it won\u0027t work for Zeppelin\u0027s embedded spark mode. The embedded spark mode doesn\u0027t \n# use spark-submit to launch spark interpreter, so spark.jars and spark.jars.packages won\u0027t take affect. \n\n#\n#\n#\n\nSPARK_HOME /opt/spark-3.1.2\n\n\n#\n# set execution mode\n#\n\nmaster yarn\n# set driver memory to 8g\nspark.driver.memory 1g\nspark.driver.cores 1\n\n# set executor number to be \nspark.executor.instances  2\nspark.executor.memory  640m\nspark.executor.cores 4\n\n#\nspark.submit.deployMode cluster\n\n#\n# spark.jars can be used for adding any local jar files into spark interpreter\n# \n\n# spark.jars  file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.driver.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.executor.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n# spark.executor.extraLibrary file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n\n#\n# spark.jars.packages can be used for adding packages into spark interpreter\n# The following is to add avro into your spark interpreter\n#\n\n# spark.jars.packages com.databricks:spark-avro_2.11:4.0.0\n\n#\n# Python 3.7 Runtime\n#\nspark.yarn.dist.archives hdfs://namenode:9000/archives/pyspark3.7.tar.gz#environment\n\n\n\n\n",
+      "text": "%spark.conf\n\n#\n#\n#\n\nSPARK_HOME /opt/spark-3.1.2\n\n\n#\n# set execution mode\n#\n\nmaster yarn\nspark.submit.deployMode cluster\n\n\n#\n#\n#\nspark.driver.memory 640m\nspark.driver.cores 1\n\n#\n#\n#\nspark.executor.instances  2\nspark.executor.memory  640m\nspark.executor.cores 2\n\n#\n# spark.jars.packages can be used for adding packages into spark interpreter\n#\nspark.jars.packages io.delta:delta-core_2.12:1.0.0,com.databricks:spark-avro_2.11:4.0.0\n\n#\n#\n#\nspark.yarn.dist.files hdfs://namenode:9000/configs/statsd.metrics.properties#metrics.properties\n\n#\n# Python 3.7 Runtime\n#\nspark.yarn.dist.archives hdfs://namenode:9000/archives/pyspark3.7-20221125.tar.gz#environment\n\n#\n# stadsd Configuration\n#\nspark.metrics.conf metrics.properties\nspark.metrics.staticSources.enabled true\nspark.metrics.appStatusSource.enabled true\nspark.executor.processTreeMetrics.enabled true\n\n#\n#\n#\n\n",
       "user": "anonymous",
-      "dateUpdated": "2023-02-07 02:21:52.729",
+      "dateUpdated": "2023-02-12 12:18:39.024",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -29,17 +29,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638439801256_1921713656",
+      "jobName": "paragraph_1676188665009_1164526171",
       "id": "paragraph_1638439801256_1921713656",
-      "dateCreated": "2021-12-02 15:40:01.256",
-      "dateStarted": "2022-01-10 11:31:38.320",
-      "dateFinished": "2022-01-10 11:31:38.325",
+      "dateCreated": "2023-02-12 07:57:45.009",
+      "dateStarted": "2023-02-12 12:18:39.028",
+      "dateFinished": "2023-02-12 12:18:39.037",
       "status": "FINISHED"
     },
     {
       "text": "%spark\n\nspark.sparkContext.master",
       "user": "anonymous",
-      "dateUpdated": "2022-01-10 11:31:43.148",
+      "dateUpdated": "2023-02-12 12:18:42.272",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -70,30 +70,30 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638440008618_2040289727",
+      "jobName": "paragraph_1676188665009_903672141",
       "id": "paragraph_1638440008618_2040289727",
-      "dateCreated": "2021-12-02 15:43:28.618",
-      "dateStarted": "2022-01-10 11:31:43.150",
-      "dateFinished": "2022-01-10 11:32:11.170",
+      "dateCreated": "2023-02-12 07:57:45.010",
+      "dateStarted": "2023-02-12 12:18:42.276",
+      "dateFinished": "2023-02-12 12:19:05.299",
       "status": "FINISHED"
     },
     {
       "text": "%spark\n\nval employee \u003d Seq(\n      (101,\"Chloe\",-1,\"2018\",8,\"M\",3000),\n      (102,\"Paul\",101,\"2010\",3,\"M\",4000),\n      (103,\"John\",101,\"2010\",1,\"M\",1000),\n      (104,\"Lisa\",102,\"2005\",2,\"F\",2000),\n      (105,\"Evan\",102,\"2010\",7,\"\",-1),\n      (106,\"Amy\",102,\"2010\",9,\"\",-1)\n    )\nval empColumns \u003d Seq(\"id\",\"name\",\"superior_emp_id\",\"year_joined\",\"deptno\",\"gender\",\"salary\")\n\nval department \u003d Seq(\n      (\"Marketing\",1),\n      (\"Sales\",2),\n      (\"Engineering\",3),\n      (\"Finance\",4),\n      (\"IT\",5),\n      (\"HR\",6)\n    )\nval deptColumns \u003d Seq(\"dept_name\",\"deptno\")\n\nimport spark.sqlContext.implicits._\n\nspark.conf.set(\"spark.sql.crossJoin.enabled\",true);\n\nval employeeDF \u003d employee.toDF(empColumns:_*)\nemployeeDF.show(false)\n\nval departmentDF \u003d department.toDF(deptColumns:_*)\ndepartmentDF.show(false)\n\nprintln(\"1. Inner Join Using Expression : join(right: Dataset[_]): DataFrame\")\nemployeeDF.join(departmentDF).show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-10 11:32:31.396",
+      "dateUpdated": "2023-02-12 13:14:47.419",
       "progress": 100,
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 12.0,
-        "enabled": true,
-        "results": {},
         "editorSetting": {
           "language": "scala",
           "editOnDblClick": false,
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "editorMode": "ace/mode/scala"
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -117,40 +117,40 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:41737/jobs/job?id\u003d1"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0002//jobs/job?id\u003d1"
             },
             {
-              "jobUrl": "http://nodemanager:41737/jobs/job?id\u003d2"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676201956571_0002//jobs/job?id\u003d2"
             }
           ],
           "interpreterSettingId": "spark"
         }
       },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638442347634_2006643863",
+      "jobName": "paragraph_1676188665010_2129620470",
       "id": "paragraph_1638442347634_2006643863",
-      "dateCreated": "2021-12-02 16:22:27.634",
-      "dateStarted": "2022-01-10 11:32:31.397",
-      "dateFinished": "2022-01-10 11:32:38.631",
+      "dateCreated": "2023-02-12 07:57:45.010",
+      "dateStarted": "2023-02-12 13:14:47.421",
+      "dateFinished": "2023-02-12 13:14:52.112",
       "status": "FINISHED"
     },
     {
       "text": "%spark\n\nspark.sparkContext.stop()\n",
       "user": "anonymous",
-      "dateUpdated": "2021-12-30 03:15:45.344",
+      "dateUpdated": "2023-02-12 07:57:45.010",
       "progress": 0,
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 12.0,
-        "enabled": true,
-        "results": {},
         "editorSetting": {
           "language": "scala",
           "editOnDblClick": false,
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "editorMode": "ace/mode/scala"
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -163,17 +163,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1640794966503_1048083866",
+      "jobName": "paragraph_1676188665010_764372359",
       "id": "paragraph_1640794966503_1048083866",
-      "dateCreated": "2021-12-29 16:22:46.503",
-      "dateStarted": "2021-12-30 03:15:45.346",
-      "dateFinished": "2021-12-30 03:15:45.661",
-      "status": "FINISHED"
+      "dateCreated": "2023-02-12 07:57:45.010",
+      "status": "READY"
     },
     {
       "text": "%spark\n",
       "user": "anonymous",
-      "dateUpdated": "2021-12-30 03:15:45.345",
+      "dateUpdated": "2023-02-12 07:57:45.010",
       "progress": 0,
       "config": {},
       "settings": {
@@ -183,16 +181,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1640834145345_1976143351",
+      "jobName": "paragraph_1676188665010_610706502",
       "id": "paragraph_1640834145345_1976143351",
-      "dateCreated": "2021-12-30 03:15:45.345",
+      "dateCreated": "2023-02-12 07:57:45.010",
       "status": "READY"
     }
   ],
-  "name": "spark-yarn-cluster",
-  "id": "2GP4KFVM4",
+  "name": "spark-cluster-statsd-metrics",
+  "id": "2HR615J5B",
   "defaultInterpreterGroup": "spark",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "noteParams": {},
   "noteForms": {},
   "angularObjects": {},

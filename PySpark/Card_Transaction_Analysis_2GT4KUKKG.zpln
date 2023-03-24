@@ -46,7 +46,7 @@
     {
       "text": "%pyspark\n\n# Read JSON file into dataframe\ndf \u003d spark.read.json(\"/datasets/card_transactions.json\")\ndf.printSchema()\ndf.show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 12:08:36.288",
+      "dateUpdated": "2023-02-10 02:31:02.503",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -85,10 +85,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:38657/jobs/job?id\u003d0"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d24"
             },
             {
-              "jobUrl": "http://nodemanager:38657/jobs/job?id\u003d1"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d25"
             }
           ],
           "interpreterSettingId": "spark"
@@ -98,14 +98,14 @@
       "jobName": "paragraph_1642247644820_528754606",
       "id": "paragraph_1642247644820_528754606",
       "dateCreated": "2022-01-15 11:54:04.820",
-      "dateStarted": "2022-01-16 03:55:11.865",
-      "dateFinished": "2022-01-16 03:55:17.695",
+      "dateStarted": "2023-02-10 02:31:02.507",
+      "dateFinished": "2023-02-10 02:31:03.051",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\nrdd \u003d df.rdd\nfor record in rdd.take(3): print(record)\nfor e in rdd.take(3): print(e[\"user_id\"])\nfor e in rdd.take(3): print(e.user_id)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 12:08:43.085",
+      "dateUpdated": "2023-02-10 02:31:08.346",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -142,13 +142,13 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:38657/jobs/job?id\u003d2"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d26"
             },
             {
-              "jobUrl": "http://nodemanager:38657/jobs/job?id\u003d3"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d27"
             },
             {
-              "jobUrl": "http://nodemanager:38657/jobs/job?id\u003d4"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d28"
             }
           ],
           "interpreterSettingId": "spark"
@@ -158,15 +158,15 @@
       "jobName": "paragraph_1642247729898_442213787",
       "id": "paragraph_1642247729898_442213787",
       "dateCreated": "2022-01-15 11:55:29.898",
-      "dateStarted": "2022-01-16 03:55:22.960",
-      "dateFinished": "2022-01-16 03:55:24.647",
+      "dateStarted": "2023-02-10 02:31:08.350",
+      "dateFinished": "2023-02-10 02:31:08.687",
       "status": "FINISHED"
     },
     {
       "title": "Analysis Datasource",
       "text": "%pyspark\n\nimport json\n\n\nraw_rdd \u003d spark.sparkContext.textFile(\"/datasets/card_transactions.json\")\ninput_rdd \u003d raw_rdd.map(lambda x: json.loads(x)).filter(lambda x: 1580515200 \u003c\u003d x.get(\"ts\") \u003c 1583020800).cache()\nfor e in input_rdd.take(3): print(e)\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 12:08:52.289",
+      "dateUpdated": "2023-02-10 02:31:14.264",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -204,7 +204,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d12"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d29"
             }
           ],
           "interpreterSettingId": "spark"
@@ -214,15 +214,15 @@
       "jobName": "paragraph_1642153608487_1679093617",
       "id": "paragraph_1642153608487_1679093617",
       "dateCreated": "2022-01-14 09:46:48.487",
-      "dateStarted": "2022-01-15 11:34:10.215",
-      "dateFinished": "2022-01-15 11:34:10.374",
+      "dateStarted": "2023-02-10 02:31:14.267",
+      "dateFinished": "2023-02-10 02:31:14.434",
       "status": "FINISHED"
     },
     {
       "title": "# Total amount spent by each user",
       "text": "%pyspark\n\nuser_expense_rdd \u003d input_rdd.map(lambda x: (x.get(\u0027user_id\u0027), x.get(\u0027amount\u0027)))\nresult_rdd \u003d user_expense_rdd.reduceByKey(lambda x, y: x + y)\nfor e in result_rdd.take(3): print(e)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-16 10:49:47.770",
+      "dateUpdated": "2023-02-10 02:31:17.190",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -260,10 +260,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d2"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d30"
             },
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d3"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d31"
             }
           ],
           "interpreterSettingId": "spark"
@@ -273,15 +273,15 @@
       "jobName": "paragraph_1642143338607_768206391",
       "id": "paragraph_1642143338607_768206391",
       "dateCreated": "2022-01-14 06:55:38.607",
-      "dateStarted": "2022-01-15 11:13:16.636",
-      "dateFinished": "2022-01-15 11:13:16.924",
+      "dateStarted": "2023-02-10 02:31:17.194",
+      "dateFinished": "2023-02-10 02:31:21.099",
       "status": "FINISHED"
     },
     {
       "title": "# Total amount spent by each user for each of their cards",
       "text": "%pyspark\n\nuser_expense_rdd \u003d input_rdd.map(lambda x: ((x.get(\u0027user_id\u0027), x.get(\u0027card_num\u0027)), x.get(\u0027amount\u0027)))\nresult_rdd \u003d user_expense_rdd.reduceByKey(lambda x, y: x + y)\nfor e in result_rdd.take(3): print(e)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 12:09:01.163",
+      "dateUpdated": "2023-02-10 02:31:24.937",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -306,7 +306,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "((\u0027U_104\u0027, \u0027C_108\u0027), 25528)\n((\u0027U_103\u0027, \u0027C_106\u0027), 21885)\n((\u0027U_103\u0027, \u0027C_105\u0027), 22150)\n"
+            "data": "((\u0027U_103\u0027, \u0027C_106\u0027), 21885)\n((\u0027U_103\u0027, \u0027C_105\u0027), 22150)\n((\u0027U_104\u0027, \u0027C_108\u0027), 25528)\n"
           }
         ]
       },
@@ -319,7 +319,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d4"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d32"
             }
           ],
           "interpreterSettingId": "spark"
@@ -329,15 +329,15 @@
       "jobName": "paragraph_1642245088627_1302564438",
       "id": "paragraph_1642245088627_1302564438",
       "dateCreated": "2022-01-15 11:11:28.627",
-      "dateStarted": "2022-01-15 11:15:20.982",
-      "dateFinished": "2022-01-15 11:15:21.215",
+      "dateStarted": "2023-02-10 02:31:24.940",
+      "dateFinished": "2023-02-10 02:31:25.103",
       "status": "FINISHED"
     },
     {
       "title": "# Total amount spend by each user for each of their cards on each category",
       "text": "%pyspark\n\nuser_expense_rdd \u003d input_rdd.map(lambda x: ((x.get(\u0027user_id\u0027), x.get(\u0027card_num\u0027), x.get(\u0027category\u0027)), x.get(\u0027amount\u0027)))\nresult_rdd \u003d user_expense_rdd.reduceByKey(lambda x, y: x + y)\nfor e in result_rdd.take(3): print(e)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-16 11:04:31.192",
+      "dateUpdated": "2023-02-10 02:31:41.248",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -362,7 +362,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "((\u0027U_104\u0027, \u0027C_108\u0027, \u0027entertainment\u0027), 5497)\n((\u0027U_103\u0027, \u0027C_106\u0027, \u0027entertainment\u0027), 3587)\n((\u0027U_104\u0027, \u0027C_108\u0027, \u0027children\u0027), 6939)\n"
+            "data": "((\u0027U_103\u0027, \u0027C_106\u0027, \u0027cosmetics\u0027), 3828)\n((\u0027U_103\u0027, \u0027C_105\u0027, \u0027groceries\u0027), 3902)\n((\u0027U_103\u0027, \u0027C_105\u0027, \u0027cosmetics\u0027), 5870)\n"
           }
         ]
       },
@@ -375,7 +375,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d5"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d34"
             }
           ],
           "interpreterSettingId": "spark"
@@ -385,15 +385,15 @@
       "jobName": "paragraph_1642245320980_1018818511",
       "id": "paragraph_1642245320980_1018818511",
       "dateCreated": "2022-01-15 11:15:20.980",
-      "dateStarted": "2022-01-15 11:17:16.959",
-      "dateFinished": "2022-01-15 11:17:17.107",
+      "dateStarted": "2023-02-10 02:31:41.249",
+      "dateFinished": "2023-02-10 02:31:41.434",
       "status": "FINISHED"
     },
     {
       "title": "# Distinct list of categories in which the user has made expenditure",
-      "text": "%pyspark\n\ndef initialize(value):\n  return set([value])\n\ndef add(agg, value):\n  agg.add(value)\n  return agg\n\ndef merge(agg1, agg2):\n  agg1.update(agg2)\n  return agg1\n\n//\nuser_category_rdd \u003d input_rdd.map(lambda x: (x.get(\u0027user_id\u0027), x.get(\u0027category\u0027)))\n\n//\nresult_rdd \u003d user_category_rdd.combineByKey(initialize, add, merge)\n\nfor e in result_rdd.take(3): print(e)\n",
+      "text": "%pyspark\n\ndef initialize(value):\n  return set([value])\n\ndef add(agg, value):\n  agg.add(value)\n  return agg\n\ndef merge(agg1, agg2):\n  agg1.update(agg2)\n  return agg1\n\n\nuser_category_rdd \u003d input_rdd.map(lambda x: (x.get(\u0027user_id\u0027), x.get(\u0027category\u0027)))\n\n\nresult_rdd \u003d user_category_rdd.combineByKey(initialize, add, merge)\n\nfor e in result_rdd.take(3): print(e)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-16 11:11:53.854",
+      "dateUpdated": "2023-02-10 02:32:02.536",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -418,7 +418,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "(\u0027U_101\u0027, {\u0027children\u0027, \u0027groceries\u0027, \u0027cosmetics\u0027, \u0027entertainment\u0027, \u0027food\u0027})\n(\u0027U_102\u0027, {\u0027children\u0027, \u0027groceries\u0027, \u0027cosmetics\u0027, \u0027entertainment\u0027, \u0027food\u0027})\n(\u0027U_104\u0027, {\u0027children\u0027, \u0027groceries\u0027, \u0027cosmetics\u0027, \u0027entertainment\u0027, \u0027food\u0027})\n"
+            "data": "(\u0027U_101\u0027, {\u0027children\u0027, \u0027groceries\u0027, \u0027cosmetics\u0027, \u0027entertainment\u0027, \u0027food\u0027})\n(\u0027U_102\u0027, {\u0027children\u0027, \u0027groceries\u0027, \u0027cosmetics\u0027, \u0027entertainment\u0027, \u0027food\u0027})\n(\u0027U_103\u0027, {\u0027children\u0027, \u0027groceries\u0027, \u0027cosmetics\u0027, \u0027entertainment\u0027, \u0027food\u0027})\n"
           }
         ]
       },
@@ -431,10 +431,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d8"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d35"
             },
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d9"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d36"
             }
           ],
           "interpreterSettingId": "spark"
@@ -444,8 +444,8 @@
       "jobName": "paragraph_1642245436958_1216157312",
       "id": "paragraph_1642245436958_1216157312",
       "dateCreated": "2022-01-15 11:17:16.958",
-      "dateStarted": "2022-01-15 11:24:09.138",
-      "dateFinished": "2022-01-15 11:24:09.306",
+      "dateStarted": "2023-02-10 02:32:02.539",
+      "dateFinished": "2023-02-10 02:32:02.808",
       "status": "FINISHED"
     },
     {
@@ -510,7 +510,7 @@
     {
       "text": "%pyspark\n\ndef display(rdd):\n    if not rdd.isEmpty():\n        global spark, catalog\n        df \u003d rdd.toDF()\n        z.show(df)\n\ndisplay(result_rdd)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-15 11:49:17.299",
+      "dateUpdated": "2023-02-10 02:32:08.760",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -559,11 +559,11 @@
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
+        "code": "ERROR",
         "msg": [
           {
-            "type": "TABLE",
-            "data": "_1\t_2\nU_101\t[children,992]\nU_102\t[groceries,997]\nU_103\t[food,977]\nU_104\t[children,996]\n"
+            "type": "TEXT",
+            "data": "Fail to execute line 9: display(result_rdd)\nTraceback (most recent call last):\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/types.py\", line 1039, in _infer_type\n    return _infer_schema(obj)\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/types.py\", line 1065, in _infer_schema\n    raise TypeError(\"Can not infer schema for type: %s\" % type(row))\nTypeError: Can not infer schema for type: \u003cclass \u0027set\u0027\u003e\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/types.py\", line 1070, in _infer_schema\n    fields.append(StructField(k, _infer_type(v), True))\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/types.py\", line 1041, in _infer_type\n    raise TypeError(\"not supported type: %s\" % type(obj))\nTypeError: not supported type: \u003cclass \u0027set\u0027\u003e\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/tmp/python1841845097151603256/zeppelin_python.py\", line 167, in \u003cmodule\u003e\n    exec(code, _zcUserQueryNameSpace)\n  File \"\u003cstdin\u003e\", line 9, in \u003cmodule\u003e\n  File \"\u003cstdin\u003e\", line 6, in display\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/session.py\", line 66, in toDF\n    return sparkSession.createDataFrame(self, schema, sampleRatio)\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/session.py\", line 675, in createDataFrame\n    return self._create_dataframe(data, schema, samplingRatio, verifySchema)\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/session.py\", line 698, in _create_dataframe\n    rdd, schema \u003d self._createFromRDD(data.map(prepare), schema, samplingRatio)\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/session.py\", line 486, in _createFromRDD\n    struct \u003d self._inferSchema(rdd, samplingRatio, names\u003dschema)\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/session.py\", line 466, in _inferSchema\n    schema \u003d _infer_schema(first, names\u003dnames)\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/pyspark.zip/pyspark/sql/types.py\", line 1072, in _infer_schema\n    raise TypeError(\"Unable to infer the type of the field {}.\".format(k)) from e\nTypeError: Unable to infer the type of the field _2.\n"
           }
         ]
       },
@@ -576,16 +576,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d23"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d37"
             },
             {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d24"
-            },
-            {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d25"
-            },
-            {
-              "jobUrl": "http://nodemanager:46205/jobs/job?id\u003d26"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d38"
             }
           ],
           "interpreterSettingId": "spark"
@@ -595,9 +589,9 @@
       "jobName": "paragraph_1642246023412_768814740",
       "id": "paragraph_1642246023412_768814740",
       "dateCreated": "2022-01-15 11:27:03.413",
-      "dateStarted": "2022-01-15 11:49:16.319",
-      "dateFinished": "2022-01-15 11:49:16.991",
-      "status": "FINISHED"
+      "dateStarted": "2023-02-10 02:32:08.764",
+      "dateFinished": "2023-02-10 02:32:09.441",
+      "status": "ERROR"
     },
     {
       "text": "%pyspark\n",

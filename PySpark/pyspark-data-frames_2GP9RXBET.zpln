@@ -42,7 +42,7 @@
       "title": "Data \u0026 Struct Types",
       "text": "%pyspark\n\nfrom pyspark.sql.types import *\nfrom pyspark.sql.functions import *\n\n\n#\n#\n#\nstructureData \u003d [\n    ((\"James\", \"\", \"Smith\"), \"36636\", \"Sales\", 34, \"2006-01-01\", \"true\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"M\", 3100.50, \"OH\", \"07-01-2019 12 01 19 406\"),\n    ((\"Michael\", \"Rose\", \"\"), \"40288\", \"Finance\", 25, \"2006-01-01\", \"true\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027brown\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"M\", 4300.65, \"CA\", \"06-24-2019 12 01 19 406\"),\n    ((\"Robert\", \"\", \"Williams\"), \"42114\", \"Marketing\", 27, \"1992-06-23\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027black\u0027}, \"M\", 1400.80, \"NJ\", \"11-16-2019 16 50 59 406\"),\n    ((\"Maria\", \"Anne\", \"Jones\"), \"39192\", \"Finance\", 19, \"1987-05-05\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"F\", 5500.75, \"NY\", \"11-16-2019 16 50 59 406\"),\n    ((\"Jen\", \"Mary\", \"Brown\"), \"39191\", \"Marketing\", 24, \"1990-01-01\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"F\", -1, \"UT\", \"11-16-2019 16 50 59 406\"),\n    ((\"Jeff\", \"A\", \"Jones\"), \"39193\", \"Finance\", 19, \"2000-07-17\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"F\", 5500.75, \"CA\", \"11-16-2019 16 50 59 406\"),\n    ((\"Robert\", \"\", \"Williams\"), \"42114\", \"Marketing\", 27, \"1992-06-23\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"M\", 1400.80, \"NJ\", \"11-16-2019 16 50 59 406\"),\n    ((\"James\", \"\", \"Smith\"), \"36636\", \"Sales\", 34, \"2006-01-01\", \"true\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"M\", 3100.50, \"OH\", \"07-01-2019 12 01 19 406\"),\n    ((\"Scott\", \"M\", \"Brown\"), \"39194\", \"Marketing\", 24, \"1994-10-01\", \"false\", [\"Python\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"F\", -1, None, \"11-16-2019 16 50 59 406\")\n]\n\n#\n#\n#\nschema \u003d StructType([\n        StructField(\"name\", StructType([\n            StructField(\"fname\", StringType(), True),\n            StructField(\"middle\", StringType(), True),\n            StructField(\"last\", StringType(), True),\n        ])),\n        StructField(\"id\", StringType(), True),\n        StructField(\"department\", StringType(), True),\n        StructField(\"age\", StringType(), True), \n        StructField(\"jobStartDate\", StringType(), True), \n        StructField(\"isGraduated\", StringType(), True),\n        StructField(\u0027languages\u0027, ArrayType(StringType()), True),\n        StructField(\u0027properties\u0027, MapType(StringType(),StringType()),True), \n        StructField(\"gender\", StringType(), True), \n        StructField(\"salary\", StringType(), True),\n        StructField(\"state\", StringType(), True),\n        StructField(\"addts\", StringType(), True)\n    ])",
       "user": "anonymous",
-      "dateUpdated": "2022-05-23 03:43:26.999",
+      "dateUpdated": "2023-02-10 02:22:19.623",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -72,14 +72,14 @@
       "jobName": "paragraph_1639409641645_1113256137",
       "id": "paragraph_1639409641645_1113256137",
       "dateCreated": "2021-12-13 21:04:01.645",
-      "dateStarted": "2022-05-23 03:43:27.020",
-      "dateFinished": "2022-05-23 03:44:23.570",
+      "dateStarted": "2023-02-10 02:22:19.627",
+      "dateFinished": "2023-02-10 02:22:19.637",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n#\n#\n\ndf1 \u003d spark.createDataFrame(data\u003dstructureData, schema\u003dschema)\ndf1.printSchema()",
       "user": "anonymous",
-      "dateUpdated": "2022-05-23 03:44:50.257",
+      "dateUpdated": "2023-02-07 04:22:45.318",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -113,16 +113,16 @@
       "jobName": "paragraph_1639409650868_773043775",
       "id": "paragraph_1639409650868_773043775",
       "dateCreated": "2021-12-13 21:04:10.868",
-      "dateStarted": "2022-05-23 03:44:50.279",
-      "dateFinished": "2022-05-23 03:44:57.519",
+      "dateStarted": "2023-02-07 04:22:45.321",
+      "dateFinished": "2023-02-07 04:22:46.064",
       "status": "FINISHED"
     },
     {
       "title": "PySpark Select Columns From DataFrame",
       "text": "%pyspark\n\n#\n#\ndf1.select(\"*\").show()\n\n\n# All columns \ncolumns \u003d [\"name.fname\", \"name.middle\", \"name.last\", \"id\", \"department\", \"age\", \"jobStartDate\", \"isGraduated\", \"languages\", \"properties\", \"gender\", \"salary\", \"state\", \"addts\"]\ndf1.select(*columns).show()\n\n# Select All columns\ndf1.select([col for col in df1.columns]).show()\n\n\n#\n#\ndf1.select(\"name.*\", \"id\", \"department\", \"age\", \"jobStartDate\", \"isGraduated\", \"languages\", \"properties\", \"gender\", \"salary\", \"state\", \"addts\").show()\n\n\n# Select columns by regular expression\n#\ndf1.select(df1.colRegex(\"`^.*name*`\")).show()\n\n\n# Selects first 3 columns and top 3 rows\n#\ndf1.select(df1.columns[:3]).show(3)\n\n# Selects columns 2 to 4  and top 3 rows\n#\ndf1.select(df1.columns[2:4]).show(3)\n\n\n#\n#\n#from pyspark.sql.functions import explode\n#df1.select(df1.id,explode(df1.languages)).show(truncate\u003dFalse)\n\n\n#\n#\n#df1.select(df1.id,explode(df1.properties)).show()",
       "user": "anonymous",
-      "dateUpdated": "2022-05-23 03:45:05.638",
-      "progress": 100,
+      "dateUpdated": "2023-02-10 02:10:06.562",
+      "progress": 0,
       "config": {
         "lineNumbers": false,
         "tableHide": false,
@@ -145,75 +145,29 @@
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
+        "code": "ERROR",
         "msg": [
           {
             "type": "TEXT",
-            "data": "+--------------------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n|                name|   id|department|age|jobStartDate|isGraduated|           languages|          properties|gender| salary|state|               addts|\n+--------------------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n|    {James, , Smith}|36636|     Sales| 34|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 3100.5|   OH|07-01-2019 12 01 ...|\n|   {Michael, Rose, }|40288|   Finance| 25|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M|4300.65|   CA|06-24-2019 12 01 ...|\n|{Robert, , Williams}|42114| Marketing| 27|  1992-06-23|      false|  [Java, Scala, C++]|{eye -\u003e black, ha...|     M| 1400.8|   NJ|11-16-2019 16 50 ...|\n|{Maria, Anne, Jones}|39192|   Finance| 19|  1987-05-05|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|5500.75|   NY|11-16-2019 16 50 ...|\n|  {Jen, Mary, Brown}|39191| Marketing| 24|  1990-01-01|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|     -1|   UT|11-16-2019 16 50 ...|\n|    {Jeff, A, Jones}|39193|   Finance| 19|  2000-07-17|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|5500.75|   CA|11-16-2019 16 50 ...|\n|{Robert, , Williams}|42114| Marketing| 27|  1992-06-23|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 1400.8|   NJ|11-16-2019 16 50 ...|\n|    {James, , Smith}|36636|     Sales| 34|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 3100.5|   OH|07-01-2019 12 01 ...|\n|   {Scott, M, Brown}|39194| Marketing| 24|  1994-10-01|      false|[Python, Scala, C++]|{eye -\u003e brown, ha...|     F|     -1| null|11-16-2019 16 50 ...|\n+--------------------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n\n+-------+------+--------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n|  fname|middle|    last|   id|department|age|jobStartDate|isGraduated|           languages|          properties|gender| salary|state|               addts|\n+-------+------+--------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n|  James|      |   Smith|36636|     Sales| 34|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 3100.5|   OH|07-01-2019 12 01 ...|\n|Michael|  Rose|        |40288|   Finance| 25|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M|4300.65|   CA|06-24-2019 12 01 ...|\n| Robert|      |Williams|42114| Marketing| 27|  1992-06-23|      false|  [Java, Scala, C++]|{eye -\u003e black, ha...|     M| 1400.8|   NJ|11-16-2019 16 50 ...|\n|  Maria|  Anne|   Jones|39192|   Finance| 19|  1987-05-05|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|5500.75|   NY|11-16-2019 16 50 ...|\n|    Jen|  Mary|   Brown|39191| Marketing| 24|  1990-01-01|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|     -1|   UT|11-16-2019 16 50 ...|\n|   Jeff|     A|   Jones|39193|   Finance| 19|  2000-07-17|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|5500.75|   CA|11-16-2019 16 50 ...|\n| Robert|      |Williams|42114| Marketing| 27|  1992-06-23|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 1400.8|   NJ|11-16-2019 16 50 ...|\n|  James|      |   Smith|36636|     Sales| 34|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 3100.5|   OH|07-01-2019 12 01 ...|\n|  Scott|     M|   Brown|39194| Marketing| 24|  1994-10-01|      false|[Python, Scala, C++]|{eye -\u003e brown, ha...|     F|     -1| null|11-16-2019 16 50 ...|\n+-------+------+--------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n\n+--------------------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n|                name|   id|department|age|jobStartDate|isGraduated|           languages|          properties|gender| salary|state|               addts|\n+--------------------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n|    {James, , Smith}|36636|     Sales| 34|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 3100.5|   OH|07-01-2019 12 01 ...|\n|   {Michael, Rose, }|40288|   Finance| 25|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M|4300.65|   CA|06-24-2019 12 01 ...|\n|{Robert, , Williams}|42114| Marketing| 27|  1992-06-23|      false|  [Java, Scala, C++]|{eye -\u003e black, ha...|     M| 1400.8|   NJ|11-16-2019 16 50 ...|\n|{Maria, Anne, Jones}|39192|   Finance| 19|  1987-05-05|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|5500.75|   NY|11-16-2019 16 50 ...|\n|  {Jen, Mary, Brown}|39191| Marketing| 24|  1990-01-01|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|     -1|   UT|11-16-2019 16 50 ...|\n|    {Jeff, A, Jones}|39193|   Finance| 19|  2000-07-17|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|5500.75|   CA|11-16-2019 16 50 ...|\n|{Robert, , Williams}|42114| Marketing| 27|  1992-06-23|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 1400.8|   NJ|11-16-2019 16 50 ...|\n|    {James, , Smith}|36636|     Sales| 34|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 3100.5|   OH|07-01-2019 12 01 ...|\n|   {Scott, M, Brown}|39194| Marketing| 24|  1994-10-01|      false|[Python, Scala, C++]|{eye -\u003e brown, ha...|     F|     -1| null|11-16-2019 16 50 ...|\n+--------------------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n\n+-------+------+--------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n|  fname|middle|    last|   id|department|age|jobStartDate|isGraduated|           languages|          properties|gender| salary|state|               addts|\n+-------+------+--------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n|  James|      |   Smith|36636|     Sales| 34|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 3100.5|   OH|07-01-2019 12 01 ...|\n|Michael|  Rose|        |40288|   Finance| 25|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M|4300.65|   CA|06-24-2019 12 01 ...|\n| Robert|      |Williams|42114| Marketing| 27|  1992-06-23|      false|  [Java, Scala, C++]|{eye -\u003e black, ha...|     M| 1400.8|   NJ|11-16-2019 16 50 ...|\n|  Maria|  Anne|   Jones|39192|   Finance| 19|  1987-05-05|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|5500.75|   NY|11-16-2019 16 50 ...|\n|    Jen|  Mary|   Brown|39191| Marketing| 24|  1990-01-01|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|     -1|   UT|11-16-2019 16 50 ...|\n|   Jeff|     A|   Jones|39193|   Finance| 19|  2000-07-17|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     F|5500.75|   CA|11-16-2019 16 50 ...|\n| Robert|      |Williams|42114| Marketing| 27|  1992-06-23|      false|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 1400.8|   NJ|11-16-2019 16 50 ...|\n|  James|      |   Smith|36636|     Sales| 34|  2006-01-01|       true|  [Java, Scala, C++]|{eye -\u003e brown, ha...|     M| 3100.5|   OH|07-01-2019 12 01 ...|\n|  Scott|     M|   Brown|39194| Marketing| 24|  1994-10-01|      false|[Python, Scala, C++]|{eye -\u003e brown, ha...|     F|     -1| null|11-16-2019 16 50 ...|\n+-------+------+--------+-----+----------+---+------------+-----------+--------------------+--------------------+------+-------+-----+--------------------+\n\n+--------------------+\n|                name|\n+--------------------+\n|    {James, , Smith}|\n|   {Michael, Rose, }|\n|{Robert, , Williams}|\n|{Maria, Anne, Jones}|\n|  {Jen, Mary, Brown}|\n|    {Jeff, A, Jones}|\n|{Robert, , Williams}|\n|    {James, , Smith}|\n|   {Scott, M, Brown}|\n+--------------------+\n\n+--------------------+-----+----------+\n|                name|   id|department|\n+--------------------+-----+----------+\n|    {James, , Smith}|36636|     Sales|\n|   {Michael, Rose, }|40288|   Finance|\n|{Robert, , Williams}|42114| Marketing|\n+--------------------+-----+----------+\nonly showing top 3 rows\n\n+----------+---+\n|department|age|\n+----------+---+\n|     Sales| 34|\n|   Finance| 25|\n| Marketing| 27|\n+----------+---+\nonly showing top 3 rows\n\n"
+            "data": "Fail to execute line 5: df1.select(\"*\").show()\nTraceback (most recent call last):\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1675994320382_0001/container_1675994320382_0001_01_000001/tmp/python1841845097151603256/zeppelin_python.py\", line 162, in \u003cmodule\u003e\n    exec(code, _zcUserQueryNameSpace)\n  File \"\u003cstdin\u003e\", line 5, in \u003cmodule\u003e\nNameError: name \u0027df1\u0027 is not defined\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "SPARK JOB",
-          "tooltip": "View in Spark web UI",
-          "group": "spark",
-          "values": [
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d0"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d1"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d2"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d3"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d4"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d5"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d6"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d7"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d8"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d9"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d10"
-            },
-            {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d11"
-            }
-          ],
-          "interpreterSettingId": "spark"
-        }
-      },
+      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1639410054579_280770308",
       "id": "paragraph_1639410054579_280770308",
       "dateCreated": "2021-12-13 21:10:54.579",
-      "dateStarted": "2022-05-23 03:45:05.659",
-      "dateFinished": "2022-05-23 03:45:17.756",
-      "status": "FINISHED"
+      "dateStarted": "2023-02-10 02:10:06.565",
+      "dateFinished": "2023-02-10 02:10:06.572",
+      "status": "ERROR"
     },
     {
       "title": "Change Data Type of existing dataframe",
       "text": "%pyspark\n\nfrom pyspark.sql.window import Window\nfrom pyspark.sql.types import *\nfrom pyspark.sql.functions import *\n\nwindowSpec  \u003d Window.partitionBy(\"department\").orderBy(\"salary\")\n\ndf2 \u003d df1.withColumn(\"row_number\",row_number().over(windowSpec))\\\n.withColumn(\"id\", col(\"id\").cast(IntegerType()))\\\n.withColumn(\"age\",col(\"age\").cast(IntegerType()))\\\n.withColumn(\"jobStartDate\",col(\"jobStartDate\").cast(DateType()))\\\n.withColumn(\"isGraduated\",col(\"isGraduated\").cast(BooleanType()))\\\n.withColumn(\"salary\",col(\"salary\").cast(FloatType()))\\\n.withColumn(\"addts\",to_timestamp(col(\"addts\"),\"MM-dd-yyyy HH mm ss SSS\"))\n\n#\n#\ndf2.printSchema()",
       "user": "anonymous",
-      "dateUpdated": "2022-05-23 03:38:36.705",
+      "dateUpdated": "2023-02-07 04:23:12.792",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -249,8 +203,8 @@
       "jobName": "paragraph_1639410101967_760815982",
       "id": "paragraph_1639410101967_760815982",
       "dateCreated": "2021-12-13 21:11:41.967",
-      "dateStarted": "2022-05-23 03:38:36.717",
-      "dateFinished": "2022-05-23 03:38:37.294",
+      "dateStarted": "2023-02-07 04:23:12.794",
+      "dateFinished": "2023-02-07 04:23:12.935",
       "status": "FINISHED"
     },
     {
@@ -322,8 +276,8 @@
     {
       "text": "%pyspark\n\n#\n#\ndf2.select(\"*\").show()\n\n\n# Select All columns from List\ncolumns \u003d [\"name.fname\", \"name.middle\", \"name.last\", \"id\", \"department\", \"age\", \"jobStartDate\", \"isGraduated\", \"languages\", \"properties\", \"gender\", \"salary\", \"state\", \"addts\"]\ndf2.select(*columns).show()\n\n# Select All columns\ndf2.select([col for col in df2.columns]).show()\n\n\n#\n#\ndf2.select(\"name.*\", \"id\", \"department\", \"age\", \"jobStartDate\", \"isGraduated\", \"languages\", \"properties\", \"gender\", \"salary\", \"state\", \"addts\").show()\n\n\n# Select columns by regular expression\n#\ndf2.select(df2.colRegex(\"`^.*name*`\")).show()\n\n\n#Selects first 3 columns and top 3 rows\ndf2.select(df2.columns[:3]).show(3)\n\n#Selects columns 2 to 4  and top 3 rows\ndf2.select(df2.columns[2:4]).show(3)\n\n\n#\n#\n#from pyspark.sql.functions import explode\n#df1.select(df1.id,explode(df1.languages)).show(truncate\u003dFalse)\n\n\n#\n#\n#df1.select(df1.id,explode(df1.properties)).show()",
       "user": "anonymous",
-      "dateUpdated": "2022-05-23 03:39:20.089",
-      "progress": 100,
+      "dateUpdated": "2023-02-07 04:23:20.450",
+      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "python",
@@ -359,58 +313,64 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d19"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d17"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d20"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d18"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d21"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d19"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d22"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d20"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d23"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d21"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d24"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d22"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d25"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d23"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d26"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d24"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d27"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d25"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d28"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d26"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d29"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d27"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d30"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d28"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d31"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d29"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d32"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d30"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d33"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d31"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d34"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d32"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d35"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d33"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d36"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d34"
+            },
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d35"
+            },
+            {
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675736285804_0008//jobs/job?id\u003d36"
             }
           ],
           "interpreterSettingId": "spark"
@@ -420,8 +380,8 @@
       "jobName": "paragraph_1639453758363_1702623615",
       "id": "paragraph_1639453758363_1702623615",
       "dateCreated": "2021-12-14 09:19:18.363",
-      "dateStarted": "2022-05-23 03:39:20.099",
-      "dateFinished": "2022-05-23 03:39:27.266",
+      "dateStarted": "2023-02-07 04:23:20.453",
+      "dateFinished": "2023-02-07 04:23:26.839",
       "status": "FINISHED"
     },
     {

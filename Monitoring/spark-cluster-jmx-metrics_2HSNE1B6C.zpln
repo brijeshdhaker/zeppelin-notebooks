@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "%spark.conf\n\n# Must set SPARK_HOME for this example, because it won\u0027t work for Zeppelin\u0027s embedded spark mode. The embedded spark mode doesn\u0027t \n# use spark-submit to launch spark interpreter, so spark.jars and spark.jars.packages won\u0027t take affect. \n\n#\n#\n#\n\nSPARK_HOME /opt/spark-3.1.2\n\n\n#\n# set execution mode\n#\n\nmaster yarn\n# set driver memory to 8g\nspark.driver.memory 1g\nspark.driver.cores 1\n\n# set executor number to be \nspark.executor.instances  2\nspark.executor.memory  640m\nspark.executor.cores 4\n\n#\nspark.submit.deployMode cluster\n\n#\n# spark.jars can be used for adding any local jar files into spark interpreter\n# \n\n# spark.jars  file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.driver.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n#\n# spark.executor.extraClassPath file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n# spark.executor.extraLibrary file:///opt/cloudera/parcels/CDH-6.3.2-1.cdh6.3.2.p0.1605554/lib/hive/lib/hive-hbase-handler-2.1.1-cdh6.3.2.jar\n\n\n#\n# spark.jars.packages can be used for adding packages into spark interpreter\n# The following is to add avro into your spark interpreter\n#\n\n# spark.jars.packages com.databricks:spark-avro_2.11:4.0.0\n\n#\n# Python 3.7 Runtime\n#\nspark.yarn.dist.archives hdfs://namenode:9000/archives/pyspark3.7.tar.gz#environment\n\n\n\n\n",
+      "text": "%spark.conf\n\nSPARK_HOME /opt/spark-3.1.2\nmaster yarn\nspark.submit.deployMode cluster\n\n\nspark.driver.memory 640m\nspark.driver.cores 1\n\nspark.executor.instances  2\nspark.executor.memory  640m\nspark.executor.cores 2\n\n\n#\n# spark.jars can be used for adding any local jar files into spark interpreter\n# \n\n# spark.jars\n\nspark.jars.packages io.delta:delta-core_2.12:1.0.0,com.databricks:spark-avro_2.11:4.0.0\n\nspark.yarn.dist.files hdfs://namenode:9000/configs/jmx.metrics.properties#metrics.properties,hdfs://namenode:9000/configs/jmx-spark-3-0.yml#configs/jmx-spark-3-0.yml,hdfs://namenode:9000/common-libs/jmx/jmx_prometheus_javaagent-0.11.0.jar#extralibs/jmx_prometheus_javaagent-0.11.0.jar\n\nspark.yarn.dist.archives hdfs://namenode:9000/archives/pyspark3.7-20221125.tar.gz#environment\n\n#\n# Spark Metrics Configuration\n#\n# \"-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port\u003d9091 -Dcom.sun.management.jmxremote.rmi.port\u003d9092 -Dcom.sun.management.jmxremote.authenticate\u003dfalse -Dcom.sun.management.jmxremote.ssl\u003dfalse -Djava.rmi.server.hostname\u003dnodemanager\"\n# http://nodemanager:9081/  \n# service:jmx:rmi:///jndi/rmi://nodemanager:9091/jmxrmi \n# \n\nspark.metrics.conf metrics.properties\nspark.metrics.staticSources.enabled true\nspark.metrics.appStatusSource.enabled true\nspark.metrics.executorMetricsSource.enabled true\nspark.executor.processTreeMetrics.enabled true\nspark.executor.metrics.fileSystemSchemes hdfs\nspark.driver.extraJavaOptions \"-javaagent:extralibs/jmx_prometheus_javaagent-0.11.0.jar\u003d9081:configs/jmx-spark-3-0.yml\"\n\n#\n# spark.metrics.namespace spark\n# spark.yarn.metrics.namespace spark\nspark.yarn.shuffle.service.metrics.namespace sparkShuffleService\n\n",
       "user": "anonymous",
-      "dateUpdated": "2023-02-07 02:21:52.729",
+      "dateUpdated": "2023-02-13 02:23:21.370",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -29,17 +29,17 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638439801256_1921713656",
+      "jobName": "paragraph_1675793729203_1023900310",
       "id": "paragraph_1638439801256_1921713656",
-      "dateCreated": "2021-12-02 15:40:01.256",
-      "dateStarted": "2022-01-10 11:31:38.320",
-      "dateFinished": "2022-01-10 11:31:38.325",
+      "dateCreated": "2023-02-07 18:15:29.203",
+      "dateStarted": "2023-02-13 02:23:21.375",
+      "dateFinished": "2023-02-13 02:23:21.380",
       "status": "FINISHED"
     },
     {
-      "text": "%spark\n\nspark.sparkContext.master",
+      "text": "%spark\n\nspark.sparkContext.master\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-10 11:31:43.148",
+      "dateUpdated": "2023-02-13 02:23:25.483",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -70,30 +70,30 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638440008618_2040289727",
+      "jobName": "paragraph_1675793729203_1537183904",
       "id": "paragraph_1638440008618_2040289727",
-      "dateCreated": "2021-12-02 15:43:28.618",
-      "dateStarted": "2022-01-10 11:31:43.150",
-      "dateFinished": "2022-01-10 11:32:11.170",
-      "status": "FINISHED"
+      "dateCreated": "2023-02-07 18:15:29.203",
+      "dateStarted": "2023-02-13 02:23:25.487",
+      "dateFinished": "2023-02-13 02:24:25.842",
+      "status": "ABORT"
     },
     {
       "text": "%spark\n\nval employee \u003d Seq(\n      (101,\"Chloe\",-1,\"2018\",8,\"M\",3000),\n      (102,\"Paul\",101,\"2010\",3,\"M\",4000),\n      (103,\"John\",101,\"2010\",1,\"M\",1000),\n      (104,\"Lisa\",102,\"2005\",2,\"F\",2000),\n      (105,\"Evan\",102,\"2010\",7,\"\",-1),\n      (106,\"Amy\",102,\"2010\",9,\"\",-1)\n    )\nval empColumns \u003d Seq(\"id\",\"name\",\"superior_emp_id\",\"year_joined\",\"deptno\",\"gender\",\"salary\")\n\nval department \u003d Seq(\n      (\"Marketing\",1),\n      (\"Sales\",2),\n      (\"Engineering\",3),\n      (\"Finance\",4),\n      (\"IT\",5),\n      (\"HR\",6)\n    )\nval deptColumns \u003d Seq(\"dept_name\",\"deptno\")\n\nimport spark.sqlContext.implicits._\n\nspark.conf.set(\"spark.sql.crossJoin.enabled\",true);\n\nval employeeDF \u003d employee.toDF(empColumns:_*)\nemployeeDF.show(false)\n\nval departmentDF \u003d department.toDF(deptColumns:_*)\ndepartmentDF.show(false)\n\nprintln(\"1. Inner Join Using Expression : join(right: Dataset[_]): DataFrame\")\nemployeeDF.join(departmentDF).show()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-10 11:32:31.396",
+      "dateUpdated": "2023-02-12 02:23:08.250",
       "progress": 100,
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 12.0,
-        "enabled": true,
-        "results": {},
         "editorSetting": {
           "language": "scala",
           "editOnDblClick": false,
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "editorMode": "ace/mode/scala"
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -117,40 +117,40 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://nodemanager:41737/jobs/job?id\u003d1"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676167193718_0005//jobs/job?id\u003d1"
             },
             {
-              "jobUrl": "http://nodemanager:41737/jobs/job?id\u003d2"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1676167193718_0005//jobs/job?id\u003d2"
             }
           ],
           "interpreterSettingId": "spark"
         }
       },
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1638442347634_2006643863",
+      "jobName": "paragraph_1675793729204_1608078918",
       "id": "paragraph_1638442347634_2006643863",
-      "dateCreated": "2021-12-02 16:22:27.634",
-      "dateStarted": "2022-01-10 11:32:31.397",
-      "dateFinished": "2022-01-10 11:32:38.631",
+      "dateCreated": "2023-02-07 18:15:29.204",
+      "dateStarted": "2023-02-12 02:23:08.252",
+      "dateFinished": "2023-02-12 02:23:12.959",
       "status": "FINISHED"
     },
     {
       "text": "%spark\n\nspark.sparkContext.stop()\n",
       "user": "anonymous",
-      "dateUpdated": "2021-12-30 03:15:45.344",
+      "dateUpdated": "2023-02-07 18:15:29.204",
       "progress": 0,
       "config": {
-        "colWidth": 12.0,
-        "fontSize": 12.0,
-        "enabled": true,
-        "results": {},
         "editorSetting": {
           "language": "scala",
           "editOnDblClick": false,
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "editorMode": "ace/mode/scala"
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
       },
       "settings": {
         "params": {},
@@ -163,17 +163,15 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1640794966503_1048083866",
+      "jobName": "paragraph_1675793729204_539328720",
       "id": "paragraph_1640794966503_1048083866",
-      "dateCreated": "2021-12-29 16:22:46.503",
-      "dateStarted": "2021-12-30 03:15:45.346",
-      "dateFinished": "2021-12-30 03:15:45.661",
-      "status": "FINISHED"
+      "dateCreated": "2023-02-07 18:15:29.204",
+      "status": "READY"
     },
     {
       "text": "%spark\n",
       "user": "anonymous",
-      "dateUpdated": "2021-12-30 03:15:45.345",
+      "dateUpdated": "2023-02-07 18:15:29.204",
       "progress": 0,
       "config": {},
       "settings": {
@@ -183,16 +181,16 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1640834145345_1976143351",
+      "jobName": "paragraph_1675793729204_1534793446",
       "id": "paragraph_1640834145345_1976143351",
-      "dateCreated": "2021-12-30 03:15:45.345",
+      "dateCreated": "2023-02-07 18:15:29.204",
       "status": "READY"
     }
   ],
-  "name": "spark-yarn-cluster",
-  "id": "2GP4KFVM4",
+  "name": "spark-cluster-jmx-metrics",
+  "id": "2HSNE1B6C",
   "defaultInterpreterGroup": "spark",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "noteParams": {},
   "noteForms": {},
   "angularObjects": {},

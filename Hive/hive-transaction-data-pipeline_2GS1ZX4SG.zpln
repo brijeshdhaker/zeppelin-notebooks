@@ -579,8 +579,8 @@
     {
       "text": "%spark\n\n\nval parqDF \u003d spark.read.parquet(\"/transaction_details\")\nparqDF.createOrReplaceTempView(\"transaction_details\")\n// spark.sql(\"SELECT * from transaction_details\").explain()\n    \nval parkSQL \u003d spark.sql(\"SELECT * from transaction_details\")\nparkSQL.show()\nparkSQL.printSchema()\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 10:59:24.825",
-      "progress": 0,
+      "dateUpdated": "2023-02-10 02:24:08.167",
+      "progress": 100,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -603,7 +603,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|  id|                uuid|cardtype| website| product|  amount|       city|country|     addts|txn_receive_date|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|4460|95a61f11-7e06-4e2...|  Master|  Amazon|  Tablet|21567.12| Manchester|     UK|1670229282|      2022-12-05|\n|1479|e2ca38bb-eb0d-45d...|   RuPay|  Amazon|  Laptop|14535.81|       Pune|     IN|1670229287|      2022-12-05|\n|1303|5014c65c-2df4-42e...|    VISA|  Amazon|  Tablet|23949.62|     London|     UK|1670229292|      2022-12-05|\n|2662|eb24b011-d4a7-4ce...|    VISA|  Myntra|  Laptop|18139.31|    Chennei|     IN|1670229297|      2022-12-05|\n|1624|4f6de9b8-6546-49f...|   RuPay|SnapDeal|  Tablet|12540.71|    Chennei|     IN|1670229302|      2022-12-05|\n|3150|3824538c-5e1a-49c...|   RuPay|  Myntra|  Mobile| 9047.98|    Chennei|     IN|1670229307|      2022-12-05|\n|2120|0f54e060-c491-4c3...|   RuPay|  Myntra|  Tablet|17426.77|  Liverpool|     UK|1670229312|      2022-12-05|\n|1808|9820efeb-fc5c-483...|  Master|SnapDeal|  Laptop| 6519.41|      Tokyo|     JP|1670229317|      2022-12-05|\n|4652|b1747181-bf62-4d9...|    VISA|  Myntra|Computer| 3259.16|   New York|    USA|1670229322|      2022-12-05|\n|2852|326bc20b-520e-486...|   RuPay|SnapDeal|  Tablet| 8613.91|      Delhi|     IN|1670229327|      2022-12-05|\n|4019|4c491371-d3b7-421...|   RuPay|Flipkart|Computer|11725.32|      Tokyo|     JP|1670229332|      2022-12-05|\n|3849|52e49013-fb35-45b...|  Master|  Myntra|Computer| 11008.9|      Delhi|     IN|1670229337|      2022-12-05|\n|3269|f190e6fd-8b89-489...|    Amex|  Amazon|Computer| 16962.5| Manchester|     UK|1670229342|      2022-12-05|\n|4970|9b20d139-f0be-4b0...|    VISA|Flipkart|  Tablet| 9811.07|  Liverpool|     UK|1670229347|      2022-12-05|\n|3544|1b31403d-b036-46b...|    VISA|Flipkart|  Laptop|11924.87|   New York|    USA|1670229352|      2022-12-05|\n|1023|82f0b894-19f1-4dc...|    VISA|  Amazon|  Mobile|21180.96|    Chennei|     IN|1670229357|      2022-12-05|\n|4871|54766f0a-234f-476...|  Master|  Myntra|  Tablet| 9824.45|Los Angeles|    USA|1670229362|      2022-12-05|\n|2421|ee02f8d5-33df-4be...|    Amex|SnapDeal|  Mobile| 4858.78|     London|     UK|1670229367|      2022-12-05|\n|3230|9521a3f7-8391-420...|    Amex|SnapDeal|Computer|15739.62|     London|     UK|1670229372|      2022-12-05|\n|2386|2bdb1b4b-2b18-4d0...|  Master|  Amazon|  Tablet|18612.47|   Banglore|     IN|1670229377|      2022-12-05|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\nonly showing top 20 rows\n\nroot\n |-- id: integer (nullable \u003d true)\n |-- uuid: string (nullable \u003d true)\n |-- cardtype: string (nullable \u003d true)\n |-- website: string (nullable \u003d true)\n |-- product: string (nullable \u003d true)\n |-- amount: double (nullable \u003d true)\n |-- city: string (nullable \u003d true)\n |-- country: string (nullable \u003d true)\n |-- addts: long (nullable \u003d true)\n |-- txn_receive_date: date (nullable \u003d true)\n\n\u001b[1m\u001b[34mparqDF\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [id: int, uuid: string ... 8 more fields]\n\u001b[1m\u001b[34mparkSQL\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [id: int, uuid: string ... 8 more fields]\n"
+            "data": "+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|  id|                uuid|cardtype| website| product|  amount|       city|country|     addts|txn_receive_date|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\n|2384|f5933a1b-7e40-46e...|    VISA|Flipkart|Computer| 2063.05|   Banglore|     IN|1670091965|      2022-12-03|\n|1578|d8bc8036-dd5a-486...|  Master|SnapDeal|  Tablet|14983.49|      Osaka|     JP|1670091970|      2022-12-03|\n|2263|8fa465b4-90ed-472...|    VISA|  Myntra|  Mobile|19861.74| Manchester|     UK|1670091975|      2022-12-03|\n|4860|55bd7efe-2396-44d...|   RuPay|Flipkart|  Mobile|  602.14|      Miami|    USA|1670091980|      2022-12-03|\n|4875|65ff481a-fdb3-413...|   RuPay|  Myntra|  Laptop|10756.32| Manchester|     UK|1670091985|      2022-12-03|\n|4503|67c11efd-a168-4e6...|    VISA|  Amazon|  Tablet|22579.02|      Miami|    USA|1670091990|      2022-12-03|\n|3158|2f3d4d8f-5eae-444...|   RuPay|  Amazon|  Tablet|23931.48|Los Angeles|    USA|1670091995|      2022-12-03|\n|4328|af670a37-73d3-451...|    VISA|SnapDeal|  Mobile|17015.44|   New York|    USA|1670092000|      2022-12-03|\n|2241|ef5ac267-4e1e-4e1...|   RuPay|  Myntra|  Mobile|17466.07|      Tokyo|     JP|1670092005|      2022-12-03|\n|1133|4c4a5531-71a5-4e4...|    VISA|  Myntra|Computer|20511.61|  Hiroshima|     JP|1670092010|      2022-12-03|\n|1665|8c37ea81-1aa9-416...|   RuPay|  Myntra|  Mobile|17428.22|      Tokyo|     JP|1670092015|      2022-12-03|\n|4372|88fc405d-980f-448...|   RuPay|  Myntra|  Laptop|12217.09|      Osaka|     JP|1670092020|      2022-12-03|\n|2915|f91ec2e3-bad7-412...|  Master|  Myntra|  Laptop|17863.81|    Chennei|     IN|1670092025|      2022-12-03|\n|1933|0b29b437-8134-46b...|  Master|SnapDeal|  Tablet|12110.63|      Tokyo|     JP|1670092030|      2022-12-03|\n|4489|812850fb-eada-4a6...|    VISA|Flipkart|  Mobile|12300.78|      Miami|    USA|1670092035|      2022-12-03|\n|2490|8cf0f5f4-593a-42f...|  Master|SnapDeal|  Laptop| 8506.18|      Tokyo|     JP|1670092040|      2022-12-03|\n|2179|738944b0-7a61-49b...|   RuPay|  Myntra|  Mobile| 9614.46|     Mumbai|     IN|1670092045|      2022-12-03|\n|2833|07898a08-556f-40e...|    Amex|  Amazon|  Tablet| 5724.46|   Yokohama|     JP|1670092050|      2022-12-03|\n|4832|c167813a-8c7c-479...|    VISA|  Myntra|Computer|10165.43|    Chennei|     IN|1670092055|      2022-12-03|\n|2452|27ead86b-b078-48f...|   RuPay|Flipkart|  Laptop|21055.86|     Mumbai|     IN|1670092060|      2022-12-03|\n+----+--------------------+--------+--------+--------+--------+-----------+-------+----------+----------------+\nonly showing top 20 rows\n\nroot\n |-- id: integer (nullable \u003d true)\n |-- uuid: string (nullable \u003d true)\n |-- cardtype: string (nullable \u003d true)\n |-- website: string (nullable \u003d true)\n |-- product: string (nullable \u003d true)\n |-- amount: double (nullable \u003d true)\n |-- city: string (nullable \u003d true)\n |-- country: string (nullable \u003d true)\n |-- addts: long (nullable \u003d true)\n |-- txn_receive_date: date (nullable \u003d true)\n\n\u001b[1m\u001b[34mparqDF\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [id: int, uuid: string ... 8 more fields]\n\u001b[1m\u001b[34mparkSQL\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [id: int, uuid: string ... 8 more fields]\n"
           }
         ]
       },
@@ -616,10 +616,10 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://resourcemanager:8088/proxy/application_1670220251196_0010//jobs/job?id\u003d0"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d7"
             },
             {
-              "jobUrl": "http://resourcemanager:8088/proxy/application_1670220251196_0010//jobs/job?id\u003d1"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1675994320382_0001//jobs/job?id\u003d8"
             }
           ],
           "interpreterSettingId": "spark"
@@ -629,14 +629,14 @@
       "jobName": "paragraph_1642035492566_1329498388",
       "id": "paragraph_1642035492566_1329498388",
       "dateCreated": "2022-01-13 00:58:12.566",
-      "dateStarted": "2022-12-05 10:59:24.890",
-      "dateFinished": "2022-12-05 11:00:46.418",
+      "dateStarted": "2023-02-10 02:24:08.171",
+      "dateFinished": "2023-02-10 02:24:08.865",
       "status": "FINISHED"
     },
     {
-      "text": "%hive\n\nset yarn.app.mapreduce.am.resource.mb\u003d1024;\nset yarn.app.mapreduce.am.resource.cpu-vcores\u003d1;\n--set mapred.job.queue.name\u003droot.default;\n\n\nselect txn_receive_date, count(uuid) AS txn_count from transaction_details group by txn_receive_date;\n",
+      "text": "%hive\n\n--set yarn.app.mapreduce.am.resource.mb\u003d1024;\n--set yarn.app.mapreduce.am.resource.cpu-vcores\u003d1;\n--set mapred.job.queue.name\u003droot.default;\n\n\nselect txn_receive_date, count(uuid) AS txn_count from transaction_details group by txn_receive_date;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 10:37:52.739",
+      "dateUpdated": "2023-02-10 02:24:11.117",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -648,6 +648,34 @@
         "editorMode": "ace/mode/sql",
         "fontSize": 12.0,
         "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "txn_receive_date": "string",
+                      "txn_count": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
           "1": {
             "graph": {
               "mode": "table",
@@ -778,40 +806,19 @@
         "code": "SUCCESS",
         "msg": [
           {
-            "type": "TEXT",
-            "data": "Query executed successfully. Affected rows : -1\n\n"
-          },
-          {
-            "type": "TEXT",
-            "data": "Query executed successfully. Affected rows : -1\nINFO  : Compiling command(queryId\u003droot_20221205103752_a0d08d26-073e-489e-8aac-2ae458254327): \n\n\n\n\n\n\nselect txn_receive_date, count(uuid) AS txn_count from transaction_details group by txn_receive_date\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial \u003d false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:txn_receive_date, type:string, comment:null), FieldSchema(name:txn_count, type:bigint, comment:null)], properties:null)\nINFO  : EXPLAIN output for queryid root_20221205103752_a0d08d26-073e-489e-8aac-2ae458254327 : STAGE DEPENDENCIES:\n  Stage-1 is a root stage [MAPRED]\n  Stage-0 depends on stages: Stage-1 [FETCH]\n\nSTAGE PLANS:\n  Stage: Stage-1\n    Map Reduce\n      Map Operator Tree:\n          TableScan\n            alias: transaction_details\n            GatherStats: false\n            Select Operator\n              expressions: uuid (type: string), txn_receive_date (type: string)\n              outputColumnNames: uuid, txn_receive_date\n              Group By Operator\n                aggregations: count(uuid)\n                keys: txn_receive_date (type: string)\n                mode: hash\n                outputColumnNames: _col0, _col1\n                Reduce Output Operator\n                  key expressions: _col0 (type: string)\n                  null sort order: a\n                  sort order: +\n                  Map-reduce partition columns: _col0 (type: string)\n                  tag: -1\n                  value expressions: _col1 (type: bigint)\n                  auto parallelism: false\n      Execution mode: vectorized\n      Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-03 [transaction_details]\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-05 [transaction_details]\n      Path -\u003e Partition:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-03 \n          Partition\n            base file name: txn_receive_date\u003d2022-12-03\n            input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n            output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n            partition values:\n              txn_receive_date 2022-12-03\n            properties:\n              COLUMN_STATS_ACCURATE {\"BASIC_STATS\":\"true\"}\n              bucket_count -1\n              column.name.delimiter ,\n              columns id,uuid,cardtype,website,product,amount,city,country,addts\n              columns.comments \n              columns.types int:string:string:string:string:double:string:string:bigint\n              file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              location hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-03\n              name default.transaction_details\n              numFiles 1\n              numRows 0\n              partition_columns txn_receive_date\n              partition_columns.types string\n              rawDataSize 0\n              serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n              serialization.format 1\n              serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              totalSize 62414\n              transient_lastDdlTime 1670125586\n            serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n          \n              input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              properties:\n                EXTERNAL TRUE\n                bucket_count -1\n                bucketing_version 2\n                column.name.delimiter ,\n                columns id,uuid,cardtype,website,product,amount,city,country,addts\n                columns.comments \n                columns.types int:string:string:string:string:double:string:string:bigint\n                comment Transaction Details External Table\n                creator Brijesh K Dhaker\n                file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n                file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n                location hdfs://namenode:9000/transaction_details\n                name default.transaction_details\n                partition_columns txn_receive_date\n                partition_columns.types string\n                serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n                serialization.format 1\n                serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n                transient_lastDdlTime 1670125117\n              serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              name: default.transaction_details\n            name: default.transaction_details\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-05 \n          Partition\n            base file name: txn_receive_date\u003d2022-12-05\n            input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n            output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n            partition values:\n              txn_receive_date 2022-12-05\n            properties:\n              bucket_count -1\n              column.name.delimiter ,\n              columns id,uuid,cardtype,website,product,amount,city,country,addts\n              columns.comments \n              columns.types int:string:string:string:string:double:string:string:bigint\n              file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              location hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-05\n              name default.transaction_details\n              numFiles 21\n              partition_columns txn_receive_date\n              partition_columns.types string\n              serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n              serialization.format 1\n              serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              totalSize 72266\n              transient_lastDdlTime 1670235815\n            serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n          \n              input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              properties:\n                EXTERNAL TRUE\n                bucket_count -1\n                bucketing_version 2\n                column.name.delimiter ,\n                columns id,uuid,cardtype,website,product,amount,city,country,addts\n                columns.comments \n                columns.types int:string:string:string:string:double:string:string:bigint\n                comment Transaction Details External Table\n                creator Brijesh K Dhaker\n                file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n                file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n                location hdfs://namenode:9000/transaction_details\n                name default.transaction_details\n                partition_columns txn_receive_date\n                partition_columns.types string\n                serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n                serialization.format 1\n                serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n                transient_lastDdlTime 1670125117\n              serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              name: default.transaction_details\n            name: default.transaction_details\n      Truncated Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-03 [transaction_details]\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-05 [transaction_details]\n      Needs Tagging: false\n      Reduce Operator Tree:\n        Group By Operator\n          aggregations: count(VALUE._col0)\n          keys: KEY._col0 (type: string)\n          mode: mergepartial\n          outputColumnNames: _col0, _col1\n          File Output Operator\n            compressed: false\n            GlobalTableId: 0\n            directory: hdfs://namenode:9000/tmp/hive/hive/77896dbc-c52b-4aeb-ad7f-4bcee5c9c338/hive_2022-12-05_10-37-52_855_4987263957482915768-1/-mr-10001/.hive-staging_hive_2022-12-05_10-37-52_855_4987263957482915768-1/-ext-10002\n            NumFilesPerFileSink: 1\n            Stats Publishing Key Prefix: hdfs://namenode:9000/tmp/hive/hive/77896dbc-c52b-4aeb-ad7f-4bcee5c9c338/hive_2022-12-05_10-37-52_855_4987263957482915768-1/-mr-10001/.hive-staging_hive_2022-12-05_10-37-52_855_4987263957482915768-1/-ext-10002/\n            table:\n                input format: org.apache.hadoop.mapred.SequenceFileInputFormat\n                output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat\n                properties:\n                  columns _col0,_col1\n                  columns.types string:bigint\n                  escape.delim \\\n                  hive.serialization.extend.additional.nesting.levels true\n                  serialization.escape.crlf true\n                  serialization.format 1\n                  serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n                serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n            TotalFiles: 1\n            GatherStats: false\n            MultiFileSpray: false\n\n  Stage: Stage-0\n    Fetch Operator\n      limit: -1\n      Processor Tree:\n        ListSink\n\n\nINFO  : Completed compiling command(queryId\u003droot_20221205103752_a0d08d26-073e-489e-8aac-2ae458254327); Time taken: 0.252 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId\u003droot_20221205103752_a0d08d26-073e-489e-8aac-2ae458254327): \n\n\n\n\n\n\nselect txn_receive_date, count(uuid) AS txn_count from transaction_details group by txn_receive_date\nWARN  : Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.\nINFO  : Query ID \u003d root_20221205103752_a0d08d26-073e-489e-8aac-2ae458254327\nINFO  : Total jobs \u003d 1\nINFO  : Launching Job 1 out of 1\nINFO  : Starting task [Stage-1:MAPRED] in serial mode\nINFO  : Number of reduce tasks not specified. Estimated from input data size: 1\nINFO  : In order to change the average load for a reducer (in bytes):\nINFO  :   set hive.exec.reducers.bytes.per.reducer\u003d\u003cnumber\u003e\nINFO  : In order to limit the maximum number of reducers:\nINFO  :   set hive.exec.reducers.max\u003d\u003cnumber\u003e\nINFO  : In order to set a constant number of reducers:\nINFO  :   set mapreduce.job.reduces\u003d\u003cnumber\u003e\nINFO  : number of splits:1\nINFO  : Submitting tokens for job: job_1670220251196_0008\nINFO  : Executing with tokens: []\nINFO  : The url to track the job: http://resourcemanager:8088/proxy/application_1670220251196_0008/\nINFO  : Starting Job \u003d job_1670220251196_0008, Tracking URL \u003d http://resourcemanager:8088/proxy/application_1670220251196_0008/\nINFO  : Kill Command \u003d /opt/hadoop-3.3.4/bin/mapred job  -kill job_1670220251196_0008\nINFO  : Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1\nINFO  : 2022-12-05 10:38:02,180 Stage-1 map \u003d 0%,  reduce \u003d 0%\nINFO  : 2022-12-05 10:38:08,789 Stage-1 map \u003d 100%,  reduce \u003d 0%, Cumulative CPU 4.7 sec\nINFO  : 2022-12-05 10:38:14,944 Stage-1 map \u003d 100%,  reduce \u003d 100%, Cumulative CPU 7.13 sec\n"
-          },
-          {
             "type": "TABLE",
-            "data": "txn_receive_date\ttxn_count\n2022-12-03\t1175\n2022-12-05\t432\n"
+            "data": "txn_receive_date\ttxn_count\n2022-12-03\t1175\n2022-12-05\t864\n2022-12-06\t340\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "HIVE JOB",
-          "tooltip": "View in YARN WEB UI",
-          "group": "jdbc",
-          "values": [
-            {
-              "jobUrl": "http://resourcemanager:8088/proxy/application_1670220251196_0008/"
-            }
-          ],
-          "interpreterSettingId": "hive"
-        }
-      },
+      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641789776482_1365117778",
       "id": "paragraph_1641789776482_1365117778",
       "dateCreated": "2022-01-10 04:42:56.482",
-      "dateStarted": "2022-12-05 10:37:52.760",
-      "dateFinished": "2022-12-05 10:38:17.065",
+      "dateStarted": "2023-02-10 02:23:46.477",
+      "dateFinished": "2023-02-10 02:24:10.798",
       "status": "FINISHED"
     },
     {
