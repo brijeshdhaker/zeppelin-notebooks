@@ -45,7 +45,7 @@
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:05:49.073",
+      "dateUpdated": "2023-04-23 04:11:17.072",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -68,7 +68,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Found 10 items\ndrwxr-xr-x   - root          supergroup          0 2022-01-25 00:18 /FileStore\ndrwxrwxrwx   - root          supergroup          0 2022-11-25 02:29 /archives\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-01-13 01:11 /checkpoints\ndrwxr-xr-x   - root          supergroup          0 2022-06-05 05:51 /datasets\ndrwxr-xr-x   - root          supergroup          0 2022-01-13 04:46 /discretized-streams\ndrwxr-xr-x   - root          supergroup          0 2022-11-22 05:11 /hbase\ndrwxrwxrwx   - brije         supergroup          0 2022-05-29 05:39 /home\ndrwxrwxrwx   - hive          supergroup          0 2022-10-21 02:03 /tmp\ndrwxrwxrwx   - brije         supergroup          0 2022-09-15 01:10 /transaction_details\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-11-27 03:39 /user\n"
+            "data": "Found 12 items\ndrwxr-xr-x   - root          supergroup          0 2022-01-25 00:18 /FileStore\ndrwxrwxrwx   - root          supergroup          0 2022-11-30 00:46 /archives\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-01-13 01:11 /checkpoints\ndrwxr-xr-x   - root          supergroup          0 2022-11-27 14:23 /datasets\ndrwxr-xr-x   - root          supergroup          0 2022-01-13 04:46 /discretized-streams\ndrwxr-xr-x   - root          supergroup          0 2022-12-01 02:21 /hbase\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-05-29 05:39 /home\ndrwxrwxrwx   - zeppelin      supergroup          0 2022-11-28 02:18 /test\ndrwxrwxrwx   - hive          supergroup          0 2022-10-21 02:03 /tmp\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-09-15 01:10 /transaction_details\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-11-27 03:39 /user\ndrwxrwxrwx   - root          supergroup          0 2023-04-19 17:10 /yarn\n"
           }
         ]
       },
@@ -78,14 +78,14 @@
       "jobName": "paragraph_1669520416975_1687379561",
       "id": "paragraph_1669520416975_1687379561",
       "dateCreated": "2022-11-27 03:40:16.975",
-      "dateStarted": "2022-11-27 03:40:40.703",
-      "dateFinished": "2022-11-27 03:40:41.990",
+      "dateStarted": "2023-04-23 04:11:17.076",
+      "dateFinished": "2023-04-23 04:11:18.348",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\n\n$HADOOP_HOME/bin/hadoop fs -mkdir -p /user/zeppelin\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:05:53.632",
+      "dateUpdated": "2023-04-23 03:53:02.780",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -104,8 +104,17 @@
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
-        "msg": []
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "mkdir: `/user/zeppelin\u0027: Input/output error\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "ExitValue: 1"
+          }
+        ]
       },
       "apps": [],
       "runtimeInfos": {},
@@ -113,14 +122,14 @@
       "jobName": "paragraph_1669520406592_806578354",
       "id": "paragraph_1669520406592_806578354",
       "dateCreated": "2022-11-27 03:40:06.593",
-      "dateStarted": "2022-11-27 03:42:11.800",
-      "dateFinished": "2022-11-27 03:42:13.092",
-      "status": "FINISHED"
+      "dateStarted": "2023-04-23 03:53:02.783",
+      "dateFinished": "2023-04-23 03:53:03.561",
+      "status": "ERROR"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:05:58.023",
+      "dateUpdated": "2023-04-23 04:06:51.494",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -139,11 +148,15 @@
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
+        "code": "ERROR",
         "msg": [
           {
             "type": "TEXT",
-            "data": "Found 4 items\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-11-26 06:44 /user/brijeshdhaker\ndrwxrwxrwx   - root          supergroup          0 2022-01-10 10:44 /user/hive\ndrwxr-xr-x   - root          supergroup          0 2022-11-27 03:39 /user/root\ndrwxrwxrwx   - zeppelin      supergroup          0 2022-02-04 06:44 /user/zeppelin\n"
+            "data": "ls: `/user\u0027: No such file or directory\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "ExitValue: 1"
           }
         ]
       },
@@ -153,9 +166,9 @@
       "jobName": "paragraph_1669520414709_1132110154",
       "id": "paragraph_1669520414709_1132110154",
       "dateCreated": "2022-11-27 03:40:14.709",
-      "dateStarted": "2022-11-27 03:42:16.648",
-      "dateFinished": "2022-11-27 03:42:17.927",
-      "status": "FINISHED"
+      "dateStarted": "2023-04-23 04:06:51.497",
+      "dateFinished": "2023-04-23 04:06:52.365",
+      "status": "ERROR"
     },
     {
       "text": "%sh\n\n\n#\n# \u0027/\u0027 means absolute path\n#\ndate_now\u003d$(date \"+%F\")\nunix_epoch_date\u003d$(date +%s)\necho $date_now \necho $unix_epoch_date\n\n$HADOOP_HOME/bin/hadoop fs -mkdir  -p \"/test-$unix_epoch_date\"  \n\n\n                                  \n",
@@ -586,9 +599,9 @@
       "status": "FINISHED"
     },
     {
-      "text": "%sh\n\n# dus:: This command will give the total size of directory/file.\n\n$HADOOP_HOME/bin/hdfs dfs -dus /user",
+      "text": "%sh\n\n# dus:: This command will give the total size of directory/file.\n\n$HADOOP_HOME/bin/hdfs dfs -du -s /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:03:32.950",
+      "dateUpdated": "2023-04-23 04:14:50.255",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -611,7 +624,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "dus: DEPRECATED: Please use \u0027du -s\u0027 instead.\n625312466  833728486  /user\n"
+            "data": "521141434  521215390  /user\n"
           }
         ]
       },
@@ -621,8 +634,8 @@
       "jobName": "paragraph_1669521726582_1315864413",
       "id": "paragraph_1669521726582_1315864413",
       "dateCreated": "2022-11-27 04:02:06.582",
-      "dateStarted": "2022-11-27 04:03:32.954",
-      "dateFinished": "2022-11-27 04:03:34.277",
+      "dateStarted": "2023-04-23 04:14:50.257",
+      "dateFinished": "2023-04-23 04:14:51.464",
       "status": "FINISHED"
     },
     {

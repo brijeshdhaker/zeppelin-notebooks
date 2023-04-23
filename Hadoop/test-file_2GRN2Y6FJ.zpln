@@ -3,7 +3,7 @@
     {
       "text": "%file\n\nls -l /user",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 08:06:19.892",
+      "dateUpdated": "2023-04-23 04:02:48.813",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -25,7 +25,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxr-xr-x\t-\t airflow\tsupergroup\t0\t2022-12-02 18:08GMT\t/user/airflow\ndrwxrwxrwx\t-\t brijeshdhaker\tsupergroup\t0\t2022-11-26 06:44GMT\t/user/brijeshdhaker\ndrwxrwxrwx\t-\t root\tsupergroup\t0\t2022-01-10 10:44GMT\t/user/hive\ndrwxr-xr-x\t-\t root\tsupergroup\t0\t2022-11-27 03:39GMT\t/user/root\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-12-04 17:11GMT\t/user/zeppelin\n"
+            "data": "drwxrwxrwx\t-\t brijeshdhaker\tsupergroup\t0\t2022-11-26 06:44GMT\t/user/brijeshdhaker\ndrwxrwxrwx\t-\t root\tsupergroup\t0\t2022-01-10 10:44GMT\t/user/hive\ndrwxr-xr-x\t-\t root\tsupergroup\t0\t2022-11-27 03:39GMT\t/user/root\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-11-27 03:56GMT\t/user/zeppelin\n"
           }
         ]
       },
@@ -35,14 +35,14 @@
       "jobName": "paragraph_1640953227121_981635026",
       "id": "paragraph_1640953227121_981635026",
       "dateCreated": "2021-12-31 12:20:27.121",
-      "dateStarted": "2022-12-05 08:06:19.916",
-      "dateFinished": "2022-12-05 08:06:22.338",
+      "dateStarted": "2023-04-23 04:02:48.815",
+      "dateFinished": "2023-04-23 04:02:50.553",
       "status": "FINISHED"
     },
     {
       "text": "%file\n\nls -l /user/hive/warehouse/\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 08:07:32.535",
+      "dateUpdated": "2023-04-23 04:56:11.500",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -74,14 +74,53 @@
       "jobName": "paragraph_1640953238940_1049456036",
       "id": "paragraph_1640953238940_1049456036",
       "dateCreated": "2021-12-31 12:20:38.940",
-      "dateStarted": "2022-12-05 08:07:32.538",
-      "dateFinished": "2022-12-05 08:07:32.552",
+      "dateStarted": "2023-04-23 04:56:11.504",
+      "dateFinished": "2023-04-23 04:56:11.520",
       "status": "FINISHED"
+    },
+    {
+      "text": "%file\n\n\nrm -R /tmp/spark/logs/",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 04:57:28.174",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/undefined"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Unknown command"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1641812308964_209963750",
+      "id": "paragraph_1641812308964_209963750",
+      "dateCreated": "2022-01-10 10:58:28.964",
+      "dateStarted": "2023-04-23 04:57:28.176",
+      "dateFinished": "2023-04-23 04:57:28.181",
+      "status": "ERROR"
     },
     {
       "text": "%file\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-10 10:58:28.965",
+      "dateUpdated": "2023-04-23 04:50:07.130",
       "progress": 0,
       "config": {},
       "settings": {
@@ -91,9 +130,9 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1641812308964_209963750",
-      "id": "paragraph_1641812308964_209963750",
-      "dateCreated": "2022-01-10 10:58:28.964",
+      "jobName": "paragraph_1682225407130_1069468018",
+      "id": "paragraph_1682225407130_1069468018",
+      "dateCreated": "2023-04-23 04:50:07.130",
       "status": "READY"
     }
   ],
