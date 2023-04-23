@@ -45,7 +45,7 @@
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 00:38:36.116",
+      "dateUpdated": "2023-04-23 04:02:13.453",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -68,7 +68,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Found 10 items\ndrwxr-xr-x   - root          supergroup          0 2022-01-25 00:18 /FileStore\ndrwxrwxrwx   - root          supergroup          0 2022-11-25 02:29 /archives\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-01-13 01:11 /checkpoints\ndrwxr-xr-x   - root          supergroup          0 2022-06-05 05:51 /datasets\ndrwxr-xr-x   - root          supergroup          0 2022-01-13 04:46 /discretized-streams\ndrwxr-xr-x   - root          supergroup          0 2022-11-22 05:11 /hbase\ndrwxrwxrwx   - brije         supergroup          0 2022-05-29 05:39 /home\ndrwxrwxrwx   - hive          supergroup          0 2022-10-21 02:03 /tmp\ndrwxrwxrwx   - brije         supergroup          0 2022-09-15 01:10 /transaction_details\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-11-27 03:39 /user\n"
+            "data": "Found 24 items\n-rwxr-xr-x   1 root root          0 2023-04-23 03:49 /.dockerenv\ndrwxr-xr-x   - root root       4096 2023-04-23 03:49 /apps\ndrwxr-xr-x   - root root       4096 2022-02-28 09:25 /bin\ndrwxr-xr-x   - root root       4096 2020-04-15 11:09 /boot\ndrwxr-xr-x   - root root        340 2023-04-23 03:49 /dev\n-rw-r--r--   1 root root        477 2022-02-28 09:24 /env_python_3_with_R.yml\ndrwxr-xr-x   - root root       4096 2023-04-23 03:49 /etc\ndrwxr-xr-x   - root root       4096 2020-04-15 11:09 /home\ndrwxr-xr-x   - root root       4096 2022-02-28 09:25 /lib\ndrwxr-xr-x   - root root       4096 2022-01-13 16:47 /lib32\ndrwxr-xr-x   - root root       4096 2022-01-13 16:50 /lib64\ndrwxr-xr-x   - root root       4096 2022-01-13 16:47 /libx32\ndrwxr-xr-x   - root root       4096 2022-01-13 16:47 /media\ndrwxr-xr-x   - root root       4096 2022-01-13 16:47 /mnt\ndrwxr-xr-x   - root root       4096 2023-04-23 03:49 /opt\ndr-xr-xr-x   - root root          0 2023-04-23 03:49 /proc\ndrwx------   - root root       4096 2022-01-13 16:50 /root\ndrwxr-xr-x   - root root       4096 2022-01-13 16:50 /run\ndrwxr-xr-x   - root root       4096 2022-02-28 09:25 /sbin\ndrwxr-xr-x   - root root       4096 2022-01-13 16:47 /srv\ndr-xr-xr-x   - root root          0 2023-04-23 03:49 /sys\ndrwxrwxrwt   - root root       4096 2023-04-23 03:57 /tmp\ndrwxr-xr-x   - root root       4096 2022-01-13 16:47 /usr\ndrwxr-xr-x   - root root       4096 2022-01-13 16:50 /var\n"
           }
         ]
       },
@@ -78,7 +78,9 @@
       "jobName": "paragraph_1669682316116_1893938647",
       "id": "paragraph_1669520416975_1687379561",
       "dateCreated": "2022-11-29 00:38:36.116",
-      "status": "READY"
+      "dateStarted": "2023-04-23 04:02:13.456",
+      "dateFinished": "2023-04-23 04:02:14.087",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\n\n$HADOOP_HOME/bin/hadoop fs -mkdir -p /user/zeppelin\n",
@@ -112,6 +114,132 @@
       "id": "paragraph_1669520406592_806578354",
       "dateCreated": "2022-11-29 00:38:36.116",
       "status": "READY"
+    },
+    {
+      "text": "%md\n\nls:\nList directories present under a specific directory in HDFS, similar to Unix ls command. The -lsr command can be used for recursive listing of directories and files.\n\nOptions:\n-d : List the directories as plain files\n-h : Format the sizes of files to a human-readable manner instead of number of bytes\n-R : Recursively list the contents of directories",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:02:15.713",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003els:\u003cbr /\u003e\nList directories present under a specific directory in HDFS, similar to Unix ls command. The -lsr command can be used for recursive listing of directories and files.\u003c/p\u003e\n\u003cp\u003eOptions:\u003cbr /\u003e\n-d : List the directories as plain files\u003cbr /\u003e\n-h : Format the sizes of files to a human-readable manner instead of number of bytes\u003cbr /\u003e\n-R : Recursively list the contents of directories\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226127446_1503763158",
+      "id": "paragraph_1682226127446_1503763158",
+      "dateCreated": "2023-04-23 05:02:07.446",
+      "dateStarted": "2023-04-23 05:02:15.714",
+      "dateFinished": "2023-04-23 05:02:17.477",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n### chmod:\nChange the permission of a file, similar to Linux shell’s command but with a few exceptions.\n\n\u003cMODE\u003e Same as mode used for the shell’s command with the only letters recognized are ‘rwxXt’\n\n\u003cOCTALMODE\u003e Mode specified in 3 or 4 digits. It is not possible to specify only part of the mode, unlike the shell command.\n\n### Options:\n-R : Modify the files recursively\n\n$ hadoop fs -chmod [-R] \u003cMODE[,MODE]... | OCTALMODE\u003e PATH\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:16:23.672",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003echmod:\u003c/h3\u003e\n\u003cp\u003eChange the permission of a file, similar to Linux shell’s command but with a few exceptions.\u003c/p\u003e\n\u003cp\u003e\u003cMODE\u003e Same as mode used for the shell’s command with the only letters recognized are ‘rwxXt’\u003c/p\u003e\n\u003cp\u003e\u003cOCTALMODE\u003e Mode specified in 3 or 4 digits. It is not possible to specify only part of the mode, unlike the shell command.\u003c/p\u003e\n\u003ch3\u003eOptions:\u003c/h3\u003e\n\u003cp\u003e-R : Modify the files recursively\u003c/p\u003e\n\u003cp\u003e$ hadoop fs -chmod [-R] \u0026lt;MODE[,MODE]\u0026hellip; | OCTALMODE\u0026gt; PATH\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226960960_1921821146",
+      "id": "paragraph_1682226960960_1921821146",
+      "dateCreated": "2023-04-23 05:16:00.960",
+      "dateStarted": "2023-04-23 05:16:23.672",
+      "dateFinished": "2023-04-23 05:16:23.681",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n### chown:\nChange owner and group of a file, similar to Linux shell’s command but with a few exceptions.\n\n### Options:\n-R : Modify the files recursively\n\n$ hadoop fs -chown [-R] [OWNER][:[GROUP]] PATH\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:16:50.021",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003echown:\u003c/h3\u003e\n\u003cp\u003eChange owner and group of a file, similar to Linux shell’s command but with a few exceptions.\u003c/p\u003e\n\u003ch3\u003eOptions:\u003c/h3\u003e\n\u003cp\u003e-R : Modify the files recursively\u003c/p\u003e\n\u003cp\u003e$ hadoop fs -chown [-R] [OWNER][:[GROUP]] PATH\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226998279_2088555769",
+      "id": "paragraph_1682226998279_2088555769",
+      "dateCreated": "2023-04-23 05:16:38.279",
+      "dateStarted": "2023-04-23 05:16:50.021",
+      "dateFinished": "2023-04-23 05:16:50.030",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /user",
@@ -150,6 +278,48 @@
       "id": "paragraph_1669520414709_1132110154",
       "dateCreated": "2022-11-29 00:38:36.116",
       "status": "READY"
+    },
+    {
+      "text": "%md\n\nmkdir:\nTo create a directory, similar to Unix ls command.\n\nOptions:\n-p : Do not fail if the directory already exists",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:02:50.610",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003emkdir:\u003cbr /\u003e\nTo create a directory, similar to Unix ls command.\u003c/p\u003e\n\u003cp\u003eOptions:\u003cbr /\u003e\n-p : Do not fail if the directory already exists\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226142741_1224379532",
+      "id": "paragraph_1682226142741_1224379532",
+      "dateCreated": "2023-04-23 05:02:22.741",
+      "dateStarted": "2023-04-23 05:02:50.610",
+      "dateFinished": "2023-04-23 05:02:50.615",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\n\n#\n# \u0027/\u0027 means absolute path\n#\n$HADOOP_HOME/bin/hdfs dfs -mkdir  /test  \n\n\n                                  \n",
@@ -289,6 +459,90 @@
       "status": "READY"
     },
     {
+      "text": "%md\n\n### test:\nTest an HDFS file’s existence of an empty file or if it is a directory or not.\n\n### Options:\n-w : Request the command wait for the replication to be completed (potentially takes a long time)\n-r : Accept for backwards compatibility and has no effect \n\n$ hadoop fs -setrep [-R] [-w]\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:17:24.453",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003etest:\u003c/h3\u003e\n\u003cp\u003eTest an HDFS file’s existence of an empty file or if it is a directory or not.\u003c/p\u003e\n\u003ch3\u003eOptions:\u003c/h3\u003e\n\u003cp\u003e-w : Request the command wait for the replication to be completed (potentially takes a long time)\u003cbr /\u003e\n-r : Accept for backwards compatibility and has no effect\u003c/p\u003e\n\u003cp\u003e$ hadoop fs -setrep [-R] [-w]\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682227031692_1751421713",
+      "id": "paragraph_1682227031692_1751421713",
+      "dateCreated": "2023-04-23 05:17:11.692",
+      "dateStarted": "2023-04-23 05:17:24.454",
+      "dateFinished": "2023-04-23 05:17:24.462",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n### touchz:\nCreates an empty file in HDFS.\n\n$ hadoop fs -touchz URI\n\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:18:29.129",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003etouchz:\u003c/h3\u003e\n\u003cp\u003eCreates an empty file in HDFS.\u003c/p\u003e\n\u003cp\u003e$ hadoop fs -touchz URI\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682227084192_577466658",
+      "id": "paragraph_1682227084192_577466658",
+      "dateCreated": "2023-04-23 05:18:04.192",
+      "dateStarted": "2023-04-23 05:18:29.130",
+      "dateFinished": "2023-04-23 05:18:29.133",
+      "status": "FINISHED"
+    },
+    {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -touchz  myfile.txt ",
       "user": "anonymous",
       "dateUpdated": "2022-11-29 00:38:36.116",
@@ -320,6 +574,48 @@
       "id": "paragraph_1669521037440_1974018261",
       "dateCreated": "2022-11-29 00:38:36.116",
       "status": "READY"
+    },
+    {
+      "text": "%md\n\n# copyFromLocal:\nCopy files from the local file system to HDFS, similar to -put command. This command will not work if the file already exists. To overwrite the destination if the file already exists, add -f flag to command.\n\n# Options:\n\n-p : Preserves access and modification time, ownership and the mode\n-f : Overwrites the destination",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:04:43.747",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003ecopyFromLocal:\u003c/h1\u003e\n\u003cp\u003eCopy files from the local file system to HDFS, similar to -put command. This command will not work if the file already exists. To overwrite the destination if the file already exists, add -f flag to command.\u003c/p\u003e\n\u003ch1\u003eOptions:\u003c/h1\u003e\n\u003cp\u003e-p : Preserves access and modification time, ownership and the mode\u003cbr /\u003e\n-f : Overwrites the destination\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226243813_1415626258",
+      "id": "paragraph_1682226243813_1415626258",
+      "dateCreated": "2023-04-23 05:04:03.813",
+      "dateStarted": "2023-04-23 05:04:43.747",
+      "dateFinished": "2023-04-23 05:04:43.755",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -copyFromLocal ../Desktop/AI.txt /geeks\n\n(OR)\n\n$HADOOP_HOME/bin/hdfs dfs -put ../Desktop/AI.txt /geeks\n",
@@ -438,6 +734,48 @@
       "status": "READY"
     },
     {
+      "text": "%md\n\n# cp:\nCopy files from one directory to another within HDFS, similar to Unix cp command.",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:05:31.473",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003ecp:\u003c/h1\u003e\n\u003cp\u003eCopy files from one directory to another within HDFS, similar to Unix cp command.\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226312477_225755126",
+      "id": "paragraph_1682226312477_225755126",
+      "dateCreated": "2023-04-23 05:05:12.478",
+      "dateStarted": "2023-04-23 05:05:31.473",
+      "dateFinished": "2023-04-23 05:05:31.476",
+      "status": "FINISHED"
+    },
+    {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs -cp /geeks  /geeks_copied\n",
       "user": "anonymous",
       "dateUpdated": "2022-11-29 00:38:36.117",
@@ -496,6 +834,48 @@
       "status": "READY"
     },
     {
+      "text": "%md\n\n### rm:\nRemove a file from HDFS, similar to Unix rm command. This command does not delete directories. For recursive delete, use command -rm -r.\n\n### Options:\n-r : Recursively remove directories and files\n-skipTrash : To bypass trash and immediately delete the source\n-f : Mention if there is no file existing\n-rR : Recursively delete directories\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:13:43.169",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003erm:\u003c/h3\u003e\n\u003cp\u003eRemove a file from HDFS, similar to Unix rm command. This command does not delete directories. For recursive delete, use command -rm -r.\u003c/p\u003e\n\u003ch3\u003eOptions:\u003c/h3\u003e\n\u003cp\u003e-r : Recursively remove directories and files\u003cbr /\u003e\n-skipTrash : To bypass trash and immediately delete the source\u003cbr /\u003e\n-f : Mention if there is no file existing\u003cbr /\u003e\n-rR : Recursively delete directories\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226338061_1983853679",
+      "id": "paragraph_1682226338061_1983853679",
+      "dateCreated": "2023-04-23 05:05:38.061",
+      "dateStarted": "2023-04-23 05:13:43.170",
+      "dateFinished": "2023-04-23 05:13:43.173",
+      "status": "FINISHED"
+    },
+    {
       "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -rmr  /geeks_copied -\u003e It will delete all the content inside the \n                                       directory then the directory itself.\n                                       ",
       "user": "anonymous",
       "dateUpdated": "2022-11-29 00:38:36.117",
@@ -525,9 +905,51 @@
       "status": "READY"
     },
     {
-      "text": "%sh\n\n# du: It will give the size of each file in directory.\n\n$HADOOP_HOME/bin/hdfs dfs -du /user\n",
+      "text": "%md\n\n### df:\nShow capacity (free and used space) of the file system. The status of the root partitions are provided if the file system has multiple partitions and no path is specified.\n\n### Options:\n-h : Format the sizes of files to a human-readable manner instead of number of bytes\n\n$ hadoop fs -df [-h] [\u003cpath\u003e ...]",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 00:38:36.117",
+      "dateUpdated": "2023-04-23 05:14:33.703",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003edf:\u003c/h3\u003e\n\u003cp\u003eShow capacity (free and used space) of the file system. The status of the root partitions are provided if the file system has multiple partitions and no path is specified.\u003c/p\u003e\n\u003ch3\u003eOptions:\u003c/h3\u003e\n\u003cp\u003e-h : Format the sizes of files to a human-readable manner instead of number of bytes\u003c/p\u003e\n\u003cp\u003e$ hadoop fs -df [-h] [\u003cpath\u003e \u0026hellip;]\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226858177_1797889793",
+      "id": "paragraph_1682226858177_1797889793",
+      "dateCreated": "2023-04-23 05:14:18.177",
+      "dateStarted": "2023-04-23 05:14:33.703",
+      "dateFinished": "2023-04-23 05:14:33.707",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -df -h /user\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:15:13.706",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -550,7 +972,89 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "0          0          /user/brijeshdhaker\n40159      48869      /user/hive\n0          0          /user/root\n625272307  833679617  /user/zeppelin\n"
+            "data": "Filesystem               Size   Used  Available  Use%\nhdfs://namenode:9000  467.9 G  7.4 G    274.6 G    2%\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226878359_775964632",
+      "id": "paragraph_1682226878359_775964632",
+      "dateCreated": "2023-04-23 05:14:38.359",
+      "dateStarted": "2023-04-23 05:15:01.016",
+      "dateFinished": "2023-04-23 05:15:02.359",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n\n### du:\nShow size of each file in the directory. \n\n### Options:\n-s : Show total summary size\n-h : Format the sizes of files to a human-readable manner instead of number of bytes",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:12:34.263",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003edu:\u003c/h3\u003e\n\u003cp\u003eShow size of each file in the directory.\u003c/p\u003e\n\u003ch3\u003eOptions:\u003c/h3\u003e\n\u003cp\u003e-s : Show total summary size\u003cbr /\u003e\n-h : Format the sizes of files to a human-readable manner instead of number of bytes\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226741100_1836007479",
+      "id": "paragraph_1682226741100_1836007479",
+      "dateCreated": "2023-04-23 05:12:21.100",
+      "dateStarted": "2023-04-23 05:12:34.263",
+      "dateFinished": "2023-04-23 05:12:34.269",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n# du: It will give the size of each file in directory.\n\n$HADOOP_HOME/bin/hdfs dfs -du -h /user\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:13:09.584",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0        0        /user/brijeshdhaker\n71.1 K   143.3 K  /user/hive\n0        0        /user/root\n609.1 M  609.1 M  /user/zeppelin\n"
           }
         ]
       },
@@ -560,12 +1064,14 @@
       "jobName": "paragraph_1669682316117_377076792",
       "id": "paragraph_1669521639068_417047791",
       "dateCreated": "2022-11-29 00:38:36.117",
-      "status": "READY"
+      "dateStarted": "2023-04-23 05:13:09.589",
+      "dateFinished": "2023-04-23 05:13:10.985",
+      "status": "FINISHED"
     },
     {
-      "text": "%sh\n\n# dus:: This command will give the total size of directory/file.\n\n$HADOOP_HOME/bin/hdfs dfs -dus /user",
+      "text": "%sh\n\n# dus:: This command will give the total size of directory/file.\n\n$HADOOP_HOME/bin/hdfs dfs -du -s /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 00:38:36.117",
+      "dateUpdated": "2023-04-23 05:12:59.189",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -588,7 +1094,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "dus: DEPRECATED: Please use \u0027du -s\u0027 instead.\n625312466  833728486  /user\n"
+            "data": "638762384  638836340  /user\n"
           }
         ]
       },
@@ -598,50 +1104,14 @@
       "jobName": "paragraph_1669682316117_73194018",
       "id": "paragraph_1669521726582_1315864413",
       "dateCreated": "2022-11-29 00:38:36.117",
-      "status": "READY"
+      "dateStarted": "2023-04-23 05:12:59.191",
+      "dateFinished": "2023-04-23 05:13:00.652",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\n# stat: It will give the last modified time of directory or path. In short it will give stats of the directory or file.\n\n$HADOOP_HOME/bin/hdfs dfs -stat /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 00:38:36.117",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "sh",
-          "editOnDblClick": false,
-          "completionSupport": false
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/sh",
-        "fontSize": 12.0,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "2022-11-27 03:39:05\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669682316117_1177197981",
-      "id": "paragraph_1669521804878_1360607290",
-      "dateCreated": "2022-11-29 00:38:36.117",
-      "status": "READY"
-    },
-    {
-      "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs\n",
-      "user": "anonymous",
-      "dateUpdated": "2022-11-29 00:38:36.117",
+      "dateUpdated": "2023-04-23 04:06:10.678",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -664,7 +1134,133 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Usage: hadoop fs [generic options]\n\t[-appendToFile \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-cat [-ignoreCrc] \u003csrc\u003e ...]\n\t[-checksum \u003csrc\u003e ...]\n\t[-chgrp [-R] GROUP PATH...]\n\t[-chmod [-R] \u003cMODE[,MODE]... | OCTALMODE\u003e PATH...]\n\t[-chown [-R] [OWNER][:[GROUP]] PATH...]\n\t[-copyFromLocal [-f] [-p] [-l] [-d] [-t \u003cthread count\u003e] \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-copyToLocal [-f] [-p] [-ignoreCrc] [-crc] \u003csrc\u003e ... \u003clocaldst\u003e]\n\t[-count [-q] [-h] [-v] [-t [\u003cstorage type\u003e]] [-u] [-x] [-e] \u003cpath\u003e ...]\n\t[-cp [-f] [-p | -p[topax]] [-d] \u003csrc\u003e ... \u003cdst\u003e]\n\t[-createSnapshot \u003csnapshotDir\u003e [\u003csnapshotName\u003e]]\n\t[-deleteSnapshot \u003csnapshotDir\u003e \u003csnapshotName\u003e]\n\t[-df [-h] [\u003cpath\u003e ...]]\n\t[-du [-s] [-h] [-v] [-x] \u003cpath\u003e ...]\n\t[-expunge [-immediate]]\n\t[-find \u003cpath\u003e ... \u003cexpression\u003e ...]\n\t[-get [-f] [-p] [-ignoreCrc] [-crc] \u003csrc\u003e ... \u003clocaldst\u003e]\n\t[-getfacl [-R] \u003cpath\u003e]\n\t[-getfattr [-R] {-n name | -d} [-e en] \u003cpath\u003e]\n\t[-getmerge [-nl] [-skip-empty-file] \u003csrc\u003e \u003clocaldst\u003e]\n\t[-head \u003cfile\u003e]\n\t[-help [cmd ...]]\n\t[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [\u003cpath\u003e ...]]\n\t[-mkdir [-p] \u003cpath\u003e ...]\n\t[-moveFromLocal \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-moveToLocal \u003csrc\u003e \u003clocaldst\u003e]\n\t[-mv \u003csrc\u003e ... \u003cdst\u003e]\n\t[-put [-f] [-p] [-l] [-d] \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-renameSnapshot \u003csnapshotDir\u003e \u003coldName\u003e \u003cnewName\u003e]\n\t[-rm [-f] [-r|-R] [-skipTrash] [-safely] \u003csrc\u003e ...]\n\t[-rmdir [--ignore-fail-on-non-empty] \u003cdir\u003e ...]\n\t[-setfacl [-R] [{-b|-k} {-m|-x \u003cacl_spec\u003e} \u003cpath\u003e]|[--set \u003cacl_spec\u003e \u003cpath\u003e]]\n\t[-setfattr {-n name [-v value] | -x name} \u003cpath\u003e]\n\t[-setrep [-R] [-w] \u003crep\u003e \u003cpath\u003e ...]\n\t[-stat [format] \u003cpath\u003e ...]\n\t[-tail [-f] [-s \u003csleep interval\u003e] \u003cfile\u003e]\n\t[-test -[defswrz] \u003cpath\u003e]\n\t[-text [-ignoreCrc] \u003csrc\u003e ...]\n\t[-touch [-a] [-m] [-t TIMESTAMP ] [-c] \u003cpath\u003e ...]\n\t[-touchz \u003cpath\u003e ...]\n\t[-truncate [-w] \u003clength\u003e \u003cpath\u003e ...]\n\t[-usage [cmd ...]]\n\nGeneric options supported are:\n-conf \u003cconfiguration file\u003e        specify an application configuration file\n-D \u003cproperty\u003dvalue\u003e               define a value for a given property\n-fs \u003cfile:///|hdfs://namenode:port\u003e specify default filesystem URL to use, overrides \u0027fs.defaultFS\u0027 property from configurations.\n-jt \u003clocal|resourcemanager:port\u003e  specify a ResourceManager\n-files \u003cfile1,...\u003e                specify a comma-separated list of files to be copied to the map reduce cluster\n-libjars \u003cjar1,...\u003e               specify a comma-separated list of jar files to be included in the classpath\n-archives \u003carchive1,...\u003e          specify a comma-separated list of archives to be unarchived on the compute machines\n\nThe general command line syntax is:\ncommand [genericOptions] [commandOptions]\n\n"
+            "data": "stat: `/user\u0027: No such file or directory\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "ExitValue: 1"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669682316117_1177197981",
+      "id": "paragraph_1669521804878_1360607290",
+      "dateCreated": "2022-11-29 00:38:36.117",
+      "dateStarted": "2023-04-23 04:06:10.684",
+      "dateFinished": "2023-04-23 04:06:11.280",
+      "status": "ERROR"
+    },
+    {
+      "text": "%md\n\n### tail:\nShow the last 1KB of the file.\n\n### Options:\n-f : Show appended data as the file grows\n\n$ hadoop fs -tail [-f]",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:08:16.394",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003etail:\u003c/h3\u003e\n\u003cp\u003eShow the last 1KB of the file.\u003c/p\u003e\n\u003ch3\u003eOptions:\u003c/h3\u003e\n\u003cp\u003e-f : Show appended data as the file grows\u003c/p\u003e\n\u003cp\u003e$ hadoop fs -tail [-f]\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226479772_944171238",
+      "id": "paragraph_1682226479772_944171238",
+      "dateCreated": "2023-04-23 05:07:59.772",
+      "dateStarted": "2023-04-23 05:08:16.395",
+      "dateFinished": "2023-04-23 05:08:16.402",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -tail /FileStore/tables/README.md",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:11:43.833",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2012.17).\n\nThe data was downloaded from the UCI Machine Learning Repository. Please see this page for more information: http://archive.ics.uci.edu/ml/datasets/Online+Retail\n\n## Bike Data\n\nThis data comes from the Bay Area Bike Share network. Please see this page for more infomation: http://www.bayareabikeshare.com/open-data\n\n## Sensor Data (Heterogeneity Human Activity Recognition Dataset)\n\nAllan Stisen, Henrik Blunck, Sourav Bhattacharya, Thor Siiger Prentow, Mikkel Baun Kjærgaard, Anind Dey, Tobias Sonne, and Mads Møller Jensen \"Smart Devices are Different: Assessing and Mitigating Mobile Sensing Heterogeneities for Activity Recognition\" In Proc. 13th ACM Conference on Embedded Networked Sensor Systems (SenSys 2015), Seoul, Korea, 2015. [Web Link]\n\nThe data was downloaded from the UCI Machine Learning Repository. It is formally known as the Heterogeneity Human Activity Recognition Dataset. Please see this page for more information: https://archive.ics.uci.edu/ml/datasets/Heterogeneity+Activity+Recognition"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1682226500240_633933428",
+      "id": "paragraph_1682226500240_633933428",
+      "dateCreated": "2023-04-23 05:08:20.240",
+      "dateStarted": "2023-04-23 05:11:43.835",
+      "dateFinished": "2023-04-23 05:11:45.469",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-04-23 05:07:07.381",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Usage: hadoop fs [generic options]\n\t[-appendToFile \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-cat [-ignoreCrc] \u003csrc\u003e ...]\n\t[-checksum [-v] \u003csrc\u003e ...]\n\t[-chgrp [-R] GROUP PATH...]\n\t[-chmod [-R] \u003cMODE[,MODE]... | OCTALMODE\u003e PATH...]\n\t[-chown [-R] [OWNER][:[GROUP]] PATH...]\n\t[-concat \u003ctarget path\u003e \u003csrc path\u003e \u003csrc path\u003e ...]\n\t[-copyFromLocal [-f] [-p] [-l] [-d] [-t \u003cthread count\u003e] [-q \u003cthread pool queue size\u003e] \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t \u003cthread count\u003e] [-q \u003cthread pool queue size\u003e] \u003csrc\u003e ... \u003clocaldst\u003e]\n\t[-count [-q] [-h] [-v] [-t [\u003cstorage type\u003e]] [-u] [-x] [-e] [-s] \u003cpath\u003e ...]\n\t[-cp [-f] [-p | -p[topax]] [-d] [-t \u003cthread count\u003e] [-q \u003cthread pool queue size\u003e] \u003csrc\u003e ... \u003cdst\u003e]\n\t[-createSnapshot \u003csnapshotDir\u003e [\u003csnapshotName\u003e]]\n\t[-deleteSnapshot \u003csnapshotDir\u003e \u003csnapshotName\u003e]\n\t[-df [-h] [\u003cpath\u003e ...]]\n\t[-du [-s] [-h] [-v] [-x] \u003cpath\u003e ...]\n\t[-expunge [-immediate] [-fs \u003cpath\u003e]]\n\t[-find \u003cpath\u003e ... \u003cexpression\u003e ...]\n\t[-get [-f] [-p] [-crc] [-ignoreCrc] [-t \u003cthread count\u003e] [-q \u003cthread pool queue size\u003e] \u003csrc\u003e ... \u003clocaldst\u003e]\n\t[-getfacl [-R] \u003cpath\u003e]\n\t[-getfattr [-R] {-n name | -d} [-e en] \u003cpath\u003e]\n\t[-getmerge [-nl] [-skip-empty-file] \u003csrc\u003e \u003clocaldst\u003e]\n\t[-head \u003cfile\u003e]\n\t[-help [cmd ...]]\n\t[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [\u003cpath\u003e ...]]\n\t[-mkdir [-p] \u003cpath\u003e ...]\n\t[-moveFromLocal [-f] [-p] [-l] [-d] \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-moveToLocal \u003csrc\u003e \u003clocaldst\u003e]\n\t[-mv \u003csrc\u003e ... \u003cdst\u003e]\n\t[-put [-f] [-p] [-l] [-d] [-t \u003cthread count\u003e] [-q \u003cthread pool queue size\u003e] \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-renameSnapshot \u003csnapshotDir\u003e \u003coldName\u003e \u003cnewName\u003e]\n\t[-rm [-f] [-r|-R] [-skipTrash] [-safely] \u003csrc\u003e ...]\n\t[-rmdir [--ignore-fail-on-non-empty] \u003cdir\u003e ...]\n\t[-setfacl [-R] [{-b|-k} {-m|-x \u003cacl_spec\u003e} \u003cpath\u003e]|[--set \u003cacl_spec\u003e \u003cpath\u003e]]\n\t[-setfattr {-n name [-v value] | -x name} \u003cpath\u003e]\n\t[-setrep [-R] [-w] \u003crep\u003e \u003cpath\u003e ...]\n\t[-stat [format] \u003cpath\u003e ...]\n\t[-tail [-f] [-s \u003csleep interval\u003e] \u003cfile\u003e]\n\t[-test -[defswrz] \u003cpath\u003e]\n\t[-text [-ignoreCrc] \u003csrc\u003e ...]\n\t[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] \u003cpath\u003e ...]\n\t[-touchz \u003cpath\u003e ...]\n\t[-truncate [-w] \u003clength\u003e \u003cpath\u003e ...]\n\t[-usage [cmd ...]]\n\nGeneric options supported are:\n-conf \u003cconfiguration file\u003e        specify an application configuration file\n-D \u003cproperty\u003dvalue\u003e               define a value for a given property\n-fs \u003cfile:///|hdfs://namenode:port\u003e specify default filesystem URL to use, overrides \u0027fs.defaultFS\u0027 property from configurations.\n-jt \u003clocal|resourcemanager:port\u003e  specify a ResourceManager\n-files \u003cfile1,...\u003e                specify a comma-separated list of files to be copied to the map reduce cluster\n-libjars \u003cjar1,...\u003e               specify a comma-separated list of jar files to be included in the classpath\n-archives \u003carchive1,...\u003e          specify a comma-separated list of archives to be unarchived on the compute machines\n\nThe general command line syntax is:\ncommand [genericOptions] [commandOptions]\n\n"
           },
           {
             "type": "TEXT",
@@ -678,7 +1274,9 @@
       "jobName": "paragraph_1669682316117_1661276283",
       "id": "paragraph_1669521862986_849057622",
       "dateCreated": "2022-11-29 00:38:36.117",
-      "status": "READY"
+      "dateStarted": "2023-04-23 05:07:07.383",
+      "dateFinished": "2023-04-23 05:07:09.682",
+      "status": "ERROR"
     },
     {
       "text": "%sh\n",
