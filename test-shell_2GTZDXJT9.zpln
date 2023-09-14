@@ -3,7 +3,7 @@
     {
       "text": "%sh\n\n\nls -lart /",
       "user": "anonymous",
-      "dateUpdated": "2021-12-31 14:37:47.159",
+      "dateUpdated": "2023-07-24 03:11:42.089",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -27,7 +27,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "total 28\ndrwxr-xr-x   1 root root    0 Apr 15  2020 home\ndrwxr-xr-x   1 root root    0 Apr 15  2020 boot\nlrwxrwxrwx   1 root root    8 Jul 23 17:35 sbin -\u003e usr/sbin\nlrwxrwxrwx   1 root root   10 Jul 23 17:35 libx32 -\u003e usr/libx32\nlrwxrwxrwx   1 root root    9 Jul 23 17:35 lib64 -\u003e usr/lib64\nlrwxrwxrwx   1 root root    9 Jul 23 17:35 lib32 -\u003e usr/lib32\nlrwxrwxrwx   1 root root    7 Jul 23 17:35 lib -\u003e usr/lib\nlrwxrwxrwx   1 root root    7 Jul 23 17:35 bin -\u003e usr/bin\ndrwxr-xr-x   1 root root  102 Jul 23 17:35 usr\ndrwxr-xr-x   1 root root    0 Jul 23 17:35 srv\ndrwxr-xr-x   1 root root    0 Jul 23 17:35 mnt\ndrwxr-xr-x   1 root root    0 Jul 23 17:35 media\ndrwxr-xr-x   1 root root   90 Jul 23 17:38 var\ndrwx------   1 root root   30 Jul 23 17:38 root\ndrwxr-xr-x   1 root root   40 Jul 23 17:38 run\n-rw-r--r--   1 root root  477 Aug 24 06:36 env_python_3_with_R.yml\n-rwxr-xr-x   1 root root    0 Dec 31 11:50 .dockerenv\ndrwxr-xr-x   1 root root 1398 Dec 31 11:50 etc\ndr-xr-xr-x  13 root root    0 Dec 31 11:51 sys\ndr-xr-xr-x 552 root root    0 Dec 31 11:51 proc\ndrwxr-xr-x   1 root root  116 Dec 31 11:51 opt\ndrwxr-xr-x   1 root root   16 Dec 31 11:51 apps\ndrwxr-xr-x   1 root root  228 Dec 31 11:51 ..\ndrwxr-xr-x   1 root root  228 Dec 31 11:51 .\ndrwxr-xr-x   5 root root  340 Dec 31 11:51 dev\ndrwxrwxrwt   1 root root  188 Dec 31 14:37 tmp\n"
+            "data": "total 68\ndrwxr-xr-x   2 root     root 4096 Apr 15  2020 home\ndrwxr-xr-x   2 root     root 4096 Apr 15  2020 boot\nlrwxrwxrwx   1 root     root    8 Jan 13  2022 sbin -\u003e usr/sbin\nlrwxrwxrwx   1 root     root   10 Jan 13  2022 libx32 -\u003e usr/libx32\nlrwxrwxrwx   1 root     root    9 Jan 13  2022 lib64 -\u003e usr/lib64\nlrwxrwxrwx   1 root     root    9 Jan 13  2022 lib32 -\u003e usr/lib32\nlrwxrwxrwx   1 root     root    7 Jan 13  2022 lib -\u003e usr/lib\nlrwxrwxrwx   1 root     root    7 Jan 13  2022 bin -\u003e usr/bin\ndrwxr-xr-x   1 root     root 4096 Jan 13  2022 usr\ndrwxr-xr-x   2 root     root 4096 Jan 13  2022 srv\ndrwxr-xr-x   2 root     root 4096 Jan 13  2022 mnt\ndrwxr-xr-x   2 root     root 4096 Jan 13  2022 media\ndrwxr-xr-x   1 root     root 4096 Jan 13  2022 var\ndrwx------   2 root     root 4096 Jan 13  2022 root\ndrwxr-xr-x   5 root     root 4096 Jan 13  2022 run\n-rw-r--r--   1 root     root  477 Feb 28  2022 env_python_3_with_R.yml\ndrwxrwxr-x   5 zeppelin root 4096 Jul 23 00:49 apps\n-rwxr-xr-x   1 root     root    0 Jul 24 03:11 .dockerenv\ndr-xr-xr-x  13 root     root    0 Jul 24 03:11 sys\ndr-xr-xr-x 432 root     root    0 Jul 24 03:11 proc\ndrwxr-xr-x   1 root     root 4096 Jul 24 03:11 opt\ndrwxr-xr-x   1 root     root 4096 Jul 24 03:11 etc\ndrwxr-xr-x   5 root     root  340 Jul 24 03:11 dev\ndrwxr-xr-x   1 root     root 4096 Jul 24 03:11 ..\ndrwxr-xr-x   1 root     root 4096 Jul 24 03:11 .\ndrwxrwxrwt   1 root     root 4096 Jul 24 03:11 tmp\n"
           }
         ]
       },
@@ -37,14 +37,14 @@
       "jobName": "paragraph_1640961453774_2002247069",
       "id": "paragraph_1640961453774_2002247069",
       "dateCreated": "2021-12-31 14:37:33.774",
-      "dateStarted": "2021-12-31 14:37:47.161",
-      "dateFinished": "2021-12-31 14:37:49.212",
-      "status": "ABORT"
+      "dateStarted": "2023-07-24 03:11:42.112",
+      "dateFinished": "2023-07-24 03:11:44.062",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\njava -version\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 08:08:01.183",
+      "dateUpdated": "2023-07-24 03:11:53.383",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -78,14 +78,14 @@
       "jobName": "paragraph_1640961467161_1663777995",
       "id": "paragraph_1640961467161_1663777995",
       "dateCreated": "2021-12-31 14:37:47.161",
-      "dateStarted": "2022-12-05 08:08:01.185",
-      "dateFinished": "2022-12-05 08:08:03.292",
+      "dateStarted": "2023-07-24 03:11:53.388",
+      "dateFinished": "2023-07-24 03:11:53.437",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\npython --version",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 08:08:05.496",
+      "dateUpdated": "2023-07-24 03:11:57.545",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -119,8 +119,8 @@
       "jobName": "paragraph_1640964883683_819741172",
       "id": "paragraph_1640964883683_819741172",
       "dateCreated": "2021-12-31 15:34:43.683",
-      "dateStarted": "2022-12-05 08:08:05.506",
-      "dateFinished": "2022-12-05 08:08:05.528",
+      "dateStarted": "2023-07-24 03:11:57.548",
+      "dateFinished": "2023-07-24 03:11:57.563",
       "status": "FINISHED"
     },
     {

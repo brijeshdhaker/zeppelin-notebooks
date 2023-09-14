@@ -1,10 +1,109 @@
 {
   "paragraphs": [
     {
+      "text": "%hive\n\nshow tables;",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-21 02:45:17.369",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "tab_name": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "tab_name": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "23/07/21 02:45:15 [0762fdcf-3dc3-4ad1-9928-4e5adcd5251c HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Compiling command(queryId\u003dhive_20230721024515_f0211389-a989-4b62-b30d-96793656f76f): \n\nshow tables\n23/07/21 02:45:16 [0762fdcf-3dc3-4ad1-9928-4e5adcd5251c HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Semantic Analysis Completed\n23/07/21 02:45:16 [0762fdcf-3dc3-4ad1-9928-4e5adcd5251c HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:tab_name, type:string, comment:from deserializer)], properties:null)\n23/07/21 02:45:16 [0762fdcf-3dc3-4ad1-9928-4e5adcd5251c HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Completed compiling command(queryId\u003dhive_20230721024515_f0211389-a989-4b62-b30d-96793656f76f); Time taken: 0.503 seconds\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: Concurrency mode is disabled, not creating a lock manager\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: Executing command(queryId\u003dhive_20230721024515_f0211389-a989-4b62-b30d-96793656f76f): \n\nshow tables\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: Starting task [Stage-0:DDL] in serial mode\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: Completed executing command(queryId\u003dhive_20230721024515_f0211389-a989-4b62-b30d-96793656f76f); Time taken: 0.466 seconds\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: OK\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "tab_name\ne_students\nm_students\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1687679032442_491873234",
+      "id": "paragraph_1687679032442_491873234",
+      "dateCreated": "2023-06-25 07:43:52.443",
+      "dateStarted": "2023-07-21 02:45:15.352",
+      "dateFinished": "2023-07-21 02:45:16.949",
+      "status": "FINISHED"
+    },
+    {
       "title": "List All Databases",
       "text": "%hive\n\n--\nSHOW DATABASES;\n\n-- SELECT CURRENT_DATE;\n-- SELECT CURRENT_TIMESTAMP;\n-- SELECT unix_timestamp();\n-- SELECT from_unixtime(unix_timestamp());\n\n",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:17:16.832",
+      "dateUpdated": "2023-07-16 05:00:51.445",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -175,14 +274,14 @@
       "jobName": "paragraph_1639224747962_2073327326",
       "id": "paragraph_1639224747962_2073327326",
       "dateCreated": "2021-12-11 17:42:27.989",
-      "dateStarted": "2023-04-23 04:17:16.839",
-      "dateFinished": "2023-04-23 04:17:16.896",
+      "dateStarted": "2023-07-16 05:00:51.451",
+      "dateFinished": "2023-07-16 05:00:51.597",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\nshow tables;",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:17:22.427",
+      "dateUpdated": "2023-07-16 05:01:00.738",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -233,7 +332,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "tab_name\n10e4\n10e6\nglobal_external_table\nglobal_managed_table\noptrans_tbl\npermanent_view\nproduct_revenue\nsales_delta_managed\ntransact_tbl\ntransaction_detail_hive_tbl\ntransaction_details\ntransaction_details_orc\ntransaction_details_parquet\ntweeter_tweets\n"
+            "data": "tab_name\ne_students\nm_students\n"
           }
         ]
       },
@@ -243,14 +342,14 @@
       "jobName": "paragraph_1644973722839_1227372135",
       "id": "paragraph_1644973722839_1227372135",
       "dateCreated": "2022-02-16 01:08:42.839",
-      "dateStarted": "2023-04-23 04:17:22.433",
-      "dateFinished": "2023-04-23 04:17:22.508",
+      "dateStarted": "2023-07-16 05:01:00.744",
+      "dateFinished": "2023-07-16 05:01:00.893",
       "status": "FINISHED"
     },
     {
-      "text": "%hive\n\ndfs -ls /transaction_details",
+      "text": "%hive\n\ndfs -ls / ;",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:17:35.084",
+      "dateUpdated": "2023-07-21 02:45:47.294",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -260,7 +359,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {
           "0": {
             "graph": {
@@ -311,14 +410,14 @@
       "jobName": "paragraph_1670737248335_684494031",
       "id": "paragraph_1670737248335_684494031",
       "dateCreated": "2022-12-11 05:40:48.335",
-      "dateStarted": "2023-04-23 04:17:35.087",
-      "dateFinished": "2023-04-23 04:17:35.100",
+      "dateStarted": "2023-07-21 02:45:31.295",
+      "dateFinished": "2023-07-21 02:45:31.594",
       "status": "ERROR"
     },
     {
       "text": "%hive\n\n\nselect array(\u0027Tom\u0027,\u0027Jerry\u0027,\u0027Emily\u0027);\n\n",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:17:47.023",
+      "dateUpdated": "2023-07-16 05:01:21.978",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -379,8 +478,8 @@
       "jobName": "paragraph_1640925853473_15471634",
       "id": "paragraph_1640925853473_15471634",
       "dateCreated": "2021-12-31 04:44:13.473",
-      "dateStarted": "2023-04-23 04:17:47.027",
-      "dateFinished": "2023-04-23 04:17:48.907",
+      "dateStarted": "2023-07-16 05:01:21.983",
+      "dateFinished": "2023-07-16 05:01:22.228",
       "status": "FINISHED"
     },
     {

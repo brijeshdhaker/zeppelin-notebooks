@@ -3,7 +3,7 @@
     {
       "text": "%file\n\nls -l /user",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:02:48.813",
+      "dateUpdated": "2023-07-23 02:02:28.894",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -25,7 +25,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxrwxrwx\t-\t brijeshdhaker\tsupergroup\t0\t2022-11-26 06:44GMT\t/user/brijeshdhaker\ndrwxrwxrwx\t-\t root\tsupergroup\t0\t2022-01-10 10:44GMT\t/user/hive\ndrwxr-xr-x\t-\t root\tsupergroup\t0\t2022-11-27 03:39GMT\t/user/root\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-11-27 03:56GMT\t/user/zeppelin\n"
+            "data": "drwxrwxrwx\t-\t brijeshdhaker\tsupergroup\t0\t2023-07-20 02:51GMT\t/user/brijeshdhaker\ndrwxrwxrwx\t-\t hbase\tsupergroup\t0\t2023-07-14 06:48GMT\t/user/hbase\ndrwxrwxrwx\t-\t hdfs\tsupergroup\t0\t2023-07-14 06:48GMT\t/user/hdfs\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2023-07-14 07:10GMT\t/user/hive\ndrwxrwxrwx\t-\t spark\tsupergroup\t0\t2023-07-14 06:48GMT\t/user/spark\ndrwxr-xr-x\t-\t zeppelin\tsupergroup\t0\t2023-07-20 03:03GMT\t/user/zeppelin\n"
           }
         ]
       },
@@ -35,14 +35,14 @@
       "jobName": "paragraph_1640953227121_981635026",
       "id": "paragraph_1640953227121_981635026",
       "dateCreated": "2021-12-31 12:20:27.121",
-      "dateStarted": "2023-04-23 04:02:48.815",
-      "dateFinished": "2023-04-23 04:02:50.553",
+      "dateStarted": "2023-07-23 02:02:28.898",
+      "dateFinished": "2023-07-23 02:02:30.652",
       "status": "FINISHED"
     },
     {
-      "text": "%file\n\nls -l /user/hive/warehouse/\n",
+      "text": "%file\n\nls -l /user/brijeshdhaker\n",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:56:11.500",
+      "dateUpdated": "2023-07-23 02:03:09.164",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -64,7 +64,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 03:05GMT\t/user/hive/warehouse/optrans_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 02:43GMT\t/user/hive/warehouse/product_revenue\ndrwxrwxrwx\t-\t zeppelin\tsupergroup\t0\t2022-11-25 01:47GMT\t/user/hive/warehouse/sales_delta_managed\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 03:04GMT\t/user/hive/warehouse/transact_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 05:23GMT\t/user/hive/warehouse/transaction_detail_hive_tbl\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-22 00:54GMT\t/user/hive/warehouse/transaction_details_orc\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-11-21 13:30GMT\t/user/hive/warehouse/transaction_details_parquet\ndrwxr-xr-x\t-\t zeppelin\tsupergroup\t0\t2022-12-01 09:59GMT\t/user/hive/warehouse/tweeter_tweets\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:24GMT\t/user/hive/warehouse/zipcodes\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2022-09-18 05:23GMT\t/user/hive/warehouse/zipcodes_tmp\n"
+            "data": "drwxr-xr-x\t-\t brijeshdhaker\tsupergroup\t0\t2023-07-20 02:53GMT\t/user/brijeshdhaker/.sparkStaging\n"
           }
         ]
       },
@@ -74,14 +74,53 @@
       "jobName": "paragraph_1640953238940_1049456036",
       "id": "paragraph_1640953238940_1049456036",
       "dateCreated": "2021-12-31 12:20:38.940",
-      "dateStarted": "2023-04-23 04:56:11.504",
-      "dateFinished": "2023-04-23 04:56:11.520",
+      "dateStarted": "2023-07-23 02:03:09.167",
+      "dateFinished": "2023-07-23 02:03:09.182",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%file\n\nls -l /user/zeppelin",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-23 02:03:27.937",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "drwxr-xr-x\t-\t zeppelin\tsupergroup\t0\t2023-07-23 01:44GMT\t/user/zeppelin/.sparkStaging\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1690077795758_1385623618",
+      "id": "paragraph_1690077795758_1385623618",
+      "dateCreated": "2023-07-23 02:03:15.758",
+      "dateStarted": "2023-07-23 02:03:27.941",
+      "dateFinished": "2023-07-23 02:03:27.962",
       "status": "FINISHED"
     },
     {
       "text": "%file\n\n\nrm -R /tmp/spark/logs/",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:57:28.174",
+      "dateUpdated": "2023-07-23 02:02:38.375",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -113,8 +152,8 @@
       "jobName": "paragraph_1641812308964_209963750",
       "id": "paragraph_1641812308964_209963750",
       "dateCreated": "2022-01-10 10:58:28.964",
-      "dateStarted": "2023-04-23 04:57:28.176",
-      "dateFinished": "2023-04-23 04:57:28.181",
+      "dateStarted": "2023-07-23 02:02:38.377",
+      "dateFinished": "2023-07-23 02:02:38.380",
       "status": "ERROR"
     },
     {

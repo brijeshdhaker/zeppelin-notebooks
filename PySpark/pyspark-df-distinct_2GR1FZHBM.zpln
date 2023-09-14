@@ -42,7 +42,7 @@
       "title": "Data \u0026 Struct Types",
       "text": "%pyspark\n\nfrom pyspark.sql.types import *\nfrom pyspark.sql.functions import *\n\n\n#\n#\n#\nstructureData \u003d [\n    ((\"James\", \"\", \"Smith\"), 36636, \"Sales\", 34, \"2006-01-01\", \"true\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"M\", 3100.50, \"OH\", \"07-01-2019 12 01 19 406\"),\n    ((\"Michael\", \"Rose\", \"\"), 40288, \"Finance\", 25, \"2006-01-01\", \"true\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027brown\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"M\", 4300.65, \"CA\", \"06-24-2019 12 01 19 406\"),\n    ((\"Robert\", \"\", \"Williams\"), 42114, \"Marketing\", 27, \"1992-06-23\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027black\u0027}, \"M\", 1400.80, \"NJ\", \"11-16-2019 16 50 59 406\"),\n    ((\"Maria\", \"Anne\", \"Jones\"), 39192, \"Finance\", 19, \"1987-05-05\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"F\", 5500.75, \"NY\", \"11-16-2019 16 50 59 406\"),\n    ((\"Jen\", \"Mary\", \"Brown\"), 39191, \"Marketing\", 24, \"1990-01-01\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"F\", -1, \"UT\", \"11-16-2019 16 50 59 406\"),\n    ((\"Jeff\", \"A\", \"Jones\"), 39193, \"Finance\", 19, \"2000-07-17\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"F\", 5500.75, \"CA\", \"11-16-2019 16 50 59 406\"),\n    ((\"Robert\", \"\", \"Williams\"), 42114, \"Marketing\", 27, \"1992-06-23\", \"false\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"M\", 1400.80, \"NJ\", \"11-16-2019 16 50 59 406\"),\n    ((\"James\", \"\", \"Smith\"), 36636, \"Sales\", 34, \"2006-01-01\", \"true\", [\"Java\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"M\", 3100.50, \"OH\", \"07-01-2019 12 01 19 406\"),\n    ((\"Scott\", \"M\", \"Brown\"), 39194, \"Marketing\", 24, \"1994-10-01\", \"false\", [\"Python\", \"Scala\", \"C++\"], {\u0027hair\u0027: \u0027black\u0027, \u0027eye\u0027: \u0027brown\u0027}, \"F\", -1, None, \"11-16-2019 16 50 59 406\")\n]\n\n#\n#\n#\nschema \u003d StructType([\n        StructField(\"name\", StructType([\n            StructField(\"fname\", StringType(), True),\n            StructField(\"middle\", StringType(), True),\n            StructField(\"last\", StringType(), True),\n        ])),\n        StructField(\"id\", IntegerType(), True),\n        StructField(\"department\", StringType(), True),\n        StructField(\"age\", IntegerType(), True), \n        StructField(\"jobStartDate\", StringType(), True), \n        StructField(\"isGraduated\", StringType(), True),\n        StructField(\u0027languages\u0027, ArrayType(StringType()), True),\n        StructField(\u0027properties\u0027, MapType(StringType(),StringType()),True), \n        StructField(\"gender\", StringType(), True), \n        StructField(\"salary\", StringType(), True),\n        StructField(\"state\", StringType(), True),\n        StructField(\"addts\", StringType(), True)\n    ])\n    \n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 15:43:45.433",
+      "dateUpdated": "2023-07-23 01:57:27.689",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -72,14 +72,14 @@
       "jobName": "paragraph_1639545424261_1471399757",
       "id": "paragraph_1639409641645_1113256137",
       "dateCreated": "2021-12-15 10:47:04.261",
-      "dateStarted": "2022-11-29 15:43:45.435",
-      "dateFinished": "2022-11-29 15:43:46.919",
+      "dateStarted": "2023-07-23 01:57:27.694",
+      "dateFinished": "2023-07-23 01:57:29.042",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\n\n#\n#\n\ndf1 \u003d spark.createDataFrame(data\u003dstructureData, schema\u003dschema)\ndf1.printSchema()",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 15:43:52.571",
+      "dateUpdated": "2023-07-23 01:57:33.996",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -114,15 +114,15 @@
       "jobName": "paragraph_1639545424261_98649919",
       "id": "paragraph_1639409650868_773043775",
       "dateCreated": "2021-12-15 10:47:04.261",
-      "dateStarted": "2022-11-29 15:43:52.572",
-      "dateFinished": "2022-11-29 15:43:53.193",
+      "dateStarted": "2023-07-23 01:57:34.000",
+      "dateFinished": "2023-07-23 01:57:34.374",
       "status": "FINISHED"
     },
     {
       "title": "Change Data Type of existing dataframe",
       "text": "%pyspark\n\nfrom pyspark.sql.window import Window\nfrom pyspark.sql.types import *\nfrom pyspark.sql.functions import *\n\nwindowSpec  \u003d Window.partitionBy(\"department\").orderBy(\"salary\")\n\ndf2 \u003d df1.withColumn(\"row_number\",row_number().over(windowSpec))\\\n.withColumn(\"id\", col(\"id\").cast(IntegerType()))\\\n.withColumn(\"age\",col(\"age\").cast(IntegerType()))\\\n.withColumn(\"jobStartDate\",col(\"jobStartDate\").cast(DateType()))\\\n.withColumn(\"isGraduated\",col(\"isGraduated\").cast(BooleanType()))\\\n.withColumn(\"salary\",col(\"salary\").cast(FloatType()))\\\n.withColumn(\"addts\",to_timestamp(col(\"addts\"),\"MM-dd-yyyy HH mm ss SSS\"))\n\n#\n#\n#df2.printSchema()\n#df2.show(truncate\u003dFalse)",
       "user": "anonymous",
-      "dateUpdated": "2022-11-29 15:44:08.145",
+      "dateUpdated": "2023-07-23 01:58:15.221",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -153,8 +153,8 @@
       "jobName": "paragraph_1639545424261_84137204",
       "id": "paragraph_1639410101967_760815982",
       "dateCreated": "2021-12-15 10:47:04.262",
-      "dateStarted": "2022-11-29 15:44:08.147",
-      "dateFinished": "2022-11-29 15:44:08.280",
+      "dateStarted": "2023-07-23 01:58:15.226",
+      "dateFinished": "2023-07-23 01:58:15.407",
       "status": "FINISHED"
     },
     {
@@ -227,7 +227,7 @@
     {
       "text": "%pyspark\n\n# Drop duplicates on selected columns\ndf2.select(\"id\", \"name.*\", \"state\").dropDuplicates([\"state\"]).show(truncate\u003dFalse)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-10 11:47:53.740",
+      "dateUpdated": "2023-07-23 02:00:18.797",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -265,19 +265,19 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d5"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1690076238010_0002//jobs/job?id\u003d3"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d6"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1690076238010_0002//jobs/job?id\u003d4"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d7"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1690076238010_0002//jobs/job?id\u003d5"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d8"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1690076238010_0002//jobs/job?id\u003d6"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d9"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1690076238010_0002//jobs/job?id\u003d7"
             }
           ],
           "interpreterSettingId": "spark"
@@ -287,8 +287,8 @@
       "jobName": "paragraph_1639546458690_1619100954",
       "id": "paragraph_1639546458690_1619100954",
       "dateCreated": "2021-12-15 11:04:18.690",
-      "dateStarted": "2022-01-10 11:47:53.744",
-      "dateFinished": "2022-01-10 11:47:55.438",
+      "dateStarted": "2023-07-23 02:00:18.801",
+      "dateFinished": "2023-07-23 02:00:22.321",
       "status": "FINISHED"
     },
     {

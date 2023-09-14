@@ -82,7 +82,7 @@
     {
       "text": "%spark\n\nimport scala.util._\nimport  org.apache.spark.sql.functions._\n\nimport spark.sqlContext.implicits._\n\nval df1 \u003d Seq.fill(50)(Random.nextInt).toDF(\"C1\")\n//df1.show()\nval df2 \u003d df1.withColumn(\"C2\", rand()).join(df1, \"C1\").cache()\n\n//df1.select(concat($\"C1\", lit(\" Brijesh \")).alias(\"VAL\")).show()\n\n//use withColumn method to add a new column called newColName\ndf1.withColumn(\"newColName\", concat($\"C1\", lit(\" Hello\"))).select(\"newColName\", \"C1\").show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-01 11:01:12.426",
+      "dateUpdated": "2023-07-23 02:07:13.214",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -106,7 +106,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "+-----------------+-----------+\n|       newColName|         C1|\n+-----------------+-----------+\n|-1594845337 Hello|-1594845337|\n| 1175459310 Hello| 1175459310|\n| 1859921333 Hello| 1859921333|\n|  -34389266 Hello|  -34389266|\n| 1214601851 Hello| 1214601851|\n|-1146676462 Hello|-1146676462|\n|  -72615285 Hello|  -72615285|\n| 1852692284 Hello| 1852692284|\n| -672405579 Hello| -672405579|\n| -562645394 Hello| -562645394|\n|  117723528 Hello|  117723528|\n| 2124507433 Hello| 2124507433|\n|-1842466779 Hello|-1842466779|\n|-1694335133 Hello|-1694335133|\n| -748872351 Hello| -748872351|\n|  512515636 Hello|  512515636|\n|  747593857 Hello|  747593857|\n| 1222679925 Hello| 1222679925|\n|-1718330544 Hello|-1718330544|\n|-1197237547 Hello|-1197237547|\n+-----------------+-----------+\nonly showing top 20 rows\n\nimport scala.util._\nimport org.apache.spark.sql.functions._\nimport spark.sqlContext.implicits._\n\u001b[1m\u001b[34mdf1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [C1: int]\n\u001b[1m\u001b[34mdf2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [C1: int, C2: double]\n"
+            "data": "+-----------------+-----------+\n|       newColName|         C1|\n+-----------------+-----------+\n|-1080580068 Hello|-1080580068|\n|  474963058 Hello|  474963058|\n|  265907090 Hello|  265907090|\n|  690863799 Hello|  690863799|\n|  483110999 Hello|  483110999|\n|  507261083 Hello|  507261083|\n|-1617955421 Hello|-1617955421|\n| 1991204141 Hello| 1991204141|\n| -618234747 Hello| -618234747|\n|-1638384624 Hello|-1638384624|\n| 1716582348 Hello| 1716582348|\n| 1968463279 Hello| 1968463279|\n|  277336863 Hello|  277336863|\n| -163354128 Hello| -163354128|\n|  517411800 Hello|  517411800|\n| 1761010396 Hello| 1761010396|\n| 1159428778 Hello| 1159428778|\n| 1557113873 Hello| 1557113873|\n|  -22975720 Hello|  -22975720|\n|-1594820355 Hello|-1594820355|\n+-----------------+-----------+\nonly showing top 20 rows\n\nimport scala.util._\nimport org.apache.spark.sql.functions._\nimport spark.sqlContext.implicits._\n\u001b[1m\u001b[34mdf1\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [C1: int]\n\u001b[1m\u001b[34mdf2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m \u003d [C1: int, C2: double]\n"
           }
         ]
       },
@@ -116,14 +116,14 @@
       "jobName": "paragraph_1641033351266_1126094960",
       "id": "paragraph_1641033351266_1126094960",
       "dateCreated": "2022-01-01 10:35:51.266",
-      "dateStarted": "2022-01-01 11:01:12.430",
-      "dateFinished": "2022-01-01 11:01:13.818",
+      "dateStarted": "2023-07-23 02:07:13.216",
+      "dateFinished": "2023-07-23 02:07:14.098",
       "status": "FINISHED"
     },
     {
       "text": "%spark\n\nimport spark.sqlContext.implicits._\nimport org.apache.spark.sql.{Row, SaveMode, SparkSession}\n\nval df \u003d spark.range(1,31).withColumn(\"partition_id\", col(\"id\")%3)\nprint(df.count())\ndf.show()\ndf.write.mode(SaveMode.Overwrite).option(\"inferSchema\", false).partitionBy(\"partition_id\").format(\"parquet\").save(\"range_data\")\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-02 14:45:36.855",
+      "dateUpdated": "2023-07-23 02:07:18.759",
       "progress": 100,
       "config": {
         "editorSetting": {
@@ -147,7 +147,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "+---+------------+\n| id|partition_id|\n+---+------------+\n|  1|           1|\n|  2|           2|\n|  3|           0|\n|  4|           1|\n|  5|           2|\n|  6|           0|\n|  7|           1|\n|  8|           2|\n|  9|           0|\n| 10|           1|\n| 11|           2|\n| 12|           0|\n| 13|           1|\n| 14|           2|\n| 15|           0|\n| 16|           1|\n| 17|           2|\n| 18|           0|\n| 19|           1|\n| 20|           2|\n+---+------------+\nonly showing top 20 rows\n\nimport spark.sqlContext.implicits._\nimport org.apache.spark.sql.{Row, SaveMode, SparkSession}\n\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [id: bigint, partition_id: bigint]\n"
+            "data": "30+---+------------+\n| id|partition_id|\n+---+------------+\n|  1|           1|\n|  2|           2|\n|  3|           0|\n|  4|           1|\n|  5|           2|\n|  6|           0|\n|  7|           1|\n|  8|           2|\n|  9|           0|\n| 10|           1|\n| 11|           2|\n| 12|           0|\n| 13|           1|\n| 14|           2|\n| 15|           0|\n| 16|           1|\n| 17|           2|\n| 18|           0|\n| 19|           1|\n| 20|           2|\n+---+------------+\nonly showing top 20 rows\n\nimport spark.sqlContext.implicits._\nimport org.apache.spark.sql.{Row, SaveMode, SparkSession}\n\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [id: bigint, partition_id: bigint]\n"
           }
         ]
       },
@@ -160,16 +160,16 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d59"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1690076238010_0002//jobs/job?id\u003d8"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d60"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1690076238010_0002//jobs/job?id\u003d9"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d61"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1690076238010_0002//jobs/job?id\u003d10"
             },
             {
-              "jobUrl": "http://zeppelin:4040/jobs/job?id\u003d62"
+              "jobUrl": "http://resourcemanager:8088/proxy/application_1690076238010_0002//jobs/job?id\u003d11"
             }
           ],
           "interpreterSettingId": "spark"
@@ -179,14 +179,14 @@
       "jobName": "paragraph_1640921002358_1279001877",
       "id": "paragraph_1640921002358_1279001877",
       "dateCreated": "2021-12-31 03:23:22.358",
-      "dateStarted": "2022-01-02 14:44:39.882",
-      "dateFinished": "2022-01-02 14:44:42.563",
+      "dateStarted": "2023-07-23 02:07:18.763",
+      "dateFinished": "2023-07-23 02:07:22.167",
       "status": "FINISHED"
     },
     {
       "text": "%file\n\nls -l /user/zeppelin/range_data",
       "user": "anonymous",
-      "dateUpdated": "2022-02-21 11:41:34.177",
+      "dateUpdated": "2023-07-23 02:07:42.784",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -210,7 +210,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "No such File or directory"
+            "data": "-rw-r--r--\t3\t zeppelin\tsupergroup\t0\t2023-07-23 02:07GMT\t/user/zeppelin/range_data/_SUCCESS\ndrwxr-xr-x\t-\t zeppelin\tsupergroup\t0\t2023-07-23 02:07GMT\t/user/zeppelin/range_data/partition_id\u003d0\ndrwxr-xr-x\t-\t zeppelin\tsupergroup\t0\t2023-07-23 02:07GMT\t/user/zeppelin/range_data/partition_id\u003d1\ndrwxr-xr-x\t-\t zeppelin\tsupergroup\t0\t2023-07-23 02:07GMT\t/user/zeppelin/range_data/partition_id\u003d2\n"
           }
         ]
       },
@@ -220,8 +220,8 @@
       "jobName": "paragraph_1641020658037_259879160",
       "id": "paragraph_1641020658037_259879160",
       "dateCreated": "2022-01-01 07:04:18.037",
-      "dateStarted": "2022-02-21 11:41:34.195",
-      "dateFinished": "2022-02-21 11:41:36.214",
+      "dateStarted": "2023-07-23 02:07:42.794",
+      "dateFinished": "2023-07-23 02:07:42.800",
       "status": "FINISHED"
     },
     {

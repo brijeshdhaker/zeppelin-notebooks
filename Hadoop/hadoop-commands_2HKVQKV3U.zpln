@@ -43,9 +43,164 @@
       "status": "FINISHED"
     },
     {
+      "text": "%sh \n\nkinit -k -t /etc/kerberos/users/zeppelin.keytab zeppelin@SANDBOX.NET\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-06 02:28:27.599",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1687578973197_700017498",
+      "id": "paragraph_1687578973197_700017498",
+      "dateCreated": "2023-06-24 03:56:13.197",
+      "dateStarted": "2023-07-06 02:28:27.632",
+      "dateFinished": "2023-07-06 02:28:27.645",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\nklist",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-06 02:28:34.652",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Ticket cache: FILE:/tmp/krb5cc_zepplin\nDefault principal: zeppelin@SANDBOX.NET\n\nValid starting       Expires              Service principal\n07/06/2023 02:28:27  07/06/2023 14:28:27  krbtgt/SANDBOX.NET@SANDBOX.NET\n\trenew until 07/13/2023 02:28:27\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1687579669965_201635962",
+      "id": "paragraph_1687579669965_201635962",
+      "dateCreated": "2023-06-24 04:07:49.965",
+      "dateStarted": "2023-07-06 02:28:34.655",
+      "dateFinished": "2023-07-06 02:28:34.663",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\nwhoami\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-07-06 02:28:41.263",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "zeppelin\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1687579255199_1051904431",
+      "id": "paragraph_1687579255199_1051904431",
+      "dateCreated": "2023-06-24 04:00:55.199",
+      "dateStarted": "2023-07-06 02:28:41.267",
+      "dateFinished": "2023-07-06 02:28:41.273",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\npwd",
+      "user": "anonymous",
+      "dateUpdated": "2023-06-24 05:30:20.622",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "/opt/zeppelin\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1687579272047_205917772",
+      "id": "paragraph_1687579272047_205917772",
+      "dateCreated": "2023-06-24 04:01:12.047",
+      "dateStarted": "2023-06-24 05:30:20.627",
+      "dateFinished": "2023-06-24 05:30:20.643",
+      "status": "FINISHED"
+    },
+    {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:11:17.072",
+      "dateUpdated": "2023-07-16 05:01:54.630",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -68,7 +223,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Found 12 items\ndrwxr-xr-x   - root          supergroup          0 2022-01-25 00:18 /FileStore\ndrwxrwxrwx   - root          supergroup          0 2022-11-30 00:46 /archives\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-01-13 01:11 /checkpoints\ndrwxr-xr-x   - root          supergroup          0 2022-11-27 14:23 /datasets\ndrwxr-xr-x   - root          supergroup          0 2022-01-13 04:46 /discretized-streams\ndrwxr-xr-x   - root          supergroup          0 2022-12-01 02:21 /hbase\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-05-29 05:39 /home\ndrwxrwxrwx   - zeppelin      supergroup          0 2022-11-28 02:18 /test\ndrwxrwxrwx   - hive          supergroup          0 2022-10-21 02:03 /tmp\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-09-15 01:10 /transaction_details\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2022-11-27 03:39 /user\ndrwxrwxrwx   - root          supergroup          0 2023-04-19 17:10 /yarn\n"
+            "data": "Found 6 items\ndrwxr-xr-x   - yarn   supergroup          0 2023-07-14 07:06 /apps\ndrwxrwxrwx   - hive   supergroup          0 2023-07-14 15:28 /archives\ndrwxrwxrwx   - mapred supergroup          0 2023-07-14 05:17 /tmp\ndrwxrwxrwx   - hdfs   supergroup          0 2023-07-14 06:48 /user\ndrwxrwxrwx   - hive   supergroup          0 2023-07-14 06:52 /warehouse\ndrwxr-xr-x   - yarn   supergroup          0 2023-07-14 03:32 /yarn\n"
           }
         ]
       },
@@ -78,14 +233,14 @@
       "jobName": "paragraph_1669520416975_1687379561",
       "id": "paragraph_1669520416975_1687379561",
       "dateCreated": "2022-11-27 03:40:16.975",
-      "dateStarted": "2023-04-23 04:11:17.076",
-      "dateFinished": "2023-04-23 04:11:18.348",
+      "dateStarted": "2023-07-16 05:01:54.632",
+      "dateFinished": "2023-07-16 05:01:57.575",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\n\n$HADOOP_HOME/bin/hadoop fs -mkdir -p /user/zeppelin\n",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 03:53:02.780",
+      "dateUpdated": "2023-07-16 05:02:06.085",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -104,17 +259,8 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "mkdir: `/user/zeppelin\u0027: Input/output error\n"
-          },
-          {
-            "type": "TEXT",
-            "data": "ExitValue: 1"
-          }
-        ]
+        "code": "SUCCESS",
+        "msg": []
       },
       "apps": [],
       "runtimeInfos": {},
@@ -122,14 +268,14 @@
       "jobName": "paragraph_1669520406592_806578354",
       "id": "paragraph_1669520406592_806578354",
       "dateCreated": "2022-11-27 03:40:06.593",
-      "dateStarted": "2023-04-23 03:53:02.783",
-      "dateFinished": "2023-04-23 03:53:03.561",
-      "status": "ERROR"
+      "dateStarted": "2023-07-16 05:02:06.089",
+      "dateFinished": "2023-07-16 05:02:07.347",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /user",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:06:51.494",
+      "dateUpdated": "2023-07-16 05:02:15.497",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -148,15 +294,11 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
+        "code": "SUCCESS",
         "msg": [
           {
             "type": "TEXT",
-            "data": "ls: `/user\u0027: No such file or directory\n"
-          },
-          {
-            "type": "TEXT",
-            "data": "ExitValue: 1"
+            "data": "Found 6 items\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2023-07-14 06:48 /user/brijeshdhaker\ndrwxrwxrwx   - hbase         supergroup          0 2023-07-14 06:48 /user/hbase\ndrwxrwxrwx   - hdfs          supergroup          0 2023-07-14 06:48 /user/hdfs\ndrwxrwxrwx   - hive          supergroup          0 2023-07-14 07:10 /user/hive\ndrwxrwxrwx   - spark         supergroup          0 2023-07-14 06:48 /user/spark\ndrwxr-xr-x   - zeppelin      supergroup          0 2023-07-16 05:02 /user/zeppelin\n"
           }
         ]
       },
@@ -166,9 +308,9 @@
       "jobName": "paragraph_1669520414709_1132110154",
       "id": "paragraph_1669520414709_1132110154",
       "dateCreated": "2022-11-27 03:40:14.709",
-      "dateStarted": "2023-04-23 04:06:51.497",
-      "dateFinished": "2023-04-23 04:06:52.365",
-      "status": "ERROR"
+      "dateStarted": "2023-07-16 05:02:15.499",
+      "dateFinished": "2023-07-16 05:02:16.763",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n\n\n#\n# \u0027/\u0027 means absolute path\n#\ndate_now\u003d$(date \"+%F\")\nunix_epoch_date\u003d$(date +%s)\necho $date_now \necho $unix_epoch_date\n\n$HADOOP_HOME/bin/hadoop fs -mkdir  -p \"/test-$unix_epoch_date\"  \n\n\n                                  \n",
@@ -559,9 +701,9 @@
       "status": "READY"
     },
     {
-      "text": "%sh\n\n# du: It will give the size of each file in directory.\n\n$HADOOP_HOME/bin/hdfs dfs -du /user\n",
+      "text": "%sh\n\n# du: It will give the size of each file in directory.\n\n$HADOOP_HOME/bin/hdfs dfs -du -h -s /user\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:02:27.654",
+      "dateUpdated": "2023-06-24 05:31:18.137",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -584,7 +726,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "0          0          /user/brijeshdhaker\n40159      48869      /user/hive\n0          0          /user/root\n625272307  833679617  /user/zeppelin\n"
+            "data": "38.7 M  38.7 M  /user\n"
           }
         ]
       },
@@ -594,8 +736,8 @@
       "jobName": "paragraph_1669521639068_417047791",
       "id": "paragraph_1669521639068_417047791",
       "dateCreated": "2022-11-27 04:00:39.068",
-      "dateStarted": "2022-11-27 04:02:27.656",
-      "dateFinished": "2022-11-27 04:02:28.950",
+      "dateStarted": "2023-06-24 05:31:18.142",
+      "dateFinished": "2023-06-24 05:31:19.403",
       "status": "FINISHED"
     },
     {
@@ -641,7 +783,7 @@
     {
       "text": "%sh\n\n# stat: It will give the last modified time of directory or path. In short it will give stats of the directory or file.\n\n$HADOOP_HOME/bin/hdfs dfs -stat /user",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:04:26.531",
+      "dateUpdated": "2023-06-24 05:31:36.902",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -664,7 +806,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "2022-11-27 03:39:05\n"
+            "data": "2023-06-24 04:08:31\n"
           }
         ]
       },
@@ -674,14 +816,14 @@
       "jobName": "paragraph_1669521804878_1360607290",
       "id": "paragraph_1669521804878_1360607290",
       "dateCreated": "2022-11-27 04:03:24.878",
-      "dateStarted": "2022-11-27 04:04:22.988",
-      "dateFinished": "2022-11-27 04:04:24.284",
+      "dateStarted": "2023-06-24 05:31:36.913",
+      "dateFinished": "2023-06-24 05:31:38.142",
       "status": "FINISHED"
     },
     {
-      "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs\n",
+      "text": "%sh\n\n$HADOOP_HOME/bin/hdfs dfs -ls /\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:05:37.862",
+      "dateUpdated": "2023-06-24 05:31:54.340",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -700,15 +842,11 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
+        "code": "SUCCESS",
         "msg": [
           {
             "type": "TEXT",
-            "data": "Usage: hadoop fs [generic options]\n\t[-appendToFile \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-cat [-ignoreCrc] \u003csrc\u003e ...]\n\t[-checksum \u003csrc\u003e ...]\n\t[-chgrp [-R] GROUP PATH...]\n\t[-chmod [-R] \u003cMODE[,MODE]... | OCTALMODE\u003e PATH...]\n\t[-chown [-R] [OWNER][:[GROUP]] PATH...]\n\t[-copyFromLocal [-f] [-p] [-l] [-d] [-t \u003cthread count\u003e] \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-copyToLocal [-f] [-p] [-ignoreCrc] [-crc] \u003csrc\u003e ... \u003clocaldst\u003e]\n\t[-count [-q] [-h] [-v] [-t [\u003cstorage type\u003e]] [-u] [-x] [-e] \u003cpath\u003e ...]\n\t[-cp [-f] [-p | -p[topax]] [-d] \u003csrc\u003e ... \u003cdst\u003e]\n\t[-createSnapshot \u003csnapshotDir\u003e [\u003csnapshotName\u003e]]\n\t[-deleteSnapshot \u003csnapshotDir\u003e \u003csnapshotName\u003e]\n\t[-df [-h] [\u003cpath\u003e ...]]\n\t[-du [-s] [-h] [-v] [-x] \u003cpath\u003e ...]\n\t[-expunge [-immediate]]\n\t[-find \u003cpath\u003e ... \u003cexpression\u003e ...]\n\t[-get [-f] [-p] [-ignoreCrc] [-crc] \u003csrc\u003e ... \u003clocaldst\u003e]\n\t[-getfacl [-R] \u003cpath\u003e]\n\t[-getfattr [-R] {-n name | -d} [-e en] \u003cpath\u003e]\n\t[-getmerge [-nl] [-skip-empty-file] \u003csrc\u003e \u003clocaldst\u003e]\n\t[-head \u003cfile\u003e]\n\t[-help [cmd ...]]\n\t[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [\u003cpath\u003e ...]]\n\t[-mkdir [-p] \u003cpath\u003e ...]\n\t[-moveFromLocal \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-moveToLocal \u003csrc\u003e \u003clocaldst\u003e]\n\t[-mv \u003csrc\u003e ... \u003cdst\u003e]\n\t[-put [-f] [-p] [-l] [-d] \u003clocalsrc\u003e ... \u003cdst\u003e]\n\t[-renameSnapshot \u003csnapshotDir\u003e \u003coldName\u003e \u003cnewName\u003e]\n\t[-rm [-f] [-r|-R] [-skipTrash] [-safely] \u003csrc\u003e ...]\n\t[-rmdir [--ignore-fail-on-non-empty] \u003cdir\u003e ...]\n\t[-setfacl [-R] [{-b|-k} {-m|-x \u003cacl_spec\u003e} \u003cpath\u003e]|[--set \u003cacl_spec\u003e \u003cpath\u003e]]\n\t[-setfattr {-n name [-v value] | -x name} \u003cpath\u003e]\n\t[-setrep [-R] [-w] \u003crep\u003e \u003cpath\u003e ...]\n\t[-stat [format] \u003cpath\u003e ...]\n\t[-tail [-f] [-s \u003csleep interval\u003e] \u003cfile\u003e]\n\t[-test -[defswrz] \u003cpath\u003e]\n\t[-text [-ignoreCrc] \u003csrc\u003e ...]\n\t[-touch [-a] [-m] [-t TIMESTAMP ] [-c] \u003cpath\u003e ...]\n\t[-touchz \u003cpath\u003e ...]\n\t[-truncate [-w] \u003clength\u003e \u003cpath\u003e ...]\n\t[-usage [cmd ...]]\n\nGeneric options supported are:\n-conf \u003cconfiguration file\u003e        specify an application configuration file\n-D \u003cproperty\u003dvalue\u003e               define a value for a given property\n-fs \u003cfile:///|hdfs://namenode:port\u003e specify default filesystem URL to use, overrides \u0027fs.defaultFS\u0027 property from configurations.\n-jt \u003clocal|resourcemanager:port\u003e  specify a ResourceManager\n-files \u003cfile1,...\u003e                specify a comma-separated list of files to be copied to the map reduce cluster\n-libjars \u003cjar1,...\u003e               specify a comma-separated list of jar files to be included in the classpath\n-archives \u003carchive1,...\u003e          specify a comma-separated list of archives to be unarchived on the compute machines\n\nThe general command line syntax is:\ncommand [genericOptions] [commandOptions]\n\n"
-          },
-          {
-            "type": "TEXT",
-            "data": "ExitValue: 255"
+            "data": "Found 7 items\ndrwxr-xr-x   - hdfs   hadoop          0 2023-06-17 12:50 /apps\ndrwxrwxrwx   - hdfs   hadoop          0 2023-06-24 05:08 /archives\ndrwxr-xr-x   - hbase  hadoop          0 2023-06-19 02:51 /hbase\ndrwxrwx---   - mapred hadoop          0 2023-06-17 12:47 /mapred\ndrwxrwxrwx   - hdfs   hadoop          0 2023-06-19 04:43 /tmp\ndrwxr-xr-x   - hdfs   hadoop          0 2023-06-24 04:08 /user\ndrwxr-xr-x   - hive   mapred          0 2023-06-17 12:54 /warehouse\n"
           }
         ]
       },
@@ -718,9 +856,9 @@
       "jobName": "paragraph_1669521862986_849057622",
       "id": "paragraph_1669521862986_849057622",
       "dateCreated": "2022-11-27 04:04:22.987",
-      "dateStarted": "2022-11-27 04:05:13.829",
-      "dateFinished": "2022-11-27 04:05:14.333",
-      "status": "ERROR"
+      "dateStarted": "2023-06-24 05:31:54.351",
+      "dateFinished": "2023-06-24 05:31:55.610",
+      "status": "FINISHED"
     },
     {
       "text": "%sh\n",

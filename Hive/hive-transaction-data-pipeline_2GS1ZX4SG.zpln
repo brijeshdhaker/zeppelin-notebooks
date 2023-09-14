@@ -3,7 +3,7 @@
     {
       "text": "%hive\n\nshow tables;",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 10:58:43.101",
+      "dateUpdated": "2023-07-23 02:14:24.478",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -97,8 +97,12 @@
         "code": "SUCCESS",
         "msg": [
           {
+            "type": "TEXT",
+            "data": "23/07/23 02:14:27 [7345e0aa-bc15-452f-a374-dd8b484a5839 HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Compiling command(queryId\u003dhive_20230723021427_e641c981-56ca-45a0-a541-fac91900be03): \n\nshow tables\n23/07/23 02:14:27 [7345e0aa-bc15-452f-a374-dd8b484a5839 HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Semantic Analysis Completed\n23/07/23 02:14:27 [7345e0aa-bc15-452f-a374-dd8b484a5839 HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:tab_name, type:string, comment:from deserializer)], properties:null)\n23/07/23 02:14:27 [7345e0aa-bc15-452f-a374-dd8b484a5839 HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Completed compiling command(queryId\u003dhive_20230723021427_e641c981-56ca-45a0-a541-fac91900be03); Time taken: 0.482 seconds\n23/07/23 02:14:27 [HiveServer2-Background-Pool: Thread-35]: INFO ql.Driver: Concurrency mode is disabled, not creating a lock manager\n23/07/23 02:14:27 [HiveServer2-Background-Pool: Thread-35]: INFO ql.Driver: Executing command(queryId\u003dhive_20230723021427_e641c981-56ca-45a0-a541-fac91900be03): \n\nshow tables\n23/07/23 02:14:27 [HiveServer2-Background-Pool: Thread-35]: INFO ql.Driver: Starting task [Stage-0:DDL] in serial mode\n23/07/23 02:14:27 [HiveServer2-Background-Pool: Thread-35]: INFO ql.Driver: Completed executing command(queryId\u003dhive_20230723021427_e641c981-56ca-45a0-a541-fac91900be03); Time taken: 0.427 seconds\n23/07/23 02:14:27 [HiveServer2-Background-Pool: Thread-35]: INFO ql.Driver: OK\n"
+          },
+          {
             "type": "TABLE",
-            "data": "tab_name\nglobal_external_table\nglobal_managed_table\noptrans_tbl\npermanent_view\nproduct_revenue\nsales_delta_managed\ntransact_tbl\ntransaction_detail_hive_tbl\ntransaction_details\ntransaction_details_orc\ntransaction_details_parquet\ntweeter_tweets\n"
+            "data": "tab_name\ne_students\nm_students\nzipcodes\nzipcodes_tmp\n"
           }
         ]
       },
@@ -108,14 +112,14 @@
       "jobName": "paragraph_1641519921329_1121972646",
       "id": "paragraph_1641519921329_1121972646",
       "dateCreated": "2022-01-07 01:45:21.329",
-      "dateStarted": "2022-12-05 10:58:43.214",
-      "dateFinished": "2022-12-05 10:58:44.479",
-      "status": "ABORT"
+      "dateStarted": "2023-07-23 02:14:24.495",
+      "dateFinished": "2023-07-23 02:14:28.156",
+      "status": "FINISHED"
     },
     {
       "text": "%hive\n\n/* show tables; */\n\nSELECT FROM_UNIXTIME(1641620328);\n",
       "user": "anonymous",
-      "dateUpdated": "2022-10-21 02:34:11.217",
+      "dateUpdated": "2023-07-23 02:15:13.606",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -177,14 +181,14 @@
       "jobName": "paragraph_1641519937983_1341536481",
       "id": "paragraph_1641519937983_1341536481",
       "dateCreated": "2022-01-07 01:45:37.983",
-      "dateStarted": "2022-10-21 02:34:11.223",
-      "dateFinished": "2022-10-21 02:34:12.738",
+      "dateStarted": "2023-07-23 02:15:13.609",
+      "dateFinished": "2023-07-23 02:15:14.604",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\n--\nDROP TABLE IF EXISTS transaction_details;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-04 03:37:53.051",
+      "dateUpdated": "2023-07-23 02:16:04.858",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -217,14 +221,14 @@
       "jobName": "paragraph_1642034568518_201239793",
       "id": "paragraph_1642034568518_201239793",
       "dateCreated": "2022-01-13 00:42:48.518",
-      "dateStarted": "2022-12-04 03:37:53.056",
-      "dateFinished": "2022-12-04 03:37:53.847",
+      "dateStarted": "2023-07-23 02:16:04.864",
+      "dateFinished": "2023-07-23 02:16:05.047",
       "status": "FINISHED"
     },
     {
-      "text": "%hive\n\n--\nCREATE EXTERNAL TABLE IF NOT EXISTS transaction_details (\n    `id` int,\n    `uuid` string,\n    `cardtype` string,\n    `website` string,\n    `product` string,\n    `amount` double,\n    `city` string,\n    `country` string,\n    `addts` bigint\n)\nCOMMENT \u0027Transaction Details External Table\u0027\nPARTITIONED BY(`txn_receive_date` string)\nSTORED AS Parquet\nLOCATION  \u0027hdfs://namenode:9000/transaction_details/\u0027\nTBLPROPERTIES(\"creator\"\u003d\"Brijesh K Dhaker\");",
+      "text": "%hive\n\n--\nCREATE EXTERNAL TABLE IF NOT EXISTS transaction_details (\n    `id` int,\n    `uuid` string,\n    `cardtype` string,\n    `website` string,\n    `product` string,\n    `amount` double,\n    `city` string,\n    `country` string,\n    `addts` bigint\n)\nCOMMENT \u0027Transaction Details External Table\u0027\nPARTITIONED BY(`txn_receive_date` string)\nSTORED AS Parquet\nLOCATION  \u0027hdfs://namenode:9000/warehouse/tablespace/external/hive/transaction_details/\u0027\nTBLPROPERTIES(\"creator\"\u003d\"Brijesh K Dhaker\");",
       "user": "anonymous",
-      "dateUpdated": "2022-12-04 03:38:37.799",
+      "dateUpdated": "2023-07-23 02:16:18.452",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -257,14 +261,14 @@
       "jobName": "paragraph_1641519962115_353682234",
       "id": "paragraph_1641519962115_353682234",
       "dateCreated": "2022-01-07 01:46:02.115",
-      "dateStarted": "2022-12-04 03:38:37.810",
-      "dateFinished": "2022-12-04 03:38:38.088",
+      "dateStarted": "2023-07-23 02:16:18.457",
+      "dateFinished": "2023-07-23 02:16:19.369",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\nDESCRIBE FORMATTED transaction_details;\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 10:59:00.464",
+      "dateUpdated": "2023-07-23 02:16:22.780",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -345,12 +349,8 @@
         "code": "SUCCESS",
         "msg": [
           {
-            "type": "TEXT",
-            "data": "INFO  : Compiling command(queryId\u003droot_20221205105858_2dab3c7d-3aeb-4391-9a0a-bd2dc697d198): \n\nDESCRIBE FORMATTED transaction_details\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial \u003d false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:col_name, type:string, comment:from deserializer), FieldSchema(name:data_type, type:string, comment:from deserializer), FieldSchema(name:comment, type:string, comment:from deserializer)], properties:null)\nINFO  : EXPLAIN output for queryid root_20221205105858_2dab3c7d-3aeb-4391-9a0a-bd2dc697d198 : STAGE DEPENDENCIES:\n  Stage-0 is a root stage [DDL]\n  Stage-1 depends on stages: Stage-0 [FETCH]\n\nSTAGE PLANS:\n  Stage: Stage-0\n      Describe Table Operator:\n        Describe Table\n          result file: file:/tmp/root/77896dbc-c52b-4aeb-ad7f-4bcee5c9c338/hive_2022-12-05_10-58-58_277_4402516231035543807-1/-local-10000\n          table: transaction_details\n\n  Stage: Stage-1\n    Fetch Operator\n      limit: -1\n      Processor Tree:\n        ListSink\n\n\nINFO  : Completed compiling command(queryId\u003droot_20221205105858_2dab3c7d-3aeb-4391-9a0a-bd2dc697d198); Time taken: 0.256 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId\u003droot_20221205105858_2dab3c7d-3aeb-4391-9a0a-bd2dc697d198): \n\nDESCRIBE FORMATTED transaction_details\nINFO  : Starting task [Stage-0:DDL] in serial mode\n"
-          },
-          {
             "type": "TABLE",
-            "data": "col_name\tdata_type\tcomment\n# col_name\tdata_type\tcomment\nid\tint\t\nuuid\tstring\t\ncardtype\tstring\t\nwebsite\tstring\t\nproduct\tstring\t\namount\tdouble\t\ncity\tstring\t\ncountry\tstring\t\naddts\tbigint\t\n\tnull\tnull\n# Partition Information\tnull\tnull\n# col_name\tdata_type\tcomment\ntxn_receive_date\tstring\t\n\tnull\tnull\n# Detailed Table Information\tnull\tnull\nDatabase:           \tdefault             \tnull\nOwnerType:          \tUSER                \tnull\nOwner:              \thive                \tnull\nCreateTime:         \tSun Dec 04 03:38:37 GMT 2022\tnull\nLastAccessTime:     \tUNKNOWN             \tnull\nRetention:          \t0                   \tnull\nLocation:           \thdfs://namenode:9000/transaction_details\tnull\nTable Type:         \tEXTERNAL_TABLE      \tnull\nTable Parameters:\tnull\tnull\n\tEXTERNAL            \tTRUE                \n\tbucketing_version   \t2                   \n\tcomment             \tTransaction Details External Table\n\tcreator             \tBrijesh K Dhaker    \n\tnumFiles            \t22                  \n\tnumPartitions       \t2                   \n\tnumRows             \t0                   \n\trawDataSize         \t0                   \n\ttotalSize           \t134680              \n\ttransient_lastDdlTime\t1670125117          \n\tnull\tnull\n# Storage Information\tnull\tnull\nSerDe Library:      \torg.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\tnull\nInputFormat:        \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\tnull\nOutputFormat:       \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\tnull\nCompressed:         \tNo                  \tnull\nNum Buckets:        \t-1                  \tnull\nBucket Columns:     \t[]                  \tnull\nSort Columns:       \t[]                  \tnull\nStorage Desc Params:\tnull\tnull\n\tserialization.format\t1                   \n"
+            "data": "col_name\tdata_type\tcomment\n# col_name            \tdata_type           \tcomment             \n\tnull\tnull\nid\tint\t\nuuid\tstring\t\ncardtype\tstring\t\nwebsite\tstring\t\nproduct\tstring\t\namount\tdouble\t\ncity\tstring\t\ncountry\tstring\t\naddts\tbigint\t\n\tnull\tnull\n# Partition Information\tnull\tnull\n# col_name            \tdata_type           \tcomment             \n\tnull\tnull\ntxn_receive_date\tstring\t\n\tnull\tnull\n# Detailed Table Information\tnull\tnull\nDatabase:           \tdefault             \tnull\nOwner:              \thive                \tnull\nCreateTime:         \tSun Jul 23 02:16:19 GMT 2023\tnull\nLastAccessTime:     \tUNKNOWN             \tnull\nRetention:          \t0                   \tnull\nLocation:           \thdfs://namenode:9000/warehouse/tablespace/external/hive/transaction_details\tnull\nTable Type:         \tEXTERNAL_TABLE      \tnull\nTable Parameters:\tnull\tnull\n\tCOLUMN_STATS_ACCURATE\t{\\\"BASIC_STATS\\\":\\\"true\\\"}\n\tEXTERNAL            \tTRUE                \n\tcomment             \tTransaction Details External Table\n\tcreator             \tBrijesh K Dhaker    \n\tnumFiles            \t0                   \n\tnumPartitions       \t0                   \n\tnumRows             \t0                   \n\trawDataSize         \t0                   \n\ttotalSize           \t0                   \n\ttransient_lastDdlTime\t1690078579          \n\tnull\tnull\n# Storage Information\tnull\tnull\nSerDe Library:      \torg.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\tnull\nInputFormat:        \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\tnull\nOutputFormat:       \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\tnull\nCompressed:         \tNo                  \tnull\nNum Buckets:        \t-1                  \tnull\nBucket Columns:     \t[]                  \tnull\nSort Columns:       \t[]                  \tnull\nStorage Desc Params:\tnull\tnull\n\tserialization.format\t1                   \n"
           }
         ]
       },
@@ -360,14 +360,14 @@
       "jobName": "paragraph_1641526549350_829778374",
       "id": "paragraph_1641526549350_829778374",
       "dateCreated": "2022-01-07 03:35:49.350",
-      "dateStarted": "2022-12-05 10:58:58.146",
-      "dateFinished": "2022-12-05 10:58:59.887",
+      "dateStarted": "2023-07-23 02:16:22.783",
+      "dateFinished": "2023-07-23 02:16:23.256",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\n/* \nIf we have a large number of partitions you might need to \nset hive.msck.repair.batch.size\n*/\n\nMSCK REPAIR TABLE transaction_details;\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 10:23:25.561",
+      "dateUpdated": "2023-07-16 13:37:55.881",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -400,14 +400,14 @@
       "jobName": "paragraph_1641519999115_1185534228",
       "id": "paragraph_1641519999115_1185534228",
       "dateCreated": "2022-01-07 01:46:39.115",
-      "dateStarted": "2022-12-05 10:23:25.606",
-      "dateFinished": "2022-12-05 10:23:35.725",
+      "dateStarted": "2023-07-16 13:37:55.884",
+      "dateFinished": "2023-07-16 13:37:56.095",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\nSELECT count(id) from transaction_details where txn_receive_date \u003d \u00272022-12-05\u0027;\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-05 10:30:15.799",
+      "dateUpdated": "2023-07-16 13:38:00.077",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -522,22 +522,35 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "INFO  : Compiling command(queryId\u003droot_20221205102946_66b7b0c7-e54c-4a59-b7c2-fada5a758289): \n\nSELECT count(id) from transaction_details where txn_receive_date \u003d \u00272022-12-05\u0027\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial \u003d false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:_c0, type:bigint, comment:null)], properties:null)\nINFO  : EXPLAIN output for queryid root_20221205102946_66b7b0c7-e54c-4a59-b7c2-fada5a758289 : STAGE DEPENDENCIES:\n  Stage-1 is a root stage [MAPRED]\n  Stage-0 depends on stages: Stage-1 [FETCH]\n\nSTAGE PLANS:\n  Stage: Stage-1\n    Map Reduce\n      Map Operator Tree:\n          TableScan\n            alias: transaction_details\n            GatherStats: false\n            Select Operator\n              expressions: id (type: int)\n              outputColumnNames: id\n              Group By Operator\n                aggregations: count(id)\n                mode: hash\n                outputColumnNames: _col0\n                Reduce Output Operator\n                  null sort order: \n                  sort order: \n                  tag: -1\n                  value expressions: _col0 (type: bigint)\n                  auto parallelism: false\n      Execution mode: vectorized\n      Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-05 [transaction_details]\n      Path -\u003e Partition:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-05 \n          Partition\n            base file name: txn_receive_date\u003d2022-12-05\n            input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n            output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n            partition values:\n              txn_receive_date 2022-12-05\n            properties:\n              bucket_count -1\n              column.name.delimiter ,\n              columns id,uuid,cardtype,website,product,amount,city,country,addts\n              columns.comments \n              columns.types int:string:string:string:string:double:string:string:bigint\n              file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              location hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-05\n              name default.transaction_details\n              numFiles 21\n              partition_columns txn_receive_date\n              partition_columns.types string\n              serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n              serialization.format 1\n              serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              totalSize 72266\n              transient_lastDdlTime 1670235815\n            serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n          \n              input format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n              output format: org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n              properties:\n                EXTERNAL TRUE\n                bucket_count -1\n                bucketing_version 2\n                column.name.delimiter ,\n                columns id,uuid,cardtype,website,product,amount,city,country,addts\n                columns.comments \n                columns.types int:string:string:string:string:double:string:string:bigint\n                comment Transaction Details External Table\n                creator Brijesh K Dhaker\n                file.inputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\n                file.outputformat org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\n                location hdfs://namenode:9000/transaction_details\n                name default.transaction_details\n                partition_columns txn_receive_date\n                partition_columns.types string\n                serialization.ddl struct transaction_details { i32 id, string uuid, string cardtype, string website, string product, double amount, string city, string country, i64 addts}\n                serialization.format 1\n                serialization.lib org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n                transient_lastDdlTime 1670125117\n              serde: org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\n              name: default.transaction_details\n            name: default.transaction_details\n      Truncated Path -\u003e Alias:\n        hdfs://namenode:9000/transaction_details/txn_receive_date\u003d2022-12-05 [transaction_details]\n      Needs Tagging: false\n      Reduce Operator Tree:\n        Group By Operator\n          aggregations: count(VALUE._col0)\n          mode: mergepartial\n          outputColumnNames: _col0\n          File Output Operator\n            compressed: false\n            GlobalTableId: 0\n            directory: hdfs://namenode:9000/tmp/hive/hive/77896dbc-c52b-4aeb-ad7f-4bcee5c9c338/hive_2022-12-05_10-29-46_394_7405450630524308271-1/-mr-10001/.hive-staging_hive_2022-12-05_10-29-46_394_7405450630524308271-1/-ext-10002\n            NumFilesPerFileSink: 1\n            Stats Publishing Key Prefix: hdfs://namenode:9000/tmp/hive/hive/77896dbc-c52b-4aeb-ad7f-4bcee5c9c338/hive_2022-12-05_10-29-46_394_7405450630524308271-1/-mr-10001/.hive-staging_hive_2022-12-05_10-29-46_394_7405450630524308271-1/-ext-10002/\n            table:\n                input format: org.apache.hadoop.mapred.SequenceFileInputFormat\n                output format: org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat\n                properties:\n                  columns _col0\n                  columns.types bigint\n                  escape.delim \\\n                  hive.serialization.extend.additional.nesting.levels true\n                  serialization.escape.crlf true\n                  serialization.format 1\n                  serialization.lib org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n                serde: org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe\n            TotalFiles: 1\n            GatherStats: false\n            MultiFileSpray: false\n\n  Stage: Stage-0\n    Fetch Operator\n      limit: -1\n      Processor Tree:\n        ListSink\n\n\nINFO  : Completed compiling command(queryId\u003droot_20221205102946_66b7b0c7-e54c-4a59-b7c2-fada5a758289); Time taken: 0.194 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId\u003droot_20221205102946_66b7b0c7-e54c-4a59-b7c2-fada5a758289): \n\nSELECT count(id) from transaction_details where txn_receive_date \u003d \u00272022-12-05\u0027\nWARN  : Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.\nINFO  : Query ID \u003d root_20221205102946_66b7b0c7-e54c-4a59-b7c2-fada5a758289\nINFO  : Total jobs \u003d 1\nINFO  : Launching Job 1 out of 1\nINFO  : Starting task [Stage-1:MAPRED] in serial mode\nINFO  : Number of reduce tasks determined at compile time: 1\nINFO  : In order to change the average load for a reducer (in bytes):\nINFO  :   set hive.exec.reducers.bytes.per.reducer\u003d\u003cnumber\u003e\nINFO  : In order to limit the maximum number of reducers:\nINFO  :   set hive.exec.reducers.max\u003d\u003cnumber\u003e\nINFO  : In order to set a constant number of reducers:\nINFO  :   set mapreduce.job.reduces\u003d\u003cnumber\u003e\nINFO  : number of splits:1\nINFO  : Submitting tokens for job: job_1670220251196_0006\nINFO  : Executing with tokens: []\n"
+            "data": "23/07/16 13:38:00 [e17bb641-0351-42f4-a455-944ff2ba6b31 HiveServer2-Handler-Pool: Thread-68]: INFO ql.Driver: Compiling command(queryId\u003dhive_20230716133800_2c0e0b97-fa0f-43e4-bc97-827af932da02): \n\nSELECT count(id) from transaction_details where txn_receive_date \u003d \u00272022-12-05\u0027\n23/07/16 13:38:00 [e17bb641-0351-42f4-a455-944ff2ba6b31 HiveServer2-Handler-Pool: Thread-68]: INFO ql.Driver: Semantic Analysis Completed\n23/07/16 13:38:00 [e17bb641-0351-42f4-a455-944ff2ba6b31 HiveServer2-Handler-Pool: Thread-68]: INFO ql.Driver: Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:_c0, type:bigint, comment:null)], properties:null)\n23/07/16 13:38:00 [e17bb641-0351-42f4-a455-944ff2ba6b31 HiveServer2-Handler-Pool: Thread-68]: INFO ql.Driver: Completed compiling command(queryId\u003dhive_20230716133800_2c0e0b97-fa0f-43e4-bc97-827af932da02); Time taken: 0.314 seconds\n23/07/16 13:38:00 [HiveServer2-Background-Pool: Thread-91]: INFO ql.Driver: Concurrency mode is disabled, not creating a lock manager\n23/07/16 13:38:00 [HiveServer2-Background-Pool: Thread-91]: INFO ql.Driver: Executing command(queryId\u003dhive_20230716133800_2c0e0b97-fa0f-43e4-bc97-827af932da02): \n\nSELECT count(id) from transaction_details where txn_receive_date \u003d \u00272022-12-05\u0027\n23/07/16 13:38:00 [HiveServer2-Background-Pool: Thread-91]: INFO ql.Driver: Query ID \u003d hive_20230716133800_2c0e0b97-fa0f-43e4-bc97-827af932da02\n23/07/16 13:38:00 [HiveServer2-Background-Pool: Thread-91]: INFO ql.Driver: Total jobs \u003d 1\n23/07/16 13:38:00 [HiveServer2-Background-Pool: Thread-91]: INFO ql.Driver: Launching Job 1 out of 1\n23/07/16 13:38:00 [HiveServer2-Background-Pool: Thread-91]: INFO ql.Driver: Starting task [Stage-1:MAPRED] in serial mode\n23/07/16 13:38:00 [HiveServer2-Background-Pool: Thread-91]: INFO exec.Task: Tez session hasn\u0027t been created yet. Opening session\n23/07/16 13:38:04 [HiveServer2-Background-Pool: Thread-91]: INFO exec.Task: Dag name: SELECT count(id) from transac...\u00272022-12-05\u0027(Stage-1)\n23/07/16 13:38:05 [HiveServer2-Background-Pool: Thread-91]: INFO SessionState: Status: Running (Executing on YARN cluster with App id application_1689482028164_0002)\n\n23/07/16 13:38:08 [HiveServer2-Background-Pool: Thread-91]: INFO ql.Driver: Completed executing command(queryId\u003dhive_20230716133800_2c0e0b97-fa0f-43e4-bc97-827af932da02); Time taken: 7.985 seconds\n23/07/16 13:38:08 [HiveServer2-Background-Pool: Thread-91]: INFO ql.Driver: OK\n"
           },
           {
             "type": "TABLE",
-            "data": "_c0\n432\n"
+            "data": "_c0\n0\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "HIVE JOB",
+          "tooltip": "View in YARN WEB UI",
+          "group": "jdbc",
+          "values": [
+            {
+              "jobUrl": "application_1689482028164_0002"
+            }
+          ],
+          "interpreterSettingId": "hive"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641619517034_1700994531",
       "id": "paragraph_1641619517034_1700994531",
       "dateCreated": "2022-01-08 05:25:17.035",
-      "dateStarted": "2022-12-05 10:29:46.364",
-      "dateFinished": "2022-12-05 10:30:13.785",
+      "dateStarted": "2023-07-16 13:38:00.079",
+      "dateFinished": "2023-07-16 13:38:09.242",
       "status": "FINISHED"
     },
     {
