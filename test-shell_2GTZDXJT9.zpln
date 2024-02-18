@@ -3,7 +3,7 @@
     {
       "text": "%sh\n\n\nls -lart /",
       "user": "anonymous",
-      "dateUpdated": "2023-07-24 03:11:42.089",
+      "dateUpdated": "2024-02-05 03:10:06.060",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -27,7 +27,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "total 68\ndrwxr-xr-x   2 root     root 4096 Apr 15  2020 home\ndrwxr-xr-x   2 root     root 4096 Apr 15  2020 boot\nlrwxrwxrwx   1 root     root    8 Jan 13  2022 sbin -\u003e usr/sbin\nlrwxrwxrwx   1 root     root   10 Jan 13  2022 libx32 -\u003e usr/libx32\nlrwxrwxrwx   1 root     root    9 Jan 13  2022 lib64 -\u003e usr/lib64\nlrwxrwxrwx   1 root     root    9 Jan 13  2022 lib32 -\u003e usr/lib32\nlrwxrwxrwx   1 root     root    7 Jan 13  2022 lib -\u003e usr/lib\nlrwxrwxrwx   1 root     root    7 Jan 13  2022 bin -\u003e usr/bin\ndrwxr-xr-x   1 root     root 4096 Jan 13  2022 usr\ndrwxr-xr-x   2 root     root 4096 Jan 13  2022 srv\ndrwxr-xr-x   2 root     root 4096 Jan 13  2022 mnt\ndrwxr-xr-x   2 root     root 4096 Jan 13  2022 media\ndrwxr-xr-x   1 root     root 4096 Jan 13  2022 var\ndrwx------   2 root     root 4096 Jan 13  2022 root\ndrwxr-xr-x   5 root     root 4096 Jan 13  2022 run\n-rw-r--r--   1 root     root  477 Feb 28  2022 env_python_3_with_R.yml\ndrwxrwxr-x   5 zeppelin root 4096 Jul 23 00:49 apps\n-rwxr-xr-x   1 root     root    0 Jul 24 03:11 .dockerenv\ndr-xr-xr-x  13 root     root    0 Jul 24 03:11 sys\ndr-xr-xr-x 432 root     root    0 Jul 24 03:11 proc\ndrwxr-xr-x   1 root     root 4096 Jul 24 03:11 opt\ndrwxr-xr-x   1 root     root 4096 Jul 24 03:11 etc\ndrwxr-xr-x   5 root     root  340 Jul 24 03:11 dev\ndrwxr-xr-x   1 root     root 4096 Jul 24 03:11 ..\ndrwxr-xr-x   1 root     root 4096 Jul 24 03:11 .\ndrwxrwxrwt   1 root     root 4096 Jul 24 03:11 tmp\n"
+            "data": "total 72\ndrwxr-xr-x   2 root     root 4096 Apr 15  2020 home\ndrwxr-xr-x   2 root     root 4096 Apr 15  2020 boot\nlrwxrwxrwx   1 root     root    8 Jan 13  2022 sbin -\u003e usr/sbin\nlrwxrwxrwx   1 root     root   10 Jan 13  2022 libx32 -\u003e usr/libx32\nlrwxrwxrwx   1 root     root    9 Jan 13  2022 lib64 -\u003e usr/lib64\nlrwxrwxrwx   1 root     root    9 Jan 13  2022 lib32 -\u003e usr/lib32\nlrwxrwxrwx   1 root     root    7 Jan 13  2022 lib -\u003e usr/lib\nlrwxrwxrwx   1 root     root    7 Jan 13  2022 bin -\u003e usr/bin\ndrwxr-xr-x   1 root     root 4096 Jan 13  2022 usr\ndrwxr-xr-x   2 root     root 4096 Jan 13  2022 srv\ndrwxr-xr-x   2 root     root 4096 Jan 13  2022 mnt\ndrwxr-xr-x   2 root     root 4096 Jan 13  2022 media\ndrwxr-xr-x   1 root     root 4096 Jan 13  2022 var\ndrwx------   2 root     root 4096 Jan 13  2022 root\ndrwxr-xr-x   5 root     root 4096 Jan 13  2022 run\n-rw-r--r--   1 root     root  477 Feb 28  2022 env_python_3_with_R.yml\n-rwxr-xr-x   1 root     root    0 Feb  5 02:57 .dockerenv\ndr-xr-xr-x  13 root     root    0 Feb  5 02:57 sys\ndr-xr-xr-x 489 root     root    0 Feb  5 02:57 proc\ndrwxr-xr-x   1 root     root 4096 Feb  5 02:57 opt\ndrwxr-xr-x   1 root     root 4096 Feb  5 02:57 etc\ndrwxr-xr-x   5 root     root  340 Feb  5 02:57 dev\ndrwxr-xr-x   1 root     root 4096 Feb  5 02:57 ..\ndrwxr-xr-x   1 root     root 4096 Feb  5 02:57 .\ndrwxrwxr-x   5 zeppelin root 4096 Feb  5 03:07 apps\ndrwxrwxrwt   1 root     root 4096 Feb  5 03:10 tmp\n"
           }
         ]
       },
@@ -37,14 +37,14 @@
       "jobName": "paragraph_1640961453774_2002247069",
       "id": "paragraph_1640961453774_2002247069",
       "dateCreated": "2021-12-31 14:37:33.774",
-      "dateStarted": "2023-07-24 03:11:42.112",
-      "dateFinished": "2023-07-24 03:11:44.062",
+      "dateStarted": "2024-02-05 03:10:06.070",
+      "dateFinished": "2024-02-05 03:10:07.855",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\njava -version\n",
       "user": "anonymous",
-      "dateUpdated": "2023-07-24 03:11:53.383",
+      "dateUpdated": "2024-02-05 03:16:58.817",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -78,14 +78,14 @@
       "jobName": "paragraph_1640961467161_1663777995",
       "id": "paragraph_1640961467161_1663777995",
       "dateCreated": "2021-12-31 14:37:47.161",
-      "dateStarted": "2023-07-24 03:11:53.388",
-      "dateFinished": "2023-07-24 03:11:53.437",
+      "dateStarted": "2024-02-05 03:16:58.819",
+      "dateFinished": "2024-02-05 03:16:58.891",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\npython --version",
       "user": "anonymous",
-      "dateUpdated": "2023-07-24 03:11:57.545",
+      "dateUpdated": "2024-02-05 03:17:06.692",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -119,8 +119,8 @@
       "jobName": "paragraph_1640964883683_819741172",
       "id": "paragraph_1640964883683_819741172",
       "dateCreated": "2021-12-31 15:34:43.683",
-      "dateStarted": "2023-07-24 03:11:57.548",
-      "dateFinished": "2023-07-24 03:11:57.563",
+      "dateStarted": "2024-02-05 03:17:06.693",
+      "dateFinished": "2024-02-05 03:17:06.719",
       "status": "FINISHED"
     },
     {
@@ -167,7 +167,7 @@
     {
       "text": "%sh.terminal\n\nany char\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:16:40.697",
+      "dateUpdated": "2024-02-05 03:13:17.761",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -192,7 +192,7 @@
         "msg": [
           {
             "type": "ANGULAR",
-            "data": "\n\u003cdiv class\u003d\"row\" style\u003d\"width:100%\"\u003e\n  \u003cdiv class\u003d\"col-md-12\" ng-switch\u003dTERMINAL_SOCKET_STATUS\u003e\n    \u003cb\u003eTerminal - zeppelin (172.18.0.3)\u003c/b\u003e\n    \u003cb style\u003d\"color: #999; margin-left:10px;\"\u003eSTATUS: \u003c/b\u003e\n    \u003ci ng-switch-when\u003d\u0027TERMINAL_SOCKET_CONNECT\u0027 ng-style\u003d\"{\u0027color\u0027:\u0027green\u0027}\"\u003eCONNECTED\u003c/i\u003e\n    \u003ci ng-switch-when\u003d\u0027TERMINAL_SOCKET_CLOSE\u0027 ng-style\u003d\"{\u0027color\u0027:\u0027red\u0027}\"\u003eDISCONNECTED\u003c/i\u003e\n    \u003ci ng-switch-default ng-style\u003d\"{\u0027color\u0027:\u0027red\u0027}\"\u003eERROR\u003c/i\u003e\n    \u003ca ng-if\u003d\"TERMINAL_SOCKET_STATUS!\u003d\u0027TERMINAL_SOCKET_CONNECT\u0027\" class\u003d\"fa fa-info-circle interpreter-binding-mode-info-link\" aria-hidden\u003d\"true\" tooltip-placement\u003d\"bottom\" uib-tooltip\u003d\"Please run this paragraph again\"\u003e\u003c/a\u003e\n\n    \u003c!--button class\u003d\"btn btn-default btn-xs\" style\u003d\"margin-left:40px;\"\n      ng-click\u003d\"\" tooltip-placement\u003d\"top\" uib-tooltip\u003d\"upload file to host\"\u003e\u003cspan class\u003d\"icon-plus shortcut-icon\"\u003e\u003c/span\u003e Upload File\n    \u003c/button\u003e\n    \u003cbutton class\u003d\"btn btn-default btn-xs\" style\u003d\"margin-left:4px;\"\n      ng-click\u003d\"\" tooltip-placement\u003d\"top\" uib-tooltip\u003d\"download file from host\"\u003e \u003cspan class\u003d\"icon-arrow-down shortcut-icon\"\u003e\u003c/span\u003e Download File\n    \u003c/button--\u003e\n\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003chr style\u003d\"margin-top: 10px; margin-bottom: 10px;\"/\u003e\n\n\u003cform style\u003d\"width:100%\"\u003e\n  \u003ciframe src\u003d\"http://172.18.0.3:33137?noteId\u003d2GTZDXJT9\u0026paragraphId\u003dparagraph_1640964950987_507423571\u0026t\u003d1669522601331\" height\u003d\"400\" width\u003d\"100%\" frameborder\u003d\"0\" scrolling\u003d\"0\"\u003e\u003c/iframe\u003e\n\u003c/form\u003e\n"
+            "data": "\n\u003cdiv class\u003d\"row\" style\u003d\"width:100%\"\u003e\n  \u003cdiv class\u003d\"col-md-12\" ng-switch\u003dTERMINAL_SOCKET_STATUS\u003e\n    \u003cb\u003eTerminal - zeppelin.sandbox.net (172.18.0.2)\u003c/b\u003e\n    \u003cb style\u003d\"color: #999; margin-left:10px;\"\u003eSTATUS: \u003c/b\u003e\n    \u003ci ng-switch-when\u003d\u0027TERMINAL_SOCKET_CONNECT\u0027 ng-style\u003d\"{\u0027color\u0027:\u0027green\u0027}\"\u003eCONNECTED\u003c/i\u003e\n    \u003ci ng-switch-when\u003d\u0027TERMINAL_SOCKET_CLOSE\u0027 ng-style\u003d\"{\u0027color\u0027:\u0027red\u0027}\"\u003eDISCONNECTED\u003c/i\u003e\n    \u003ci ng-switch-default ng-style\u003d\"{\u0027color\u0027:\u0027red\u0027}\"\u003eERROR\u003c/i\u003e\n    \u003ca ng-if\u003d\"TERMINAL_SOCKET_STATUS!\u003d\u0027TERMINAL_SOCKET_CONNECT\u0027\" class\u003d\"fa fa-info-circle interpreter-binding-mode-info-link\" aria-hidden\u003d\"true\" tooltip-placement\u003d\"bottom\" uib-tooltip\u003d\"Please run this paragraph again\"\u003e\u003c/a\u003e\n\n    \u003c!--button class\u003d\"btn btn-default btn-xs\" style\u003d\"margin-left:40px;\"\n      ng-click\u003d\"\" tooltip-placement\u003d\"top\" uib-tooltip\u003d\"upload file to host\"\u003e\u003cspan class\u003d\"icon-plus shortcut-icon\"\u003e\u003c/span\u003e Upload File\n    \u003c/button\u003e\n    \u003cbutton class\u003d\"btn btn-default btn-xs\" style\u003d\"margin-left:4px;\"\n      ng-click\u003d\"\" tooltip-placement\u003d\"top\" uib-tooltip\u003d\"download file from host\"\u003e \u003cspan class\u003d\"icon-arrow-down shortcut-icon\"\u003e\u003c/span\u003e Download File\n    \u003c/button--\u003e\n\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003chr style\u003d\"margin-top: 10px; margin-bottom: 10px;\"/\u003e\n\n\u003cform style\u003d\"width:100%\"\u003e\n  \u003ciframe src\u003d\"http://172.18.0.2:44899?noteId\u003d2GTZDXJT9\u0026paragraphId\u003dparagraph_1640964950987_507423571\u0026t\u003d1707102798378\" height\u003d\"400\" width\u003d\"100%\" frameborder\u003d\"0\" scrolling\u003d\"0\"\u003e\u003c/iframe\u003e\n\u003c/form\u003e\n"
           }
         ]
       },
@@ -202,14 +202,55 @@
       "jobName": "paragraph_1640964950987_507423571",
       "id": "paragraph_1640964950987_507423571",
       "dateCreated": "2021-12-31 15:35:50.987",
-      "dateStarted": "2022-11-27 04:16:40.700",
-      "dateFinished": "2022-11-27 04:16:41.361",
+      "dateStarted": "2024-02-05 03:13:17.763",
+      "dateFinished": "2024-02-05 03:13:18.408",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$HIVE_HOME/bin/beeline -u \"jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\" -e \u0027show tables\u0027\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-05 03:16:50.448",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "WARNING: Use \"yarn jar\" to launch YARN applications.\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/opt/hive/lib/log4j-slf4j-impl-2.17.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/opt/hadoop/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]\nConnecting to jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\nConnected to: Apache Hive (version 3.1.3)\nDriver: Hive JDBC (version 3.1.3)\nTransaction isolation: TRANSACTION_REPEATABLE_READ\n+------------------------------+\n|           tab_name           |\n+------------------------------+\n| 10e4                         |\n| 10e6                         |\n| global_external_table        |\n| global_managed_table         |\n| optrans_tbl                  |\n| permanent_view               |\n| product_revenue              |\n| sales_delta_managed          |\n| transact_tbl                 |\n| tra1n4sa crtoiwosn _sdeelteacitle_dh i(v1e._0t6b1l  s e|c\n| transaction_details          |\n| transaction_details_orc      |\n| transaction_details_parquet  |\n| tweeter_tweets               |\n+------------------------------+\nonds)\nBeeline version 3.1.3 by Apache Hive\nClosing: 0: jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669522585303_1695796215",
+      "id": "paragraph_1669522585303_1695796215",
+      "dateCreated": "2022-11-27 04:16:25.303",
+      "dateStarted": "2024-02-05 03:10:58.096",
+      "dateFinished": "2024-02-05 03:11:01.077",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 04:16:25.303",
+      "dateUpdated": "2024-02-05 03:10:58.096",
       "progress": 0,
       "config": {},
       "settings": {
@@ -219,9 +260,9 @@
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669522585303_1695796215",
-      "id": "paragraph_1669522585303_1695796215",
-      "dateCreated": "2022-11-27 04:16:25.303",
+      "jobName": "paragraph_1707102658095_1212925437",
+      "id": "paragraph_1707102658095_1212925437",
+      "dateCreated": "2024-02-05 03:10:58.095",
       "status": "READY"
     }
   ],

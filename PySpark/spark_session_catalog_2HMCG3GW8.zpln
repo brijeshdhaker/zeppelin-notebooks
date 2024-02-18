@@ -3,7 +3,7 @@
     {
       "text": "%pyspark\n\nspark.catalog.currentDatabase()",
       "user": "anonymous",
-      "dateUpdated": "2022-12-06 15:45:24.618",
+      "dateUpdated": "2024-02-17 11:57:21.244",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -23,11 +23,11 @@
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
+        "code": "ERROR",
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u0027default\u0027\n"
+            "data": "java.lang.RuntimeException\n\tat org.apache.zeppelin.interpreter.remote.PooledRemoteClient.callRemoteFunction(PooledRemoteClient.java:119)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:100)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.open(RemoteInterpreter.java:133)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getFormType(RemoteInterpreter.java:271)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:438)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:69)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
           }
         ]
       },
@@ -37,12 +37,14 @@
       "jobName": "paragraph_1670341509377_80678223",
       "id": "paragraph_1670340929434_1715832294",
       "dateCreated": "2022-12-06 15:45:09.377",
-      "status": "READY"
+      "dateStarted": "2024-02-17 11:57:21.245",
+      "dateFinished": "2024-02-17 11:57:21.246",
+      "status": "ERROR"
     },
     {
       "text": "%pyspark\n\nspark.catalog.databaseExists(\"default\")\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-06 15:47:35.400",
+      "dateUpdated": "2024-02-17 11:56:54.356",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -66,7 +68,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Fail to execute line 3: spark.catalog.databaseExists(\"default\")\nTraceback (most recent call last):\n  File \"/tmp/hadoop-root/nm-local-dir/usercache/zeppelin/appcache/application_1670331107952_0005/container_1670331107952_0005_01_000001/tmp/python7830983884828520469/zeppelin_python.py\", line 167, in \u003cmodule\u003e\n    exec(code, _zcUserQueryNameSpace)\n  File \"\u003cstdin\u003e\", line 3, in \u003cmodule\u003e\nAttributeError: \u0027Catalog\u0027 object has no attribute \u0027databaseExists\u0027\n"
+            "data": "java.lang.RuntimeException\n\tat org.apache.zeppelin.interpreter.remote.PooledRemoteClient.callRemoteFunction(PooledRemoteClient.java:119)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:100)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.open(RemoteInterpreter.java:133)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getFormType(RemoteInterpreter.java:271)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:438)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:69)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
           }
         ]
       },
@@ -76,8 +78,8 @@
       "jobName": "paragraph_1670341647548_1943455616",
       "id": "paragraph_1670341647548_1943455616",
       "dateCreated": "2022-12-06 15:47:27.548",
-      "dateStarted": "2022-12-06 15:47:35.403",
-      "dateFinished": "2022-12-06 15:47:35.415",
+      "dateStarted": "2024-02-17 11:56:54.366",
+      "dateFinished": "2024-02-17 11:56:54.367",
       "status": "ERROR"
     },
     {

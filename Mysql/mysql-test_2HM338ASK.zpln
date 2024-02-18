@@ -3,7 +3,7 @@
     {
       "text": "%mysql\n\nshow databases;",
       "user": "anonymous",
-      "dateUpdated": "2023-07-23 02:05:30.575",
+      "dateUpdated": "2024-02-17 11:28:26.560",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -54,7 +54,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "Database\nHMS239\nHMS4\nHMS41\nPUBLIC\nairflow\ninformation_schema\nmetastore\nmysql\nperformance_schema\nsys\n"
+            "data": "Database\nPUBLIC\nairflow\ninformation_schema\nmetastore\nmysql\nperformance_schema\nsys\n"
           }
         ]
       },
@@ -64,8 +64,8 @@
       "jobName": "paragraph_1669944087805_535027863",
       "id": "paragraph_1669944087805_535027863",
       "dateCreated": "2022-12-02 01:21:27.806",
-      "dateStarted": "2023-07-23 02:05:30.577",
-      "dateFinished": "2023-07-23 02:05:32.596",
+      "dateStarted": "2024-02-17 11:28:26.570",
+      "dateFinished": "2024-02-17 11:28:28.656",
       "status": "FINISHED"
     },
     {

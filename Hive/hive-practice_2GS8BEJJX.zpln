@@ -1,9 +1,44 @@
 {
   "paragraphs": [
     {
+      "text": "%sh\nexport HADOOP_CLASSPATH\u003d$(/opt/hadoop/bin/hadoop classpath)\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-05 17:10:39.738",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1707152216309_1982754555",
+      "id": "paragraph_1707152216309_1982754555",
+      "dateCreated": "2024-02-05 16:56:56.309",
+      "dateStarted": "2024-02-05 17:10:39.742",
+      "dateFinished": "2024-02-05 17:10:39.894",
+      "status": "FINISHED"
+    },
+    {
       "text": "%hive\n\nshow tables;",
       "user": "anonymous",
-      "dateUpdated": "2023-07-21 02:45:17.369",
+      "dateUpdated": "2024-02-17 11:08:12.058",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -80,12 +115,8 @@
         "code": "SUCCESS",
         "msg": [
           {
-            "type": "TEXT",
-            "data": "23/07/21 02:45:15 [0762fdcf-3dc3-4ad1-9928-4e5adcd5251c HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Compiling command(queryId\u003dhive_20230721024515_f0211389-a989-4b62-b30d-96793656f76f): \n\nshow tables\n23/07/21 02:45:16 [0762fdcf-3dc3-4ad1-9928-4e5adcd5251c HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Semantic Analysis Completed\n23/07/21 02:45:16 [0762fdcf-3dc3-4ad1-9928-4e5adcd5251c HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:tab_name, type:string, comment:from deserializer)], properties:null)\n23/07/21 02:45:16 [0762fdcf-3dc3-4ad1-9928-4e5adcd5251c HiveServer2-Handler-Pool: Thread-32]: INFO ql.Driver: Completed compiling command(queryId\u003dhive_20230721024515_f0211389-a989-4b62-b30d-96793656f76f); Time taken: 0.503 seconds\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: Concurrency mode is disabled, not creating a lock manager\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: Executing command(queryId\u003dhive_20230721024515_f0211389-a989-4b62-b30d-96793656f76f): \n\nshow tables\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: Starting task [Stage-0:DDL] in serial mode\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: Completed executing command(queryId\u003dhive_20230721024515_f0211389-a989-4b62-b30d-96793656f76f); Time taken: 0.466 seconds\n23/07/21 02:45:16 [HiveServer2-Background-Pool: Thread-34]: INFO ql.Driver: OK\n"
-          },
-          {
             "type": "TABLE",
-            "data": "tab_name\ne_students\nm_students\n"
+            "data": "tab_name\ne_students\nm_students\ntransaction_details\n"
           }
         ]
       },
@@ -95,15 +126,216 @@
       "jobName": "paragraph_1687679032442_491873234",
       "id": "paragraph_1687679032442_491873234",
       "dateCreated": "2023-06-25 07:43:52.443",
-      "dateStarted": "2023-07-21 02:45:15.352",
-      "dateFinished": "2023-07-21 02:45:16.949",
+      "dateStarted": "2024-02-17 11:08:12.080",
+      "dateFinished": "2024-02-17 11:08:15.542",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$HIVE_HOME/bin/beeline -u \"jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\" -e \u0027show tables\u0027",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-09 04:32:04.774",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "WARNING: Use \"yarn jar\" to launch YARN applications.\nConnecting to jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\nConnected to: Apache Hive (version 3.1.3)\nDriver: Hive JDBC (version 3.1.3)\nTransaction isolation: TRANSACTION_REPEATABLE_READ\n+-------------+\n|  tab_name   |\n+-------------+\n| e_students  |\n| m_students  |\n+-------------+\n2 rows selected (1.063 seconds)\nBeeline version 3.1.3 by Apache Hive\nClosing: 0: jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1707102683927_1620251923",
+      "id": "paragraph_1707102683927_1620251923",
+      "dateCreated": "2024-02-05 03:11:23.927",
+      "dateStarted": "2024-02-09 04:32:04.778",
+      "dateFinished": "2024-02-09 04:32:09.111",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$HIVE_HOME/bin/beeline -u \"jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\"",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-05 03:12:52.605",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "WARNING: Use \"yarn jar\" to launch YARN applications.\nSLF4J: Class path contains multiple SLF4J bindings.\nSLF4J: Found binding in [jar:file:/opt/hive/lib/log4j-slf4j-impl-2.17.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: Found binding in [jar:file:/opt/hadoop/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]\nSLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.\nSLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]\nConnecting to jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\nConnected to: Apache Hive (version 3.1.3)\nDriver: Hive JDBC (version 3.1.3)\nTransaction isolation: TRANSACTION_REPEATABLE_READ\nBeeline version 3.1.3 by Apache Hive\n0: jdbc:hive2://hiveserver.sandbox.net:10000/\u003e Closing: 0: jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1707102693735_1581395879",
+      "id": "paragraph_1707102693735_1581395879",
+      "dateCreated": "2024-02-05 03:11:33.735",
+      "dateStarted": "2024-02-05 03:12:52.609",
+      "dateFinished": "2024-02-05 03:12:54.022",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$HIVE_HOME/bin/beeline -u \"jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\" -f \"/apps/sandbox/hive/hql/table.hql\"\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-09 04:38:27.466",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "WARNING: Use \"yarn jar\" to launch YARN applications.\nConnecting to jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\nConnected to: Apache Hive (version 3.1.3)\nDriver: Hive JDBC (version 3.1.3)\nTransaction isolation: TRANSACTION_REPEATABLE_READ\n0: jdbc:hive2://hiveserver.sandbox.net:10000/\u003e CREATE EXTERNAL TABLE IF NOT EXIS \rTS transaction_details (\n. . . . . . . . . . . . . . . . . . . . . . .\u003e     transaction_id int,\n. . . . . . . . . . . . . . . . . . . . . . .\u003e     tansaction_uuid string,\n. . . . . . . . . . . . . . . . . . . . . . .\u003e     transaction_card_type string, \r\n. . . . . . . . . . . . . . . . . . . . . . .\u003e     transaction_ecommerce_website \r_name string,\n. . . . . . . . . . . . . . . . . . . . . . .\u003e     transaction_product_name stri \rng,\n. . . . . . . . . . . . . . . . . . . . . . .\u003e     transaction_datetime string,\n. . . . . . . . . . . . . . . . . . . . . . .\u003e     transaction_amount double,\n. . . . . . . . . . . . . . . . . . . . . . .\u003e     transaction_city_name string, \r\n. . . . . . . . . . . . . . . . . . . . . . .\u003e     transaction_country_name stri \rng\n. . . . . . . . . . . . . . . . . . . . . . .\u003e )\n. . . . . . . . . . . . . . . . . . . . . . .\u003e COMMENT \u0027Transaction Details Exte \rrnal Table\u0027\n. . . . . . . . . . . . . . . . . . . . . . .\u003e PARTITIONED BY(txn_receive_date s \rtring)\n. . . . . . . . . . . . . . . . . . . . . . .\u003e STORED AS Parquet\n. . . . . . . . . . . . . . . . . . . . . . .\u003e TBLPROPERTIES(\"creator\"\u003d\"Brijesh  \rK Dhaker\");\nNo rows affected (1.155 seconds)\n0: jdbc:hive2://hiveserver.sandbox.net:10000/\u003e \n0: jdbc:hive2://hiveserver.sandbox.net:10000/\u003e Closing: 0: jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1707453388768_744914426",
+      "id": "paragraph_1707453388768_744914426",
+      "dateCreated": "2024-02-09 04:36:28.768",
+      "dateStarted": "2024-02-09 04:37:19.598",
+      "dateFinished": "2024-02-09 04:37:21.990",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$HIVE_HOME/bin/beeline -u \"jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\" -e \"describe formatted transaction_details\"\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-09 04:38:33.135",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "WARNING: Use \"yarn jar\" to launch YARN applications.\nConnecting to jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\nConnected to: Apache Hive (version 3.1.3)\nDriver: Hive JDBC (version 3.1.3)\nTransaction isolation: TRANSACTION_REPEATABLE_READ\n+-------------------------------------+----------------------------------------------------+-------------------------------------+\n|              col_name               |                     data_type                      |               comment               |\n+-------------------------------------+----------------------------------------------------+-------------------------------------+\n| # col_name                          | data_type                                          | comment                             |\n| transaction_id                      | int                                                |                                     |\n| tansaction_uuid                     | string                                             |                                     |\n| transaction_card_type               | string                                             |                                     |\n| transaction_ecommerce_website_name  | string                                             |                                     |\n| transaction_product_name            | string                                             |                                     |\n| transaction_datetime                | string                                             |                                     |\n| transaction_amount                  | double                                             |                                     |\n| transaction_city_name               | string                                             |                                     |\n| transaction_country_name            | string                                             |                                     |\n|                                     | NULL                                               | NULL                                |\n| # Partition Information             | NULL                                               | NULL                                |\n| # col_name                          | data_type                                          | comment                             |\n| txn_receive_date                    | string                                             |                                     |\n|                                     | NULL                                               | NULL                                |\n| # Detailed Table Information        | NULL                                               | NULL                                |\n| Database:                           | default                                            | NULL                                |\n| OwnerType:                          | USER                                               | NULL                                |\n| Owner:                              | hive                                               | NULL                                |\n| CreateTime:                         | Fri Feb 09 04:37:21 GMT 2024                       | NULL                                |\n| LastAccessTime:                     | UNKNOWN                                            | NULL                                |\n| Retention:                          | 0                                                  | NULL                                |\n| Location:                           | hdfs://namenode.sandbox.net:9000/warehouse/tablespace/external/hive/transaction_details | NULL                                |\n| Table Type:                         | EXTERNAL_TABLE                                     | NULL                                |\n| Table Parameters:                   | NULL                                               | NULL                                |\n|                                     | COLUMN_STATS_ACCURATE                              | {\\\"BASIC_STATS\\\":\\\"true\\\"}          |\n|                                     | EXTERNAL                                           | TRUE                                |\n|                                     | bucketing_version                                  | 2                                   |\n|                                     | comment                                            | Transaction Details External Table  |\n|                                     | creator                                            | Brijesh K Dhaker                    |\n|                                     | numFiles                                           | 0                                   |\n|                                     | numPartitions                                      | 0                                   |\n|                                     | numRows                                            | 0                                   |\n|                                     | rawDataSize                                        | 0                                   |\n|                                     | totalSize                                          | 0                                   |\n|                                     | transient_lastDdlTime                              | 1707453441                          |\n|                                     | NULL                                               | NULL                                |\n| # Storage Information               | NULL                                               | NULL                                |\n| SerDe Library:                      | org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe | NULL                                |\n| InputFormat:                        | org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat | NULL                                |\n| OutputFormat:                       | org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat | NULL                                |\n| Compressed:                         | No                                                 | NULL                                |\n| Num Buckets:                        | -1                                                 | NULL                                |\n| Bucket Columns:                     | []                                                 | NULL                                |\n| Sort Columns:                       | []                                                 | NULL                                |\n4|7  Srtoowrsa gsee lDeecstce dP a(r0a.m3s8:7   s e c o n d s )       | NULL                                      \n         | NULL                                |\n|                                     | serialization.format                               | 1                                   |\n+-------------------------------------+----------------------------------------------------+-------------------------------------+\nBeeline version 3.1.3 by Apache Hive\nClosing: 0: jdbc:hive2://hiveserver.sandbox.net:10000/default;principal\u003dhive/_HOST@SANDBOX.NET\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1707453466275_524600733",
+      "id": "paragraph_1707453466275_524600733",
+      "dateCreated": "2024-02-09 04:37:46.275",
+      "dateStarted": "2024-02-09 04:38:18.547",
+      "dateFinished": "2024-02-09 04:38:20.133",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh.terminal\n\nany char\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-05 03:18:43.284",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "checkEmpty": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "ANGULAR",
+            "data": "\n\u003cdiv class\u003d\"row\" style\u003d\"width:100%\"\u003e\n  \u003cdiv class\u003d\"col-md-12\" ng-switch\u003dTERMINAL_SOCKET_STATUS\u003e\n    \u003cb\u003eTerminal - zeppelin.sandbox.net (172.18.0.2)\u003c/b\u003e\n    \u003cb style\u003d\"color: #999; margin-left:10px;\"\u003eSTATUS: \u003c/b\u003e\n    \u003ci ng-switch-when\u003d\u0027TERMINAL_SOCKET_CONNECT\u0027 ng-style\u003d\"{\u0027color\u0027:\u0027green\u0027}\"\u003eCONNECTED\u003c/i\u003e\n    \u003ci ng-switch-when\u003d\u0027TERMINAL_SOCKET_CLOSE\u0027 ng-style\u003d\"{\u0027color\u0027:\u0027red\u0027}\"\u003eDISCONNECTED\u003c/i\u003e\n    \u003ci ng-switch-default ng-style\u003d\"{\u0027color\u0027:\u0027red\u0027}\"\u003eERROR\u003c/i\u003e\n    \u003ca ng-if\u003d\"TERMINAL_SOCKET_STATUS!\u003d\u0027TERMINAL_SOCKET_CONNECT\u0027\" class\u003d\"fa fa-info-circle interpreter-binding-mode-info-link\" aria-hidden\u003d\"true\" tooltip-placement\u003d\"bottom\" uib-tooltip\u003d\"Please run this paragraph again\"\u003e\u003c/a\u003e\n\n    \u003c!--button class\u003d\"btn btn-default btn-xs\" style\u003d\"margin-left:40px;\"\n      ng-click\u003d\"\" tooltip-placement\u003d\"top\" uib-tooltip\u003d\"upload file to host\"\u003e\u003cspan class\u003d\"icon-plus shortcut-icon\"\u003e\u003c/span\u003e Upload File\n    \u003c/button\u003e\n    \u003cbutton class\u003d\"btn btn-default btn-xs\" style\u003d\"margin-left:4px;\"\n      ng-click\u003d\"\" tooltip-placement\u003d\"top\" uib-tooltip\u003d\"download file from host\"\u003e \u003cspan class\u003d\"icon-arrow-down shortcut-icon\"\u003e\u003c/span\u003e Download File\n    \u003c/button--\u003e\n\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003chr style\u003d\"margin-top: 10px; margin-bottom: 10px;\"/\u003e\n\n\u003cform style\u003d\"width:100%\"\u003e\n  \u003ciframe src\u003d\"http://172.18.0.2:44899?noteId\u003d2GS8BEJJX\u0026paragraphId\u003dparagraph_1707103116195_284110558\u0026t\u003d1707103123297\" height\u003d\"400\" width\u003d\"100%\" frameborder\u003d\"0\" scrolling\u003d\"0\"\u003e\u003c/iframe\u003e\n\u003c/form\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1707103116195_284110558",
+      "id": "paragraph_1707103116195_284110558",
+      "dateCreated": "2024-02-05 03:18:36.195",
+      "dateStarted": "2024-02-05 03:18:43.286",
+      "dateFinished": "2024-02-05 03:18:43.299",
       "status": "FINISHED"
     },
     {
       "title": "List All Databases",
       "text": "%hive\n\n--\nSHOW DATABASES;\n\n-- SELECT CURRENT_DATE;\n-- SELECT CURRENT_TIMESTAMP;\n-- SELECT unix_timestamp();\n-- SELECT from_unixtime(unix_timestamp());\n\n",
       "user": "anonymous",
-      "dateUpdated": "2023-07-16 05:00:51.445",
+      "dateUpdated": "2024-02-17 11:08:24.956",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -274,14 +506,14 @@
       "jobName": "paragraph_1639224747962_2073327326",
       "id": "paragraph_1639224747962_2073327326",
       "dateCreated": "2021-12-11 17:42:27.989",
-      "dateStarted": "2023-07-16 05:00:51.451",
-      "dateFinished": "2023-07-16 05:00:51.597",
+      "dateStarted": "2024-02-17 11:08:24.964",
+      "dateFinished": "2024-02-17 11:08:25.145",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\nshow tables;",
       "user": "anonymous",
-      "dateUpdated": "2023-07-16 05:01:00.738",
+      "dateUpdated": "2024-02-17 11:08:29.507",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -332,7 +564,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "tab_name\ne_students\nm_students\n"
+            "data": "tab_name\ne_students\nm_students\ntransaction_details\n"
           }
         ]
       },
@@ -342,14 +574,14 @@
       "jobName": "paragraph_1644973722839_1227372135",
       "id": "paragraph_1644973722839_1227372135",
       "dateCreated": "2022-02-16 01:08:42.839",
-      "dateStarted": "2023-07-16 05:01:00.744",
-      "dateFinished": "2023-07-16 05:01:00.893",
+      "dateStarted": "2024-02-17 11:08:29.514",
+      "dateFinished": "2024-02-17 11:08:29.685",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\ndfs -ls / ;",
       "user": "anonymous",
-      "dateUpdated": "2023-07-21 02:45:47.294",
+      "dateUpdated": "2024-02-17 11:08:37.165",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -396,11 +628,11 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
+        "code": "SUCCESS",
         "msg": [
           {
-            "type": "TEXT",
-            "data": "Error while processing statement: null"
+            "type": "TABLE",
+            "data": "DFS Output\nFound 7 items\ndrwxrwxrwx   - yarn   hadoop          0 2024-02-06 04:19 /apps\ndrwxrwxrwx   - hdfs   hadoop          0 2024-02-15 18:18 /archives\ndrwxr-xr-x   - hbase  hadoop          0 2024-02-17 05:47 /hbase\ndrwxrwx---   - mapred hadoop          0 2024-02-06 03:49 /mapred\ndrwxrwxrwx   - hive   hadoop          0 2024-02-15 01:38 /tmp\ndrwxrwxrwx   - hive   hadoop          0 2024-02-06 04:16 /user\ndrwxr-xr-x   - hive   hdfs            0 2024-02-06 04:10 /warehouse\n"
           }
         ]
       },
@@ -410,9 +642,9 @@
       "jobName": "paragraph_1670737248335_684494031",
       "id": "paragraph_1670737248335_684494031",
       "dateCreated": "2022-12-11 05:40:48.335",
-      "dateStarted": "2023-07-21 02:45:31.295",
-      "dateFinished": "2023-07-21 02:45:31.594",
-      "status": "ERROR"
+      "dateStarted": "2024-02-17 11:08:37.171",
+      "dateFinished": "2024-02-17 11:08:37.317",
+      "status": "FINISHED"
     },
     {
       "text": "%hive\n\n\nselect array(\u0027Tom\u0027,\u0027Jerry\u0027,\u0027Emily\u0027);\n\n",
@@ -1571,7 +1803,16 @@
   "version": "0.10.0",
   "noteParams": {},
   "noteForms": {},
-  "angularObjects": {},
+  "angularObjects": {
+    "sh-shared_process": [
+      {
+        "name": "TERMINAL_SOCKET_STATUS",
+        "object": "TERMINAL_SOCKET_CLOSE",
+        "noteId": "2GS8BEJJX",
+        "paragraphId": "paragraph_1707103116195_284110558"
+      }
+    ]
+  },
   "config": {
     "isZeppelinNotebookCronEnable": false,
     "looknfeel": "default",

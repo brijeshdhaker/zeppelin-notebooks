@@ -4,7 +4,7 @@
       "title": "Introduction",
       "text": "%md\n\n# Introduction\n\n[Apache Flink](https://flink.apache.org/) is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams. This is Flink tutorial for running classical wordcount in both batch and streaming mode. \n\nThere\u0027re 3 things you need to do before using flink in Zeppelin.\n\n* Download [Flink 1.10 or afterwards](https://flink.apache.org/downloads.html)  (Only 1.10 afterwards are supported), unpack it and set `FLINK_HOME` in Flink interpreter setting to this location.\n* Copy flink-python_2.11–x.x.x.jar from flink opt folder to flink lib folder (it is used by Pyflink which is supported in Zeppelin)\n* If you want to run yarn mode, you need to set `HADOOP_CONF_DIR` in flink interpreter setting. And make sure `hadoop` is in your `PATH`, because internally Flink will call command `hadoop classpath` and put all the hadoop related jars on the classpath of Flink interpreter process.\n\nThere\u0027re 6 sub interpreters in Flink interpreter, each is used for different purpose. However they are in the the JVM and share the same ExecutionEnviroment/StremaExecutionEnvironment/BatchTableEnvironment/StreamTableEnvironment.\n\n\n* `%flink`\t- Creates ExecutionEnvironment/StreamExecutionEnvironment/BatchTableEnvironment/StreamTableEnvironment and provides a Scala environment \n* `%flink.pyflink`\t- Provides a python environment \n* `%flink.ipyflink`\t- Provides an ipython environment \n* `%flink.ssql`\t - Provides a stream sql environment \n* `%flink.bsql`\t- Provides a batch sql environment ",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 04:41:59.563",
+      "dateUpdated": "2024-02-06 14:03:52.327",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -19,8 +19,8 @@
         },
         "editorMode": "ace/mode/markdown",
         "title": false,
-        "editorHide": true,
-        "tableHide": false
+        "editorHide": false,
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -41,15 +41,15 @@
       "jobName": "paragraph_1580997898536_-1239502599",
       "id": "paragraph_1580997898536_-1239502599",
       "dateCreated": "2020-02-06 22:04:58.536",
-      "dateStarted": "2021-07-26 04:41:59.562",
-      "dateFinished": "2021-07-26 04:41:59.580",
+      "dateStarted": "2024-02-04 12:45:59.117",
+      "dateFinished": "2024-02-04 12:46:00.990",
       "status": "FINISHED"
     },
     {
       "title": "Batch WordCount",
       "text": "%flink\n\nval data \u003d benv.fromElements(\"hello world\", \"hello flink\", \"hello hadoop\")\ndata.flatMap(line \u003d\u003e line.split(\"\\\\s\"))\n             .map(w \u003d\u003e (w, 1))\n             .groupBy(0)\n             .sum(1)\n             .print()\n",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 04:39:20.665",
+      "dateUpdated": "2024-02-06 02:50:38.393",
       "progress": 0,
       "config": {
         "colWidth": 6.0,
@@ -70,42 +70,29 @@
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
+        "code": "ERROR",
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.api.scala.DataSet[String]\u001b[0m \u003d org.apache.flink.api.scala.DataSet@2d73af10\n(flink,1)\n(hadoop,1)\n(hello,3)\n(world,1)\n"
+            "data": "org.apache.zeppelin.interpreter.InterpreterException: org.apache.zeppelin.interpreter.InterpreterException: Fail to open FlinkInterpreter\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:76)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:844)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:752)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.FIFOScheduler.lambda$runJobInScheduler$0(FIFOScheduler.java:42)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.zeppelin.interpreter.InterpreterException: Fail to open FlinkInterpreter\n\tat org.apache.zeppelin.flink.FlinkInterpreter.open(FlinkInterpreter.java:80)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:70)\n\t... 8 more\nCaused by: java.lang.IllegalArgumentException: Can\u0027t get Kerberos realm\n\tat org.apache.hadoop.security.HadoopKerberosName.setConfiguration(HadoopKerberosName.java:71)\n\tat org.apache.hadoop.security.UserGroupInformation.initialize(UserGroupInformation.java:319)\n\tat org.apache.hadoop.security.UserGroupInformation.ensureInitialized(UserGroupInformation.java:304)\n\tat org.apache.hadoop.security.UserGroupInformation.doSubjectLogin(UserGroupInformation.java:1828)\n\tat org.apache.hadoop.security.UserGroupInformation.createLoginUser(UserGroupInformation.java:710)\n\tat org.apache.hadoop.security.UserGroupInformation.getLoginUser(UserGroupInformation.java:660)\n\tat org.apache.hadoop.security.UserGroupInformation.getCurrentUser(UserGroupInformation.java:571)\n\tat org.apache.hadoop.yarn.client.RMProxy.\u003cinit\u003e(RMProxy.java:64)\n\tat org.apache.hadoop.yarn.client.ClientRMProxy.\u003cinit\u003e(ClientRMProxy.java:58)\n\tat org.apache.hadoop.yarn.client.ClientRMProxy.createRMProxy(ClientRMProxy.java:71)\n\tat org.apache.hadoop.yarn.client.api.impl.YarnClientImpl.serviceStart(YarnClientImpl.java:233)\n\tat org.apache.hadoop.service.AbstractService.start(AbstractService.java:194)\n\tat org.apache.flink.yarn.YarnClusterClientFactory.getClusterDescriptor(YarnClusterClientFactory.java:82)\n\tat org.apache.flink.yarn.YarnClusterClientFactory.createClusterDescriptor(YarnClusterClientFactory.java:61)\n\tat org.apache.flink.yarn.YarnClusterClientFactory.createClusterDescriptor(YarnClusterClientFactory.java:43)\n\tat org.apache.zeppelin.flink.internal.FlinkShell$.deployNewYarnCluster(FlinkShell.scala:149)\n\tat org.apache.zeppelin.flink.internal.FlinkShell$.createYarnClusterIfNeededAndGetConfig(FlinkShell.scala:111)\n\tat org.apache.zeppelin.flink.internal.FlinkShell$.fetchConnectionInfo(FlinkShell.scala:98)\n\tat org.apache.zeppelin.flink.FlinkScalaInterpreter.createFlinkILoop(FlinkScalaInterpreter.scala:317)\n\tat org.apache.zeppelin.flink.FlinkScalaInterpreter.open(FlinkScalaInterpreter.scala:123)\n\tat org.apache.zeppelin.flink.FlinkInterpreter.open(FlinkInterpreter.java:75)\n\t... 9 more\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.apache.hadoop.security.authentication.util.KerberosUtil.getDefaultRealm(KerberosUtil.java:110)\n\tat org.apache.hadoop.security.HadoopKerberosName.setConfiguration(HadoopKerberosName.java:69)\n\t... 29 more\nCaused by: KrbException: Cannot locate default realm\n\tat sun.security.krb5.Config.getDefaultRealm(Config.java:1137)\n\t... 35 more\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {
-        "jobUrl": {
-          "propertyName": "jobUrl",
-          "label": "FLINK JOB",
-          "tooltip": "View in Flink web UI",
-          "group": "flink",
-          "values": [
-            {
-              "jobUrl": "http://localhost:8083#/job/3e3862199e3e9ce97cfa7f115d63242f"
-            }
-          ],
-          "interpreterSettingId": "flink"
-        }
-      },
+      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1580998080340_1531975932",
       "id": "paragraph_1580998080340_1531975932",
       "dateCreated": "2020-02-06 22:08:00.340",
-      "dateStarted": "2021-07-26 04:39:20.670",
-      "dateFinished": "2021-07-26 04:39:42.257",
-      "status": "FINISHED"
+      "dateStarted": "2024-02-06 02:50:38.395",
+      "dateFinished": "2024-02-06 02:50:41.476",
+      "status": "ERROR"
     },
     {
       "title": "Streaming WordCount",
       "text": "%flink\n\nval data \u003d senv.fromElements(\"hello world\", \"hello flink\", \"hello hadoop\")\ndata.flatMap(line \u003d\u003e line.split(\"\\\\s\"))\n  .map(w \u003d\u003e (w, 1))\n  .keyBy(0)\n  .sum(1)\n  .print\n\nsenv.execute()",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 04:39:42.299",
+      "dateUpdated": "2024-02-05 00:22:19.684",
       "progress": 0,
       "config": {
         "colWidth": 6.0,
@@ -130,7 +117,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.streaming.api.scala.DataStream[String]\u001b[0m \u003d org.apache.flink.streaming.api.scala.DataStream@5814d5e0\n\u001b[33mwarning: \u001b[0mthere was one deprecation warning; re-run with -deprecation for details\n\u001b[1m\u001b[34mres2\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.streaming.api.datastream.DataStreamSink[(String, Int)]\u001b[0m \u003d org.apache.flink.streaming.api.datastream.DataStreamSink@5c76bd7d\n(hello,1)\n(world,1)\n(hello,2)\n(flink,1)\n(hello,3)\n(hadoop,1)\n\u001b[1m\u001b[34mres3\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.api.common.JobExecutionResult\u001b[0m \u003d\nProgram execution finished\nJob with JobID 27af9c543e20d02098d66e0900526361 has finished.\nJob Runtime: 152 ms\n"
+            "data": "\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.streaming.api.scala.DataStream[String]\u001b[0m \u003d org.apache.flink.streaming.api.scala.DataStream@1d099c21\n\u001b[33mwarning: \u001b[0mthere was one deprecation warning; for details, enable `:setting -deprecation\u0027 or `:replay -deprecation\u0027\n\u001b[1m\u001b[34mres2\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.streaming.api.datastream.DataStreamSink[(String, Int)]\u001b[0m \u003d org.apache.flink.streaming.api.datastream.DataStreamSink@6e132726\n(hello,1)\n(world,1)\n(hello,2)\n(flink,1)\n(hello,3)\n(hadoop,1)\n\u001b[1m\u001b[34mres3\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.api.common.JobExecutionResult\u001b[0m \u003d\nProgram execution finished\nJob with JobID 5887726c6667fa6e9e0078b8d869abe6 has finished.\nJob Runtime: 123 ms\n"
           }
         ]
       },
@@ -143,7 +130,7 @@
           "group": "flink",
           "values": [
             {
-              "jobUrl": "http://localhost:8083#/job/27af9c543e20d02098d66e0900526361"
+              "jobUrl": "http://localhost:8081#/job/5887726c6667fa6e9e0078b8d869abe6"
             }
           ],
           "interpreterSettingId": "flink"
@@ -153,8 +140,8 @@
       "jobName": "paragraph_1580998084555_-697674675",
       "id": "paragraph_1580998084555_-697674675",
       "dateCreated": "2020-02-06 22:08:04.555",
-      "dateStarted": "2021-07-26 04:39:42.303",
-      "dateFinished": "2021-07-26 04:39:48.021",
+      "dateStarted": "2024-02-05 00:22:19.686",
+      "dateFinished": "2024-02-05 00:22:24.774",
       "status": "FINISHED"
     },
     {
@@ -186,7 +173,5 @@
   "config": {
     "isZeppelinNotebookCronEnable": false
   },
-  "info": {
-    "isRunning": false
-  }
+  "info": {}
 }

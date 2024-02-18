@@ -3,7 +3,7 @@
     {
       "text": "%file\n\nls -l /user",
       "user": "anonymous",
-      "dateUpdated": "2023-07-23 02:02:28.894",
+      "dateUpdated": "2024-02-05 02:46:48.412",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -25,7 +25,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxrwxrwx\t-\t brijeshdhaker\tsupergroup\t0\t2023-07-20 02:51GMT\t/user/brijeshdhaker\ndrwxrwxrwx\t-\t hbase\tsupergroup\t0\t2023-07-14 06:48GMT\t/user/hbase\ndrwxrwxrwx\t-\t hdfs\tsupergroup\t0\t2023-07-14 06:48GMT\t/user/hdfs\ndrwxrwxrwx\t-\t hive\tsupergroup\t0\t2023-07-14 07:10GMT\t/user/hive\ndrwxrwxrwx\t-\t spark\tsupergroup\t0\t2023-07-14 06:48GMT\t/user/spark\ndrwxr-xr-x\t-\t zeppelin\tsupergroup\t0\t2023-07-20 03:03GMT\t/user/zeppelin\n"
+            "data": "No such File or directory"
           }
         ]
       },
@@ -35,14 +35,14 @@
       "jobName": "paragraph_1640953227121_981635026",
       "id": "paragraph_1640953227121_981635026",
       "dateCreated": "2021-12-31 12:20:27.121",
-      "dateStarted": "2023-07-23 02:02:28.898",
-      "dateFinished": "2023-07-23 02:02:30.652",
+      "dateStarted": "2024-02-05 02:46:48.414",
+      "dateFinished": "2024-02-05 02:46:48.420",
       "status": "FINISHED"
     },
     {
       "text": "%file\n\nls -l /user/brijeshdhaker\n",
       "user": "anonymous",
-      "dateUpdated": "2023-07-23 02:03:09.164",
+      "dateUpdated": "2024-02-05 02:46:29.783",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -64,7 +64,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxr-xr-x\t-\t brijeshdhaker\tsupergroup\t0\t2023-07-20 02:53GMT\t/user/brijeshdhaker/.sparkStaging\n"
+            "data": "No such File or directory"
           }
         ]
       },
@@ -74,14 +74,14 @@
       "jobName": "paragraph_1640953238940_1049456036",
       "id": "paragraph_1640953238940_1049456036",
       "dateCreated": "2021-12-31 12:20:38.940",
-      "dateStarted": "2023-07-23 02:03:09.167",
-      "dateFinished": "2023-07-23 02:03:09.182",
+      "dateStarted": "2024-02-05 02:46:29.785",
+      "dateFinished": "2024-02-05 02:46:32.401",
       "status": "FINISHED"
     },
     {
       "text": "%file\n\nls -l /user/zeppelin",
       "user": "anonymous",
-      "dateUpdated": "2023-07-23 02:03:27.937",
+      "dateUpdated": "2024-02-05 02:46:39.518",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -103,7 +103,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "drwxr-xr-x\t-\t zeppelin\tsupergroup\t0\t2023-07-23 01:44GMT\t/user/zeppelin/.sparkStaging\n"
+            "data": "No such File or directory"
           }
         ]
       },
@@ -113,8 +113,8 @@
       "jobName": "paragraph_1690077795758_1385623618",
       "id": "paragraph_1690077795758_1385623618",
       "dateCreated": "2023-07-23 02:03:15.758",
-      "dateStarted": "2023-07-23 02:03:27.941",
-      "dateFinished": "2023-07-23 02:03:27.962",
+      "dateStarted": "2024-02-05 02:46:39.522",
+      "dateFinished": "2024-02-05 02:46:39.533",
       "status": "FINISHED"
     },
     {

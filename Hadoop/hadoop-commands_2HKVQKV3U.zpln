@@ -43,9 +43,9 @@
       "status": "FINISHED"
     },
     {
-      "text": "%sh \n\nkinit -k -t /etc/kerberos/users/zeppelin.keytab zeppelin@SANDBOX.NET\n",
+      "text": "%sh \n\nkinit -k -t /etc/kerberos/users/brijeshdhaker.keytab brijeshdhaker@SANDBOX.NET\n",
       "user": "anonymous",
-      "dateUpdated": "2023-07-06 02:28:27.599",
+      "dateUpdated": "2024-02-05 00:37:11.128",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -73,14 +73,14 @@
       "jobName": "paragraph_1687578973197_700017498",
       "id": "paragraph_1687578973197_700017498",
       "dateCreated": "2023-06-24 03:56:13.197",
-      "dateStarted": "2023-07-06 02:28:27.632",
-      "dateFinished": "2023-07-06 02:28:27.645",
+      "dateStarted": "2024-02-05 00:37:11.136",
+      "dateFinished": "2024-02-05 00:37:12.851",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\nklist",
       "user": "anonymous",
-      "dateUpdated": "2023-07-06 02:28:34.652",
+      "dateUpdated": "2024-02-05 01:22:56.924",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -103,7 +103,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Ticket cache: FILE:/tmp/krb5cc_zepplin\nDefault principal: zeppelin@SANDBOX.NET\n\nValid starting       Expires              Service principal\n07/06/2023 02:28:27  07/06/2023 14:28:27  krbtgt/SANDBOX.NET@SANDBOX.NET\n\trenew until 07/13/2023 02:28:27\n"
+            "data": "Ticket cache: FILE:/tmp/krb5cc_zepplin\nDefault principal: brijeshdhaker@SANDBOX.NET\n\nValid starting       Expires              Service principal\n02/05/2024 01:22:04  02/05/2024 13:22:04  krbtgt/SANDBOX.NET@SANDBOX.NET\n\trenew until 02/12/2024 01:22:04\n"
           }
         ]
       },
@@ -113,14 +113,14 @@
       "jobName": "paragraph_1687579669965_201635962",
       "id": "paragraph_1687579669965_201635962",
       "dateCreated": "2023-06-24 04:07:49.965",
-      "dateStarted": "2023-07-06 02:28:34.655",
-      "dateFinished": "2023-07-06 02:28:34.663",
+      "dateStarted": "2024-02-05 01:22:56.927",
+      "dateFinished": "2024-02-05 01:22:56.937",
       "status": "FINISHED"
     },
     {
       "text": "%sh\nwhoami\n\n",
       "user": "anonymous",
-      "dateUpdated": "2023-07-06 02:28:41.263",
+      "dateUpdated": "2024-02-05 01:15:43.240",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -153,14 +153,14 @@
       "jobName": "paragraph_1687579255199_1051904431",
       "id": "paragraph_1687579255199_1051904431",
       "dateCreated": "2023-06-24 04:00:55.199",
-      "dateStarted": "2023-07-06 02:28:41.267",
-      "dateFinished": "2023-07-06 02:28:41.273",
+      "dateStarted": "2024-02-05 01:15:43.242",
+      "dateFinished": "2024-02-05 01:15:43.252",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\npwd",
       "user": "anonymous",
-      "dateUpdated": "2023-06-24 05:30:20.622",
+      "dateUpdated": "2024-02-05 00:31:32.962",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -193,14 +193,14 @@
       "jobName": "paragraph_1687579272047_205917772",
       "id": "paragraph_1687579272047_205917772",
       "dateCreated": "2023-06-24 04:01:12.047",
-      "dateStarted": "2023-06-24 05:30:20.627",
-      "dateFinished": "2023-06-24 05:30:20.643",
+      "dateStarted": "2024-02-05 00:31:32.964",
+      "dateFinished": "2024-02-05 00:31:32.969",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /",
       "user": "anonymous",
-      "dateUpdated": "2023-07-16 05:01:54.630",
+      "dateUpdated": "2024-02-07 17:27:08.920",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -223,7 +223,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Found 6 items\ndrwxr-xr-x   - yarn   supergroup          0 2023-07-14 07:06 /apps\ndrwxrwxrwx   - hive   supergroup          0 2023-07-14 15:28 /archives\ndrwxrwxrwx   - mapred supergroup          0 2023-07-14 05:17 /tmp\ndrwxrwxrwx   - hdfs   supergroup          0 2023-07-14 06:48 /user\ndrwxrwxrwx   - hive   supergroup          0 2023-07-14 06:52 /warehouse\ndrwxr-xr-x   - yarn   supergroup          0 2023-07-14 03:32 /yarn\n"
+            "data": "2024-02-07 17:27:11,299 INFO Configuration.deprecation: No unit for dfs.client.datanode-restart.timeout(30) assuming SECONDS\nFound 7 items\ndrwxrwxrwx   - yarn   hadoop          0 2024-02-06 04:19 /apps\ndrwxrwxrwx   - hdfs   hadoop          0 2024-02-06 14:47 /archives\ndrwxr-xr-x   - hbase  hadoop          0 2024-02-07 17:16 /hbase\ndrwxrwx---   - mapred hadoop          0 2024-02-06 03:49 /mapred\ndrwxrwxrwx   - hive   hadoop          0 2024-02-06 03:57 /tmp\ndrwxrwxrwx   - hive   hadoop          0 2024-02-06 04:16 /user\ndrwxr-xr-x   - hive   hdfs            0 2024-02-06 04:10 /warehouse\n"
           }
         ]
       },
@@ -233,49 +233,14 @@
       "jobName": "paragraph_1669520416975_1687379561",
       "id": "paragraph_1669520416975_1687379561",
       "dateCreated": "2022-11-27 03:40:16.975",
-      "dateStarted": "2023-07-16 05:01:54.632",
-      "dateFinished": "2023-07-16 05:01:57.575",
+      "dateStarted": "2024-02-07 17:27:08.922",
+      "dateFinished": "2024-02-07 17:27:12.123",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\n\n$HADOOP_HOME/bin/hadoop fs -mkdir -p /user/zeppelin\n",
       "user": "anonymous",
-      "dateUpdated": "2023-07-16 05:02:06.085",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "sh",
-          "editOnDblClick": false,
-          "completionSupport": false
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/sh",
-        "fontSize": 12.0,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": []
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1669520406592_806578354",
-      "id": "paragraph_1669520406592_806578354",
-      "dateCreated": "2022-11-27 03:40:06.593",
-      "dateStarted": "2023-07-16 05:02:06.089",
-      "dateFinished": "2023-07-16 05:02:07.347",
-      "status": "FINISHED"
-    },
-    {
-      "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /user",
-      "user": "anonymous",
-      "dateUpdated": "2023-07-16 05:02:15.497",
+      "dateUpdated": "2024-02-05 01:16:59.685",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -298,7 +263,47 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "Found 6 items\ndrwxrwxrwx   - brijeshdhaker supergroup          0 2023-07-14 06:48 /user/brijeshdhaker\ndrwxrwxrwx   - hbase         supergroup          0 2023-07-14 06:48 /user/hbase\ndrwxrwxrwx   - hdfs          supergroup          0 2023-07-14 06:48 /user/hdfs\ndrwxrwxrwx   - hive          supergroup          0 2023-07-14 07:10 /user/hive\ndrwxrwxrwx   - spark         supergroup          0 2023-07-14 06:48 /user/spark\ndrwxr-xr-x   - zeppelin      supergroup          0 2023-07-16 05:02 /user/zeppelin\n"
+            "data": "2024-02-05 01:17:00,223 INFO Configuration.deprecation: No unit for dfs.client.datanode-restart.timeout(30) assuming SECONDS\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1669520406592_806578354",
+      "id": "paragraph_1669520406592_806578354",
+      "dateCreated": "2022-11-27 03:40:06.593",
+      "dateStarted": "2024-02-05 01:16:59.687",
+      "dateFinished": "2024-02-05 01:17:01.096",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n\n$HADOOP_HOME/bin/hadoop fs -ls /user",
+      "user": "anonymous",
+      "dateUpdated": "2024-02-07 17:27:22.859",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 12.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2024-02-07 17:27:23,553 INFO Configuration.deprecation: No unit for dfs.client.datanode-restart.timeout(30) assuming SECONDS\nFound 7 items\ndrwxr-xr-x   - brijeshdhaker hadoop          0 2024-02-06 04:14 /user/brijeshdhaker\ndrwxr-xr-x   - hdfs          hadoop          0 2024-02-06 04:15 /user/hdfs\ndrwxr-xr-x   - hive          hadoop          0 2024-02-06 03:57 /user/hive\ndrwxr-xr-x   - sandbox       hadoop          0 2024-02-06 04:15 /user/sandbox\ndrwxr-xr-x   - spark         hadoop          0 2024-02-06 04:16 /user/spark\ndrwxr-xr-x   - yarn          hadoop          0 2024-02-06 04:15 /user/yarn\ndrwxr-xr-x   - zeppelin      hadoop          0 2024-02-06 15:40 /user/zeppelin\n"
           }
         ]
       },
@@ -308,8 +313,8 @@
       "jobName": "paragraph_1669520414709_1132110154",
       "id": "paragraph_1669520414709_1132110154",
       "dateCreated": "2022-11-27 03:40:14.709",
-      "dateStarted": "2023-07-16 05:02:15.499",
-      "dateFinished": "2023-07-16 05:02:16.763",
+      "dateStarted": "2024-02-07 17:27:22.861",
+      "dateFinished": "2024-02-07 17:27:24.331",
       "status": "FINISHED"
     },
     {
@@ -703,7 +708,7 @@
     {
       "text": "%sh\n\n# du: It will give the size of each file in directory.\n\n$HADOOP_HOME/bin/hdfs dfs -du -h -s /user\n",
       "user": "anonymous",
-      "dateUpdated": "2023-06-24 05:31:18.137",
+      "dateUpdated": "2024-02-06 14:06:06.460",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -726,7 +731,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "38.7 M  38.7 M  /user\n"
+            "data": "2024-02-06 14:06:07,193 INFO Configuration.deprecation: No unit for dfs.client.datanode-restart.timeout(30) assuming SECONDS\n39.9 M  39.9 M  /user\n"
           }
         ]
       },
@@ -736,14 +741,14 @@
       "jobName": "paragraph_1669521639068_417047791",
       "id": "paragraph_1669521639068_417047791",
       "dateCreated": "2022-11-27 04:00:39.068",
-      "dateStarted": "2023-06-24 05:31:18.142",
-      "dateFinished": "2023-06-24 05:31:19.403",
+      "dateStarted": "2024-02-06 14:06:06.467",
+      "dateFinished": "2024-02-06 14:06:08.006",
       "status": "FINISHED"
     },
     {
       "text": "%sh\n\n# dus:: This command will give the total size of directory/file.\n\n$HADOOP_HOME/bin/hdfs dfs -du -s /user",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:14:50.255",
+      "dateUpdated": "2024-02-06 14:06:13.732",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -766,7 +771,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "521141434  521215390  /user\n"
+            "data": "2024-02-06 14:06:14,416 INFO Configuration.deprecation: No unit for dfs.client.datanode-restart.timeout(30) assuming SECONDS\n41873153  41873153  /user\n"
           }
         ]
       },
@@ -776,8 +781,8 @@
       "jobName": "paragraph_1669521726582_1315864413",
       "id": "paragraph_1669521726582_1315864413",
       "dateCreated": "2022-11-27 04:02:06.582",
-      "dateStarted": "2023-04-23 04:14:50.257",
-      "dateFinished": "2023-04-23 04:14:51.464",
+      "dateStarted": "2024-02-06 14:06:13.734",
+      "dateFinished": "2024-02-06 14:06:15.197",
       "status": "FINISHED"
     },
     {

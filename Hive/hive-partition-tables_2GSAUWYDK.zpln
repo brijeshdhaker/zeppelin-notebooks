@@ -46,7 +46,7 @@
       "title": "Advantage",
       "text": "%hive\n\nshow databases;\n",
       "user": "anonymous",
-      "dateUpdated": "2023-06-07 03:30:12.815",
+      "dateUpdated": "2024-02-17 11:26:34.615",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -95,11 +95,11 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
+        "code": "SUCCESS",
         "msg": [
           {
-            "type": "TEXT",
-            "data": "java.lang.RuntimeException: Interpreter Setting \u0027hive\u0027 is not ready, its status is ERROR\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:422)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:69)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+            "type": "TABLE",
+            "data": "database_name\ndefault\n"
           }
         ]
       },
@@ -109,14 +109,14 @@
       "jobName": "paragraph_1639277817222_1025855003",
       "id": "paragraph_1639277817222_1025855003",
       "dateCreated": "2021-12-12 08:26:57.222",
-      "dateStarted": "2023-06-07 03:30:12.819",
-      "dateFinished": "2023-06-07 03:30:12.819",
-      "status": "ERROR"
+      "dateStarted": "2024-02-17 11:26:34.621",
+      "dateFinished": "2024-02-17 11:26:34.767",
+      "status": "FINISHED"
     },
     {
       "text": "%hive\n\nshow tables;\n\n",
       "user": "anonymous",
-      "dateUpdated": "2023-07-21 02:47:19.555",
+      "dateUpdated": "2024-02-17 11:26:32.263",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -167,7 +167,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "tab_name\ne_students\nm_students\n"
+            "data": "tab_name\ne_students\nm_students\ntransaction_details\n"
           }
         ]
       },
@@ -177,8 +177,8 @@
       "jobName": "paragraph_1639295298354_986197200",
       "id": "paragraph_1639295298354_986197200",
       "dateCreated": "2021-12-12 13:18:18.354",
-      "dateStarted": "2023-07-21 02:47:19.561",
-      "dateFinished": "2023-07-21 02:47:19.755",
+      "dateStarted": "2024-02-17 11:26:32.273",
+      "dateFinished": "2024-02-17 11:26:32.468",
       "status": "FINISHED"
     },
     {
@@ -271,7 +271,7 @@
     {
       "text": "%hive\n\nset hive.exec.dynamic.partition; \nset hive.exec.dynamic.partition.mode;",
       "user": "anonymous",
-      "dateUpdated": "2023-07-21 03:57:46.148",
+      "dateUpdated": "2024-02-17 11:26:59.858",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -281,7 +281,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {
           "0": {
             "graph": {

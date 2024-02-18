@@ -50,7 +50,7 @@
     {
       "text": "%flink \n\nimport org.apache.flink.streaming.api.functions.source.SourceFunction\nimport org.apache.flink.table.api.TableEnvironment\nimport org.apache.flink.streaming.api.TimeCharacteristic\nimport org.apache.flink.streaming.api.checkpoint.ListCheckpointed\nimport java.util.Collections\nimport scala.collection.JavaConversions._\n\nsenv.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)\nsenv.enableCheckpointing(1000)\n\nval data \u003d senv.addSource(new SourceFunction[(Long, String)] with ListCheckpointed[java.lang.Long] {\n\n  val pages \u003d Seq(\"home\", \"search\", \"search\", \"product\", \"product\", \"product\")\n  var count: Long \u003d 0\n  var running : Boolean \u003d true\n  // startTime is 2020/1/1\n  var startTime: Long \u003d new java.util.Date(2020 - 1900,0,1).getTime\n  var sleepInterval \u003d 100\n\n  override def run(ctx: SourceFunction.SourceContext[(Long, String)]): Unit \u003d {\n    val lock \u003d ctx.getCheckpointLock\n\n    while (count \u003c 300000 \u0026\u0026 running) {\n      lock.synchronized({\n        ctx.collect((startTime + count * sleepInterval, pages(count.toInt % pages.size)))\n        count +\u003d 1\n        Thread.sleep(sleepInterval)\n      })\n    }\n  }\n\n  override def cancel(): Unit \u003d {\n    running \u003d false\n  }\n\n  override def snapshotState(checkpointId: Long, timestamp: Long): java.util.List[java.lang.Long] \u003d {\n    Collections.singletonList(count)\n  }\n\n  override def restoreState(state: java.util.List[java.lang.Long]): Unit \u003d {\n    state.foreach(s \u003d\u003e count \u003d s)\n  }\n\n}).assignAscendingTimestamps(_._1)\n\nstenv.registerDataStream(\"log\", data, \u0027time, \u0027url, \u0027rowtime.rowtime)\n",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 05:19:24.659",
+      "dateUpdated": "2024-02-05 00:23:28.385",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -74,7 +74,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "import org.apache.flink.streaming.api.functions.source.SourceFunction\nimport org.apache.flink.table.api.TableEnvironment\nimport org.apache.flink.streaming.api.TimeCharacteristic\nimport org.apache.flink.streaming.api.checkpoint.ListCheckpointed\nimport java.util.Collections\nimport scala.collection.JavaConversions._\n\u001b[33mwarning: \u001b[0mthere was one deprecation warning; re-run with -deprecation for details\n\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.streaming.api.scala.StreamExecutionEnvironment\u001b[0m \u003d org.apache.flink.streaming.api.scala.StreamExecutionEnvironment@7bfce85\n\u001b[33mwarning: \u001b[0mthere were two deprecation warnings; re-run with -deprecation for details\n\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.streaming.api.scala.DataStream[(Long, String)]\u001b[0m \u003d org.apache.flink.streaming.api.scala.DataStream@1a38d116\n"
+            "data": "import org.apache.flink.streaming.api.functions.source.SourceFunction\nimport org.apache.flink.table.api.TableEnvironment\nimport org.apache.flink.streaming.api.TimeCharacteristic\nimport org.apache.flink.streaming.api.checkpoint.ListCheckpointed\nimport java.util.Collections\nimport scala.collection.JavaConversions._\n\u001b[33mwarning: \u001b[0mthere was one deprecation warning; for details, enable `:setting -deprecation\u0027 or `:replay -deprecation\u0027\n\u001b[1m\u001b[34mres6\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.streaming.api.scala.StreamExecutionEnvironment\u001b[0m \u003d org.apache.flink.streaming.api.scala.StreamExecutionEnvironment@5e6c0b43\n\u001b[33mwarning: \u001b[0mthere were two deprecation warnings\n\u001b[33mwarning: \u001b[0mthere was one deprecation warning (since 2.12.0)\n\u001b[33mwarning: \u001b[0mthere were three deprecation warnings in total; for details, enable `:setting -deprecation\u0027 or `:replay -deprecation\u0027\n\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.flink.streaming.api.scala.DataStream[(Long, String)]\u001b[0m \u003d org.apache.flink.streaming.api.scala.DataStream@4724bebc\n"
           }
         ]
       },
@@ -84,15 +84,15 @@
       "jobName": "paragraph_1611556011274_1848600588",
       "id": "paragraph_1611556011274_1848600588",
       "dateCreated": "2021-01-25 14:26:51.274",
-      "dateStarted": "2021-07-26 05:19:24.685",
-      "dateFinished": "2021-07-26 05:19:43.196",
+      "dateStarted": "2024-02-05 00:23:28.388",
+      "dateFinished": "2024-02-05 00:23:31.035",
       "status": "FINISHED"
     },
     {
       "title": "Single row mode of Output",
       "text": "%flink.ssql(type\u003dsingle,parallelism\u003d1,refreshInterval\u003d1000,template\u003d\u003ch1\u003e{1}\u003c/h1\u003e until \u003ch2\u003e{0}\u003c/h2\u003e)\n\nselect max(rowtime),count(1) from log\n",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 05:19:44.486",
+      "dateUpdated": "2024-02-05 00:23:38.063",
       "progress": 0,
       "config": {
         "runOnSelectionChange": true,
@@ -120,11 +120,15 @@
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
+        "code": "ERROR",
         "msg": [
           {
             "type": "ANGULAR",
-            "data": "\u003ch1\u003e{{value_1}}\u003c/h1\u003e until \u003ch2\u003e{{value_0}}\u003c/h2\u003e"
+            "data": "\u003ch1\u003e{{value_1}}\u003c/h1\u003e until \u003ch2\u003e{{value_0}}\u003c/h2\u003e\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Fail to run sql command: select max(rowtime),count(1) from log\njava.io.IOException: Fail to run stream sql job\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:177)\n\tat org.apache.zeppelin.flink.sql.AbstractStreamSqlJob.run(AbstractStreamSqlJob.java:109)\n\tat org.apache.zeppelin.flink.FlinkStreamSqlInterpreter.callInnerSelect(FlinkStreamSqlInterpreter.java:68)\n\tat org.apache.zeppelin.flink.FlinkSqlInterpreter.callSelect(FlinkSqlInterpreter.java:494)\n\tat org.apache.zeppelin.flink.FlinkSqlInterpreter.callCommand(FlinkSqlInterpreter.java:257)\n\tat org.apache.zeppelin.flink.FlinkSqlInterpreter.runSqlList(FlinkSqlInterpreter.java:151)\n\tat org.apache.zeppelin.flink.FlinkSqlInterpreter.internalInterpret(FlinkSqlInterpreter.java:109)\n\tat org.apache.zeppelin.interpreter.AbstractInterpreter.interpret(AbstractInterpreter.java:55)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:110)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:860)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:752)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler.lambda$runJobInScheduler$0(ParallelScheduler.java:46)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: org.apache.flink.client.program.ProgramInvocationException: Job failed (JobID: 7ea438206c6d1778209eedc90a5286aa)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$null$6(ClusterClientJobClientAdapter.java:125)\n\tat java.util.concurrent.CompletableFuture.uniApply(CompletableFuture.java:616)\n\tat java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:591)\n\tat java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)\n\tat java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)\n\tat org.apache.flink.client.program.rest.RestClusterClient.lambda$pollResourceAsync$22(RestClusterClient.java:665)\n\tat java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)\n\tat java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)\n\tat java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)\n\tat java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)\n\tat org.apache.flink.runtime.concurrent.FutureUtils.lambda$retryOperationWithDelay$9(FutureUtils.java:394)\n\tat java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)\n\tat java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)\n\tat java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)\n\tat java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:575)\n\tat java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:943)\n\tat java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:456)\n\t... 3 more\nCaused by: org.apache.flink.runtime.client.JobCancellationException: Job was cancelled.\n\tat org.apache.flink.runtime.jobmaster.JobResult.toJobExecutionResult(JobResult.java:146)\n\tat org.apache.flink.client.deployment.ClusterClientJobClientAdapter.lambda$null$6(ClusterClientJobClientAdapter.java:123)\n\t... 19 more\n\n"
           }
         ]
       },
@@ -137,7 +141,7 @@
           "group": "flink",
           "values": [
             {
-              "jobUrl": "http://localhost:8083#/job/7fb3fd251e490c3447e1793b776b1535"
+              "jobUrl": "http://localhost:8081#/job/7ea438206c6d1778209eedc90a5286aa"
             }
           ],
           "interpreterSettingId": "flink"
@@ -147,15 +151,15 @@
       "jobName": "paragraph_1578909960516_-1812187661",
       "id": "paragraph_1578909960516_-1812187661",
       "dateCreated": "2020-01-13 18:06:00.516",
-      "dateStarted": "2021-07-26 05:19:44.490",
-      "dateFinished": "2021-07-26 04:44:25.285",
-      "status": "ABORT"
+      "dateStarted": "2024-02-05 00:23:38.065",
+      "dateFinished": "2024-02-05 00:25:00.225",
+      "status": "ERROR"
     },
     {
       "title": "Update mode of Output",
       "text": "%flink.ssql(type\u003dupdate,parallelism\u003d1,refreshInterval\u003d1000)\n\nselect url,count(1) as pv from log group by url\n",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 05:25:22.905",
+      "dateUpdated": "2024-02-05 00:24:25.937",
       "progress": 0,
       "config": {
         "runOnSelectionChange": true,
@@ -234,6 +238,15 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.lang.RuntimeException\n\tat org.apache.zeppelin.interpreter.remote.PooledRemoteClient.callRemoteFunction(PooledRemoteClient.java:119)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:100)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.interpret(RemoteInterpreter.java:208)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:484)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:69)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+          }
+        ]
+      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -243,7 +256,7 @@
           "group": "flink",
           "values": [
             {
-              "jobUrl": "http://localhost:8083#/job/e0a0636052b9cb6780c72320fe749700"
+              "jobUrl": "http://localhost:8081#/job/8102fa60611caadb2bdfacf578d13977"
             }
           ],
           "interpreterSettingId": "flink"
@@ -253,15 +266,15 @@
       "jobName": "paragraph_1578910004762_-286113604",
       "id": "paragraph_1578910004762_-286113604",
       "dateCreated": "2020-01-13 18:06:44.762",
-      "dateStarted": "2021-07-26 05:20:22.128",
-      "dateFinished": "2021-07-26 05:20:20.018",
+      "dateStarted": "2024-02-05 00:24:25.941",
+      "dateFinished": "2024-02-05 00:25:56.441",
       "status": "ABORT"
     },
     {
       "title": "Append mode of Output",
       "text": "%flink.ssql(type\u003dappend,parallelism\u003d1,refreshInterval\u003d2000,threshold\u003d60000)\n\nselect TUMBLE_START(rowtime,INTERVAL \u00275\u0027 SECOND) start_time,url,count(1) as pv from log\ngroup by TUMBLE(rowtime,INTERVAL \u00275\u0027 SECOND),url\n",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 05:25:37.664",
+      "dateUpdated": "2024-02-05 00:24:36.584",
       "progress": 0,
       "config": {
         "runOnSelectionChange": true,
@@ -353,6 +366,15 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "java.lang.RuntimeException\n\tat org.apache.zeppelin.interpreter.remote.PooledRemoteClient.callRemoteFunction(PooledRemoteClient.java:119)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:100)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.interpret(RemoteInterpreter.java:208)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:484)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:69)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+          }
+        ]
+      },
       "apps": [],
       "runtimeInfos": {
         "jobUrl": {
@@ -362,7 +384,7 @@
           "group": "flink",
           "values": [
             {
-              "jobUrl": "http://localhost:8083#/job/3051db0415e197bf781d3c718879ecaa"
+              "jobUrl": "http://localhost:8081#/job/4470c19eeab13f229736236f2e168b04"
             }
           ],
           "interpreterSettingId": "flink"
@@ -372,8 +394,8 @@
       "jobName": "paragraph_1578910016872_1942851900",
       "id": "paragraph_1578910016872_1942851900",
       "dateCreated": "2020-01-13 18:06:56.872",
-      "dateStarted": "2021-07-26 05:24:18.512",
-      "dateFinished": "2021-07-26 05:24:17.140",
+      "dateStarted": "2024-02-05 00:24:36.587",
+      "dateFinished": "2024-02-05 00:25:56.441",
       "status": "ABORT"
     },
     {
@@ -405,13 +427,13 @@
     "flink-shared_process": [
       {
         "name": "value_0",
-        "object": "2020-01-01 00:06:51.2",
+        "object": "2020-01-01 00:01:18.1",
         "noteId": "2EYT7Q6R8",
         "paragraphId": "paragraph_1578909960516_-1812187661"
       },
       {
         "name": "value_1",
-        "object": "4113",
+        "object": "782",
         "noteId": "2EYT7Q6R8",
         "paragraphId": "paragraph_1578909960516_-1812187661"
       }
