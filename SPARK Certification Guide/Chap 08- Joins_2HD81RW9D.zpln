@@ -1473,7 +1473,7 @@
           "editOnDblClick": true
         },
         "colWidth": 12.0,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "enabled": true,
         "results": {},
         "tableHide": true

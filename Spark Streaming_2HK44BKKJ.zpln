@@ -360,7 +360,7 @@
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
         "editorHide": false,
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "title": true,
         "results": {},
         "graph": {

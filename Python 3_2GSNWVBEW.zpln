@@ -44,20 +44,21 @@
     {
       "text": "%md\n* [RDD API](http://nbviewer.ipython.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb)\n* [GitHub](https://github.com/jkthompson/pyspark-pictures)\n* [related blog post](http://data-frack.blogspot.com/2015/01/visual-mnemonics-for-pyspark-api.html)",
       "user": "anonymous",
-      "dateUpdated": "2022-05-23 03:34:17.461",
+      "dateUpdated": "2024-02-29 03:24:40.029",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": false,
+        "editorHide": true,
         "editorSetting": {
           "language": "markdown",
-          "editOnDblClick": true
+          "editOnDblClick": true,
+          "completionSupport": false
         },
         "colWidth": 12.0,
         "fontSize": 12.0,
         "enabled": true,
         "results": {},
-        "tableHide": true
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -68,7 +69,7 @@
         "msg": [
           {
             "type": "HTML",
-            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n  \u003cli\u003e\u003ca href\u003d\"http://nbviewer.ipython.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb\"\u003eRDD API\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"https://github.com/jkthompson/pyspark-pictures\"\u003eGitHub\u003c/a\u003e\u003c/li\u003e\n  \u003cli\u003e\u003ca href\u003d\"http://data-frack.blogspot.com/2015/01/visual-mnemonics-for-pyspark-api.html\"\u003erelated blog post\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e"
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href\u003d\"http://nbviewer.ipython.org/github/jkthompson/pyspark-pictures/blob/master/pyspark-pictures.ipynb\"\u003eRDD API\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href\u003d\"https://github.com/jkthompson/pyspark-pictures\"\u003eGitHub\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href\u003d\"http://data-frack.blogspot.com/2015/01/visual-mnemonics-for-pyspark-api.html\"\u003erelated blog post\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003c/div\u003e"
           }
         ]
       },
@@ -78,7 +79,9 @@
       "jobName": "paragraph_1641208994508_2123309038",
       "id": "20220103-112314_1097892704",
       "dateCreated": "2022-01-03 11:23:14.508",
-      "status": "READY"
+      "dateStarted": "2024-02-29 03:24:40.029",
+      "dateFinished": "2024-02-29 03:24:42.112",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page2.svg\" width\u003d500 height\u003d500\u003e\n\u003c/a\u003e",
@@ -149,9 +152,9 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# versions\nimport IPython\nprint(\"pyspark version:\" + str(sc.version))\nprint(\"Ipython version:\" + str(IPython.__version__))",
+      "text": "%pyspark\n\n# versions\nimport IPython\nprint(\"pyspark version:\" + str(sc.version))\nprint(\"Ipython version:\" + str(IPython.__version__))",
       "user": "anonymous",
-      "dateUpdated": "2022-11-23 17:08:04.924",
+      "dateUpdated": "2024-02-29 03:25:28.634",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
@@ -163,7 +166,8 @@
         "editorSetting": {
           "language": "python",
           "editOnDblClick": false,
-          "completionSupport": true
+          "completionSupport": true,
+          "completionKey": "TAB"
         }
       },
       "settings": {
@@ -171,11 +175,11 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
+        "code": "SUCCESS",
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)\n\u001b[0;32m/tmp/ipykernel_383/2676512168.py\u001b[0m in \u001b[0;36m\u003cmodule\u003e\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# versions\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mIPython\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----\u003e 3\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"pyspark version:\"\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msc\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mversion\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Ipython version:\"\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mIPython\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m__version__\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;31mNameError\u001b[0m: name \u0027sc\u0027 is not defined"
+            "data": "pyspark version:3.1.2\nIpython version:7.33.0\n"
           }
         ]
       },
@@ -185,9 +189,9 @@
       "jobName": "paragraph_1641208994508_362771995",
       "id": "20220103-112314_695298832",
       "dateCreated": "2022-01-03 11:23:14.508",
-      "dateStarted": "2022-11-23 17:08:04.935",
-      "dateFinished": "2022-11-23 17:08:09.872",
-      "status": "ERROR"
+      "dateStarted": "2024-02-29 03:25:28.650",
+      "dateFinished": "2024-02-29 03:25:28.915",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca href\u003d\"http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame.agg\"\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page3.svg\" width\u003d500 height\u003d500 /\u003e\n\u003c/a\u003e",
@@ -224,13 +228,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# agg\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.agg({\"amt\":\"avg\"})\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# agg\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.agg({\"amt\":\"avg\"})\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:27:14.818",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -246,12 +260,33 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d34"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d35"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d36"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641208994509_1519229579",
       "id": "20220103-112314_679624605",
       "dateCreated": "2022-01-03 11:23:14.509",
-      "status": "READY"
+      "dateStarted": "2024-02-29 03:25:52.890",
+      "dateFinished": "2024-02-29 03:25:53.342",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca href\u003d\"http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame.alias\"\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page4.svg\" width\u003d750 height\u003d750 /\u003e\n\u003c/a\u003e",
@@ -288,13 +323,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# alias\nfrom pyspark.sql.functions import col\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.alias(\u0027transactions\u0027)\nx.show()\ny.show()\ny.select(col(\"transactions.to\")).show()",
+      "text": "%pyspark\n# alias\nfrom pyspark.sql.functions import col\n\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.alias(\u0027transactions\u0027)\nx.show()\ny.show()\ny.select(col(\"transactions.to\")).show()\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:27:35.675",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -310,12 +355,42 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d37"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d38"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d39"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d40"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d41"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d42"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641208994509_924080743",
       "id": "20220103-112314_1403208108",
       "dateCreated": "2022-01-03 11:23:14.509",
-      "status": "READY"
+      "dateStarted": "2024-02-29 03:27:35.678",
+      "dateFinished": "2024-02-29 03:27:36.141",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca href\u003d\"http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame.cache\"\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page5.svg\" width\u003d750 height\u003d750 /\u003e\n\u003c/a\u003e",
@@ -352,13 +427,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# cache\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.cache()\nprint(x.count()) # first action materializes x in memory\nprint(x.count()) # later actions avoid IO overhead",
+      "text": "%pyspark\n\n# cache\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.cache()\nprint(x.count()) # first action materializes x in memory\nprint(x.count()) # later actions avoid IO overhead",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:27:52.073",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -374,12 +459,30 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d43"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d44"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641208994509_735983480",
       "id": "20220103-112314_793332896",
       "dateCreated": "2022-01-03 11:23:14.509",
-      "status": "READY"
+      "dateStarted": "2024-02-29 03:27:52.076",
+      "dateFinished": "2024-02-29 03:27:52.547",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca href\u003d\"http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame.coalesce\"\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page6.svg\" width\u003d750 height\u003d750 /\u003e\n\u003c/a\u003e",
@@ -416,13 +519,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# coalesce\nx_rdd \u003d sc.parallelize([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)],2)\nx \u003d sqlContext.createDataFrame(x_rdd, [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.coalesce(numPartitions\u003d1)\nprint(x.rdd.getNumPartitions())\nprint(y.rdd.getNumPartitions())",
+      "text": "%pyspark\n\n# coalesce\nx_rdd \u003d sc.parallelize([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)],2)\nx \u003d sqlContext.createDataFrame(x_rdd, [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.coalesce(numPartitions\u003d1)\nprint(x.rdd.getNumPartitions())\nprint(y.rdd.getNumPartitions())",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:28:08.613",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -438,12 +551,27 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d45"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641208994509_1457524300",
       "id": "20220103-112314_528791605",
       "dateCreated": "2022-01-03 11:23:14.509",
-      "status": "READY"
+      "dateStarted": "2024-02-29 03:28:08.616",
+      "dateFinished": "2024-02-29 03:28:08.803",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca href\u003d\"http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame.collect\"\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page7.svg\" width\u003d750 height\u003d750 /\u003e\n\u003c/a\u003e",
@@ -480,13 +608,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# collect\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.collect() # creates list of rows on driver\nx.show()\nprint(y)",
+      "text": "%pyspark\n\n# collect\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.collect() # creates list of rows on driver\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:28:17.547",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -497,17 +635,38 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "+-----+-----+---+\n| from|   to|amt|\n+-----+-----+---+\n|Alice|  Bob|0.1|\n|  Bob|Carol|0.2|\n|Carol| Dave|0.3|\n+-----+-----+---+\n\n[Row(from\u003du\u0027Alice\u0027, to\u003du\u0027Bob\u0027, amt\u003d0.1), Row(from\u003du\u0027Bob\u0027, to\u003du\u0027Carol\u0027, amt\u003d0.2), Row(from\u003du\u0027Carol\u0027, to\u003du\u0027Dave\u0027, amt\u003d0.3)]\n"
+            "data": "+-----+-----+---+\n| from|   to|amt|\n+-----+-----+---+\n|Alice|  Bob|0.1|\n|  Bob|Carol|0.2|\n|Carol| Dave|0.3|\n+-----+-----+---+\n\n[Row(from\u003d\u0027Alice\u0027, to\u003d\u0027Bob\u0027, amt\u003d0.1), Row(from\u003d\u0027Bob\u0027, to\u003d\u0027Carol\u0027, amt\u003d0.2), Row(from\u003d\u0027Carol\u0027, to\u003d\u0027Dave\u0027, amt\u003d0.3)]\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d46"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d47"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d48"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641208994509_1025322603",
       "id": "20220103-112314_463166567",
       "dateCreated": "2022-01-03 11:23:14.509",
-      "status": "READY"
+      "dateStarted": "2024-02-29 03:28:17.550",
+      "dateFinished": "2024-02-29 03:28:17.836",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca href\u003d\"http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame.columns\"\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page8.svg\" width\u003d500 height\u003d500 /\u003e\n\u003c/a\u003e",
@@ -544,13 +703,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# columns\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.columns #creates list of column names on driver\nx.show()\nprint(y)",
+      "text": "%pyspark\n\n# columns\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.columns #creates list of column names on driver\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:28:29.701",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -566,12 +735,30 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d49"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d50"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641208994509_572888963",
       "id": "20220103-112314_1856214467",
       "dateCreated": "2022-01-03 11:23:14.509",
-      "status": "READY"
+      "dateStarted": "2024-02-29 03:28:29.704",
+      "dateFinished": "2024-02-29 03:28:29.897",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca href\u003d\"http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame.corr\"\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page9.svg\" width\u003d500 height\u003d500 /\u003e\n\u003c/a\u003e",
@@ -608,13 +795,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# corr\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1,0.001),(\"Bob\",\"Carol\",0.2,0.02),(\"Carol\",\"Dave\",0.3,0.02)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027fee\u0027])\ny \u003d x.corr(col1\u003d\"amt\",col2\u003d\"fee\")\nx.show()\nprint(y)",
+      "text": "%pyspark\n\n# corr\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1,0.001),(\"Bob\",\"Carol\",0.2,0.02),(\"Carol\",\"Dave\",0.3,0.02)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027fee\u0027])\ny \u003d x.corr(col1\u003d\"amt\",col2\u003d\"fee\")\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:28:36.659",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -672,13 +869,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# count\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()\nprint(x.count())",
+      "text": "%pyspark\n\n# count\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()\nprint(x.count())",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:28:43.366",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -736,13 +943,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# cov\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1,0.001),(\"Bob\",\"Carol\",0.2,0.02),(\"Carol\",\"Dave\",0.3,0.02)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027fee\u0027])\ny \u003d x.cov(col1\u003d\"amt\",col2\u003d\"fee\")\nx.show()\nprint(y)",
+      "text": "%pyspark\n\n# cov\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1,0.001),(\"Bob\",\"Carol\",0.2,0.02),(\"Carol\",\"Dave\",0.3,0.02)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027fee\u0027])\ny \u003d x.cov(col1\u003d\"amt\",col2\u003d\"fee\")\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:28:49.916",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -800,13 +1017,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# crosstab\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.crosstab(col1\u003d\u0027from\u0027,col2\u003d\u0027to\u0027)\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# crosstab\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.crosstab(col1\u003d\u0027from\u0027,col2\u003d\u0027to\u0027)\nx.show()\ny.show()\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.509",
+      "dateUpdated": "2024-02-29 03:29:23.041",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -864,13 +1091,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# cube\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Alice\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.cube(\u0027from\u0027,\u0027to\u0027)\nx.show()\nprint(y) # y is a grouped data object, aggregations will be applied to all numerical columns\ny.sum().show() \ny.max().show()",
+      "text": "%pyspark\n\n# cube\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Alice\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.cube(\u0027from\u0027,\u0027to\u0027)\nx.show()\nprint(y) # y is a grouped data object, aggregations will be applied to all numerical columns\ny.sum().show() \ny.max().show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:29:38.335",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -928,13 +1165,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# describe\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()\nx.describe().show()",
+      "text": "%pyspark\n\n# describe\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()\nx.describe().show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:29:33.766",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -992,13 +1239,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# distinct\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.distinct()\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# distinct\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.distinct()\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:29:51.473",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -1056,13 +1313,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# drop\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.drop(\u0027amt\u0027)\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# drop\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.drop(\u0027amt\u0027)\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:30:01.315",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -1120,13 +1387,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# dropDuplicates / drop_duplicates\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Bob\",\"Carol\",0.3),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.dropDuplicates(subset\u003d[\u0027from\u0027,\u0027to\u0027])\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# dropDuplicates / drop_duplicates\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Bob\",\"Carol\",0.3),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.dropDuplicates(subset\u003d[\u0027from\u0027,\u0027to\u0027])\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:30:10.434",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -1184,13 +1461,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# dropna\nx \u003d sqlContext.createDataFrame([(None,\"Bob\",0.1),(\"Bob\",\"Carol\",None),(\"Carol\",None,0.3),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.dropna(how\u003d\u0027any\u0027,subset\u003d[\u0027from\u0027,\u0027to\u0027])\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# dropna\nx \u003d sqlContext.createDataFrame([(None,\"Bob\",0.1),(\"Bob\",\"Carol\",None),(\"Carol\",None,0.3),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.dropna(how\u003d\u0027any\u0027,subset\u003d[\u0027from\u0027,\u0027to\u0027])\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:30:20.363",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -1248,13 +1535,22 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# dtypes\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.dtypes\nx.show()\nprint(y)",
+      "text": "%python\n\n# dtypes\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.dtypes\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:42:50.330",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -1312,13 +1608,22 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# explain\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()\nx.agg({\"amt\":\"avg\"}).explain(extended \u003d True)",
+      "text": "%python\n\n# explain\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()\nx.agg({\"amt\":\"avg\"}).explain(extended \u003d True)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:38:43.570",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -1376,13 +1681,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# fillna\nx \u003d sqlContext.createDataFrame([(None,\"Bob\",0.1),(\"Bob\",\"Carol\",None),(\"Carol\",None,0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.fillna(value\u003d\u0027unknown\u0027,subset\u003d[\u0027from\u0027,\u0027to\u0027])\nx.show()\ny.show()",
+      "text": "%pyspark\n# fillna\nx \u003d sqlContext.createDataFrame([(None,\"Bob\",0.1),(\"Bob\",\"Carol\",None),(\"Carol\",None,0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.fillna(value\u003d\u0027unknown\u0027,subset\u003d[\u0027from\u0027,\u0027to\u0027])\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:37:06.734",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -1440,13 +1750,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# filter\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.filter(\"amt \u003e 0.1\")\nx.show()\ny.show()",
+      "text": "%pyspark\n# filter\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.filter(\"amt \u003e 0.1\")\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:36:59.301",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -1504,13 +1819,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# first\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.first()\nx.show()\nprint(y)",
+      "text": "%pyspark\n# first\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.first()\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:36:55.159",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -1568,13 +1888,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# flatMap\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.flatMap(lambda x: (x[0],x[2])) \nprint(y) # implicit coversion to RDD\ny.collect()",
+      "text": "%pyspark\n# flatMap\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.flatMap(lambda x: (x[0],x[2])) \nprint(y) # implicit coversion to RDD\ny.collect()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:36:50.439",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -1636,13 +1961,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# foreach\nfrom __future__ import print_function\n\n# setup\nfn \u003d \u0027./foreachExampleDataFrames.txt\u0027 \nopen(fn, \u0027w\u0027).close()  # clear the file\ndef fappend(el,f):\n    \u0027\u0027\u0027appends el to file f\u0027\u0027\u0027\n    print(el,file\u003dopen(f, \u0027a+\u0027) )\n\n# example\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.foreach(lambda x: fappend(x,fn)) # writes into foreachExampleDataFrames.txt\nx.show() # original dataframe\nprint(y) # foreach returns \u0027None\u0027\n# print the contents of the file\nwith open(fn, \"r\") as foreachExample:\n    print (foreachExample.read())",
+      "text": "%pyspark\n# foreach\nfrom __future__ import print_function\n\n# setup\nfn \u003d \u0027./foreachExampleDataFrames.txt\u0027 \nopen(fn, \u0027w\u0027).close()  # clear the file\ndef fappend(el,f):\n    \u0027\u0027\u0027appends el to file f\u0027\u0027\u0027\n    print(el,file\u003dopen(f, \u0027a+\u0027) )\n\n# example\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.foreach(lambda x: fappend(x,fn)) # writes into foreachExampleDataFrames.txt\nx.show() # original dataframe\nprint(y) # foreach returns \u0027None\u0027\n# print the contents of the file\nwith open(fn, \"r\") as foreachExample:\n    print (foreachExample.read())",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:36:27.374",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -1700,13 +2030,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# foreachPartition\nfrom __future__ import print_function\n\n#setup\nfn \u003d \u0027./foreachPartitionExampleDataFrames.txt\u0027\nopen(fn, \u0027w\u0027).close()  # clear the file\ndef fappend(partition,f):\n    \u0027\u0027\u0027append all elements in partition to file f\u0027\u0027\u0027\n    print([el for el in partition],file\u003dopen(f, \u0027a+\u0027))\n\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx \u003d x.repartition(2) # force 2 partitions\ny \u003d x.foreachPartition(lambda x: fappend(x,fn)) # writes into foreachPartitionExampleDataFrames.txt\n\nx.show() # original dataframe\nprint(y) # foreach returns \u0027None\u0027\n# print the contents of the file\nwith open(fn, \"r\") as foreachExample:\n    print (foreachExample.read())",
+      "text": "%pyspark\n# foreachPartition\nfrom __future__ import print_function\n\n#setup\nfn \u003d \u0027./foreachPartitionExampleDataFrames.txt\u0027\nopen(fn, \u0027w\u0027).close()  # clear the file\ndef fappend(partition,f):\n    \u0027\u0027\u0027append all elements in partition to file f\u0027\u0027\u0027\n    print([el for el in partition],file\u003dopen(f, \u0027a+\u0027))\n\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx \u003d x.repartition(2) # force 2 partitions\ny \u003d x.foreachPartition(lambda x: fappend(x,fn)) # writes into foreachPartitionExampleDataFrames.txt\n\nx.show() # original dataframe\nprint(y) # foreach returns \u0027None\u0027\n# print the contents of the file\nwith open(fn, \"r\") as foreachExample:\n    print (foreachExample.read())",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:36:20.311",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -1764,13 +2099,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# freqItems\nx \u003d sqlContext.createDataFrame([(\"Bob\",\"Carol\",0.1), \\\n                                (\"Alice\",\"Dave\",0.1), \\\n                                (\"Alice\",\"Bob\",0.1), \\\n                                (\"Alice\",\"Bob\",0.5), \\\n                                (\"Carol\",\"Bob\",0.1)], \\\n                               [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.freqItems(cols\u003d[\u0027from\u0027,\u0027amt\u0027],support\u003d0.8)\nx.show()\ny.show()",
+      "text": "%pyspark\n# freqItems\nx \u003d sqlContext.createDataFrame([(\"Bob\",\"Carol\",0.1), \\\n                                (\"Alice\",\"Dave\",0.1), \\\n                                (\"Alice\",\"Bob\",0.1), \\\n                                (\"Alice\",\"Bob\",0.5), \\\n                                (\"Carol\",\"Bob\",0.1)], \\\n                               [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.freqItems(cols\u003d[\u0027from\u0027,\u0027amt\u0027],support\u003d0.8)\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:36:16.178",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -1828,13 +2168,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# groupBy\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Alice\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.groupBy(\u0027from\u0027)\nx.show()\nprint(y)",
+      "text": "%pyspark\n# groupBy\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Alice\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.groupBy(\u0027from\u0027)\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.510",
+      "dateUpdated": "2024-02-29 03:36:10.857",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -1892,13 +2237,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# groupBy(col1).avg(col2)\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Alice\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.groupBy(\u0027from\u0027).avg(\u0027amt\u0027)\nx.show()\ny.show()",
+      "text": "%pyspark\n# groupBy(col1).avg(col2)\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Alice\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.groupBy(\u0027from\u0027).avg(\u0027amt\u0027)\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:36:06.913",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -1956,13 +2306,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# head\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.head(2)\nx.show()\nprint(y)",
+      "text": "%pyspark\n# head\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.head(2)\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:36:03.126",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2020,13 +2375,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# intersect\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Alice\",0.2),(\"Carol\",\"Dave\",0.1)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nz \u003d x.intersect(y)\nx.show()\ny.show()\nz.show()",
+      "text": "%pyspark\n# intersect\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Alice\",0.2),(\"Carol\",\"Dave\",0.1)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nz \u003d x.intersect(y)\nx.show()\ny.show()\nz.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:58.943",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2084,13 +2444,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# isLocal\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.isLocal()\nx.show()\nprint(y)",
+      "text": "%pyspark\n# isLocal\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.isLocal()\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:51.544",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2148,13 +2513,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# join\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,20),(\"Bob\",40),(\"Dave\",80)], [\u0027name\u0027,\u0027age\u0027])\nz \u003d x.join(y,x.to \u003d\u003d y.name,\u0027inner\u0027).select(\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027age\u0027)\nx.show()\ny.show()\nz.show()",
+      "text": "%pyspark\n# join\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,20),(\"Bob\",40),(\"Dave\",80)], [\u0027name\u0027,\u0027age\u0027])\nz \u003d x.join(y,x.to \u003d\u003d y.name,\u0027inner\u0027).select(\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027age\u0027)\nx.show()\ny.show()\nz.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:46.091",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2212,13 +2582,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# limit\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.limit(2)\nx.show()\ny.show()",
+      "text": "%pyspark\n# limit\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.limit(2)\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:40.109",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2276,13 +2651,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# map\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.map(lambda x: x.amt+1)\nx.show()\nprint(y.collect())  # output is RDD",
+      "text": "%pyspark\n# map\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.map(lambda x: x.amt+1)\nx.show()\nprint(y.collect())  # output is RDD",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:34.129",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2340,13 +2720,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# mapPartitions\ndef amt_sum(partition):\n    \u0027\u0027\u0027sum the value in field amt\u0027\u0027\u0027\n    yield sum([el.amt for el in partition])\n    \nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx \u003d x.repartition(2) # force 2 partitions\ny \u003d x.mapPartitions(lambda p: amt_sum(p))\nx.show()\nprint(x.rdd.glom().collect()) # flatten elements on the same partition\nprint(y.collect())\nprint(y.glom().collect())",
+      "text": "%pyspark\n# mapPartitions\ndef amt_sum(partition):\n    \u0027\u0027\u0027sum the value in field amt\u0027\u0027\u0027\n    yield sum([el.amt for el in partition])\n    \nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx \u003d x.repartition(2) # force 2 partitions\ny \u003d x.mapPartitions(lambda p: amt_sum(p))\nx.show()\nprint(x.rdd.glom().collect()) # flatten elements on the same partition\nprint(y.collect())\nprint(y.glom().collect())",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:27.913",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2404,13 +2789,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# na\nx \u003d sqlContext.createDataFrame([(None,\"Bob\",0.1),(\"Bob\",\"Carol\",None),(\"Carol\",None,0.3),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.na  # returns an object for handling missing values, supports drop, fill, and replace methods\nx.show()\nprint(y)\ny.drop().show()\ny.fill({\u0027from\u0027:\u0027unknown\u0027,\u0027to\u0027:\u0027unknown\u0027,\u0027amt\u0027:0}).show()\ny.fill(0).show()",
+      "text": "%pyspark\n# na\nx \u003d sqlContext.createDataFrame([(None,\"Bob\",0.1),(\"Bob\",\"Carol\",None),(\"Carol\",None,0.3),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.na  # returns an object for handling missing values, supports drop, fill, and replace methods\nx.show()\nprint(y)\ny.drop().show()\ny.fill({\u0027from\u0027:\u0027unknown\u0027,\u0027to\u0027:\u0027unknown\u0027,\u0027amt\u0027:0}).show()\ny.fill(0).show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:21.604",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2468,13 +2858,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# orderBy\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.orderBy([\u0027from\u0027],ascending\u003d[False])\nx.show()\ny.show()",
+      "text": "%pyspark\n# orderBy\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.orderBy([\u0027from\u0027],ascending\u003d[False])\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:14.749",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2532,13 +2927,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# persist\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.persist(storageLevel\u003dStorageLevel(True,True,False,True,1)) # StorageLevel(useDisk,useMemory,useOffHeap,deserialized,replication\u003d1)\nx.show()\nx.is_cached",
+      "text": "%pyspark\n# persist\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.persist(storageLevel\u003dStorageLevel(True,True,False,True,1)) # StorageLevel(useDisk,useMemory,useOffHeap,deserialized,replication\u003d1)\nx.show()\nx.is_cached",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:06.331",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2600,13 +3000,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# printSchema\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()\nx.printSchema()",
+      "text": "%pyspark\n# printSchema\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()\nx.printSchema()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:35:01.670",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2664,13 +3069,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# randomSplit\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.randomSplit([0.5,0.5])\nx.show()\ny[0].show()\ny[1].show()",
+      "text": "%pyspark\n# randomSplit\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.randomSplit([0.5,0.5])\nx.show()\ny[0].show()\ny[1].show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:34:56.464",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2728,13 +3138,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# rdd\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.rdd\nx.show()\nprint(y.collect())",
+      "text": "%pyspark\n# rdd\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.rdd\nx.show()\nprint(y.collect())",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.511",
+      "dateUpdated": "2024-02-29 03:34:50.927",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2792,13 +3207,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# registerTempTable\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.registerTempTable(name\u003d\"TRANSACTIONS\")\ny \u003d sqlContext.sql(\u0027SELECT * FROM TRANSACTIONS WHERE amt \u003e 0.1\u0027)\nx.show()\ny.show()",
+      "text": "%pyspark\n# registerTempTable\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.registerTempTable(name\u003d\"TRANSACTIONS\")\ny \u003d sqlContext.sql(\u0027SELECT * FROM TRANSACTIONS WHERE amt \u003e 0.1\u0027)\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.512",
+      "dateUpdated": "2024-02-29 03:34:44.919",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2856,13 +3276,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# repartition\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.repartition(3)\nprint(x.rdd.getNumPartitions())\nprint(y.rdd.getNumPartitions())",
+      "text": "%pyspark\n# repartition\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.repartition(3)\nprint(x.rdd.getNumPartitions())\nprint(y.rdd.getNumPartitions())",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.512",
+      "dateUpdated": "2024-02-29 03:34:38.281",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2920,13 +3345,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# replace\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.replace(\u0027Dave\u0027,\u0027David\u0027,[\u0027from\u0027,\u0027to\u0027])\nx.show()\ny.show()",
+      "text": "%pyspark\n# replace\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.replace(\u0027Dave\u0027,\u0027David\u0027,[\u0027from\u0027,\u0027to\u0027])\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.512",
+      "dateUpdated": "2024-02-29 03:34:33.251",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -2984,13 +3414,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# rollup\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.rollup([\u0027from\u0027,\u0027to\u0027])\nx.show()\nprint(y) # y is a grouped data object, aggregations will be applied to all numerical columns\ny.sum().show()\ny.max().show()",
+      "text": "%pyspark\n# rollup\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.rollup([\u0027from\u0027,\u0027to\u0027])\nx.show()\nprint(y) # y is a grouped data object, aggregations will be applied to all numerical columns\ny.sum().show()\ny.max().show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.512",
+      "dateUpdated": "2024-02-29 03:34:25.814",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3048,13 +3483,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# sample\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.sample(False,0.5)\nx.show()\ny.show()",
+      "text": "%pyspark\n# sample\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.sample(False,0.5)\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.512",
+      "dateUpdated": "2024-02-29 03:34:19.936",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3112,13 +3552,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# sampleBy\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Alice\",\"Carol\",0.2),(\"Alice\",\"Alice\",0.3), \\\n                               (\u0027Alice\u0027,\"Dave\",0.4),(\"Bob\",\"Bob\",0.5),(\"Bob\",\"Carol\",0.6)], \\\n                                [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.sampleBy(col\u003d\u0027from\u0027,fractions\u003d{\u0027Alice\u0027:0.1,\u0027Bob\u0027:0.9})\nx.show()\ny.show()",
+      "text": "%pyspark\n# sampleBy\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Alice\",\"Carol\",0.2),(\"Alice\",\"Alice\",0.3), \\\n                               (\u0027Alice\u0027,\"Dave\",0.4),(\"Bob\",\"Bob\",0.5),(\"Bob\",\"Carol\",0.6)], \\\n                                [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.sampleBy(col\u003d\u0027from\u0027,fractions\u003d{\u0027Alice\u0027:0.1,\u0027Bob\u0027:0.9})\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:34:15.337",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3176,13 +3621,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# schema\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.schema\nx.show()\nprint(y)",
+      "text": "%pyspark\n# schema\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.schema\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:34:08.109",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3240,13 +3690,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# select\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.select([\u0027from\u0027,\u0027amt\u0027])\nx.show()\ny.show()",
+      "text": "%pyspark\n# select\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.select([\u0027from\u0027,\u0027amt\u0027])\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:34:02.604",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3304,13 +3759,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# selectExpr\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.selectExpr([\u0027substr(from,1,1)\u0027,\u0027amt+10\u0027])\nx.show()\ny.show()",
+      "text": "%pyspark\n# selectExpr\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.selectExpr([\u0027substr(from,1,1)\u0027,\u0027amt+10\u0027])\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:33:55.942",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3368,13 +3828,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# show\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()",
+      "text": "%pyspark\n# show\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:33:51.582",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3432,13 +3897,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# sort\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Alice\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.sort([\u0027to\u0027])\nx.show()\ny.show()",
+      "text": "%pyspark\n# sort\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Alice\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.sort([\u0027to\u0027])\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:33:45.882",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3496,13 +3966,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# sortWithinPartitions\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1,1),(\"Bob\",\"Carol\",0.2,2),(\"Carol\",\"Alice\",0.3,2)], \\\n                               [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027p_id\u0027]).repartition(2,\u0027p_id\u0027)\ny \u003d x.sortWithinPartitions([\u0027to\u0027])\nx.show()\ny.show()\nprint(x.rdd.glom().collect()) # glom() flattens elements on the same partition\nprint(y.rdd.glom().collect())",
+      "text": "%pyspark\n# sortWithinPartitions\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1,1),(\"Bob\",\"Carol\",0.2,2),(\"Carol\",\"Alice\",0.3,2)], \\\n                               [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027p_id\u0027]).repartition(2,\u0027p_id\u0027)\ny \u003d x.sortWithinPartitions([\u0027to\u0027])\nx.show()\ny.show()\nprint(x.rdd.glom().collect()) # glom() flattens elements on the same partition\nprint(y.rdd.glom().collect())",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:33:38.392",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3560,13 +4035,18 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# stat\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1,0.001),(\"Bob\",\"Carol\",0.2,0.02),(\"Carol\",\"Dave\",0.3,0.02)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027fee\u0027])\ny \u003d x.stat\nx.show()\nprint(y)\nprint(y.corr(col1\u003d\"amt\",col2\u003d\"fee\"))",
+      "text": "%pyspark\n# stat\nx \u003d sqlContext.createDataFrame([(\"Alice\",\"Bob\",0.1,0.001),(\"Bob\",\"Carol\",0.2,0.02),(\"Carol\",\"Dave\",0.3,0.02)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027,\u0027fee\u0027])\ny \u003d x.stat\nx.show()\nprint(y)\nprint(y.corr(col1\u003d\"amt\",col2\u003d\"fee\"))",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:33:31.852",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
       },
       "settings": {
         "params": {},
@@ -3624,13 +4104,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# subtract\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.1)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nz \u003d x.subtract(y)\nx.show()\ny.show()\nz.show()",
+      "text": "%pyspark\n\n# subtract\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.1)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nz \u003d x.subtract(y)\nx.show()\ny.show()\nz.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:33:24.628",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -3688,13 +4178,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# take\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.take(num\u003d2)\nx.show()\nprint(y)",
+      "text": "%pyspark\n\n# take\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.take(num\u003d2)\nx.show()\nprint(y)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:33:15.886",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -3752,13 +4252,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# toDF\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.toDF(\"seller\",\"buyer\",\"amt\")\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# toDF\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.toDF(\"seller\",\"buyer\",\"amt\")\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:33:05.436",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -3816,13 +4326,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# toJSON\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Alice\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.toJSON()\nx.show()\nprint(y.collect())",
+      "text": "%pyspark\n\n# toJSON\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Alice\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.toJSON()\nx.show()\nprint(y.collect())",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.513",
+      "dateUpdated": "2024-02-29 03:32:54.338",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -3880,13 +4400,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# toPandas\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.toPandas()\nx.show()\nprint(type(y))\ny",
+      "text": "%pyspark\n\n# toPandas\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.toPandas()\nx.show()\nprint(type(y))\ny",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.514",
+      "dateUpdated": "2024-02-29 03:32:25.287",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -3897,21 +4427,38 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "+-----+-----+---+\n| from|   to|amt|\n+-----+-----+---+\n|Alice|  Bob|0.1|\n|  Bob|Carol|0.2|\n|Carol| Dave|0.3|\n+-----+-----+---+\n\n\u003cclass \u0027pandas.core.frame.DataFrame\u0027\u003e\n"
-          },
-          {
-            "type": "HTML",
-            "data": "\u003cdiv\u003e\n\u003ctable border\u003d\"1\" class\u003d\"dataframe\"\u003e\n  \u003cthead\u003e\n    \u003ctr style\u003d\"text-align: right;\"\u003e\n      \u003cth\u003e\u003c/th\u003e\n      \u003cth\u003efrom\u003c/th\u003e\n      \u003cth\u003eto\u003c/th\u003e\n      \u003cth\u003eamt\u003c/th\u003e\n    \u003c/tr\u003e\n  \u003c/thead\u003e\n  \u003ctbody\u003e\n    \u003ctr\u003e\n      \u003cth\u003e0\u003c/th\u003e\n      \u003ctd\u003eAlice\u003c/td\u003e\n      \u003ctd\u003eBob\u003c/td\u003e\n      \u003ctd\u003e0.1\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003cth\u003e1\u003c/th\u003e\n      \u003ctd\u003eBob\u003c/td\u003e\n      \u003ctd\u003eCarol\u003c/td\u003e\n      \u003ctd\u003e0.2\u003c/td\u003e\n    \u003c/tr\u003e\n    \u003ctr\u003e\n      \u003cth\u003e2\u003c/th\u003e\n      \u003ctd\u003eCarol\u003c/td\u003e\n      \u003ctd\u003eDave\u003c/td\u003e\n      \u003ctd\u003e0.3\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/tbody\u003e\n\u003c/table\u003e\n\u003c/div\u003e"
+            "data": "+-----+-----+---+\n| from|   to|amt|\n+-----+-----+---+\n|Alice|  Bob|0.1|\n|  Bob|Carol|0.2|\n|Carol| Dave|0.3|\n+-----+-----+---+\n\n\u003cclass \u0027pandas.core.frame.DataFrame\u0027\u003e\n    from     to  amt\n0  Alice    Bob  0.1\n1    Bob  Carol  0.2\n2  Carol   Dave  0.3\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d58"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d59"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d60"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641208994513_1089081687",
       "id": "20220103-112314_835813330",
       "dateCreated": "2022-01-03 11:23:14.514",
-      "status": "READY"
+      "dateStarted": "2024-02-29 03:32:15.752",
+      "dateFinished": "2024-02-29 03:32:16.011",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca href\u003d\"http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame.unionAll\"\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page61.svg\" width\u003d500 height\u003d500 /\u003e\n\u003c/a\u003e",
@@ -3948,13 +4495,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# unionAll\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d sqlContext.createDataFrame([(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.1)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nz \u003d x.unionAll(y)\nx.show()\ny.show()\nz.show()",
+      "text": "%pyspark\n\n# unionAll\nx \u003d spark.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d spark.createDataFrame([(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.1)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nz \u003d x.unionAll(y)\nx.show()\ny.show()\nz.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.514",
+      "dateUpdated": "2024-02-29 03:31:50.359",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -3970,12 +4527,45 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d51"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d52"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d53"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d54"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d55"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d56"
+            },
+            {
+              "jobUrl": "http://resourcemanager.sandbox.net:8088/proxy/application_1709172183372_0006//jobs/job?id\u003d57"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1641208994514_1054617871",
       "id": "20220103-112314_1917107228",
       "dateCreated": "2022-01-03 11:23:14.514",
-      "status": "READY"
+      "dateStarted": "2024-02-29 03:31:50.363",
+      "dateFinished": "2024-02-29 03:31:51.005",
+      "status": "FINISHED"
     },
     {
       "text": "%md\n\u003ca href\u003d\"http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame.unpersist\"\u003e\n\u003cimg align\u003dleft src\u003d\"files/images/pyspark-pictures-dataframes-page62.svg\" width\u003d500 height\u003d500 /\u003e\n\u003c/a\u003e",
@@ -4012,13 +4602,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# unpersist\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.cache()\nx.count()\nx.show()\nprint(x.is_cached)\nx.unpersist()\nprint(x.is_cached)",
+      "text": "%pyspark\n\n# unpersist\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\nx.cache()\nx.count()\nx.show()\nprint(x.is_cached)\nx.unpersist()\nprint(x.is_cached)",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.514",
+      "dateUpdated": "2024-02-29 03:31:27.719",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -4076,13 +4676,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# where (filter)\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.where(\"amt \u003e 0.1\")\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# where (filter)\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.where(\"amt \u003e 0.1\")\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.514",
+      "dateUpdated": "2024-02-29 03:31:18.388",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -4140,13 +4750,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# withColumn\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",None),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.withColumn(\u0027conf\u0027,x.amt.isNotNull())\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# withColumn\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",None),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.withColumn(\u0027conf\u0027,x.amt.isNotNull())\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.514",
+      "dateUpdated": "2024-02-29 03:31:07.291",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -4204,13 +4824,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# withColumnRenamed\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.withColumnRenamed(\u0027amt\u0027,\u0027amount\u0027)\nx.show()\ny.show()",
+      "text": "%pyspark\n\n# withColumnRenamed\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.withColumnRenamed(\u0027amt\u0027,\u0027amount\u0027)\nx.show()\ny.show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.514",
+      "dateUpdated": "2024-02-29 03:30:56.938",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},
@@ -4268,13 +4898,23 @@
       "status": "READY"
     },
     {
-      "text": "%python\n# write\nimport json\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.write.mode(\u0027overwrite\u0027).json(\u0027./dataframeWriteExample.json\u0027)\nx.show()\n# read the dataframe back in from file\nsqlContext.read.json(\u0027./dataframeWriteExample.json\u0027).show()",
+      "text": "%pyspark\n\n# write\nimport json\nx \u003d sqlContext.createDataFrame([(\u0027Alice\u0027,\"Bob\",0.1),(\"Bob\",\"Carol\",0.2),(\"Carol\",\"Dave\",0.3)], [\u0027from\u0027,\u0027to\u0027,\u0027amt\u0027])\ny \u003d x.write.mode(\u0027overwrite\u0027).json(\u0027./dataframeWriteExample.json\u0027)\nx.show()\n# read the dataframe back in from file\nsqlContext.read.json(\u0027./dataframeWriteExample.json\u0027).show()",
       "user": "anonymous",
-      "dateUpdated": "2022-01-03 11:23:14.514",
+      "dateUpdated": "2024-02-29 03:30:47.554",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
-        "editorHide": false
+        "editorHide": false,
+        "colWidth": 12.0,
+        "fontSize": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
       },
       "settings": {
         "params": {},

@@ -13,7 +13,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sh",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "results": {},
         "enabled": true
       },
@@ -38,7 +38,7 @@
     {
       "text": "%hive\n\nshow tables;",
       "user": "anonymous",
-      "dateUpdated": "2024-02-17 11:08:12.058",
+      "dateUpdated": "2024-02-18 18:10:41.379",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -116,7 +116,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "tab_name\ne_students\nm_students\ntransaction_details\n"
+            "data": "tab_name\ncustomers\ne_students\nm_students\norders\ntransaction_details\n"
           }
         ]
       },
@@ -126,8 +126,8 @@
       "jobName": "paragraph_1687679032442_491873234",
       "id": "paragraph_1687679032442_491873234",
       "dateCreated": "2023-06-25 07:43:52.443",
-      "dateStarted": "2024-02-17 11:08:12.080",
-      "dateFinished": "2024-02-17 11:08:15.542",
+      "dateStarted": "2024-02-18 18:10:41.384",
+      "dateFinished": "2024-02-18 18:10:42.758",
       "status": "FINISHED"
     },
     {
@@ -303,7 +303,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sh",
-        "fontSize": 9.0,
+        "fontSize": 12.0,
         "checkEmpty": false,
         "results": {},
         "enabled": true
@@ -335,7 +335,7 @@
       "title": "List All Databases",
       "text": "%hive\n\n--\nSHOW DATABASES;\n\n-- SELECT CURRENT_DATE;\n-- SELECT CURRENT_TIMESTAMP;\n-- SELECT unix_timestamp();\n-- SELECT from_unixtime(unix_timestamp());\n\n",
       "user": "anonymous",
-      "dateUpdated": "2024-02-17 11:08:24.956",
+      "dateUpdated": "2024-02-18 18:10:57.180",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -506,8 +506,8 @@
       "jobName": "paragraph_1639224747962_2073327326",
       "id": "paragraph_1639224747962_2073327326",
       "dateCreated": "2021-12-11 17:42:27.989",
-      "dateStarted": "2024-02-17 11:08:24.964",
-      "dateFinished": "2024-02-17 11:08:25.145",
+      "dateStarted": "2024-02-18 18:10:57.185",
+      "dateFinished": "2024-02-18 18:10:57.322",
       "status": "FINISHED"
     },
     {
@@ -581,7 +581,7 @@
     {
       "text": "%hive\n\ndfs -ls / ;",
       "user": "anonymous",
-      "dateUpdated": "2024-02-17 11:08:37.165",
+      "dateUpdated": "2024-02-18 18:11:03.487",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -632,7 +632,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "DFS Output\nFound 7 items\ndrwxrwxrwx   - yarn   hadoop          0 2024-02-06 04:19 /apps\ndrwxrwxrwx   - hdfs   hadoop          0 2024-02-15 18:18 /archives\ndrwxr-xr-x   - hbase  hadoop          0 2024-02-17 05:47 /hbase\ndrwxrwx---   - mapred hadoop          0 2024-02-06 03:49 /mapred\ndrwxrwxrwx   - hive   hadoop          0 2024-02-15 01:38 /tmp\ndrwxrwxrwx   - hive   hadoop          0 2024-02-06 04:16 /user\ndrwxr-xr-x   - hive   hdfs            0 2024-02-06 04:10 /warehouse\n"
+            "data": "DFS Output\nFound 7 items\ndrwxrwxrwx   - yarn   hadoop          0 2024-02-06 04:19 /apps\ndrwxrwxrwx   - hdfs   hadoop          0 2024-02-18 13:57 /archives\ndrwxr-xr-x   - hbase  hadoop          0 2024-02-18 18:03 /hbase\ndrwxrwx---   - mapred hadoop          0 2024-02-06 03:49 /mapred\ndrwxrwxrwx   - hive   hadoop          0 2024-02-06 03:57 /tmp\ndrwxrwxrwx   - hive   hadoop          0 2024-02-06 04:16 /user\ndrwxr-xr-x   - hive   hdfs            0 2024-02-06 04:10 /warehouse\n"
           }
         ]
       },
@@ -642,14 +642,14 @@
       "jobName": "paragraph_1670737248335_684494031",
       "id": "paragraph_1670737248335_684494031",
       "dateCreated": "2022-12-11 05:40:48.335",
-      "dateStarted": "2024-02-17 11:08:37.171",
-      "dateFinished": "2024-02-17 11:08:37.317",
+      "dateStarted": "2024-02-18 18:11:03.492",
+      "dateFinished": "2024-02-18 18:11:03.625",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\n\nselect array(\u0027Tom\u0027,\u0027Jerry\u0027,\u0027Emily\u0027);\n\n",
       "user": "anonymous",
-      "dateUpdated": "2023-07-16 05:01:21.978",
+      "dateUpdated": "2024-02-18 18:11:09.226",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -710,14 +710,14 @@
       "jobName": "paragraph_1640925853473_15471634",
       "id": "paragraph_1640925853473_15471634",
       "dateCreated": "2021-12-31 04:44:13.473",
-      "dateStarted": "2023-07-16 05:01:21.983",
-      "dateFinished": "2023-07-16 05:01:22.228",
+      "dateStarted": "2024-02-18 18:11:09.231",
+      "dateFinished": "2024-02-18 18:11:10.926",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\n\n-- There are 2 flavors of explode, one flavor takes an Array and another takes a Map. \n-- In the below example explode function will take in an Array and explode the array into multiple rows. So if we have 3 elements in the array we will end up with 3 rows.\n\nselect explode(array(\u0027Tom\u0027,\u0027Jerry\u0027,\u0027Emily\u0027));\n\n",
       "user": "anonymous",
-      "dateUpdated": "2022-12-11 04:57:21.718",
+      "dateUpdated": "2024-02-18 18:11:17.362",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -778,8 +778,8 @@
       "jobName": "paragraph_1640925882934_1570154632",
       "id": "paragraph_1640925882934_1570154632",
       "dateCreated": "2021-12-31 04:44:42.934",
-      "dateStarted": "2022-12-11 04:57:21.723",
-      "dateFinished": "2022-12-11 04:57:23.639",
+      "dateStarted": "2024-02-18 18:11:17.367",
+      "dateFinished": "2024-02-18 18:11:17.945",
       "status": "FINISHED"
     },
     {
@@ -1049,7 +1049,7 @@
     {
       "text": "%hive\n\nDESCRIBE FORMATTED transaction_details;\n\n",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:18:01.497",
+      "dateUpdated": "2024-02-18 18:11:27.753",
       "progress": 0,
       "config": {
         "tableHide": false,
@@ -1132,7 +1132,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "col_name\tdata_type\tcomment\n# col_name\tdata_type\tcomment\nid\tint\t\nuuid\tstring\t\ncardtype\tstring\t\nwebsite\tstring\t\nproduct\tstring\t\namount\tdouble\t\ncity\tstring\t\ncountry\tstring\t\naddts\tbigint\t\n\tnull\tnull\n# Partition Information\tnull\tnull\n# col_name\tdata_type\tcomment\ntxn_receive_date\tstring\t\n\tnull\tnull\n# Detailed Table Information\tnull\tnull\nDatabase:           \tdefault             \tnull\nOwnerType:          \tUSER                \tnull\nOwner:              \thive                \tnull\nCreateTime:         \tSun Dec 04 03:38:37 UTC 2022\tnull\nLastAccessTime:     \tUNKNOWN             \tnull\nRetention:          \t0                   \tnull\nLocation:           \thdfs://namenode:9000/transaction_details\tnull\nTable Type:         \tEXTERNAL_TABLE      \tnull\nTable Parameters:\tnull\tnull\n\tEXTERNAL            \tTRUE                \n\tbucketing_version   \t2                   \n\tcomment             \tTransaction Details External Table\n\tcreator             \tBrijesh K Dhaker    \n\tnumFiles            \t30                  \n\tnumPartitions       \t3                   \n\tnumRows             \t0                   \n\trawDataSize         \t0                   \n\ttotalSize           \t165152              \n\ttransient_lastDdlTime\t1670125117          \n\tnull\tnull\n# Storage Information\tnull\tnull\nSerDe Library:      \torg.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\tnull\nInputFormat:        \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\tnull\nOutputFormat:       \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\tnull\nCompressed:         \tNo                  \tnull\nNum Buckets:        \t-1                  \tnull\nBucket Columns:     \t[]                  \tnull\nSort Columns:       \t[]                  \tnull\nStorage Desc Params:\tnull\tnull\n\tserialization.format\t1                   \n"
+            "data": "col_name\tdata_type\tcomment\n# col_name\tdata_type\tcomment\ntransaction_id\tint\t\ntansaction_uuid\tstring\t\ntransaction_card_type\tstring\t\ntransaction_ecommerce_website_name\tstring\t\ntransaction_product_name\tstring\t\ntransaction_datetime\tstring\t\ntransaction_amount\tdouble\t\ntransaction_city_name\tstring\t\ntransaction_country_name\tstring\t\n\tnull\tnull\n# Partition Information\tnull\tnull\n# col_name\tdata_type\tcomment\ntxn_receive_date\tstring\t\n\tnull\tnull\n# Detailed Table Information\tnull\tnull\nDatabase:           \tdefault             \tnull\nOwnerType:          \tUSER                \tnull\nOwner:              \thive                \tnull\nCreateTime:         \tFri Feb 09 04:37:21 GMT 2024\tnull\nLastAccessTime:     \tUNKNOWN             \tnull\nRetention:          \t0                   \tnull\nLocation:           \thdfs://namenode.sandbox.net:9000/warehouse/tablespace/external/hive/transaction_details\tnull\nTable Type:         \tEXTERNAL_TABLE      \tnull\nTable Parameters:\tnull\tnull\n\tCOLUMN_STATS_ACCURATE\t{\\\"BASIC_STATS\\\":\\\"true\\\"}\n\tEXTERNAL            \tTRUE                \n\tbucketing_version   \t2                   \n\tcomment             \tTransaction Details External Table\n\tcreator             \tBrijesh K Dhaker    \n\tnumFiles            \t0                   \n\tnumPartitions       \t0                   \n\tnumRows             \t0                   \n\trawDataSize         \t0                   \n\ttotalSize           \t0                   \n\ttransient_lastDdlTime\t1707453441          \n\tnull\tnull\n# Storage Information\tnull\tnull\nSerDe Library:      \torg.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe\tnull\nInputFormat:        \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat\tnull\nOutputFormat:       \torg.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat\tnull\nCompressed:         \tNo                  \tnull\nNum Buckets:        \t-1                  \tnull\nBucket Columns:     \t[]                  \tnull\nSort Columns:       \t[]                  \tnull\nStorage Desc Params:\tnull\tnull\n\tserialization.format\t1                   \n"
           }
         ]
       },
@@ -1142,14 +1142,14 @@
       "jobName": "paragraph_1639225818881_1161956791",
       "id": "paragraph_1639225818881_1161956791",
       "dateCreated": "2021-12-11 18:00:18.881",
-      "dateStarted": "2023-04-23 04:18:01.500",
-      "dateFinished": "2023-04-23 04:18:02.013",
+      "dateStarted": "2024-02-18 18:11:27.758",
+      "dateFinished": "2024-02-18 18:11:28.081",
       "status": "FINISHED"
     },
     {
       "text": "%hive\n\nDESCRIBE EXTENDED transaction_details;\n",
       "user": "anonymous",
-      "dateUpdated": "2023-02-06 17:29:51.432",
+      "dateUpdated": "2024-02-29 02:56:54.389",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1202,7 +1202,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "col_name\tdata_type\tcomment\nid\tint\t\nuuid\tstring\t\ncardtype\tstring\t\nwebsite\tstring\t\nproduct\tstring\t\namount\tdouble\t\ncity\tstring\t\ncountry\tstring\t\naddts\tbigint\t\ntxn_receive_date\tstring\t\n\tnull\tnull\n# Partition Information\tnull\tnull\n# col_name\tdata_type\tcomment\ntxn_receive_date\tstring\t\n\tnull\tnull\nDetailed Table Information\tTable(tableName:transaction_details, dbName:default, owner:hive, createTime:1670125117, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:id, type:int, comment:null), FieldSchema(name:uuid, type:string, comment:null), FieldSchema(name:cardtype, type:string, comment:null), FieldSchema(name:website, type:string, comment:null), FieldSchema(name:product, type:string, comment:null), FieldSchema(name:amount, type:double, comment:null), FieldSchema(name:city, type:string, comment:null), FieldSchema(name:country, type:string, comment:null), FieldSchema(name:addts, type:bigint, comment:null), FieldSchema(name:txn_receive_date, type:string, comment:null)], location:hdfs://namenode:9000/transaction_details, inputFormat:org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe, parameters:{serialization.format\u003d1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[FieldSchema(name:txn_receive_date, type:string, comment:null)], parameters:{creator\u003dBrijesh K Dhaker, totalSize\u003d165152, EXTERNAL\u003dTRUE, numRows\u003d0, rawDataSize\u003d0, numFiles\u003d30, numPartitions\u003d3, transient_lastDdlTime\u003d1670125117, bucketing_version\u003d2, comment\u003dTransaction Details External Table}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)\t\n"
+            "data": "col_name\tdata_type\tcomment\nid\tint\t\nuuid\tstring\t\ncardtype\tstring\t\nwebsite\tstring\t\nproduct\tstring\t\namount\tdouble\t\ncity\tstring\t\ncountry\tstring\t\naddts\tbigint\t\ntxn_receive_date\tstring\t\n\tnull\tnull\n# Partition Information\tnull\tnull\n# col_name\tdata_type\tcomment\ntxn_receive_date\tstring\t\n\tnull\tnull\nDetailed Table Information\tTable(tableName:transaction_details, dbName:default, owner:hive, createTime:1709172368, lastAccessTime:0, retention:0, sd:StorageDescriptor(cols:[FieldSchema(name:id, type:int, comment:null), FieldSchema(name:uuid, type:string, comment:null), FieldSchema(name:cardtype, type:string, comment:null), FieldSchema(name:website, type:string, comment:null), FieldSchema(name:product, type:string, comment:null), FieldSchema(name:amount, type:double, comment:null), FieldSchema(name:city, type:string, comment:null), FieldSchema(name:country, type:string, comment:null), FieldSchema(name:addts, type:bigint, comment:null), FieldSchema(name:txn_receive_date, type:string, comment:null)], location:hdfs://namenode:9000/warehouse/tablespace/external/hive/transaction_details, inputFormat:org.apache.hadoop.hive.ql.io.parquet.MapredParquetInputFormat, outputFormat:org.apache.hadoop.hive.ql.io.parquet.MapredParquetOutputFormat, compressed:false, numBuckets:-1, serdeInfo:SerDeInfo(name:null, serializationLib:org.apache.hadoop.hive.ql.io.parquet.serde.ParquetHiveSerDe, parameters:{serialization.format\u003d1}), bucketCols:[], sortCols:[], parameters:{}, skewedInfo:SkewedInfo(skewedColNames:[], skewedColValues:[], skewedColValueLocationMaps:{}), storedAsSubDirectories:false), partitionKeys:[FieldSchema(name:txn_receive_date, type:string, comment:null)], parameters:{creator\u003dBrijesh K Dhaker, totalSize\u003d0, EXTERNAL\u003dTRUE, numRows\u003d0, rawDataSize\u003d0, numFiles\u003d0, numPartitions\u003d1, transient_lastDdlTime\u003d1709172368, bucketing_version\u003d2, comment\u003dTransaction Details External Table}, viewOriginalText:null, viewExpandedText:null, tableType:EXTERNAL_TABLE, rewriteEnabled:false, catName:hive, ownerType:USER)\t\n"
           }
         ]
       },
@@ -1212,8 +1212,8 @@
       "jobName": "paragraph_1668564082610_1895566400",
       "id": "paragraph_1668564082610_1895566400",
       "dateCreated": "2022-11-16 02:01:22.611",
-      "dateStarted": "2023-02-06 17:29:51.435",
-      "dateFinished": "2023-02-06 17:29:51.584",
+      "dateStarted": "2024-02-29 02:56:54.391",
+      "dateFinished": "2024-02-29 02:56:54.537",
       "status": "FINISHED"
     },
     {
@@ -1306,161 +1306,9 @@
       "status": "READY"
     },
     {
-      "text": "%hive\n\nCREATE EXTERNAL TABLE IF NOT EXISTS transaction_details (\n    transaction_id int,\n    tansaction_uuid string,\n    transaction_card_type string,\n    transaction_ecommerce_website_name string,\n    transaction_product_name string,\n    transaction_datetime string,\n    transaction_amount double,\n    transaction_city_name string,\n    transaction_country_name string\n)\nCOMMENT \u0027Transaction Details External Table\u0027\nPARTITIONED BY(txn_receive_date string)\nSTORED AS Parquet\nLOCATION  \u0027hdfs://namenode:9000/transaction_details/\u0027\nTBLPROPERTIES(\"creator\"\u003d\"Brijesh K Dhaker\");\n",
-      "user": "anonymous",
-      "dateUpdated": "2022-10-21 02:28:58.122",
-      "progress": 0,
-      "config": {
-        "colWidth": 12.0,
-        "fontSize": 12.0,
-        "enabled": true,
-        "results": {},
-        "editorSetting": {
-          "language": "sql",
-          "editOnDblClick": false,
-          "completionSupport": true
-        },
-        "editorMode": "ace/mode/sql"
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "Query executed successfully. Affected rows : -1\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1639226183687_111342605",
-      "id": "paragraph_1639226183687_111342605",
-      "dateCreated": "2021-12-11 18:06:23.687",
-      "dateStarted": "2022-01-07 01:38:06.749",
-      "dateFinished": "2022-01-07 01:38:06.831",
-      "status": "FINISHED"
-    },
-    {
-      "text": "%hive\n\nMSCK REPAIR TABLE transaction_details;",
-      "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:18:17.475",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "sql",
-          "editOnDblClick": false,
-          "completionSupport": true
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/sql",
-        "fontSize": 12.0,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "INFO  : Compiling command(queryId\u003droot_20230423041817_c37e77da-40e3-4a18-bfb4-62ea4a007882): \n\nMSCK REPAIR TABLE transaction_details\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial \u003d false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:null, properties:null)\nINFO  : EXPLAIN output for queryid root_20230423041817_c37e77da-40e3-4a18-bfb4-62ea4a007882 : STAGE DEPENDENCIES:\n  Stage-0 is a root stage [DDL]\n\nSTAGE PLANS:\n  Stage: Stage-0\n\n\nINFO  : Completed compiling command(queryId\u003droot_20230423041817_c37e77da-40e3-4a18-bfb4-62ea4a007882); Time taken: 0.034 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId\u003droot_20230423041817_c37e77da-40e3-4a18-bfb4-62ea4a007882): \n\nMSCK REPAIR TABLE transaction_details\nINFO  : Starting task [Stage-0:DDL] in serial mode\n\n"
-          },
-          {
-            "type": "TEXT",
-            "data": "Query executed successfully. Affected rows : -1\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1641518575431_2095492446",
-      "id": "paragraph_1641518575431_2095492446",
-      "dateCreated": "2022-01-07 01:22:55.431",
-      "dateStarted": "2023-04-23 04:18:17.481",
-      "dateFinished": "2023-04-23 04:18:18.836",
-      "status": "FINISHED"
-    },
-    {
-      "text": "%hive\n\nSHOW PARTITIONS transaction_details;",
-      "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:18:29.394",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "sql",
-          "editOnDblClick": false,
-          "completionSupport": true
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/sql",
-        "fontSize": 12.0,
-        "results": {
-          "0": {
-            "graph": {
-              "mode": "table",
-              "height": 300.0,
-              "optionOpen": false,
-              "setting": {
-                "table": {
-                  "tableGridState": {},
-                  "tableColumnTypeState": {
-                    "names": {
-                      "partition": "string"
-                    },
-                    "updated": false
-                  },
-                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
-                  "tableOptionValue": {
-                    "useFilter": false,
-                    "showPagination": false,
-                    "showAggregationFooter": false
-                  },
-                  "updated": false,
-                  "initialized": false
-                }
-              },
-              "commonSetting": {}
-            }
-          }
-        },
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "TABLE",
-            "data": "partition\ntxn_receive_date\u003d2022-09-15\ntxn_receive_date\u003d2022-12-03\ntxn_receive_date\u003d2022-12-05\ntxn_receive_date\u003d2022-12-06\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1641526755897_741611256",
-      "id": "paragraph_1641526755897_741611256",
-      "dateCreated": "2022-01-07 03:39:15.897",
-      "dateStarted": "2023-04-23 04:18:29.399",
-      "dateFinished": "2023-04-23 04:18:29.506",
-      "status": "FINISHED"
-    },
-    {
       "text": "%hive\n\nselect * from transaction_details;\n",
       "user": "anonymous",
-      "dateUpdated": "2023-04-23 04:18:36.494",
+      "dateUpdated": "2024-02-29 02:56:40.754",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -1676,7 +1524,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "id\tuuid\tcardtype\twebsite\tproduct\tamount\tcity\tcountry\taddts\ttxn_receive_date\n2679\te6c0099a-a92f-45fa-9d04-82a422a593f6\tRuPay\tAmazon\tMobile\t7032.13\tLos Angeles\tUSA\t1663204220\t2022-09-15\n2678\tece842cc-e7d2-4aba-a9c0-bdd7560955cf\tMaster\tSnapDeal\tMobile\t23990.0\tNew York\tUSA\t1663204225\t2022-09-15\n1664\tcb498e9b-b16f-438e-8851-44b16b7a86f6\tRuPay\tAmazon\tComputer\t15798.52\tHiroshima\tJP\t1663204230\t2022-09-15\n4687\t24dab694-0d40-418f-9544-8aea19ce57b7\tVISA\tAmazon\tLaptop\t24485.26\tMiami\tUSA\t1663204235\t2022-09-15\n3949\tc08f1e8a-8e9f-43e7-bcf9-f15fde730a7d\tVISA\tAmazon\tTablet\t14949.11\tOxford\tUK\t1663203040\t2022-09-15\n4143\t319e34f2-1e00-45b3-b8d6-c628ccfbfac2\tMaster\tFlipkart\tComputer\t8618.17\tBanglore\tIN\t1663203045\t2022-09-15\n4547\tb7bae4f2-420e-4dd6-8f4a-5d9207a7957f\tMaster\tAmazon\tLaptop\t24347.02\tNew York\tUSA\t1663203050\t2022-09-15\n3196\t2d89dc1c-9d86-45f8-bfc7-d8663276b739\tRuPay\tAmazon\tTablet\t18717.18\tLos Angeles\tUSA\t1663203055\t2022-09-15\n2724\tde443eb3-38bf-4648-bf3e-31295062d25a\tVISA\tMyntra\tLaptop\t1665.79\tMiami\tUSA\t1663203060\t2022-09-15\n3136\t24e6c80a-6318-4368-be50-f2073157cd39\tMaster\tAmazon\tComputer\t17264.66\tYokohama\tJP\t1663203065\t2022-09-15\n4485\t84f78629-c611-4782-9692-396bdc84b3ea\tAmex\tMyntra\tLaptop\t511.53\tMiami\tUSA\t1663203070\t2022-09-15\n2716\tfa66b416-e2be-4d8f-b4ef-dd4c46ed2a53\tAmex\tMyntra\tMobile\t16965.5\tManchester\tUK\t1663203075\t2022-09-15\n1914\t192a7c5d-3c19-411e-b612-1036ecb0b984\tMaster\tMyntra\tLaptop\t16801.61\tMumbai\tIN\t1663203080\t2022-09-15\n4351\tc3eca654-2602-4067-a0a8-21b82b7bbfbb\tRuPay\tFlipkart\tLaptop\t4060.14\tManchester\tUK\t1663203085\t2022-09-15\n1458\tc886b787-5cb7-447e-b098-5987574c583c\tRuPay\tFlipkart\tMobile\t1750.67\tLondon\tUK\t1663203090\t2022-09-15\n4964\tf70be51e-a2d3-4206-99d9-92cd312681aa\tAmex\tSnapDeal\tComputer\t4401.56\tPune\tIN\t1663203095\t2022-09-15\n2572\tae8ba45f-e18b-48ee-93e8-6b382fa823b7\tVISA\tAmazon\tTablet\t4903.23\tTokyo\tJP\t1663203100\t2022-09-15\n3909\tc0ad06fd-ac44-427f-a4cb-cf59c273b737\tVISA\tSnapDeal\tMobile\t15298.2\tTokyo\tJP\t1663203105\t2022-09-15\n1314\t697cb724-ae18-4732-848e-e5a09d7f32ea\tMaster\tAmazon\tLaptop\t5114.79\tMiami\tUSA\t1663203110\t2022-09-15\n4820\tcac70670-42b5-4c3e-bb92-738fae6d0079\tMaster\tSnapDeal\tMobile\t10613.9\tBanglore\tIN\t1663203115\t2022-09-15\n1184\t2435c3d4-5944-4892-95cc-0cb356974003\tRuPay\tSnapDeal\tMobile\t3139.05\tTokyo\tJP\t1663203120\t2022-09-15\n3566\te2c655d6-f7c6-4938-8e8a-cea1159cc4e5\tVISA\tSnapDeal\tTablet\t5523.02\tLiverpool\tUK\t1663203125\t2022-09-15\n3844\t486af773-f766-412e-8a2a-89a613c78022\tMaster\tFlipkart\tMobile\t20678.19\tLos Angeles\tUSA\t1663203130\t2022-09-15\n1404\t20af6d2e-31d8-4b61-a285-eee7fe2d37b6\tAmex\tFlipkart\tLaptop\t22013.31\tPune\tIN\t1663203135\t2022-09-15\n3558\ta9801a6f-aa8b-4bd4-863f-22c6db7cad4e\tRuPay\tFlipkart\tLaptop\t1099.1\tTokyo\tJP\t1663203140\t2022-09-15\n3630\td1d48efc-7b87-4257-b845-1b8ec5e326d4\tAmex\tAmazon\tLaptop\t8096.47\tChennei\tIN\t1663203145\t2022-09-15\n1404\t6f01312b-cb35-42b4-9d85-df935887cb10\tRuPay\tMyntra\tTablet\t24308.2\tMumbai\tIN\t1663203150\t2022-09-15\n1130\t87226acb-7a31-41fa-afc7-cee4d8803a6e\tMaster\tFlipkart\tComputer\t11354.45\tOsaka\tJP\t1663203155\t2022-09-15\n3591\t238872e2-2b96-44fa-b183-6251b10e21a7\tMaster\tFlipkart\tTablet\t8098.57\tDelhi\tIN\t1663203160\t2022-09-15\n2333\td8dc28d2-b2fe-4a74-809f-c81649025ca2\tMaster\tMyntra\tTablet\t841.79\tYokohama\tJP\t1663203165\t2022-09-15\n4045\t7480f014-fcec-45ee-8a7d-93a64abd3578\tVISA\tFlipkart\tTablet\t23424.78\tLos Angeles\tUSA\t1663203170\t2022-09-15\n4554\t49ee3b06-641b-4617-9e32-ac022e2a429c\tAmex\tMyntra\tComputer\t22666.42\tHiroshima\tJP\t1663203175\t2022-09-15\n2637\te87676b9-b154-424f-a77f-a771fb1fe73d\tRuPay\tMyntra\tComputer\t12935.66\tManchester\tUK\t1663203180\t2022-09-15\n4924\ta38865f7-11a3-476d-bf51-14f4875e7fd4\tAmex\tFlipkart\tLaptop\t9131.9\tOxford\tUK\t1663203185\t2022-09-15\n2916\t29cccb81-2333-4fb5-95b6-686154a96113\tRuPay\tFlipkart\tTablet\t3058.42\tTokyo\tJP\t1663203190\t2022-09-15\n2105\t2e978ace-b2b7-430a-a427-c1809d19a277\tRuPay\tAmazon\tComputer\t10368.27\tMiami\tUSA\t1663203195\t2022-09-15\n1495\t532e78da-95fc-4ec2-ae80-0e68510be599\tVISA\tFlipkart\tLaptop\t13938.86\tDelhi\tIN\t1663203200\t2022-09-15\n1895\t62cdee8e-4c76-4fc2-b363-158ba71af1e5\tVISA\tSnapDeal\tTablet\t5665.99\tLos Angeles\tUSA\t1663203205\t2022-09-15\n2503\t983f1cad-c0af-40a1-87ad-e1eeaab43262\tAmex\tMyntra\tComputer\t17646.95\tLos Angeles\tUSA\t1663203210\t2022-09-15\n1121\t6c7f8654-4ae4-4908-af47-6df99f2b61c2\tMaster\tMyntra\tComputer\t11028.74\tManchester\tUK\t1663203215\t2022-09-15\n3172\ta04b94e7-8c1a-49ea-8243-9e4fca596118\tMaster\tMyntra\tLaptop\t21108.41\tNew York\tUSA\t1663203220\t2022-09-15\n3423\t58c415c1-0c4d-45ed-b498-c5bed9fac2c9\tMaster\tFlipkart\tTablet\t8445.18\tYokohama\tJP\t1663203225\t2022-09-15\n4276\t6fa6fddd-47ae-440c-b9fa-ee419074c068\tMaster\tAmazon\tTablet\t16077.82\tChennei\tIN\t1663203230\t2022-09-15\n1395\tddf2dd31-dc78-4110-b56e-307a686aefa8\tMaster\tAmazon\tTablet\t24661.78\tYokohama\tJP\t1663203235\t2022-09-15\n4029\t0d0f9e2e-cbab-4e28-8aad-34c345b0d8f0\tMaster\tAmazon\tComputer\t12721.04\tLondon\tUK\t1663203240\t2022-09-15\n4470\t2964c365-5047-46b3-b07a-1e1edb6d0ee3\tAmex\tFlipkart\tComputer\t21532.05\tOxford\tUK\t1663203245\t2022-09-15\n3254\tce01281f-9641-4435-8982-b4879bb17b7a\tVISA\tMyntra\tMobile\t5864.95\tChennei\tIN\t1663203250\t2022-09-15\n1973\tab66acfe-bfd8-4e91-8e01-65b1595e44cb\tRuPay\tSnapDeal\tMobile\t749.71\tMumbai\tIN\t1663203255\t2022-09-15\n4070\t84b3562d-c084-4995-b9d4-c4c812dfb426\tAmex\tMyntra\tMobile\t12628.95\tMumbai\tIN\t1663203260\t2022-09-15\n3601\tbd44c2a4-8426-42ae-84bc-0a2bf712446e\tVISA\tFlipkart\tMobile\t16570.75\tLos Angeles\tUSA\t1663203265\t2022-09-15\n1311\t9a8030a6-2718-4d45-a1c1-bdf30fed74a7\tVISA\tMyntra\tLaptop\t7698.38\tLiverpool\tUK\t1663203270\t2022-09-15\n1742\ta0b12275-612c-4bfb-b88b-3ae510e6a660\tVISA\tFlipkart\tLaptop\t15991.91\tHiroshima\tJP\t1663203275\t2022-09-15\n4154\t197e738d-c7df-497f-96fa-fe568141c87f\tRuPay\tSnapDeal\tLaptop\t15786.36\tOxford\tUK\t1663203280\t2022-09-15\n2449\tb5995e3b-6164-4df8-87f7-61a7bb6cebda\tAmex\tSnapDeal\tTablet\t4455.61\tMiami\tUSA\t1663203285\t2022-09-15\n4004\t18c3b7e6-a31a-4b34-923e-a2e6fcd2633f\tRuPay\tSnapDeal\tLaptop\t22146.94\tLiverpool\tUK\t1663203290\t2022-09-15\n3018\t0ddfb3ba-5069-4aa6-a17e-db625b7b226a\tAmex\tSnapDeal\tComputer\t2986.34\tManchester\tUK\t1663203295\t2022-09-15\n1474\ta3ac9031-b3d0-4ab5-9a33-932ffedbd21f\tAmex\tSnapDeal\tMobile\t14040.52\tDelhi\tIN\t1663203300\t2022-09-15\n4365\t145d31d5-68b4-4b58-94f7-7425f3497b9d\tRuPay\tMyntra\tMobile\t14253.95\tMiami\tUSA\t1663203305\t2022-09-15\n1946\tc378095d-8fbf-41e6-a0c0-306d1ba27047\tRuPay\tAmazon\tTablet\t17055.08\tPune\tIN\t1663203310\t2022-09-15\n1835\t7b2032ab-bd02-4098-887c-206e61aa1928\tRuPay\tAmazon\tComputer\t6455.46\tMiami\tUSA\t1663203315\t2022-09-15\n4561\t5d825fc0-cb99-4403-bbb7-3fea05a1b812\tRuPay\tSnapDeal\tTablet\t12434.57\tPune\tIN\t1663203320\t2022-09-15\n3214\t68d05fff-a00f-4b13-a096-275bac7c963c\tAmex\tFlipkart\tLaptop\t8134.83\tTokyo\tJP\t1663203325\t2022-09-15\n3852\t396cf7b1-5004-41d0-9de5-6f98888e3718\tRuPay\tAmazon\tMobile\t5500.66\tYokohama\tJP\t1663203330\t2022-09-15\n4515\tfd092b7b-881c-4616-9620-5914fa24a47d\tRuPay\tSnapDeal\tMobile\t2480.46\tOxford\tUK\t1663203335\t2022-09-15\n1805\t2e6fa0e7-ec11-473b-89d7-8b4b77db3f07\tRuPay\tFlipkart\tMobile\t7368.68\tTokyo\tJP\t1663203340\t2022-09-15\n1533\t9a0329c4-2a5d-4fe4-a126-55d6b2faf826\tVISA\tFlipkart\tMobile\t6517.62\tTokyo\tJP\t1663203345\t2022-09-15\n3445\t48bf2ee9-6da1-40e0-bf87-0fd5c23f1844\tAmex\tAmazon\tLaptop\t6161.2\tMumbai\tIN\t1663203350\t2022-09-15\n1803\t3e8a11ea-5c7c-4a17-a0ab-07656ea75c88\tVISA\tSnapDeal\tLaptop\t10788.81\tLos Angeles\tUSA\t1663203355\t2022-09-15\n2173\tdbbcb8f6-ae88-454f-9194-5a686e1025b0\tVISA\tFlipkart\tComputer\t7738.86\tPune\tIN\t1663203360\t2022-09-15\n2946\t56627b21-c279-4fe0-8bdb-37b40f4057f9\tVISA\tSnapDeal\tMobile\t22363.44\tYokohama\tJP\t1663203365\t2022-09-15\n1707\ta80d87df-6c8c-42fc-8324-041eb78a7de4\tAmex\tAmazon\tTablet\t12358.99\tBanglore\tIN\t1663203370\t2022-09-15\n4095\tde1f99d1-04e9-4286-b8d0-7a5b20230ceb\tAmex\tFlipkart\tMobile\t22527.26\tManchester\tUK\t1663203375\t2022-09-15\n2529\t40587d75-e7ef-4e5e-922b-8923e364f264\tVISA\tFlipkart\tComputer\t4639.72\tOsaka\tJP\t1663203380\t2022-09-15\n1450\td3adbf51-fe6f-45de-beb6-8a87338f0180\tAmex\tFlipkart\tMobile\t19435.79\tMiami\tUSA\t1663203385\t2022-09-15\n3898\tbab37205-0009-4757-b1ed-6b64df9b9e03\tRuPay\tFlipkart\tLaptop\t5125.25\tHiroshima\tJP\t1663203390\t2022-09-15\n1292\tce0bb6d0-9aa2-4849-8f2f-c66743b55bfd\tMaster\tFlipkart\tTablet\t19976.67\tLondon\tUK\t1663203395\t2022-09-15\n3854\t468a676b-9615-4a47-8c7e-6694f9fb1ff4\tVISA\tSnapDeal\tTablet\t17602.75\tLondon\tUK\t1663203400\t2022-09-15\n1456\t377d0ba7-eafe-4141-92bc-c44c9605ae09\tAmex\tFlipkart\tComputer\t4486.96\tBanglore\tIN\t1663203405\t2022-09-15\n3478\tdb0ca2f7-eab0-4034-9224-786340b11f03\tMaster\tSnapDeal\tTablet\t20184.81\tNew York\tUSA\t1663203410\t2022-09-15\n4756\te1ccc438-a78c-4423-aa2e-d9fa80b63f5f\tAmex\tFlipkart\tComputer\t8239.92\tLos Angeles\tUSA\t1663204260\t2022-09-15\n1753\te945b456-be10-4d1b-826c-e84f6bb3ffb3\tAmex\tMyntra\tTablet\t16493.33\tLiverpool\tUK\t1663204265\t2022-09-15\n3851\tb056a764-1855-44bc-9349-7bf4974bc758\tVISA\tSnapDeal\tMobile\t17530.07\tDelhi\tIN\t1663204270\t2022-09-15\n3644\td39e5219-21d0-4a3c-af76-101cdaa763c5\tVISA\tMyntra\tComputer\t5719.33\tLondon\tUK\t1663204275\t2022-09-15\n3096\t6a5a7387-b841-4062-b195-76e52c0adb86\tRuPay\tFlipkart\tTablet\t6257.98\tLiverpool\tUK\t1663204240\t2022-09-15\n4232\t818d7b85-527a-47ad-bdc9-6c3e55130f62\tMaster\tFlipkart\tLaptop\t12297.58\tOxford\tUK\t1663204245\t2022-09-15\n2926\t08f133d7-b381-4ce9-8860-5e20ab92be9b\tVISA\tSnapDeal\tLaptop\t12305.38\tNew York\tUSA\t1663204250\t2022-09-15\n3473\t86accdf7-b01d-46c1-8164-b35ac9bd2acf\tAmex\tAmazon\tTablet\t22655.99\tDelhi\tIN\t1663204255\t2022-09-15\n1556\t230814bd-2f76-44b7-be76-e034576e965c\tRuPay\tFlipkart\tComputer\t8790.97\tDelhi\tIN\t1663204210\t2022-09-15\n2734\t12162ac3-2d44-4ac5-8d33-8d6c9e6b0d04\tAmex\tSnapDeal\tLaptop\t21708.89\tYokohama\tJP\t1663204215\t2022-09-15\n"
+            "data": "id\tuuid\tcardtype\twebsite\tproduct\tamount\tcity\tcountry\taddts\ttxn_receive_date\n1832\t42c7ac6a-8e73-411a-b158-af705c6d7cf6\tAmex\thttp://glass.org/\tTV\t14505.83\tVanessaberg\tSD\t1709173455\t2024-02-29\n3928\t7831ebdc-ff31-41e5-8a2e-74c90565e965\tVISA\thttp://www.sanders.com/\tLaptop\t10844.23\tLake Karenville\tMW\t1709173457\t2024-02-29\n3620\t5c08a7f6-3ec4-4816-acf1-05ca5b5e91d4\tAmex\thttps://miller.com/\tMouse\t6120.78\tAshleyfurt\tKP\t1709173459\t2024-02-29\n2953\tfd31d651-ac9c-4f48-b166-6f7bad6aa448\tRuPay\thttps://bowman.com/\tMonitor\t22190.1\tRachelville\tHU\t1709173461\t2024-02-29\n4823\t0d5fab8c-6ccd-41de-9276-d9fffdf341dd\tMaster\thttps://bowman.com/\tPrinter\t18436.41\tAaronside\tTN\t1709173463\t2024-02-29\n4697\t0f045c79-c66e-4af5-a99d-3dc3cfda5725\tMaster\thttp://ramirez-george.com/\tRAM\t22290.7\tAmandahaven\tKP\t1709173465\t2024-02-29\n1778\t6d81997f-51e6-486f-b385-38466a9802b3\tRuPay\thttp://moses.com/\tLDC\t8486.37\tBallfurt\tCM\t1709173467\t2024-02-29\n1376\tb4f878db-5cf4-4f6e-a46f-4b4fe5766614\tAmex\thttp://rose.com/\tMobile\t8651.92\tJohnsontown\tDO\t1709173469\t2024-02-29\n1591\t8a8055fc-1b0c-46c2-bf7a-3b4d6f40b6da\tRuPay\thttps://www.phillips.biz/\tRAM\t1779.76\tNorth Adambury\tBW\t1709173410\t2024-02-29\n1275\t9de80ff7-30ad-48a9-a388-7f6b87be414c\tAmex\thttp://www.clark.net/\tTV\t16336.11\tSouth Aliciamouth\tUS\t1709173412\t2024-02-29\n4887\t36484dc7-5f93-4737-b665-3e672213d070\tRuPay\thttps://mendez-ross.net/\tRAM\t17515.1\tNew Jeremyburgh\tPH\t1709173414\t2024-02-29\n2449\tc93a55f6-26c2-4c8a-99a8-38ed51895a83\tRuPay\thttp://kim-young.org/\tRAM\t1781.16\tNew Jonathanfort\tLS\t1709173416\t2024-02-29\n1746\tb0d37364-fc21-4db4-a721-b1742bf93391\tMaster\thttps://sutton.org/\tMobile\t1982.81\tRiddleville\tDE\t1709173418\t2024-02-29\n4178\t45ff8a22-f3b4-4d3e-92f4-d24dfd578e58\tRuPay\thttps://www.kim.com/\tLaptop\t11178.38\tGeraldville\tTT\t1709173420\t2024-02-29\n2316\t6ca1c1d5-769d-4a86-997f-dab3723ab3e8\tAmex\thttp://johnson.com/\tMonitor\t1897.1\tBarbarashire\tAE\t1709173422\t2024-02-29\n1956\t6c71ace0-9e22-4933-b516-11cc63b8873d\tAmex\thttp://hernandez.com/\tMouse\t12328.52\tNew Brandy\tCV\t1709173424\t2024-02-29\n1520\tec8844dc-3c6c-46cb-b744-a2d654844de1\tAmex\thttps://adkins.com/\tSpeaker\t8540.0\tPort Jared\tSD\t1709173306\t2024-02-29\n1550\tcbdfba78-ca31-4b18-b267-e2a4f8eb79c8\tRuPay\thttp://www.hubbard-jackson.info/\tRAM\t8141.75\tPerezville\tBA\t1709173308\t2024-02-29\n2749\tbaf2afdc-68a6-443b-9199-d95eb86575c0\tRuPay\thttp://www.rivera.com/\tMobile\t8379.59\tLeeborough\tUG\t1709173310\t2024-02-29\n3150\t447e46c0-c11b-4bfe-9764-dd8150052cd6\tRuPay\thttp://thomas-thompson.com/\tMouse\t6694.17\tElizabethstad\tGM\t1709173312\t2024-02-29\n3367\taf9a3148-fe0a-4334-b524-08288bbc29e3\tVISA\thttps://garcia-monroe.com/\tLaptop\t12572.02\tMatthewbury\tYE\t1709173314\t2024-02-29\n2334\t9c2230d7-6672-4ef8-87a0-cb50699757f0\tMaster\thttp://www.acevedo-smith.com/\tSpeaker\t22838.28\tMooreville\tEE\t1709173316\t2024-02-29\n1581\tfd62bc94-9bfa-4e41-bf91-c35bb5a62a3a\tRuPay\thttp://humphrey.biz/\tTablet\t17469.95\tKanechester\tTL\t1709173318\t2024-02-29\n1099\t92bcddca-beb3-4c43-bc7d-4cd5da884d2c\tRuPay\thttps://williams-leach.biz/\tRAM\t8089.65\tLake Melissastad\tUG\t1709140147\t2024-02-29\n3979\t478c5798-faea-446b-ab70-69b272199993\tAmex\thttps://freeman-bryant.biz/\tMonitor\t4092.06\tFlemingport\tZA\t1709140225\t2024-02-29\n4254\t2f9771e5-e926-49f8-b9f2-6041521b2e8d\tVISA\thttp://www.taylor.com/\tTV\t13733.42\tGarciastad\tCH\t1709140238\t2024-02-29\n1612\t81149462-cb19-4c1d-9812-f41cf5afcba4\tVISA\thttp://www.collins.info/\tSpeaker\t17853.23\tMaryburgh\tGD\t1709140245\t2024-02-29\n2890\te0633bf3-b6d5-4743-95ab-01e42302f8ba\tAmex\thttp://www.garcia.org/\tRAM\t24685.15\tPort Hannahmouth\tRW\t1709140247\t2024-02-29\n4084\t1b842d9b-e619-4d56-b52b-93154efe98c2\tMaster\thttp://www.gonzalez.com/\tTablet\t2498.29\tSouth Rebeccaberg\tSE\t1709140249\t2024-02-29\n1735\t206fb003-0d14-41cf-a1ca-e534b710cf44\tRuPay\thttps://www.ramirez.com/\tPrinter\t7027.26\tNorth John\tGE\t1709140251\t2024-02-29\n4767\t0e2fc6f8-10ed-4604-adfc-de4c5bacd544\tVISA\thttps://erickson-welch.com/\tMouse\t1545.49\tChristineland\tLV\t1709140253\t2024-02-29\n3174\t4f8b2ed4-4237-4d6a-948d-9374633fc517\tVISA\thttp://www.rivera.com/\tComputer\t20152.42\tPort Heatherton\tPW\t1709140255\t2024-02-29\n2130\ta2f2b453-ce1c-42a6-959d-c001d392000d\tVISA\thttp://www.richardson.com/\tMouse\t9754.9\tLake Miranda\tGM\t1709140257\t2024-02-29\n3915\tdd0debfc-1b6b-41ec-8571-6009e30846f8\tRuPay\thttps://griffin-chavez.org/\tTV\t16540.15\tSmithmouth\tKN\t1709140259\t2024-02-29\n1169\ted13a4bc-3547-4e02-8c66-4ee3fa15f90d\tVISA\thttps://www.bowen-martin.com/\tMobile\t20735.08\tWest Josestad\tAG\t1709172808\t2024-02-29\n2354\t076e1a7b-e1d4-4db3-ba31-a260bd1ab34b\tRuPay\thttps://smith.com/\tTV\t2417.3\tEast Holly\tUA\t1709172811\t2024-02-29\n3821\td441164a-fd6b-4134-b7cd-904a5836ffc0\tVISA\thttps://www.morrison.com/\tMouse\t15195.72\tWest Jesus\tLT\t1709172813\t2024-02-29\n2347\tc21d1adf-3745-41d9-8bcd-12c047dba0f0\tAmex\thttps://dickerson.com/\tRAM\t17259.27\tSouth Dwayneborough\tVC\t1709172815\t2024-02-29\n1795\t3c9c83e6-e94f-4f3d-9531-0948dc83b87d\tMaster\thttp://www.bishop-moss.org/\tMonitor\t23331.71\tSouth Cathy\tBE\t1709172817\t2024-02-29\n3245\t6cff22a4-276c-4224-98cf-94e5e22a353f\tVISA\thttps://stone.com/\tTV\t3355.65\tBeckton\tAZ\t1709172819\t2024-02-29\n3568\t5b8a3d22-0006-4bac-82da-99c2942ec12f\tVISA\thttp://www.green.com/\tComputer\t10519.78\tPamelamouth\tTV\t1709172821\t2024-02-29\n2554\t212bcd7d-da90-4697-9f9b-9076915e301a\tVISA\thttps://gray.com/\tKeyboard\t17798.38\tWest Aaron\tTZ\t1709172823\t2024-02-29\n2250\t0ab20b35-00a7-4cb3-8bb9-abcf82c1803a\tRuPay\thttps://www.silva-shannon.net/\tLaptop\t6484.9\tNguyenborough\tAO\t1709172825\t2024-02-29\n4267\t9333b1a2-8bbf-436b-a87e-2d4cc4c9a911\tRuPay\thttp://walker-kidd.com/\tLaptop\t12178.78\tNew Caseytown\tAE\t1709172827\t2024-02-29\n4873\t62ff4394-5f7b-4a0a-8613-f3752f4d57db\tRuPay\thttps://matthews-richardson.com/\tRAM\t14972.72\tLake Connor\tSY\t1709172829\t2024-02-29\n4167\tabaa7313-4270-4a69-83a3-3f34a2d8e386\tMaster\thttps://rocha-jackson.net/\tSpeaker\t20153.13\tWest Jonathanhaven\tAE\t1709172831\t2024-02-29\n1878\tced6dd38-86df-4342-b03a-eb28795fc72a\tAmex\thttp://www.morgan.com/\tLDC\t22781.0\tEast Jonathanmouth\tTH\t1709172833\t2024-02-29\n2914\t429ab395-6d58-4f58-a5d8-ea23e558a586\tVISA\thttps://curtis.com/\tTablet\t24794.7\tNew Carlosfort\tKM\t1709172835\t2024-02-29\n2501\t7e0ed06c-0b34-43c9-acd6-e5b57c2d00a8\tMaster\thttp://www.anderson.com/\tMonitor\t4648.45\tLake Louis\tIT\t1709172837\t2024-02-29\n2905\t8fdefd73-a88a-4ee4-830e-cfaa45fca75c\tAmex\thttp://www.hogan-dunn.com/\tMonitor\t19019.34\tLindseyport\tAD\t1709172839\t2024-02-29\n2321\tb419eefc-10de-4fae-8502-9a48572d79e3\tRuPay\thttps://lozano-crane.biz/\tMobile\t7035.81\tWest Melissaside\tCO\t1709172841\t2024-02-29\n3031\t750868df-cdc6-4bb7-a360-b2532e01a12a\tAmex\thttps://osborn.com/\tLaptop\t2003.09\tJennifermouth\tUZ\t1709172843\t2024-02-29\n3967\t4a639417-4d8a-4664-b443-2252cc14f0fe\tMaster\thttp://www.holland.biz/\tKeyboard\t20036.76\tRomerobury\tES\t1709172845\t2024-02-29\n1241\ta8f34eb8-7a57-46cd-8aae-1d9934849e01\tAmex\thttp://www.williams.org/\tMouse\t4925.33\tLake Markchester\tDE\t1709172847\t2024-02-29\n3651\t0a2f30e3-7fd5-4054-8892-29e10167d3ad\tRuPay\thttps://bush.org/\tMouse\t4338.81\tWest Michaelbury\tJO\t1709172849\t2024-02-29\n3363\t7a6b8c10-b989-4e9f-b6e5-8f4bc8daadc1\tMaster\thttps://williams.com/\tKeyboard\t1341.77\tNorth Rachel\tPE\t1709172851\t2024-02-29\n2955\t9d17af86-bcdb-47c4-9511-55e44d461c58\tMaster\thttps://www.evans.com/\tRAM\t17021.12\tSouth David\tGA\t1709172853\t2024-02-29\n1311\t8cabbc40-da31-4735-9367-1d0b73fe7d3d\tMaster\thttps://vega-ruiz.com/\tPrinter\t12160.82\tSouth Kaitlinchester\tJO\t1709172855\t2024-02-29\n2345\tae312245-0b37-4fd7-abc3-a2bb088321f9\tAmex\thttp://brown-gaines.biz/\tMonitor\t20314.15\tAmberborough\tIS\t1709172857\t2024-02-29\n4085\t382c7ea3-c093-48ca-895b-4c92fa2a696f\tRuPay\thttps://www.white.com/\tSpeaker\t2988.35\tPort Jamieton\tAD\t1709172859\t2024-02-29\n4783\taa2b8852-c021-42bd-9e4e-7a8102ba2e45\tRuPay\thttps://www.garcia-myers.org/\tTV\t12161.51\tSmithton\tAG\t1709172861\t2024-02-29\n4627\t18b71e01-3b22-478f-abf4-fa6e512a7f39\tVISA\thttp://www.pierce.com/\tComputer\t23249.35\tNorth Ericfort\tIS\t1709172863\t2024-02-29\n4518\t7e6d459a-d876-4384-9102-5143a268f25f\tAmex\thttps://williams-baker.info/\tSpeaker\t12495.38\tNew Jessica\tMK\t1709172865\t2024-02-29\n2418\t9c9eb4da-7896-4663-baec-4bceb64830f4\tRuPay\thttps://black.com/\tPrinter\t6624.42\tNicholaschester\tKW\t1709172867\t2024-02-29\n4957\t7c709ec5-c055-4fa1-8ab6-d36195a99026\tMaster\thttps://www.nichols.com/\tComputer\t18382.09\tNorth Nicoleborough\tBB\t1709172869\t2024-02-29\n1509\t8e9077e8-c476-46fe-955d-6bacd371f096\tAmex\thttp://www.walton-wood.com/\tKeyboard\t12680.64\tNorth Victoria\tCR\t1709172871\t2024-02-29\n2960\te28d601d-c5f6-4c30-a579-eb5241cf681d\tMaster\thttp://www.lopez.com/\tMobile\t18184.05\tLake Tommyport\tSV\t1709172873\t2024-02-29\n3802\t1100c847-49e6-4dcc-855f-dfcb5587c933\tAmex\thttps://www.davidson.biz/\tMouse\t18310.41\tNew Michelle\tNP\t1709172875\t2024-02-29\n2318\ta3b22836-1736-43cd-8f46-0c38b707be25\tRuPay\thttp://www.reid-perkins.org/\tSpeaker\t2346.98\tNorth Jennifer\tLT\t1709172877\t2024-02-29\n4021\t05402bc0-d16f-4c86-945e-ba6d5fe93f4a\tAmex\thttps://scott.com/\tMonitor\t23851.4\tHessborough\tVN\t1709172879\t2024-02-29\n1903\te7b4a2a4-5ca1-4a9e-b56c-8c407e5dbf23\tAmex\thttps://www.mcdonald.com/\tLDC\t15638.15\tJessicashire\tHU\t1709172881\t2024-02-29\n4220\t98f12021-eafd-494b-b398-2eb79d8089b2\tMaster\thttp://www.sanchez-lee.com/\tLDC\t3566.67\tChristinamouth\tKW\t1709172883\t2024-02-29\n1585\t3f6f47a0-f4ae-4723-becb-374d5d392bd5\tVISA\thttps://www.coleman.org/\tTV\t15056.9\tWest Edwardfurt\tTL\t1709172885\t2024-02-29\n4281\t656e5013-59be-4a33-9feb-4ca722ace8eb\tRuPay\thttp://www.pena.biz/\tLDC\t585.91\tWilliamside\tGD\t1709172887\t2024-02-29\n4774\t022a2823-0811-4148-8128-bc20b78c612b\tVISA\thttp://rodgers.com/\tRAM\t19666.87\tAndersonton\tBI\t1709172889\t2024-02-29\n4674\t87264594-1c80-4234-80ec-b154b16d848e\tAmex\thttps://www.ray.net/\tSpeaker\t2025.78\tSherriborough\tMV\t1709172891\t2024-02-29\n4333\t68f2047e-3709-4598-8e87-329da549a76f\tVISA\thttps://www.herrera.com/\tTV\t24797.6\tSouth James\tCZ\t1709172893\t2024-02-29\n3321\t9f59ecb7-b969-4229-8a64-7f6602ad3ade\tMaster\thttp://www.pearson.com/\tRAM\t17925.68\tLake Roberta\tNZ\t1709172895\t2024-02-29\n4832\tdcc98b05-e727-4f79-a825-7ac2c86888dd\tVISA\thttp://sanders.com/\tComputer\t24026.03\tNew Lindsay\tKM\t1709172897\t2024-02-29\n3477\taccac045-111c-4b40-b749-524326eec4c7\tRuPay\thttps://www.lee.com/\tTV\t9777.88\tWatersstad\tPA\t1709172899\t2024-02-29\n4831\t015b3d8b-28a2-4397-b94c-c6e20b0550bc\tRuPay\thttp://johnson.com/\tSpeaker\t10005.52\tEast Katherinechester\tBG\t1709172901\t2024-02-29\n4585\t2a5c85ee-9a3d-4498-a492-21d8a3508a97\tRuPay\thttps://ruiz.com/\tMouse\t10945.75\tPort Brent\tJP\t1709172903\t2024-02-29\n3536\t20d9c150-4632-4aa6-9004-6c1b04b6b926\tMaster\thttp://bass.com/\tMouse\t24298.47\tSouth Chad\tSK\t1709172905\t2024-02-29\n4633\t1c351c79-9bb8-48ab-8803-1c61fc67d0d4\tAmex\thttps://bishop-hall.com/\tTablet\t17124.67\tNorth Monica\tPE\t1709172907\t2024-02-29\n4610\t9ccc64e3-6084-488c-afdd-aecd7ecfd1d5\tVISA\thttps://www.bennett.org/\tMonitor\t22807.39\tNorth Rebeccaview\tMX\t1709172909\t2024-02-29\n3971\t1f762087-2f8e-4c24-86c3-cf84ced55f48\tMaster\thttp://www.lewis.com/\tPrinter\t17231.98\tLake Jenniferview\tPK\t1709172911\t2024-02-29\n3594\t1a9ebc74-2eec-4bc3-a16b-07c2cda7a526\tMaster\thttp://cameron.org/\tSpeaker\t15130.53\tLake Jessicashire\tYE\t1709172913\t2024-02-29\n1382\tdbc31bb5-ff39-4342-a110-5b2572b5e84e\tAmex\thttp://hernandez.org/\tTablet\t627.81\tWest Tylerville\tSY\t1709173380\t2024-02-29\n2270\tb7fd6313-856a-4447-91c7-77f240bd5f88\tRuPay\thttps://www.larson.com/\tRAM\t21534.91\tLake Jessicastad\tYE\t1709173382\t2024-02-29\n2458\t5d71b340-cb13-4a14-9ba7-b3fa3b636209\tAmex\thttp://adams-jones.org/\tComputer\t24184.6\tSouth Laurachester\tMW\t1709173384\t2024-02-29\n3949\t3bdda7a7-5f31-496e-ad75-0f394941cc5b\tVISA\thttps://taylor.com/\tMobile\t17052.25\tPort Jamesfurt\tBO\t1709173386\t2024-02-29\n4508\t999d0f4a-a164-405d-8b6f-0da41874e6c1\tAmex\thttps://diaz.com/\tRAM\t13965.97\tPort Briannaville\tNR\t1709173388\t2024-02-29\n1325\t3833ce75-72e3-4008-bed9-e26edc82b501\tAmex\thttp://www.thomas-fleming.biz/\tTablet\t11759.44\tLake Ambertown\tAE\t1709173390\t2024-02-29\n3595\tc8dfb36f-09ae-4b48-a23d-b26f3972a3d5\tAmex\thttp://stephens-patterson.com/\tTV\t13904.07\tPort Ronald\tDJ\t1709173392\t2024-02-29\n1926\te7ed4dea-066a-40c1-af32-adab980c84f6\tMaster\thttp://ellis-shaw.org/\tMonitor\t11166.41\tLorichester\tBA\t1709173394\t2024-02-29\n4463\t5b9a3a2d-159b-416b-84f6-edc5ff0e1572\tAmex\thttps://www.robinson-williams.com/\tKeyboard\t17995.1\tChristiantown\tIQ\t1709173426\t2024-02-29\n3331\t23fa6317-3f12-4aea-b46d-6a226353db16\tRuPay\thttps://www.king.biz/\tSpeaker\t1752.56\tEast Kristieburgh\tKE\t1709173428\t2024-02-29\n4447\t370ef086-e010-4548-beb2-82578008f8b5\tAmex\thttp://hall-le.biz/\tMonitor\t7860.63\tPort Michellebury\tUG\t1709173430\t2024-02-29\n4637\td9706455-7c1a-44db-b650-f9c51a59cef3\tVISA\thttps://www.reed-meyer.net/\tLaptop\t19873.13\tJacobshire\tSI\t1709173432\t2024-02-29\n4285\tdbe8ffd9-ae04-4f5c-8873-a436dc9d9f73\tRuPay\thttps://www.burton-winters.com/\tPrinter\t1840.55\tSantanabury\tLT\t1709173434\t2024-02-29\n4003\t597ca814-53e6-4cce-9d31-1943409d29c4\tVISA\thttp://www.valencia-burgess.com/\tMouse\t16502.03\tEast David\tMZ\t1709173436\t2024-02-29\n1217\tfcb0872a-3dbe-4fce-87c0-be6c709be9f1\tVISA\thttp://www.baker.com/\tPrinter\t9247.98\tRodriguezberg\tTV\t1709173438\t2024-02-29\n4983\t2ae4dc5f-884c-42d5-832e-28f5788f3345\tRuPay\thttps://www.gibson.com/\tSpeaker\t13362.98\tEast Kristinview\tLT\t1709173291\t2024-02-29\n2863\tcd1431c6-e667-4df3-84eb-d11b9ccc4066\tAmex\thttps://montoya.info/\tPrinter\t5778.27\tNorth Brittneystad\tGQ\t1709173293\t2024-02-29\n1245\t1f8ca7aa-91a5-4bd0-b29a-b45bd132130b\tMaster\thttps://thornton.com/\tMouse\t24010.27\tSnyderburgh\tDO\t1709173295\t2024-02-29\n2604\t83a1a616-a147-4414-9011-e1214b2814ac\tRuPay\thttp://lopez.net/\tTablet\t16711.47\tJohnberg\tRU\t1709173297\t2024-02-29\n3621\t3b166da3-dbdb-426a-8303-d69eeba4bc2b\tAmex\thttps://williams.info/\tTV\t12242.61\tDanielsside\tEC\t1709173299\t2024-02-29\n3829\tc29cd287-0c2d-4da2-acfb-4fcb2ce603c6\tVISA\thttp://brown.info/\tMouse\t15766.97\tLake Brandon\tMZ\t1709173302\t2024-02-29\n2559\t928371fa-5813-44a9-be7e-75ae4b948b54\tVISA\thttps://smith-burke.com/\tComputer\t3568.16\tMichaelview\tTR\t1709173304\t2024-02-29\n4419\tfe0ff90d-039c-4fb5-85ae-a3246591cdec\tMaster\thttps://www.park.com/\tLaptop\t4598.88\tSouth Paul\tKE\t1709173366\t2024-02-29\n1137\t5f097087-4422-4706-97b4-7e03731d1b00\tVISA\thttps://young-hill.info/\tComputer\t16632.79\tLake Kevinmouth\tAF\t1709173368\t2024-02-29\n2607\t844e11de-04cf-45cd-afec-71977c5fa0b3\tMaster\thttps://www.woodard.biz/\tMonitor\t13150.83\tMasonbury\tCY\t1709173370\t2024-02-29\n1349\t916b1848-a5ad-42d5-87f4-e389635603ce\tRuPay\thttp://vang.com/\tRAM\t8654.52\tWeeksview\tNI\t1709173372\t2024-02-29\n1580\t2459bd43-cb6a-4377-814b-6bc7f6a0708e\tMaster\thttp://www.miller-warren.info/\tMouse\t17131.44\tWilliamville\tEE\t1709173374\t2024-02-29\n1860\taadfd19c-5ae5-4e57-886a-c9dbdc5ac258\tVISA\thttps://www.flores.info/\tSpeaker\t22607.95\tKellybury\tAZ\t1709173376\t2024-02-29\n3000\td868c59b-b63c-4525-a06a-cf80a24dda1b\tRuPay\thttp://www.barnes.info/\tTablet\t2628.78\tEast Deborah\tPH\t1709173378\t2024-02-29\n2251\t945146c7-a5b6-442c-8e4e-4d7c051de667\tMaster\thttps://stephens.com/\tTV\t3593.89\tHughesmouth\tCG\t1709173396\t2024-02-29\n3927\t28344d15-4bbc-4e78-a25d-3e1c7c25aa26\tMaster\thttps://www.munoz.info/\tMobile\t16804.35\tVictormouth\tGW\t1709173398\t2024-02-29\n1463\te0e08a55-58c9-4043-b3b8-290f7bca2515\tAmex\thttp://harris.com/\tRAM\t9019.03\tEast Dawnside\tPK\t1709173400\t2024-02-29\n3051\t21c7a2fd-bf4c-4dd7-ba61-0573c2acfa76\tRuPay\thttp://hughes.net/\tLaptop\t18196.29\tGarnermouth\tLV\t1709173402\t2024-02-29\n3966\tf9f1b54a-5549-4270-97b0-e96ed0c2b0b5\tVISA\thttp://www.perry.com/\tLDC\t11037.76\tPort Michellefurt\tAE\t1709173404\t2024-02-29\n1695\t6ff403e9-2827-4ae0-8be3-80b9b6826edc\tRuPay\thttps://allen-lewis.com/\tLaptop\t7391.64\tGarrisonton\tVC\t1709173406\t2024-02-29\n2224\t00e53e62-4200-4a4b-b72c-57975aa28f44\tMaster\thttp://www.perez.net/\tMonitor\t6963.82\tGonzaleztown\tSI\t1709173408\t2024-02-29\n4296\t3e76c46c-efb6-4115-b3d5-5e17bb98aeb1\tAmex\thttp://www.parker.com/\tMobile\t22926.37\tStevensberg\tGH\t1709173336\t2024-02-29\n4445\t8a25374c-11fc-41ac-b018-036b0de1eb4e\tMaster\thttps://www.powell-solomon.net/\tTV\t17277.54\tPopeton\tAT\t1709173338\t2024-02-29\n2610\t3b25a339-23f7-470b-916d-855d9d305c6a\tVISA\thttp://miller.com/\tKeyboard\t21194.28\tVirginiaborough\tBD\t1709173340\t2024-02-29\n3659\tf20ab65b-ea48-4765-a250-9fc0fd777f81\tMaster\thttps://carter.com/\tLaptop\t15758.33\tNew Brentfurt\tPE\t1709173342\t2024-02-29\n3772\t296f4848-ff2e-4f06-bd0c-48afc1139586\tVISA\thttp://aguilar.com/\tTablet\t2222.14\tPatrickmouth\tCR\t1709173344\t2024-02-29\n4509\tbce9ff73-dded-44b4-8c15-481a3d0ad077\tRuPay\thttp://www.jones-smith.com/\tTablet\t16355.7\tNorth Ashley\tKZ\t1709173346\t2024-02-29\n2436\t1b0220bd-0797-4c7f-bf4f-ebb682e85a2f\tAmex\thttps://www.doyle.com/\tMonitor\t12271.69\tWilliamsville\tCF\t1709173348\t2024-02-29\n1923\td1bc2906-b1f2-4e5d-9738-28b010077b46\tAmex\thttps://www.willis.com/\tMonitor\t2474.5\tSouth Jason\tBY\t1709173320\t2024-02-29\n3192\t0fbc6730-a449-41e9-a73f-b333b0129760\tVISA\thttps://www.cobb.info/\tMonitor\t17519.33\tWilsonton\tCR\t1709173322\t2024-02-29\n2801\t21d8d115-8a25-4d68-9f84-fcc73d0262ba\tVISA\thttp://www.walters-james.net/\tComputer\t8254.02\tMichelefurt\tCV\t1709173324\t2024-02-29\n2945\tccfb0927-3b80-45c2-8a44-85a910e333c0\tVISA\thttps://www.hughes-thomas.info/\tMobile\t9184.14\tEast Jennifer\tBY\t1709173326\t2024-02-29\n3745\t00ce4421-992e-4d63-ac82-05cc2d52768d\tRuPay\thttp://brown.com/\tComputer\t17060.16\tPort Robin\tHT\t1709173328\t2024-02-29\n1283\tf97aeb40-e30a-43d1-98a5-aab9a4aaa9c8\tVISA\thttp://www.garcia-white.info/\tKeyboard\t16512.76\tWalkershire\tTW\t1709173330\t2024-02-29\n1031\t9c4af7ed-b0ff-4d8a-8d5d-58c1a9bf23e7\tMaster\thttp://www.ramirez.org/\tTV\t16290.23\tNew Shannon\tPA\t1709173332\t2024-02-29\n4260\t38bcacca-dd5e-43dd-9dfd-0ef273c2d583\tVISA\thttps://ballard-armstrong.info/\tMonitor\t15784.76\tCurtisfurt\tIT\t1709173334\t2024-02-29\n2558\t575f6a1a-5f9e-4caf-b5b2-82bddba0537d\tRuPay\thttps://garcia.com/\tMobile\t3907.94\tMitchellhaven\tZW\t1709173280\t2024-02-29\n3524\tbdbd2595-c4f0-463a-9a9a-631dc93fb6dd\tVISA\thttps://www.benson.org/\tMonitor\t7947.77\tColemouth\tVU\t1709173283\t2024-02-29\n1670\t5bec6727-8a8e-4743-8c76-0d296d205f6f\tMaster\thttps://www.moore-grant.info/\tSpeaker\t21502.24\tMarkland\tGT\t1709173285\t2024-02-29\n4274\t5c708812-81c8-4638-8061-d039bc161f4e\tRuPay\thttp://www.hebert.com/\tMonitor\t22192.75\tEast Bryanmouth\tAE\t1709173287\t2024-02-29\n2591\t325aec9f-5808-44ad-bf83-5b108c9fd431\tMaster\thttps://gonzalez.com/\tMonitor\t15743.8\tScottshire\tKI\t1709173289\t2024-02-29\n3739\t85587280-75c8-4415-a108-0b63eeeec0be\tMaster\thttps://www.smith.com/\tPrinter\t12666.27\tAmyfurt\tTG\t1709173350\t2024-02-29\n1004\t2ff05b7e-2a35-4f11-918e-a1994f2c74fb\tAmex\thttps://arroyo.net/\tTV\t9954.04\tJohnville\tPG\t1709173352\t2024-02-29\n3113\t067aedcb-6931-4283-be0f-8411dd6b328a\tAmex\thttp://ross.com/\tTV\t4358.41\tArthurville\tLC\t1709173354\t2024-02-29\n2431\t03916e89-02e9-4561-8c3f-85d8fb52cf01\tAmex\thttps://www.brown.biz/\tPrinter\t15886.82\tAllisonbury\tCG\t1709173356\t2024-02-29\n3474\t8cf34786-faa7-420c-90ff-7efef3fbe2f0\tRuPay\thttps://www.cole-spencer.com/\tMouse\t21670.04\tWest Christopher\tNG\t1709173358\t2024-02-29\n3753\tf27acfad-6087-4e90-b9a7-074513707d85\tRuPay\thttp://faulkner.net/\tKeyboard\t16055.05\tNorth Ericaview\tTR\t1709173360\t2024-02-29\n1455\t4a72a9de-6689-43c3-bc27-56576f54b618\tMaster\thttps://www.shepard.com/\tTablet\t15310.26\tSouth Charleneborough\tDJ\t1709173362\t2024-02-29\n1240\t1417e6b3-89aa-4c93-b8d9-78a03321c4d1\tAmex\thttp://www.sullivan-peterson.com/\tPrinter\t16989.4\tKennethton\tKE\t1709173364\t2024-02-29\n2585\tafc00a2e-2463-4caa-8e12-632bed7721ae\tAmex\thttps://www.proctor-norris.org/\tKeyboard\t6845.76\tPort Sandraton\tER\t1709173440\t2024-02-29\n4819\t52da53ce-4736-4ef0-8c94-06c648b13e7a\tAmex\thttps://galloway.biz/\tRAM\t3222.85\tRobinsonville\tRS\t1709173442\t2024-02-29\n1347\t6ecc1130-4e09-4306-9f96-6859d8dee614\tRuPay\thttps://decker.net/\tComputer\t23080.37\tMelissaborough\tER\t1709173444\t2024-02-29\n2696\tda51208b-2f25-42fd-b212-786f6f9eba14\tVISA\thttps://mcguire.org/\tComputer\t5351.3\tReginamouth\tDE\t1709173446\t2024-02-29\n3281\t873d2fe9-f152-4335-9f19-6e2889fd77bc\tMaster\thttps://www.moore-cooper.net/\tLDC\t12037.76\tNorth Charlesville\tBY\t1709173448\t2024-02-29\n4499\t976a3e19-015b-401a-97c8-d1748c5fbcb9\tMaster\thttps://perez.com/\tMobile\t3086.24\tPorterfurt\tUG\t1709173450\t2024-02-29\n1099\t1acd4144-26a1-4c89-b49a-fb9b188833d8\tAmex\thttps://www.davis.net/\tSpeaker\t5730.4\tLarrystad\tQA\t1709173452\t2024-02-29\n"
           }
         ]
       },
@@ -1686,8 +1534,8 @@
       "jobName": "paragraph_1641518420417_1655939487",
       "id": "paragraph_1641518420417_1655939487",
       "dateCreated": "2022-01-07 01:20:20.417",
-      "dateStarted": "2023-04-23 04:18:36.499",
-      "dateFinished": "2023-04-23 04:18:37.255",
+      "dateStarted": "2024-02-29 02:56:40.756",
+      "dateFinished": "2024-02-29 02:56:41.250",
       "status": "FINISHED"
     },
     {
@@ -1803,16 +1651,7 @@
   "version": "0.10.0",
   "noteParams": {},
   "noteForms": {},
-  "angularObjects": {
-    "sh-shared_process": [
-      {
-        "name": "TERMINAL_SOCKET_STATUS",
-        "object": "TERMINAL_SOCKET_CLOSE",
-        "noteId": "2GS8BEJJX",
-        "paragraphId": "paragraph_1707103116195_284110558"
-      }
-    ]
-  },
+  "angularObjects": {},
   "config": {
     "isZeppelinNotebookCronEnable": false,
     "looknfeel": "default",
