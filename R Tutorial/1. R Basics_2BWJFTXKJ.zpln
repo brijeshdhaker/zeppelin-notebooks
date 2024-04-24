@@ -8,7 +8,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -75,7 +75,7 @@
           "completionSupport": true,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -132,7 +132,7 @@
           "completionSupport": true,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -189,7 +189,7 @@
           "completionSupport": true,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -299,7 +299,7 @@
           "completionSupport": true,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -356,7 +356,7 @@
           "completionSupport": true,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -411,7 +411,7 @@
         "editorHide": false,
         "tableHide": false,
         "title": false,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -470,7 +470,7 @@
         "editorHide": false,
         "tableHide": false,
         "title": false,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -525,7 +525,7 @@
         "editorHide": false,
         "tableHide": false,
         "title": false,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -580,7 +580,7 @@
           "completionSupport": true,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "title": false,
         "checkEmpty": true
@@ -636,7 +636,7 @@
           "completionSupport": true,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "title": false,
         "checkEmpty": true
@@ -693,7 +693,7 @@
           "completionKey": "TAB"
         },
         "editorHide": false,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "title": false,
         "checkEmpty": true
@@ -756,7 +756,7 @@
           "completionKey": "TAB"
         },
         "editorHide": false,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -814,7 +814,7 @@
         },
         "editorHide": false,
         "title": false,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -857,7 +857,7 @@
         "editorMode": "ace/mode/markdown",
         "editorHide": true,
         "tableHide": false,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "title": false,
         "checkEmpty": true

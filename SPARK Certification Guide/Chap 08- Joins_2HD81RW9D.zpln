@@ -3,15 +3,20 @@
     {
       "text": "%md\n###### Join Expressions:\n* Join brings two datasets together by comparing by comparing the value of one or more keys of the left and right and evaluating the result of a join expression\n* Join expression determines whether Spark should bring together the left set of data with the right set of data.\n* an **equi-join expression**, compares whether the specified keys in your left and right datasets are equal.\n* Spark also allows for much more sophsticated join policies in addition to equi-joins. We can even use **complex types and perform something like checking whether a key exists within an array when you perform a join.**",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.669",
+      "dateUpdated": "2024-03-20 02:24:11.451",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -37,15 +42,20 @@
     {
       "text": "%md\n###### Join Types:\njoin type determines what should be in the result set. There are a variety of different join types available in Spark\n\n* Inner Joins - Keep rows with keys that exist in the left and right datasets\n* Outter Joins - Keep rows with keys in either the left or right datasets\n* Left Outer Joins - Keep rows with keys in the left dataset\n* Right Outer Joins - Keep rows with keys in the right dataset\n* Left Semi Join - Keep the rows in the left, and only the left, dataset where the key appears in the right dataset.\n* Left anti Join - keep the rows in the left, and only the left, dataset where they do not appear in the right dataset.\n* Natural joins - Perform a join by implicitly matching the columns between the two datasets with the same names.\n* Cross (or Cartesian) joins - Match every row in the left dataset with every row in the right dataset.\n\nlet’s create some simple datasets to understand more with examples.",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2024-03-20 02:25:32.135",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -191,15 +201,20 @@
     {
       "text": "%md\n###### Inner Joins:\nInner joins evaluate the keys in both of the DataFrames or tables and include (and join together) only the rows that evaluate to true.\n\nEg: we join the graduateProgram DataFrame with the person DataFrame to create a new DataFrame",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2024-03-20 02:27:34.006",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -305,15 +320,20 @@
     {
       "text": "%md\nInner joins are the default join, so we just need to specify our left DataFrame and join the right in the JOIN expression:",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2024-03-20 02:28:42.302",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -439,15 +459,20 @@
     {
       "text": "%md\n###### Outer Join:\n* Outer joins evaluate the keys in both of the DataFrames or tables and includes (and joins together) the rows that evaluate to true or false. \n* If there is no equivalent row in either the left or right DataFrame, Spark will insert null",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2024-03-20 02:34:11.961",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -503,15 +528,20 @@
     {
       "text": "%md\n###### Left Outer Joins:\n* Left outer joins evaluate the keys in both of the DataFrames or tables and includes all rows from the left DataFrame as well as any rows in the right DataFrame that have a match in the left DataFrame.\n* If there is no equivalent row in the right DataFrame, Spark will insert null",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2024-03-20 02:35:48.918",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -567,15 +597,20 @@
     {
       "text": "%md\n###### Right Outer Joins:\n* Right outer joins evaluate the keys in both of the DataFrames or tables and includes all rows from the right DataFrame as well as any rows in the left DataFrame that have a match in the right DataFrame.\n* If there is no equivalent row in the left DataFrame, Spark will insert null",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.670",
+      "dateUpdated": "2024-03-20 02:38:36.547",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -725,15 +760,20 @@
     {
       "text": "%md\n###### Left Anti Joins:\n* This join is exactly opposite to Left Semi Join.\n* This also compare values to see if the value exists in the second DataFrame. However, rather than keeping the values that exist in the second DataFrame, they keep only the values that do not have a corresponding key in the second DataFrame.\n* Think of anti joins as a NOT IN SQL-style filter",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.672",
+      "dateUpdated": "2024-03-20 02:47:29.829",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -789,15 +829,20 @@
     {
       "text": "%md\n###### Cross (Cartesian) Joins:\n* Cross joins will join every single row in the left DataFrame to ever single row in the right DataFrame.\n* This will cause an absolute explosion in the number of rows contained in the resulting DataFrame.",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.672",
+      "dateUpdated": "2024-03-20 02:52:12.431",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -883,15 +928,20 @@
     {
       "text": "%md\n* You should use cross-joins only if you are absolutely, 100 percent sure that this is the join you need.Reason being we need to be explicit when defining a cross-join in Spark.\n\n* Advanced users can set the session-level configuration **spark.sql.crossJoin.enable** to true in order to allow cross-joins without warnings or without Spark trying to perform another join for you.",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.672",
+      "dateUpdated": "2024-03-20 02:55:08.774",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -917,15 +967,20 @@
     {
       "text": "%md\n###### Challenges When Using Joins:\n**Joining Complex Types:**\n* Any expression is a valid join expression, assuming that it returns a Boolean",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.672",
+      "dateUpdated": "2024-03-20 02:55:34.028",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -981,15 +1036,20 @@
     {
       "text": "%md\n**Handling Duplicate Column Names:**\n\n* In a DataFrame, each column has a unique ID within Spark’s SQL Engine,Catalyst. This unique ID is purely internal and not something that you can directly reference. \n* Duplicate column names occur in two distinct situations:\n  * The Join expression that you specify does not remove one key from one of the input DataFrames and the keys have the same column name.\n  * Two columns on which we are not performing the join have the same name..",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.672",
+      "dateUpdated": "2024-03-20 02:57:15.332",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -1105,15 +1165,20 @@
     {
       "text": "%md\nThe challenge arises when we refer to one of these columns",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.672",
+      "dateUpdated": "2024-03-20 02:59:35.863",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -1173,15 +1238,20 @@
     {
       "text": "%md\n**Approach 1: Different join expression**\nThe easiest fix is to change the join expression from a Boolean expression to a string or sequence. This automatically removes one of\nthe columns for you during the join",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.673",
+      "dateUpdated": "2024-03-20 03:00:26.419",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -1267,15 +1337,20 @@
     {
       "text": "%md\n**Approach 2: Dropping the column after the join**\n* When doing this, we need to refer to the column via the original source DataFrame.\n* We can do this if the join uses the same key names or if the source DataFrames have columns that simply have the same name",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.673",
+      "dateUpdated": "2024-03-20 03:01:46.148",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -1365,15 +1440,20 @@
     {
       "text": "%md\n**Approach 3: Renaming a column before the join:**\n\nWe can avoid this issue altogether if we rename one of our columns before the join",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.673",
+      "dateUpdated": "2024-03-20 03:03:37.349",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -1429,15 +1509,20 @@
     {
       "text": "%md\n###### How Spark Performs Joins:\nTo understand how Spark performs joins, we need to understand the two core resources at play:\n* node-to-node communication strategy\n* per node computation stratergy\n\nSpark approaches cluster communication in two different ways during joins. It either incurs a\n* shuffle join, which results in an all-to-all communication. When you join a big table to another big table, you end up with a shuffle join. \n* a broadcast join\n\nThe core foundation of simplified view of joins is that in Spark we will have either a **big table** or a **small table.**",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.673",
+      "dateUpdated": "2024-03-20 03:04:13.965",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -1502,15 +1587,20 @@
     {
       "text": "%md\n**Big table–to–small table:**\n* This uses Broadcast Join.\n* When the table is small enough to fit into the memory of a single worker node, with some breathing room of course, we can optimize our join.\n* replicate our small DataFrame onto every worker node in the cluster (be it located on one machine or many).\n* Even it looks expensive initially, but this prevents us from performing the all-to-all communication during the entire join process.\n* we perform it only once at the beginning and then let each individual worker node perform the work without having to wait or communicate with any other worker node.\n* This means that joins will be performed on every single node individually, making CPU the biggest bottleneck.\n\n![Broad Cast Join](files/tables/BroadCast_Join-1b827.PNG)\n\nFor our current set of data, we can see that Spark joining type by looking at the explain plan:",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.673",
+      "dateUpdated": "2024-03-20 03:05:14.445",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -1630,15 +1720,20 @@
     {
       "text": "%md\n* The SQL interface also includes the ability to provide hints to perform joins. \n* These are not enforced, however, so the optimizer might choose to ignore them.\n* We can set one of these hints by using a special comment syntax.\n    * MAPJOIN\n    * BROADCAST \u0026\n    * BROADCASTJOIN \n   \n   all do the same thing and are all supported",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.674",
+      "dateUpdated": "2024-03-20 03:07:09.271",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -1692,17 +1787,40 @@
       "status": "READY"
     },
     {
+      "text": "%pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "2024-03-20 03:08:46.162",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1710904126162_1954847033",
+      "id": "paragraph_1710904126162_1954847033",
+      "dateCreated": "2024-03-20 03:08:46.162",
+      "status": "READY"
+    },
+    {
       "text": "%md\nif you try to broadcast something too large, you can crash your driver node (because that collect is expensive).\n\n**Little table–to–little table:**\nWhen performing joins with small tables, it’s usually best to let Spark decide how to join them. You can always force a broadcast join if you’re noticing strange behavior.",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.674",
+      "dateUpdated": "2024-03-20 03:08:31.054",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -1728,15 +1846,20 @@
     {
       "text": "%md\n###### Conclusion:\nIt is important to consider is if you **partition** your data correctly prior to a join, you can end up with much more efficient execution because even if a shuffle is planned, if data from two different DataFrames is already located on the same machine, Spark can avoid the\nshuffle.\n\nThere are additional implications when you decide what order joins should occur in. Because some joins act as filters, this can be a low-hanging improvement in your workloads, as you are guaranteed to reduce data exchanged over the network.",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:38:49.674",
+      "dateUpdated": "2024-03-20 03:08:51.078",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},

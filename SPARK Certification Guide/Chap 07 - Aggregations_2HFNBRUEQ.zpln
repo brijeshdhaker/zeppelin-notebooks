@@ -3,15 +3,20 @@
     {
       "text": "%md\n* **Aggregation** function must produce one result for each group, given multiple input values.\n* Spark also allows us to create the following groupings types\n  * The **simplest grouping** is to just summarize a complete DataFrame by performing an aggregation in a select statement.\n  * A **group by** allows you to specify one or more keys as well as one or more aggregation functions to transform the value columns.\n  * A **window** gives you the ability to specify one or more keys as well as one or more aggregation functions to transform the value columns. However, the rows input to the function are somehow related to the current row.\n  * A **grouping set,** which you can use to aggregate at multiple different levels. Grouping sets are available as a primitive in SQL and via rollups and cubes in DataFrames.\n  * A **rollup** makes it possible for you to specify one or more keys as well as one or more aggregation functions to transform the value columns, which will be summarized hierarchically.\n  * A **cube** allows you to specify one or more keys as well as one or more aggregation functions to transform the value columns, which will be summarized across all combinations of columns.\n\n* Each grouping returns a RelationalGroupedDataset on which we specify our aggregations.",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:37:04.243",
+      "dateUpdated": "2024-03-20 03:19:18.049",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -77,15 +82,20 @@
     {
       "text": "%md\nReading in our data on purchases, repartitioning the data to have far fewer partitions (because we know it’s a small volume of data stored in a lot of small files), and caching the results for rapid access",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:37:04.243",
+      "dateUpdated": "2024-03-20 03:20:25.395",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -267,15 +277,20 @@
     {
       "text": "%md\n###### Count\n* specify a specific column to count, or \n* all the columns by using count(*) or count(1) to represent that we want to count every row as the literal one",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:37:04.243",
+      "dateUpdated": "2024-03-20 03:36:03.223",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -356,15 +371,20 @@
     {
       "text": "%md\n**Note:**\n\nwhen performing a count(*), Spark will count null values (including rows containing all nulls). \nHowever, when counting an individual column, Spark will not count the null values.",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:37:04.243",
+      "dateUpdated": "2024-03-20 03:39:21.070",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -623,11 +643,11 @@
     {
       "text": "%md\n**first and last:**\n\n* Used to get the first and last values from a DataFrame.\n* This will be based on the rows in the DataFrame, not on the values in the DataFrame.",
       "user": "anonymous",
-      "dateUpdated": "2022-09-20 02:56:38.675",
+      "dateUpdated": "2024-03-20 03:49:59.070",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
@@ -636,7 +656,7 @@
         "fontSize": 12.0,
         "enabled": true,
         "results": {},
-        "tableHide": false
+        "tableHide": true
       },
       "settings": {
         "params": {},
@@ -719,15 +739,20 @@
     {
       "text": "%md\n**min and max:**\n\nuse min and max to extract the minimum and maximum values from a DataFrame",
       "user": "anonymous",
-      "dateUpdated": "2022-09-19 16:37:04.244",
+      "dateUpdated": "2024-03-20 03:50:40.855",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/markdown",
-        "editorHide": true,
+        "editorHide": false,
         "editorSetting": {
           "language": "markdown",
           "editOnDblClick": true
-        }
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "tableHide": true
       },
       "settings": {
         "params": {},

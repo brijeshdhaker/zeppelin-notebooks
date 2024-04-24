@@ -37,7 +37,7 @@
     {
       "text": "%python\n# Create Spark Session with Delta JARS and conf\n\nfrom pyspark.sql import SparkSession\n\nspark \u003d SparkSession \\\n    .builder \\\n    .appName(\"Delta with PySpark\") \\\n    .config(\u0027spark.jars.packages\u0027, \u0027io.delta:delta-core_2.12:2.1.1\u0027) \\\n    .config(\"spark.sql.extensions\", \"io.delta.sql.DeltaSparkSessionExtension\") \\\n    .config(\n        \"spark.sql.catalog.spark_catalog\",\n        \"org.apache.spark.sql.delta.catalog.DeltaCatalog\",\n    ) \\\n    .config(\"spark.sql.warehouse.dir\", \"spark-warehouse\") \\\n    .master(\"local[*]\") \\\n    .enableHiveSupport() \\\n    .getOrCreate()\n\nspark",
       "user": "anonymous",
-      "dateUpdated": "2024-02-29 03:47:38.404",
+      "dateUpdated": "2024-03-04 03:11:30.372",
       "progress": 0,
       "config": {
         "editorMode": "ace/mode/python",
@@ -61,7 +61,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)\n\u001b[0;32m/tmp/ipykernel_4445/1771390149.py\u001b[0m in \u001b[0;36m\u003cmodule\u003e\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# Create Spark Session with Delta JARS and conf\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----\u003e 3\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mpyspark\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msql\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mSparkSession\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mspark\u001b[0m \u001b[0;34m\u003d\u001b[0m \u001b[0mSparkSession\u001b[0m\u001b[0;31m \u001b[0m\u001b[0;31m\\\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;31mModuleNotFoundError\u001b[0m: No module named \u0027pyspark\u0027"
+            "data": "Fail to execute line 4: from pyspark.sql import SparkSession\nTraceback (most recent call last):\n  File \"/tmp/1709521837221-0/zeppelin_python.py\", line 153, in \u003cmodule\u003e\n    exec(code, _zcUserQueryNameSpace)\n  File \"\u003cstdin\u003e\", line 4, in \u003cmodule\u003e\nModuleNotFoundError: No module named \u0027pyspark\u0027\n"
           }
         ]
       },
@@ -71,8 +71,8 @@
       "jobName": "paragraph_1668653674653_1316870545",
       "id": "20221117-025434_1296940234",
       "dateCreated": "2022-11-17 02:54:34.654",
-      "dateStarted": "2024-02-29 03:47:38.407",
-      "dateFinished": "2024-02-29 03:47:38.461",
+      "dateStarted": "2024-03-04 03:11:30.376",
+      "dateFinished": "2024-03-04 03:11:30.387",
       "status": "ERROR"
     },
     {

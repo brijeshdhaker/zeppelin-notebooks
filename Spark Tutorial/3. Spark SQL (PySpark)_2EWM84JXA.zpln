@@ -16,7 +16,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "results": {},
         "enabled": true,
@@ -63,7 +63,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": true,
         "results": {},
@@ -110,7 +110,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": false,
         "results": {},
@@ -156,7 +156,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "results": {},
         "enabled": true,
         "runOnSelectionChange": true,
@@ -185,7 +185,7 @@
       "title": "Create Dataset/DataFrame via SparkSession",
       "text": "%spark.pyspark\n\n# create DataFrame from python list. It can infer schema for you.\ndf1 \u003d spark.createDataFrame([(1, \"andy\", 20, \"USA\"), (2, \"jeff\", 23, \"China\"), (3, \"james\", 18, \"USA\")]).toDF(\"id\", \"name\", \"age\", \"country\")\ndf1.printSchema()\ndf1.show()\n\n# create DataFrame from pandas dataframe\ndf2 \u003d spark.createDataFrame(df1.toPandas())\ndf2.printSchema()\ndf2.show()\n\n\n\n\n\n\n\n\n\n\n\n\n",
       "user": "anonymous",
-      "dateUpdated": "2024-02-17 11:58:03.838",
+      "dateUpdated": "2021-07-26 04:33:50.339",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -196,7 +196,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -208,23 +208,48 @@
         "forms": {}
       },
       "results": {
-        "code": "ERROR",
+        "code": "SUCCESS",
         "msg": [
           {
             "type": "TEXT",
-            "data": "java.lang.RuntimeException\n\tat org.apache.zeppelin.interpreter.remote.PooledRemoteClient.callRemoteFunction(PooledRemoteClient.java:119)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterProcess.callRemoteFunction(RemoteInterpreterProcess.java:100)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.open(RemoteInterpreter.java:133)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreter.getFormType(RemoteInterpreter.java:271)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:438)\n\tat org.apache.zeppelin.notebook.Paragraph.jobRun(Paragraph.java:69)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.RemoteScheduler$JobRunner.run(RemoteScheduler.java:182)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n"
+            "data": "root\n |-- id: long (nullable \u003d true)\n |-- name: string (nullable \u003d true)\n |-- age: long (nullable \u003d true)\n |-- country: string (nullable \u003d true)\n\n+---+-----+---+-------+\n| id| name|age|country|\n+---+-----+---+-------+\n|  1| andy| 20|    USA|\n|  2| jeff| 23|  China|\n|  3|james| 18|    USA|\n+---+-----+---+-------+\n\nroot\n |-- id: long (nullable \u003d true)\n |-- name: string (nullable \u003d true)\n |-- age: long (nullable \u003d true)\n |-- country: string (nullable \u003d true)\n\n+---+-----+---+-------+\n| id| name|age|country|\n+---+-----+---+-------+\n|  1| andy| 20|    USA|\n|  2| jeff| 23|  China|\n|  3|james| 18|    USA|\n+---+-----+---+-------+\n\n"
           }
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://3745c7ed824d:4040/jobs/job?id\u003d61"
+            },
+            {
+              "jobUrl": "http://3745c7ed824d:4040/jobs/job?id\u003d62"
+            },
+            {
+              "jobUrl": "http://3745c7ed824d:4040/jobs/job?id\u003d63"
+            },
+            {
+              "jobUrl": "http://3745c7ed824d:4040/jobs/job?id\u003d64"
+            },
+            {
+              "jobUrl": "http://3745c7ed824d:4040/jobs/job?id\u003d65"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1578387700850_1345292725",
       "id": "20180530-101750_1491737301",
       "dateCreated": "2020-01-07 17:01:40.850",
-      "dateStarted": "2024-02-17 11:58:03.842",
-      "dateFinished": "2024-02-17 11:58:03.843",
-      "status": "ERROR"
+      "dateStarted": "2021-07-26 04:33:50.341",
+      "dateFinished": "2021-07-26 04:33:51.158",
+      "status": "FINISHED"
     },
     {
       "title": "Create DataFrame via DataFrameReader",
@@ -242,7 +267,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -312,7 +337,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -385,7 +410,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -446,7 +471,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -513,7 +538,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -580,7 +605,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -653,7 +678,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -768,7 +793,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -880,7 +905,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -977,7 +1002,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -1033,14 +1058,14 @@
       "title": "Show Tables",
       "text": "%spark.sql\n\nshow tables",
       "user": "anonymous",
-      "dateUpdated": "2022-11-30 01:09:12.751",
+      "dateUpdated": "2021-07-26 04:34:06.478",
       "progress": 0,
       "config": {
         "runOnSelectionChange": true,
         "title": true,
         "checkEmpty": true,
         "colWidth": 12.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {
           "0": {
@@ -1090,7 +1115,7 @@
         "msg": [
           {
             "type": "TABLE",
-            "data": "database\ttableName\tisTemporary\ndefault\toptrans_tbl\tfalse\ndefault\tproduct_revenue\tfalse\ndefault\tsales_delta_managed\tfalse\ndefault\ttransact_tbl\tfalse\ndefault\ttransaction_detail_hive_tbl\tfalse\ndefault\ttransaction_details\tfalse\ndefault\ttransaction_details_orc\tfalse\ndefault\ttransaction_details_parquet\tfalse\n"
+            "data": "database\ttableName\tisTemporary\n\tbank\ttrue\n\tpeople\ttrue\n"
           }
         ]
       },
@@ -1100,8 +1125,8 @@
       "jobName": "paragraph_1578388432752_877455036",
       "id": "paragraph_1578388432752_877455036",
       "dateCreated": "2020-01-07 17:13:52.752",
-      "dateStarted": "2022-11-30 01:09:12.756",
-      "dateFinished": "2022-11-30 01:09:15.088",
+      "dateStarted": "2021-07-26 04:34:06.482",
+      "dateFinished": "2021-07-26 04:34:06.556",
       "status": "FINISHED"
     },
     {
@@ -1120,7 +1145,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": false,
         "results": {},
@@ -1166,7 +1191,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {
           "0": {
@@ -1337,7 +1362,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/python",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true,
         "results": {},
         "enabled": true,
@@ -1377,7 +1402,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "results": {
           "0": {
             "graph": {
@@ -1546,7 +1571,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/sql",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "results": {},
         "enabled": true
       },
@@ -1579,5 +1604,7 @@
   "config": {
     "isZeppelinNotebookCronEnable": false
   },
-  "info": {}
+  "info": {
+    "isRunning": false
+  }
 }

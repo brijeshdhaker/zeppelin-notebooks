@@ -3,7 +3,7 @@
     {
       "text": "%md\n## Welcome to Zeppelin.\n##### This is a live tutorial, you can run the code yourself. (Shift-Enter to Run)",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 04:36:10.172",
+      "dateUpdated": "2024-04-04 04:29:21.916",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -28,7 +28,7 @@
         },
         "editorMode": "ace/mode/markdown",
         "tableHide": false,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -49,15 +49,15 @@
       "jobName": "paragraph_1423836981412_-1007008116",
       "id": "20150213-231621_168813393",
       "dateCreated": "2015-02-13 23:16:21.000",
-      "dateStarted": "2021-07-26 04:36:10.174",
-      "dateFinished": "2021-07-26 04:36:10.184",
+      "dateStarted": "2024-04-04 04:29:21.916",
+      "dateFinished": "2024-04-04 04:29:23.934",
       "status": "FINISHED"
     },
     {
       "title": "Load data into table",
-      "text": "import org.apache.commons.io.IOUtils\nimport java.net.URL\nimport java.nio.charset.Charset\n\n// Zeppelin creates and injects sc (SparkContext) and sqlContext (HiveContext or SqlContext)\n// So you don\u0027t need create them manually\n\n// load bank data\nval bankText \u003d sc.parallelize(\n    IOUtils.toString(\n        new URL(\"https://s3.amazonaws.com/apache-zeppelin/tutorial/bank/bank.csv\"),\n        Charset.forName(\"utf8\")).split(\"\\n\"))\n\ncase class Bank(age: Integer, job: String, marital: String, education: String, balance: Integer)\n\nval bank \u003d bankText.map(s \u003d\u003e s.split(\";\")).filter(s \u003d\u003e s(0) !\u003d \"\\\"age\\\"\").map(\n    s \u003d\u003e Bank(s(0).toInt, \n            s(1).replaceAll(\"\\\"\", \"\"),\n            s(2).replaceAll(\"\\\"\", \"\"),\n            s(3).replaceAll(\"\\\"\", \"\"),\n            s(5).replaceAll(\"\\\"\", \"\").toInt\n        )\n).toDF()\nbank.registerTempTable(\"bank\")",
+      "text": "import org.apache.commons.io.IOUtils\nimport java.net.URL\nimport java.nio.charset.Charset\n\n// Zeppelin creates and injects sc (SparkContext) and sqlContext (HiveContext or SqlContext)\n// So you don\u0027t need create them manually\n\n// load bank data\nval bankText \u003d sc.parallelize(\n    IOUtils.toString(\n        new URL(\"file:///apps/hostpath/datasets/bank/bank.csv\"),\n        Charset.forName(\"utf8\")).split(\"\\n\"))\n\ncase class Bank(age: Integer, job: String, marital: String, education: String, balance: Integer)\n\nval bank \u003d bankText.map(s \u003d\u003e s.split(\";\")).filter(s \u003d\u003e s(0) !\u003d \"\\\"age\\\"\").map(\n    s \u003d\u003e Bank(s(0).toInt, \n            s(1).replaceAll(\"\\\"\", \"\"),\n            s(2).replaceAll(\"\\\"\", \"\"),\n            s(3).replaceAll(\"\\\"\", \"\"),\n            s(5).replaceAll(\"\\\"\", \"\").toInt\n        )\n).toDF()\nbank.registerTempTable(\"bank\")",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 04:36:10.274",
+      "dateUpdated": "2024-04-05 04:41:48.963",
       "progress": 0,
       "config": {
         "colWidth": 12.0,
@@ -79,18 +79,18 @@
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
         "forms": {}
       },
       "results": {
-        "code": "SUCCESS",
+        "code": "ERROR",
         "msg": [
           {
             "type": "TEXT",
-            "data": "\u001b[33mwarning: \u001b[0mthere was one deprecation warning (since 2.0.0); for details, enable `:setting -deprecation\u0027 or `:replay -deprecation\u0027\nimport sqlContext.implicits._\nimport org.apache.commons.io.IOUtils\nimport java.net.URL\nimport java.nio.charset.Charset\n\u001b[1m\u001b[34mbankText\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d ParallelCollectionRDD[505] at parallelize at \u003cconsole\u003e:32\ndefined class Bank\n\u001b[1m\u001b[34mbank\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [age: int, job: string ... 3 more fields]\n"
+            "data": "org.apache.zeppelin.interpreter.InterpreterException: java.lang.NoSuchMethodError: scala.tools.nsc.Settings.usejavacp()Lscala/tools/nsc/settings/AbsSettings$AbsSetting;\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:76)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:833)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:741)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:172)\n\tat org.apache.zeppelin.scheduler.AbstractScheduler.runJob(AbstractScheduler.java:132)\n\tat org.apache.zeppelin.scheduler.FIFOScheduler.lambda$runJobInScheduler$0(FIFOScheduler.java:42)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:750)\nCaused by: java.lang.NoSuchMethodError: scala.tools.nsc.Settings.usejavacp()Lscala/tools/nsc/settings/AbsSettings$AbsSetting;\n\tat org.apache.zeppelin.spark.SparkScala212Interpreter.open(SparkScala212Interpreter.scala:66)\n\tat org.apache.zeppelin.spark.SparkInterpreter.open(SparkInterpreter.java:121)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.open(LazyOpenInterpreter.java:70)\n\t... 8 more\n"
           }
         ]
       },
@@ -100,15 +100,15 @@
       "jobName": "paragraph_1423500779206_-1502780787",
       "id": "20150210-015259_1403135953",
       "dateCreated": "2015-02-10 01:52:59.000",
-      "dateStarted": "2021-07-26 04:36:10.276",
-      "dateFinished": "2021-07-26 04:36:13.186",
-      "status": "FINISHED"
+      "dateStarted": "2024-04-05 04:41:48.979",
+      "dateFinished": "2024-04-05 04:41:52.034",
+      "status": "ERROR"
     },
     {
       "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 04:36:13.281",
-      "progress": 15,
+      "dateUpdated": "2024-04-05 04:36:11.794",
+      "progress": 87,
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -153,7 +153,7 @@
           "completionSupport": true
         },
         "editorMode": "ace/mode/sql",
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -177,7 +177,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://3745c7ed824d:4040/jobs/job?id\u003d210"
+              "jobUrl": "http://zeppelin.sandbox.net:4040/jobs/job?id\u003d0"
             }
           ],
           "interpreterSettingId": "spark"
@@ -187,15 +187,15 @@
       "jobName": "paragraph_1423500782552_-1439281894",
       "id": "20150210-015302_1492795503",
       "dateCreated": "2015-02-10 01:53:02.000",
-      "dateStarted": "2021-07-26 04:36:13.283",
-      "dateFinished": "2021-07-26 04:36:14.677",
+      "dateStarted": "2024-04-05 04:36:11.797",
+      "dateFinished": "2024-04-05 04:36:14.892",
       "status": "FINISHED"
     },
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 04:36:14.692",
-      "progress": 58,
+      "dateUpdated": "2024-04-05 04:25:40.859",
+      "progress": 31,
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -240,7 +240,7 @@
           "completionSupport": true
         },
         "editorMode": "ace/mode/sql",
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {
@@ -274,7 +274,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://3745c7ed824d:4040/jobs/job?id\u003d211"
+              "jobUrl": "http://zeppelin.sandbox.net:4040/jobs/job?id\u003d1"
             }
           ],
           "interpreterSettingId": "spark"
@@ -284,15 +284,15 @@
       "jobName": "paragraph_1423720444030_-1424110477",
       "id": "20150212-145404_867439529",
       "dateCreated": "2015-02-12 14:54:04.000",
-      "dateStarted": "2021-07-26 04:36:14.700",
-      "dateFinished": "2021-07-26 04:36:15.404",
+      "dateStarted": "2024-04-05 04:25:40.862",
+      "dateFinished": "2024-04-05 04:25:41.718",
       "status": "FINISHED"
     },
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2021-07-26 04:36:15.497",
-      "progress": 51,
+      "dateUpdated": "2024-04-05 04:25:44.181",
+      "progress": 16,
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -337,7 +337,7 @@
           "completionSupport": true
         },
         "editorMode": "ace/mode/sql",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true
       },
       "settings": {
@@ -383,7 +383,7 @@
           "group": "spark",
           "values": [
             {
-              "jobUrl": "http://3745c7ed824d:4040/jobs/job?id\u003d212"
+              "jobUrl": "http://zeppelin.sandbox.net:4040/jobs/job?id\u003d2"
             }
           ],
           "interpreterSettingId": "spark"
@@ -393,8 +393,8 @@
       "jobName": "paragraph_1423836262027_-210588283",
       "id": "20150213-230422_1600658137",
       "dateCreated": "2015-02-13 23:04:22.000",
-      "dateStarted": "2021-07-26 04:36:15.502",
-      "dateFinished": "2021-07-26 04:36:16.265",
+      "dateStarted": "2024-04-05 04:25:44.184",
+      "dateFinished": "2024-04-05 04:25:45.050",
       "status": "FINISHED"
     },
     {
@@ -421,7 +421,7 @@
         },
         "editorMode": "ace/mode/markdown",
         "tableHide": false,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -470,7 +470,7 @@
         },
         "editorMode": "ace/mode/markdown",
         "tableHide": false,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -501,7 +501,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -535,7 +535,5 @@
     "looknfeel": "default",
     "isZeppelinNotebookCronEnable": false
   },
-  "info": {
-    "isRunning": true
-  }
+  "info": {}
 }

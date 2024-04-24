@@ -8,7 +8,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -74,7 +74,7 @@
           "completionSupport": false,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "runOnSelectionChange": true,
         "checkEmpty": true
       },
@@ -131,7 +131,7 @@
           "completionSupport": false,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -186,7 +186,7 @@
           "completionSupport": false,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -244,7 +244,7 @@
         "editorMode": "ace/mode/scala",
         "editorHide": false,
         "tableHide": false,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -300,7 +300,7 @@
           "completionSupport": false,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -369,7 +369,7 @@
           "completionKey": "TAB"
         },
         "editorHide": false,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -439,7 +439,7 @@
         },
         "editorHide": false,
         "tableHide": false,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -530,7 +530,7 @@
           "completionKey": "TAB",
           "completionSupport": true
         },
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -597,7 +597,7 @@
           "completionSupport": false,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true
       },
       "settings": {
@@ -652,7 +652,7 @@
           "completionSupport": false,
           "completionKey": "TAB"
         },
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true
       },
       "settings": {
@@ -708,7 +708,7 @@
           "completionKey": "TAB"
         },
         "editorHide": false,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "title": true
       },
       "settings": {
@@ -762,7 +762,7 @@
         "editorHide": false,
         "tableHide": false,
         "title": true,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -815,7 +815,7 @@
         "editorHide": false,
         "tableHide": false,
         "title": true,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -868,7 +868,7 @@
         "editorHide": false,
         "tableHide": false,
         "title": true,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -924,7 +924,7 @@
           "completionKey": "TAB"
         },
         "editorHide": false,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -980,7 +980,7 @@
         },
         "editorHide": false,
         "title": true,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},
@@ -1021,7 +1021,7 @@
         "editorMode": "ace/mode/markdown",
         "editorHide": true,
         "tableHide": false,
-        "fontSize": 12.0
+        "fontSize": 9.0
       },
       "settings": {
         "params": {},

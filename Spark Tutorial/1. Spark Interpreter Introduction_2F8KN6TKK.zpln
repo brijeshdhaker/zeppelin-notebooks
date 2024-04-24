@@ -5,7 +5,6 @@
       "text": "%md\n\n# Introduction\n\nThis tutorial is for how to use Spark Interpreter in Zeppelin.\n\n1. Specify `SPARK_HOME` in interpreter setting. If you don\u0027t specify `SPARK_HOME`, Zeppelin will use the embedded spark which can only run in local mode. And some advanced features may not work in this embedded spark.\n2. Specify `spark.master` for spark execution mode.\n    * `local[*]`  - Driver and Executor would both run in the same host of zeppelin server. It is only for testing and POC, not for production. \n    * `yarn-client`    - Driver would run on the same host of zeppelin server which means it would increase memory pressure on the machine of zeppelin server.\n    * `yarn-cluster`   - Driver would run in a remote node of yarn cluster, it is supported only after 0.8.0. And yarn-cluster is preferred over yarn-client as it mitigate the memory pressure of zeppelin server.\n    * `standalone`  -  Just specify master to be the spark master address. e.g. spark://HOST:PORT\n    * `mesos`  - There\u0027s no sufficient test on these mode in Zeppelin. So you may hit weird issues when using these modes.\n3. Create different spark interpreter for different spark version. If you want to use different spark version in the same Zeppelin instance, you can create different spark interpreter for each spark version. And for each interpreter, you need to specify its `SPARK_HOME` properly which point to the correct spark distribution. e.g. You can use the default spark interpreter named `spark` for spark 2.4 and create another spark interpreter named `spark3` for spark 3.0\n",
       "user": "anonymous",
       "dateUpdated": "2020-05-04 13:44:39.482",
-      "progress": 0,
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -16,7 +15,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "results": {},
         "enabled": true
@@ -35,7 +34,6 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762311_275695566",
       "id": "20180530-211919_1936070943",
@@ -49,7 +47,6 @@
       "text": "%md\n\nCustomize your spark interpreter is indispensable for Zeppelin Notebook. E.g. You want to add third party jars, change the execution mode, change the number of executor or its memory and etc. You can check this link for all the available [spark configuration](http://spark.apache.org/docs/latest/configuration.html)\nAlthough you can customize these in interpreter setting, it is recommended to do via the generic inline configuration. Because interpreter setting is shared globally, it is intend to be managed by admin not by users. Users is recommended to customize spark interpreter via the generic inline configuration `%spark.conf`\n\nThe following is an example of how to customize your spark interpreter. To be noticed, you have to run this paragraph first before launching spark interpreter process. Because these customization won\u0027t take effect after spark interpreter process is launched.",
       "user": "anonymous",
       "dateUpdated": "2020-05-04 13:45:44.204",
-      "progress": 0,
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -60,7 +57,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": true,
         "results": {},
@@ -80,7 +77,6 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762316_737450410",
       "id": "20180531-100923_1307061430",
@@ -94,7 +90,6 @@
       "text": "%spark.conf\n\nSPARK_HOME  \u003cPATH_TO_SPARK_HOME\u003e\n\n# set driver memory to 8g\nspark.driver.memory 8g\n\n# set executor number to be 6\nspark.executor.instances  6\n\n# set executor memory 4g\nspark.executor.memory  4g\n\n# Any other spark properties can be set here. Here\u0027s avaliable spark configruation you can set. (http://spark.apache.org/docs/latest/configuration.html)\n",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 10:56:30.840",
-      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "text",
@@ -104,7 +99,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "results": {},
         "enabled": true,
         "title": true
@@ -114,7 +109,6 @@
         "forms": {}
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762316_1311021507",
       "id": "20180531-101615_648039641",
@@ -126,7 +120,6 @@
       "text": "%md\n\nThere\u0027re 2 ways to add third party libraries.\n\n* `Generic Inline Configuration`   It is the recommended way to add third party jars/packages. Use `spark.jars` for adding local jar file and `spark.jars.packages` for adding packages\n* `Interpreter Setting`   You can also config `spark.jars` and `spark.jars.packages` in interpreter setting, but since adding third party libraries is usually application specific. It is recommended to use `Generic Inline Configuration` so that user can see clearly what dependencies this note needs and also easy to rerun this note in another enviroment. Otherwise you need create many interpreters for each note with different dependencies.\n\nThe following is an example that we want to use package `com.databricks:spark-avro_2.11:4.0.0` for reading avro data.\n1. First we specify it in `%spark.conf`\n2. Then we can use it in the next paragraph\n",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 10:59:35.270",
-      "progress": 0,
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -137,7 +130,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": true,
         "results": {},
@@ -157,7 +150,6 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762323_1299339607",
       "id": "20180530-212309_72587811",
@@ -171,7 +163,6 @@
       "text": "%spark.conf\n\n# Must set SPARK_HOME for this example, because it won\u0027t work for Zeppelin\u0027s embedded spark mode. The embedded spark mode doesn\u0027t \n# use spark-submit to launch spark interpreter, so spark.jars and spark.jars.packages won\u0027t take affect. \nSPARK_HOME \u003cPATH_TO_SPARK_HOME\u003e\n\n# set execution mode\nmaster yarn-client\n\n# spark.jars can be used for adding any local jar files into spark interpreter\n# spark.jars  \u003cpath_to_local_jar\u003e\n\n# spark.jars.packages can be used for adding packages into spark interpreter\n# The following is to add avro into your spark interpreter\nspark.jars.packages com.databricks:spark-avro_2.11:4.0.0\n\n\n\n",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 11:01:36.681",
-      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "text",
@@ -181,7 +172,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "results": {},
         "enabled": true,
         "editorHide": false
@@ -195,7 +186,6 @@
         "msg": []
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762323_630094194",
       "id": "20180530-222209_612020876",
@@ -207,7 +197,6 @@
       "text": "%spark\n\nimport com.databricks.spark.avro._\n\nval df \u003d spark.read.format(\"com.databricks.spark.avro\").load(\"users.avro\")\ndf.printSchema\n\n",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 10:46:02.324",
-      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -217,7 +206,7 @@
         },
         "colWidth": 6.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "results": {},
         "enabled": true
       },
@@ -235,7 +224,6 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762324_60233930",
       "id": "20180530-222838_1995256600",
@@ -247,7 +235,6 @@
       "text": "%md\n\nIf you want to work with hive tables, you need to enable hive via the following 2 steps:\n\n1. Set `zeppelin.spark.useHiveContext` to `true`\n2. Put `hive-site.xml` under `SPARK_CONF_DIR` (By default it is the conf folder of `SPARK_HOME`).  \n\n**To be noticed**, You can only enable hive when specifying `SPARK_HOME` explicitly. It doens\u0027t work with zeppelin\u0027s embedded spark.\n\n",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 10:46:02.324",
-      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "scala",
@@ -257,7 +244,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/scala",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": true,
         "results": {},
@@ -277,7 +264,6 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762324_975709991",
       "id": "20180601-095002_1719356880",
@@ -289,7 +275,6 @@
       "text": "%md\n\nSpark interpreter provide code completion feature. As long as you type `tab`, code completion will start to work and provide you with a list of candidates. Here\u0027s one screenshot of how it works. \n\n**To be noticed**, code completion only works after spark interpreter is launched. So it will not work when you type code in the first paragraph as the spark interpreter is not launched yet. For me, usually I will run one simple code such as `sc.version` to launch spark interpreter, then type my code to leverage the code completion of spark interpreter.\n\n![code_completion](https://user-images.githubusercontent.com/164491/40758276-1ab2783e-64bf-11e8-9c1e-d132455234b3.gif)",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 11:03:03.127",
-      "progress": 0,
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -300,7 +285,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": true,
         "results": {},
@@ -320,7 +305,6 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762324_1893956125",
       "id": "20180531-095404_2000387113",
@@ -334,7 +318,6 @@
       "text": "%md\n\nFor using PySpark, you need to do some other pyspark configuration besides the above spark configuration we mentioned before. The most important property you need to set is python path for both driver and executor. If you hit the following error, it means your python on driver is mismatched with that of executor. In this case you need to check the 2 properties: `PYSPARK_PYTHON` and `PYSPARK_DRIVER_PYTHON`. (You can use `spark.pyspark.python` and `spark.pyspark.driver.python` instead if you are using spark after 2.1.0)\n\n```\nPy4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.\n: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 0.0 failed 4 times, most recent failure: Lost task 1.3 in stage 0.0 (TID 7, localhost, executor 1): org.apache.spark.api.python.PythonException: Traceback (most recent call last):\n  File \"/Users/jzhang/Java/lib/spark-2.3.0-bin-hadoop2.7/python/pyspark/worker.py\", line 175, in main\n    (\"%d.%d\" % sys.version_info[:2], version))\nException: Python in worker has different version 2.7 than that in driver 3.6, PySpark cannot run with different minor versions.Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.\n```\n\nAlso it is better to specify them in the `generic inline configuration` like the following paragraph.\n\n",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 11:04:18.086",
-      "progress": 0,
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -345,7 +328,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": true,
         "results": {},
@@ -365,7 +348,6 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762324_1658396672",
       "id": "20180531-104119_406393728",
@@ -379,7 +361,6 @@
       "text": "%spark.conf\n\n# If you python path on driver and executor is the same, then you only need to set PYSPARK_PYTHON\nPYSPARK_PYTHON \u003cpython_path\u003e\nspark.pyspark.python  \u003cpython_path\u003e\n\n# You need to set PYSPARK_DRIVER_PYTHON as well if your python path on driver is different from executors.\nPYSPARK_DRIVER_PYTHON   \u003cpython_path\u003e\nspark.pyspark.driver.python   \u003cpython_path\u003e\n",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 11:04:52.984",
-      "progress": 0,
       "config": {
         "editorSetting": {
           "language": "text",
@@ -389,7 +370,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/text",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": false,
         "results": {},
         "enabled": true
@@ -403,7 +384,6 @@
         "msg": []
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762324_496073034",
       "id": "20180531-110822_21877516",
@@ -415,7 +395,6 @@
       "text": "%md\n\nStarting from Zeppelin 0.8.0, `ipython` is integrated into Zeppelin. And `PySparkInterpreter`(`%spark.pyspark`) would use `ipython` if it is available. It is recommended to use `ipython` interpreter as it provides more powerful feature than the old PythonInterpreter. Spark create a new interpreter called `IPySparkInterpreter` (`%spark.ipyspark`) which use IPython underneath. You can use all the `ipython` features in this IPySparkInterpreter. There\u0027s one ipython tutorial note in Zeppelin which you can refer for more details.\n\n`spark.pyspark` will try to use `ipython` if it is available, it will fall back to the old PySpark implemention if `ipython` is not available. But you can always use `ipython` via `%spark.ipyspark`.\n",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 11:10:07.426",
-      "progress": 0,
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -426,7 +405,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": true,
         "results": {},
@@ -446,7 +425,6 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762324_1303560480",
       "id": "20180531-104646_1689036640",
@@ -459,8 +437,7 @@
       "title": "Enable Impersonation",
       "text": "%md\n\nBy default, all the spark interpreter will run as user who launch zeppelin server. This is OK for single user, but expose potential issue for multiple user scenaior. For multiple user scenaior, it is better to enable impersonation for Spark Interpreter in yarn mode.\nThere are 3 steps you need to do to enable impersonation.\n\n1. Enable it in Spark Interpreter Setting. You have to choose Isolated Per User mode, and then click the impersonation option as following screenshot. ![screen shot 2018-05-31 at 1 35 34 pm](https://user-images.githubusercontent.com/164491/40763519-b76fa56c-64d7-11e8-9d49-53928a04ba5d.png)\n2. Add the following configure in core-site.xml of your hadoop cluser, and then restart the hadoop cluster (restart hdfs and yarn). \u003cuser_name\u003e is the user who launch zeppelin server. \n\n```xml\n\u003cproperty\u003e\n   \u003cname\u003ehadoop.proxyuser.\u003cuser_name\u003e.groups\u003c/name\u003e\n   \u003cvalue\u003e*\u003c/value\u003e\n\u003c/property\u003e\n\n\u003cproperty\u003e\n   \u003cname\u003ehadoop.proxyuser.\u003cuser_name\u003e.hosts\u003c/name\u003e\n    \u003cvalue\u003e*\u003c/value\u003e\n\u003c/property\u003e\n```\n3. Create user home folder on hdfs and also set the right permission on this folder. Because spark will use this home folder as staging directory which is used to upload spark jars and other dependencies that is needed by yarn container. Here\u0027s a sample output of command `hadoop fs -ls /user`\n```\ndrwxr-xr-x   - user1  supergroup          0 2018-05-31 13:41 /user/user1\ndrwxr-xr-x   - user2  supergroup          0 2017-01-10 12:31 /user/user2\n```\nYou can use the following command to create home folder for `user1` and also set proper permission.\n```\nhadoop fs -mkdir /uesr/user1\nhadoop fs -chown user1 /user/user1\n```\n\nAfter all these steps, you can see impersonation should work in yarn web ui. E.g. In the following screenshot, we can see that the yarn app run as user `user1` instead of the user who run zeppelin server.\n\n![screen shot 2018-05-31 at 1 47 05 pm](https://user-images.githubusercontent.com/164491/40763896-330dc8f6-64d9-11e8-9737-92d8371e85ae.png)",
       "user": "anonymous",
-      "dateUpdated": "2022-11-27 03:30:19.023",
-      "progress": 0,
+      "dateUpdated": "2020-04-30 11:11:51.383",
       "config": {
         "tableHide": false,
         "editorSetting": {
@@ -471,7 +448,7 @@
         },
         "colWidth": 12.0,
         "editorMode": "ace/mode/markdown",
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "editorHide": true,
         "title": true,
         "results": {},
@@ -491,13 +468,12 @@
         ]
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762324_1470430553",
       "id": "20180531-105943_1008146830",
       "dateCreated": "2020-04-30 10:46:02.324",
-      "dateStarted": "2022-11-27 03:30:19.024",
-      "dateFinished": "2022-11-27 03:30:20.885",
+      "dateStarted": "2020-04-30 11:11:51.385",
+      "dateFinished": "2020-04-30 11:11:51.395",
       "status": "FINISHED"
     },
     {
@@ -505,14 +481,12 @@
       "text": "%spark\n",
       "user": "anonymous",
       "dateUpdated": "2020-04-30 10:46:02.325",
-      "progress": 0,
       "config": {},
       "settings": {
         "params": {},
         "forms": {}
       },
       "apps": [],
-      "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1588214762325_1205048464",
       "id": "20180531-134529_63265354",

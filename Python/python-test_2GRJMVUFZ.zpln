@@ -3,7 +3,7 @@
     {
       "text": "%python\n\nnum\u003d10e6\nprint(num)\n",
       "user": "anonymous",
-      "dateUpdated": "2022-06-19 06:15:48.867",
+      "dateUpdated": "2024-03-04 03:10:34.881",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -36,14 +36,14 @@
       "jobName": "paragraph_1640967184140_1828589803",
       "id": "paragraph_1640967184140_1828589803",
       "dateCreated": "2021-12-31 16:13:04.140",
-      "dateStarted": "2022-06-19 06:15:48.883",
-      "dateFinished": "2022-06-19 06:15:56.986",
+      "dateStarted": "2024-03-04 03:10:34.900",
+      "dateFinished": "2024-03-04 03:10:38.041",
       "status": "FINISHED"
     },
     {
       "text": "%python\n\nprint(\"{:e}\".format(1000000))\nprint(\"{:.3e}\".format(9620000000))\n",
       "user": "anonymous",
-      "dateUpdated": "2022-06-19 06:16:00.840",
+      "dateUpdated": "2024-03-04 03:10:42.762",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -76,14 +76,14 @@
       "jobName": "paragraph_1640967206847_668026016",
       "id": "paragraph_1640967206847_668026016",
       "dateCreated": "2021-12-31 16:13:26.847",
-      "dateStarted": "2022-06-19 06:16:00.855",
-      "dateFinished": "2022-06-19 06:16:00.926",
+      "dateStarted": "2024-03-04 03:10:42.766",
+      "dateFinished": "2024-03-04 03:10:42.776",
       "status": "FINISHED"
     },
     {
       "text": "%python\n\n# Tuples are immutable, and usually, they contain a sequence of heterogeneous elements that are accessed via unpacking or indexing (or even by attribute in the case of named tuples). \n\ntuple \u003d (1,2,3,4,\u0027Brijesh\u0027, \u002705-05-2983\u0027)\n\nprint(type(tuple))\n",
       "user": "anonymous",
-      "dateUpdated": "2022-01-16 14:35:08.428",
+      "dateUpdated": "2024-03-04 03:10:47.073",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -116,8 +116,8 @@
       "jobName": "paragraph_1640967316338_1816689951",
       "id": "paragraph_1640967316338_1816689951",
       "dateCreated": "2021-12-31 16:15:16.338",
-      "dateStarted": "2022-01-16 14:35:08.439",
-      "dateFinished": "2022-01-16 14:35:08.500",
+      "dateStarted": "2024-03-04 03:10:47.079",
+      "dateFinished": "2024-03-04 03:10:47.087",
       "status": "FINISHED"
     },
     {

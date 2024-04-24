@@ -327,7 +327,7 @@
       "title": "reduceByKey",
       "text": "%spark\n\n//reduceByKey\nprintln(\"Reduce by Key \u003d\u003d\u003e\")\nval wordCount \u003d pairedWordRDD.reduceByKey((a,b)\u003d\u003ea+b)\nwordCount.take(6).foreach(println)",
       "user": "anonymous",
-      "dateUpdated": "2023-02-10 02:58:25.657",
+      "dateUpdated": "2024-03-22 12:37:47.216",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -386,7 +386,7 @@
       "title": "aggregateByKey",
       "text": "%spark\n\n/*\n\nAggregateByKey(arg1,arg2):\n\nThis will take the two functions:\n1st Argument : specify what to do with value of the key if the same key appears inside same partition\n2nd Argument : specify what to do with the values of same key across all other partitions\n\n*/\n\ndef seqFunction \u003d (accu:Int, v:Int) \u003d\u003e accu + v\n\ndef combFunction \u003d (accu1:Int, accu2:Int) \u003d\u003e accu1 + accu2\n\nprintln(\"Aggregate by Key \u003d\u003d\u003e wordcount\")\nval wordCount2 \u003d pairedWordRDD.aggregateByKey(0)(seqFunction, combFunction)\n\nwordCount2.take(3).foreach(println)\n    \n\n//keys\nprintln(\"Keys \u003d\u003d\u003e\")\nwordCount2.keys.foreach(println)\n\n//values\nprintln(\"values \u003d\u003d\u003e\")\nwordCount2.values.foreach(println)\n\nprintln(\"Count :\"+wordCount2.count())\n    ",
       "user": "anonymous",
-      "dateUpdated": "2023-02-10 02:58:34.365",
+      "dateUpdated": "2024-03-22 12:40:56.622",
       "progress": 0,
       "config": {
         "editorSetting": {

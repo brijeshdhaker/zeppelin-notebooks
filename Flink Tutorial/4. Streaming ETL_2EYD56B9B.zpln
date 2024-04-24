@@ -11,7 +11,7 @@
         "title": true,
         "checkEmpty": true,
         "colWidth": 12.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -55,7 +55,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -89,7 +89,7 @@
       "progress": 0,
       "config": {
         "colWidth": 6.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -128,7 +128,7 @@
         "title": true,
         "checkEmpty": true,
         "colWidth": 6.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -164,7 +164,7 @@
         "title": true,
         "checkEmpty": true,
         "colWidth": 12.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
@@ -201,7 +201,7 @@
         "title": true,
         "checkEmpty": true,
         "colWidth": 12.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {
           "0": {
@@ -312,7 +312,7 @@
       "progress": 0,
       "config": {
         "colWidth": 12.0,
-        "fontSize": 12.0,
+        "fontSize": 9.0,
         "enabled": true,
         "results": {},
         "editorSetting": {
